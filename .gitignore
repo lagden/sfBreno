@@ -1,0 +1,33 @@
+# Framework
+/lib/vendor/symfony/*
+/lib/*/doctrine/base/*
+/lib/*/doctrine/sfDoctrineGuardPlugin/base/*
+/web/sf
+/data/sql/schema.sql
+/test/resources/convert/*
+
+# Project files
+/cache/*
+/log/*
+/config/databases.yml
+# /web/*_dev.php
+/web/uploads/*
+!/web/uploads/.htaccess
+
+# cpanel
+/cgi-bin
+error_log
+
+# OS crap
+.DS_Store
+thumbs.db
+.*.swp
+
+# SCM files
+.arch-params
+.bzr
+_darcs
+.hg
+.monotone
+.svn
+CVS
