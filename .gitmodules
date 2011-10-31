@@ -1,0 +1,3 @@
+[submodule "plugins/csDoctrineActAsSortablePlugin"]
+	path = plugins/csDoctrineActAsSortablePlugin
+	url = git://github.com/bshaffer/csDoctrineActAsSortablePlugin.git

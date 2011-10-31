@@ -1,18 +1,23 @@
 #!/usr/bin/env sh
 THIS=$(basename $0)
 
-function usage() {
-echo "$THIS 0.1 - Author: Thiago Lagden <lagden@gmail.com>"
-echo "
-Usage:
-$THIS [-p <project_name>] [-i]
-$THIS -h (shows this help)
-"
-exit -1
+usage()
+{
+cat << EOF
+usage: $0 options
+
+This script prepare the symfony project.
+
+OPTIONS:
+   -h      Show this message
+   -p      Project name, default is 'sfProject'
+   -i      Ignore project
+EOF
+exit 1
 }
 
 IGNORE_P=0
-PROJECT="sfDefault"
+PROJECT="sfProject"
 
 while getopts "hp:i" OPT; do
     case $OPT in
@@ -38,11 +43,11 @@ then
 
     # downloading
     echo "Downloading Symfony"
-    wget 'http://www.symfony-project.org/get/symfony-1.4.9.tgz' -O symfony.tgz
+    wget 'http://www.symfony-project.org/get/symfony-1.4.15.tgz' -O symfony.tgz
 
     echo "Extracting..."
     tar xzf symfony.tgz
-    mv 'symfony-1.4.9' symfony
+    mv 'symfony-1.4.15' symfony
     rm symfony.tgz
     
     cd $ROOT_FOLDER

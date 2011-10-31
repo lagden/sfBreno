@@ -1,0 +1,122 @@
+# User
+User:
+  actAs:
+    Timestampable: ~
+  indexes:
+    login_index: { fields: [email, password] }
+  columns:
+    name: { type: string(255), notnull: true }
+    email: { type: string(255), notnull: true, unique: true }
+    password: { type: string(80), notnull: true }
+    phone: { type: string(50) }
+    token_forgot: { type: string(40) }
+
+# Seção
+Section:
+  actAs:
+    Sortable: ~
+    Sluggable:
+      fields: [title]
+      canUpdate: true
+      unique: true
+    Timestampable: ~
+  indexes:
+    route_index: { fields: [route] }
+  columns:
+    title: { type: string(255), notnull: true, unique: true }
+    description: clob
+    content: clob
+    seo: clob
+    is_active: { type: boolean, default: 0 }
+    route: { type: string(255) }
+  relations:
+    Tag:
+      refClass: SectionTag
+      alias: Tags
+      foreignAlias: Sections
+
+# Conteúdo
+Content:
+  actAs:
+    Sortable:
+      uniqueBy: [section_id]
+    Sluggable:
+      fields: [title]
+      canUpdate: true
+      unique: true
+    Timestampable: ~
+  columns:
+    title: { type: string(255), notnull: true, unique: true }
+    description: clob
+    content: clob
+    seo: clob
+    is_active: { type: boolean, default: 0 }
+    section_id: { type: bigint }
+  relations:
+    Tag:
+      refClass: ContentTag
+      alias: Tags
+      foreignAlias: Contents
+    Section:
+      local: section_id
+      class: Section
+      foreignAlias: Contents
+      onDelete: 'SET NULL'
+
+# Tag
+Tag:
+  actAs:
+    Sluggable:
+      fields: [name]
+      canUpdate: true
+      unique: true
+  indexes:
+    name_index: { fields: [name] }
+  columns:
+    name: { type: string(255), notnull: true, unique: true }
+
+SectionTag:
+  columns:
+    tag_id: { type: bigint, primary: true }
+    section_id: { type: bigint, primary: true }
+  relations:
+    Tag: { local: tag_id, onDelete: CASCADE }
+    Section: { local: section_id, onDelete: CASCADE }
+    
+ContentTag:
+  columns:
+    tag_id: { type: bigint, primary: true }
+    content_id: { type: bigint, primary: true }
+  relations:
+    Tag: { local: tag_id, onDelete: CASCADE }
+    Content: { local: content_id, onDelete: CASCADE }
+
+# Imóvel
+Estate:
+  actAs:
+    Sluggable:
+      fields: [title]
+      canUpdate: true
+      unique: true
+    Timestampable: ~
+  indexes:
+    estate_index: { fields: [reference] }
+  columns:
+    title: { type: string(255), notnull: true, unique: true }
+    reference: { type: string(255), notnull: true, unique: true }
+    seo: clob
+    is_active: { type: boolean, default: 0 }
+
+# Imagem
+Image:
+  actAs:
+    Timestampable: ~
+  columns:
+    file: { type: string(255) }
+    estate_id: { type: bigint }
+  relations:
+    Estate:
+      local: estate_id
+      class: Estate
+      foreignAlias: Images
+      onDelete: CASCADE

@@ -3,7 +3,7 @@
 /**
  * Base project form.
  * 
- * @package    BrenoHomaraImoveis
+ * @package    sfProject
  * @subpackage form
  * @author     Thiago Lagden 
  * @version    SVN: $Id: BaseForm.class.php 20147 2009-07-13 11:46:57Z FabianLange $
