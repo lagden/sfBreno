@@ -1,0 +1,255 @@
+/* line 3, ../../sass/jquery/hugrid.scss */
+#hugrid {
+  width: 960px;
+  /* width of webpage */
+  margin-left: -480px;
+  /* to center the grid, set half of webpage width as negative value */
+}
+
+/* line 8, ../../sass/jquery/hugrid.scss */
+#hugrid div {
+  margin-left: 140px;
+  /* width of column */
+  width: 24px;
+  /* width of column gutter */
+}
+
+/* Default Heads-Up Grid Styles - These styles allow you to change the color and style of the lines that make the Heads-Up Grid */
+/* line 14, ../../sass/jquery/hugrid.scss */
+#hugrid div div {
+  border-color: #FF00EB;
+  /* color of grid line */
+  border-style: solid;
+  /* style of grid line (dotted, dashed, solid) */
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  /*opacity of grid line */
+}
+
+/* line 20, ../../sass/jquery/hugrid.scss */
+#hugrid div:hover {
+  background-color: #36F3FF;
+  /* color of gutter on :hover */
+}
+
+/* line 24, ../../sass/jquery/hugrid.scss */
+#hugrid div.mline {
+  border-color: #AA82FF;
+  /* color of margin line */
+  border-style: solid;
+  /* style of margin lines (dotted, dashed, solid) */
+}
+
+/* line 29, ../../sass/jquery/hugrid.scss */
+#hugridRows {
+  border-color: #AA82FF;
+  /* color of top margin line */
+  border-style: solid;
+  /* style of top margin line */
+}
+
+/* line 34, ../../sass/jquery/hugrid.scss */
+#hugridRows div.lineB {
+  border-color: #5DFF35;
+  /* color of row line */
+  border-style: solid;
+  /* style of row line */
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  /*opacity of row line */
+}
+
+/* line 40, ../../sass/jquery/hugrid.scss */
+#hugridRows div.lineB:hover {
+  border-color: #5DFF35;
+  /* color of row line on :hover */
+  border-style: solid;
+  /* style of row line on :hover */
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* Fixed Styles (No need to alter the below styles for standard grid needs.) */
+/* line 47, ../../sass/jquery/hugrid.scss */
+#hugrid {
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 50%;
+  height: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 0;
+  cursor: crosshair;
+}
+
+/* line 60, ../../sass/jquery/hugrid.scss */
+#hugrid div {
+  display: block;
+  float: left;
+  position: relative;
+  top: 0;
+  border-width: 0;
+}
+
+/* line 68, ../../sass/jquery/hugrid.scss */
+#hugrid div div {
+  margin: 0;
+  width: 0;
+}
+
+/* line 73, ../../sass/jquery/hugrid.scss */
+#hugrid div div.lineL {
+  float: left;
+  height: 10000px;
+  border-width: 0 0 0 1px;
+}
+
+/* line 79, ../../sass/jquery/hugrid.scss */
+#hugrid div div.lineR {
+  float: right;
+  height: 10000px;
+  border-width: 0 1px 0 0;
+}
+
+/* line 85, ../../sass/jquery/hugrid.scss */
+#hugrid div.mline {
+  margin: 0 0 0 -1px;
+  width: 0;
+  height: 100000px;
+}
+
+/* line 91, ../../sass/jquery/hugrid.scss */
+#hugrid div.mlineL {
+  border-width: 0 1px 0 0;
+}
+
+/* line 95, ../../sass/jquery/hugrid.scss */
+#hugrid div.mlineR {
+  float: right;
+  margin-right: -1px;
+  border-width: 0 0 0 1px;
+}
+
+/* line 101, ../../sass/jquery/hugrid.scss */
+#hugrid div:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+
+/* line 106, ../../sass/jquery/hugrid.scss */
+#hugrid div:hover div.lineL,
+#hugrid div:hover div.lineR {
+  border-style: solid;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 111, ../../sass/jquery/hugrid.scss */
+#hugridRows {
+  position: absolute;
+  z-index: 90000;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border-width: 1px 0 0 0;
+  cursor: crosshair;
+}
+
+/* line 124, ../../sass/jquery/hugrid.scss */
+#hugridRows div {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 132, ../../sass/jquery/hugrid.scss */
+#hugridRows div div.lineB {
+  margin: 0;
+  border-width: 0 0 1px 0;
+}
+
+/* line 137, ../../sass/jquery/hugrid.scss */
+#hugridUX {
+  display: block;
+  position: fixed;
+  z-index: 200000;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 4px;
+  font: bold 11px/100% Arial, sans-serif;
+  color: #AAA;
+  text-align: center;
+}
+
+/* line 150, ../../sass/jquery/hugrid.scss */
+#hugridUX div#hugridButtonBkgd {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  -moz-border-radius: 0 0 16px 0;
+  -webkit-border-radius: 0 0 16px 0;
+  -o-border-radius: 0 0 16px 0;
+  -ms-border-radius: 0 0 16px 0;
+  -khtml-border-radius: 0 0 16px 0;
+  border-radius: 0 0 16px 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}
+
+/* line 162, ../../sass/jquery/hugrid.scss */
+#hugridUX button#hugridButton {
+  cursor: pointer;
+  position: relative;
+  width: 28px;
+  margin: 0;
+  padding: 8px 2px;
+  background-color: #5DFF35;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -o-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -khtml-border-radius: 40px;
+  border-radius: 40px;
+  border-width: 0;
+  box-shadow: 0 0 2px #666;
+  outline: 0;
+  font: bold 11px/100% Arial, sans-serif;
+}
+
+/* line 176, ../../sass/jquery/hugrid.scss */
+#hugridUX button#hugridButton::-moz-focus-inner {
+  border: 0;
+}
+
+/* line 180, ../../sass/jquery/hugrid.scss */
+#hugridUX button#hugridButton.buttonisoff {
+  background: none;
+  box-shadow: none;
+}
+
+/* line 185, ../../sass/jquery/hugrid.scss */
+#hugridUX button#hugridButton.buttonisoff:hover {
+  background-color: #999;
+}
+
+/* line 189, ../../sass/jquery/hugrid.scss */
+#hugbuttonON {
+  color: #333;
+}
+
+/* line 193, ../../sass/jquery/hugrid.scss */
+#hugbuttonOFF {
+  color: #333;
+}

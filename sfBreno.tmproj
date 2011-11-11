@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>web/config.rb</string>
+	<string>apps/frontend/config/view.yml</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,43 +21,179 @@
 	<integer>474</integer>
 	<key>metaData</key>
 	<dict>
-		<key>.gitignore</key>
+		<key>apps/frontend/config/view.yml</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>1</integer>
+				<integer>44</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>28</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>web/config.rb</key>
+		<key>apps/frontend/modules/home/actions/actions.class.php</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>25</integer>
+				<integer>47</integer>
 				<key>line</key>
-				<integer>15</integer>
+				<integer>14</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+		</dict>
+		<key>apps/frontend/modules/home/templates/indexSuccess.php</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>26</integer>
+				<key>line</key>
+				<integer>57</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>20</integer>
+		</dict>
+		<key>apps/frontend/templates/layout.php</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>12</integer>
+				<key>line</key>
+				<integer>17</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>web/.htaccess</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>15</integer>
+				<key>line</key>
+				<integer>165</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>123</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>132</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>15</integer>
+				<key>line</key>
+				<integer>165</integer>
+			</dict>
+		</dict>
+		<key>web/js/vendor/jquery/plugins/headsupgrid/hugrid.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>32</integer>
+				<key>line</key>
+				<integer>24</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>99</integer>
+		</dict>
+		<key>web/js/vendor/jquery/plugins/headsupgrid/init.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>29</integer>
+				<key>line</key>
+				<integer>11</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>web/sass/grid.scss</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>27</integer>
+				<key>line</key>
+				<integer>42</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>16</integer>
+		</dict>
+		<key>web/sass/jquery/flexslider.scss</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>14</integer>
+				<key>line</key>
+				<integer>35</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>28</integer>
+		</dict>
+		<key>web/sass/jquery/hugrid.scss</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>38</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>81</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>web/config.rb</string>
-		<string>.gitignore</string>
+		<string>apps/frontend/modules/home/actions/actions.class.php</string>
+		<string>apps/frontend/modules/home/templates/indexSuccess.php</string>
+		<string>web/sass/jquery/flexslider.scss</string>
+		<string>web/js/vendor/jquery/plugins/headsupgrid/init.js</string>
+		<string>apps/frontend/templates/layout.php</string>
+		<string>apps/frontend/config/view.yml</string>
+		<string>web/sass/grid.scss</string>
+		<string>web/.htaccess</string>
+		<string>web/sass/jquery/hugrid.scss</string>
+		<string>web/js/vendor/jquery/plugins/headsupgrid/hugrid.js</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
 	<key>windowFrame</key>
-	<string>{{0, 4}, {1280, 774}}</string>
+	<string>{{0, 36}, {1280, 742}}</string>
 </dict>
 </plist>

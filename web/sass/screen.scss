@@ -1,6 +1,262 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "compass/reset";
+@import "compass";
+@import "blueprint/grid";
+
+/* jQuery plugins */
+@import "jquery/hugrid";
+
+/* Helper para designer */
+@import "grid";
+
+
+/*
+pageUnits = 'px';
+colUnits = 'px';
+pagewidth = 940;
+columns = 6;
+columnwidth = 140;
+gutterwidth = 20;
+pagetopmargin = 0;
+rowheight = 20;
+*/
+
+// Grid default
+$blueprint_grid_columns: 6;
+$blueprint_grid_width: 140px;
+$blueprint-grid-margin: 20px;
+
+.container{
+    background:blue;
+    padding-left:10px;
+    @include container;
+    .grid_1{
+        @include column(1);
+        &:last-child{
+             @include column(1,true);
+        }
+    }
+    .grid_2{
+        @include column(2);
+        &:last-child{
+             @include column(2,true);
+        }
+    }
+    .grid_3{
+        @include column(3);
+        &:last-child{
+             @include column(3,true);
+        }
+    }
+    .grid_4{
+        @include column(4);
+        &:last-child{
+             @include column(4,true);
+        }
+    }
+    .grid_5{
+        @include column(5);
+        &:last-child{
+             @include column(5,true);
+        }
+    }
+    .grid_6{
+        @include column(6);
+        &:last-child{
+             @include column(6,true);
+        }
+    }
+}
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6{ background:red; }
+
+
+//// 960gs
+//@mixin grid_global($w : 140px){
+//    width: $w;
+//    display:inline;
+//    float: left;
+//    position: relative;
+//    margin-left: 10px;
+//    margin-right: 10px;
+//}
+//
+//// Containers
+//.container_6{
+//    margin-left: auto;
+//    margin-right: auto;
+//    width: 960px;
+//    // Grid >> 6 Columns
+//    .grid_1{ @include grid_global(140px); }
+//    .grid_2{ @include grid_global(300px); }
+//    .grid_3{ @include grid_global(460px); }
+//    .grid_4{ @include grid_global(620px); }
+//    .grid_5{ @include grid_global(780px); }
+//    .grid_6{ @include grid_global(940px); }
+//}
+//
+///* Grid >> Global
+//----------------------------------------------------------------------------------------------------*/
+//
+//.push_1, .pull_1,
+//.push_2, .pull_2,
+//.push_3, .pull_3,
+//.push_4, .pull_4,
+//.push_5, .pull_5,
+//.push_6, .pull_6 {
+//    position:relative;
+//}
+//
+//
+///* Grid >> Children (Alpha ~ First, Omega ~ Last)
+//----------------------------------------------------------------------------------------------------*/
+//
+//.alpha {
+//    margin-left: 0;
+//}
+//
+//.omega {
+//    margin-right: 0;
+//}
+//
+///* Grid >> 6 Columns
+//----------------------------------------------------------------------------------------------------*/
+//
+//
+///* Prefix Extra Space >> 6 Columns
+//----------------------------------------------------------------------------------------------------*/
+//
+//
+//.container_6 .prefix_1 {
+//    padding-left:160px;
+//}
+//
+//.container_6 .prefix_2 {
+//    padding-left:320px;
+//}
+//
+//.container_6 .prefix_3 {
+//    padding-left:480px;
+//}
+//
+//.container_6 .prefix_4 {
+//    padding-left:640px;
+//}
+//
+//.container_6 .prefix_5 {
+//    padding-left:800px;
+//}
+//
+//
+//
+///* Suffix Extra Space >> 6 Columns
+//----------------------------------------------------------------------------------------------------*/
+//
+//
+//.container_6 .suffix_1 {
+//    padding-right:160px;
+//}
+//
+//.container_6 .suffix_2 {
+//    padding-right:320px;
+//}
+//
+//.container_6 .suffix_3 {
+//    padding-right:480px;
+//}
+//
+//.container_6 .suffix_4 {
+//    padding-right:640px;
+//}
+//
+//.container_6 .suffix_5 {
+//    padding-right:800px;
+//}
+//
+//
+//
+///* Push Space >> 6 Columns
+//----------------------------------------------------------------------------------------------------*/
+//
+//
+//.container_6 .push_1 {
+//    left:160px;
+//}
+//
+//.container_6 .push_2 {
+//    left:320px;
+//}
+//
+//.container_6 .push_3 {
+//    left:480px;
+//}
+//
+//.container_6 .push_4 {
+//    left:640px;
+//}
+//
+//.container_6 .push_5 {
+//    left:800px;
+//}
+//
+//
+//
+///* Pull Space >> 6 Columns
+//----------------------------------------------------------------------------------------------------*/
+//
+//
+//.container_6 .pull_1 {
+//    left:-160px;
+//}
+//
+//.container_6 .pull_2 {
+//    left:-320px;
+//}
+//
+//.container_6 .pull_3 {
+//    left:-480px;
+//}
+//
+//.container_6 .pull_4 {
+//    left:-640px;
+//}
+//
+//.container_6 .pull_5 {
+//    left:-800px;
+//}
+
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+// http://sonspring.com/journal/clearing-floats
+.clear{
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+// http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified
+
+//  The following zoom:1 rule is specifically for IE6 + IE7.
+//  Move to separate stylesheet if invalid CSS is a problem.
+.clearfix{
+    zoom: 1;
+    &:before,
+    &:after{
+        content: '\0020';
+        display: block;
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    &:after{ clear: both; }
+}

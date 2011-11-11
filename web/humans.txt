@@ -1,0 +1,28 @@
+/* TEAM */
+  Chef: Breno Homara
+  Contact: breno [at] brenohomaraimoveis.com.br
+  Twitter: @brenohomara
+  From: Sao Paulo, Sao Paulo, Brazil
+
+  UI developer: Thiago Lagden
+  Twitter: @thiagolagden
+  From: Sao Paulo, Sao Paulo, Brazil
+
+  Web designer: Thiago Andrade
+  Twitter: @ttandrade
+  From: Sao Paulo, Sao Paulo, Brazil
+
+/* THANKS */
+
+  Programmer: Thiago Lagden
+  Twitter: @thiagolagden
+  From: Sao Paulo, Sao Paulo, Brazil
+
+/* SITE */
+
+  Last update: 2011/08/12
+  Language: Portuguese
+  Doctype: HTML5
+  Standards: HTML5, CSS3
+  Components: PHP, Symfony, Modernizr, jQuery, Mootools
+  Software: TextMate, Photoshop

@@ -2,19 +2,31 @@
 # http://www.symfony-project.org/reference/1_4/en/13-View
 
 default:
-  http_metas:
-    content-type: text/html
-
+  # http_metas:
+  
   metas:
-    #title:        symfony project
-    #description:  symfony project
-    #keywords:     symfony, project
-    #language:     en
-    #robots:       index, follow
+    charset: "utf-8"
+    title: "Apartamentos em Higienópolis - Breno Homara Imóveis"
+    description: "Breno Homara Imóveis é uma imobiliária localizada no bairro de Higienópolis que fica na região central de São Paulo. Temos diversos imóveis para venda. Apartamentos de 01, 02, 03, 04 ou mais dormitórios. Apartamentos com súites. Oferta de Imóveis em edifícios que possuem área de lazer. Apartamentos à venda em Higienópolis e Santa Cecília que possuem sacada e ou terraço."
+    keywords: "apartamento, higienópolis, higienopolis, apartamentos em higienópolis, Breno, Homara, Imóveis, imóvel em higienopolis, venda imóveis, vende-se imóvel, imoveis, casa, apartamento, prédio, cobertura, mansão, alto padrão, fotos, pacaembu, santa cecilia, santa cecília, compra, venda, aluguel, locação, negociação, perdizes, são paulo, sao paulo, imóveis em são paulo, locação higienopolis, venda higienópolis, apartamento em higienópolis, apartamento em sao paulo, apartamento em são paulo, classificados, classificados de imóveis, imóveis, imovel, imoveis, casa, apartamento"
+    language: en
+    viewport: "width=device-width, initial-scale=1.0"
 
-  stylesheets:    [main.css]
+  stylesheets:
+    - screen.css
 
-  javascripts:    []
+  javascripts:
+    # Mootools
+    - vendor/mootools/mootools-core.js
+    - vendor/mootools/mootools-more.js
+    # Libs
+    - vendor/libs/modernizr.js
+    - vendor/libs/respond.js
+    # jQuery
+    - vendor/jquery/jquery.js
+    # jQuery - Plugins
+    - vendor/jquery/plugins/headsupgrid/hugrid.js
+    - vendor/jquery/plugins/headsupgrid/init.js
 
   has_layout:     true
   layout:         layout
