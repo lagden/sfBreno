@@ -17,9 +17,9 @@ body{
         }
     }
     > nav{
+        @include box-shadow(inset 0px -5px 20px 0px rgba(0, 0, 0, .2));
         border-top:5px solid #FFF;
         border-bottom:2px solid #FFF;
-        // COLOCAR SHADOW COM INSET - VER DOC DO COMPASS
         position:relative;
         z-index:1;
         padding-bottom: $navContainer;
@@ -46,21 +46,25 @@ body{
                     float:left;
                     display:inline;
                     font-size:.8em;
-                    margin-left:20px;
+                    margin:0;
+                    margin-right:20px;
                     &:last-child{
-                        margin-left:0;
+                        margin-right:0;
                     }
                     a{
+                        @extend .btn;
+                        padding:0.6em 0.7em 0.6em 0.7em;
+//                        text-shadow:0px 1px 0px white;
+                        border:1px solid transparent;
+                        @include border-radius(4px);
+                        
                         font-weight: bold;
                         display: block;
                         float:left;
-                        padding:0.6em 0.7em 0.6em 0.7em;
-                        text-shadow:0px 1px 0px white;
-                        border:1px solid transparent;
+                        
                         color:#5a5a5a;
                         text-decoration:none;
                         outline:none;
-                        @include border-radius(4px);
                     }
                 }
             }
