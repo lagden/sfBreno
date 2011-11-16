@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "sidewalk";
+  src: url('../fonts/sidewalk-webfont.eot');
+  src: url('../fonts/sidewalk-webfont.eot?iefix') format('eot'), url('../fonts/sidewalk-webfont.woff') format('woff'), url('../fonts/sidewalk-webfont.ttf') format('truetype'), url('../fonts/sidewalk-webfont.svg#sidewalk') format('svgm'), url('../fonts/sidewalk-webfont.eot?#iefix') format('embedded-opentype');
+}

@@ -1,0 +1,30 @@
+@import "compass";
+
+$mainColor: #333;
+$darkgray: #363636;
+$embedFont: "sidewalk";
+$fontsize: "100%/1.5";
+
+$navContainer: 69px;
+
+@include font-face(
+    "#{$embedFont}",
+    font-files(
+        "#{$embedFont}-webfont.woff", woff,
+        "#{$embedFont}-webfont.ttf", truetype,
+        "#{$embedFont}-webfont.svg##{$embedFont}", svgm,
+        "#{$embedFont}-webfont.eot?#iefix", embedded-opentype
+    ),
+    "#{$embedFont}-webfont.eot"
+);
+
+@mixin fontfamily($embed : false){
+    @if $embed == false { font-family: Helvetica, Arial, sans-serif; }
+    @else { font-family: "#{$embedFont}", Helvetica, Arial, sans-serif; }
+}
+
+@mixin media960{
+    width:100%;
+    max-width:960px;
+    margin:0 auto;
+}

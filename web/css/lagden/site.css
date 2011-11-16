@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "sidewalk";
+  src: url('../fonts/sidewalk-webfont.eot');
+  src: url('../fonts/sidewalk-webfont.eot?iefix') format('eot'), url('../fonts/sidewalk-webfont.woff') format('woff'), url('../fonts/sidewalk-webfont.ttf') format('truetype'), url('../fonts/sidewalk-webfont.svg#sidewalk') format('svgm'), url('../fonts/sidewalk-webfont.eot?#iefix') format('embedded-opentype');
+}
+
+/* line 4, ../../sass/lagden/site.scss */
+body {
+  position: relative;
+  background-color: #D6D1C8;
+  color: #333333;
+  font-size: 100%/1.5;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 10, ../../sass/lagden/site.scss */
+body > header {
+  background-color: #363636;
+  padding: 1em;
+}
+/* line 13, ../../sass/lagden/site.scss */
+body > header hgroup {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* line 16, ../../sass/lagden/site.scss */
+body > header hgroup h2 {
+  color: white;
+}
+/* line 19, ../../sass/lagden/site.scss */
+body > nav {
+  border-top: 5px solid #FFF;
+  border-bottom: 2px solid #FFF;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 69px;
+  background-color: #ffd547;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFD547', endColorstr='#FFFFAC00');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffd547), color-stop(100%, #ffac00));
+  background-image: -webkit-linear-gradient(top, #ffd547 0%, #ffac00 100%);
+  background-image: -moz-linear-gradient(top, #ffd547 0%, #ffac00 100%);
+  background-image: -o-linear-gradient(top, #ffd547 0%, #ffac00 100%);
+  background-image: -ms-linear-gradient(top, #ffd547 0%, #ffac00 100%);
+  background-image: linear-gradient(top, #ffd547 0%, #ffac00 100%);
+}
+/* line 29, ../../sass/lagden/site.scss */
+body > nav .wrapper {
+  position: relative;
+  padding: 1em;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* line 33, ../../sass/lagden/site.scss */
+body > nav .wrapper img {
+  display: inline-block;
+  vertical-align: middle;
+  padding: .5em;
+}
+/* line 38, ../../sass/lagden/site.scss */
+body > nav .wrapper ul.menu {
+  vertical-align: middle;
+  display: inline-block;
+  list-style: none;
+}
+/* line 44, ../../sass/lagden/site.scss */
+body > nav .wrapper ul.menu li {
+  width: 140px;
+  float: left;
+  display: inline;
+  font-size: .8em;
+  margin-left: 20px;
+}
+/* line 50, ../../sass/lagden/site.scss */
+body > nav .wrapper ul.menu li:last-child {
+  margin-left: 0;
+}
+/* line 53, ../../sass/lagden/site.scss */
+body > nav .wrapper ul.menu li a {
+  font-weight: bold;
+  display: block;
+  float: left;
+  padding: 0.6em 0.7em 0.6em 0.7em;
+  text-shadow: 0px 1px 0px white;
+  border: 1px solid transparent;
+  color: #5a5a5a;
+  text-decoration: none;
+  outline: none;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 69, ../../sass/lagden/site.scss */
+body > .container {
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -khtml-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  background-color: #f1f1f1;
+  position: relative;
+  z-index: 2;
+  top: -69px;
+}
+/* line 78, ../../sass/lagden/site.scss */
+body > footer {
+  background: #111;
+  border-top: 1px solid #ccc;
+  -moz-box-shadow: 0 4em 3em 3.5em #111111;
+  -webkit-box-shadow: 0 4em 3em 3.5em #111111;
+  -o-box-shadow: 0 4em 3em 3.5em #111111;
+  box-shadow: 0 4em 3em 3.5em #111111;
+  color: #ccc;
+  padding: 3em 0;
+}
+/* line 85, ../../sass/lagden/site.scss */
+body > footer .wrapper p {
+  line-height: normal;
+}
+/* line 90, ../../sass/lagden/site.scss */
+body > footer .meta p {
+  border-top: 1px dashed #333;
+  padding-top: .5em;
+  margin-bottom: .5em;
+}
+/* line 94, ../../sass/lagden/site.scss */
+body > footer .meta p:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+/* line 99, ../../sass/lagden/site.scss */
+body > footer .meta a {
+  color: #cc0000;
+}
+/* line 24, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+body > footer .meta a:hover {
+  color: #333333;
+}
