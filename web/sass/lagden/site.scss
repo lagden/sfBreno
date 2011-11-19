@@ -12,7 +12,7 @@ body{
         padding:1em;
         hgroup{
             @include media960;
-            h1{ @extend .clear; }
+            h1{ @extend .visuallyhidden; }
             h2{ color:white; }
         }
     }

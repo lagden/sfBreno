@@ -1,4 +1,4 @@
-@import "compass/reset";
+// @import "compass/reset";
 @import "compass";
 @import "blueprint/grid";
 
@@ -56,37 +56,8 @@ $blueprint-grid-margin: 20px;
 .grid_5,
 .grid_6{ background:red; }
 
-
-// Clear Floated Elements
-
-// http://sonspring.com/journal/clearing-floats
-.clear{
-    clear: both;
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
-    height: 0;
-}
-
-// http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified
-
-//  The following zoom:1 rule is specifically for IE6 + IE7.
-//  Move to separate stylesheet if invalid CSS is a problem.
-.clearfix{
-    zoom: 1;
-    &:before,
-    &:after{
-        content: '\0020';
-        display: block;
-        overflow: hidden;
-        visibility: hidden;
-        width: 0;
-        height: 0;
-    }
-    &:after{ clear: both; }
-}
-
+// https://github.com/h5bp/html5-boilerplate
+@import "boilerplate";
 
 // jQuery plugins - HeadsUp Grid - http://bohemianalps.com/tools/grid/
 @import "jquery/hugrid";
@@ -97,3 +68,14 @@ $blueprint-grid-margin: 20px;
 // Site
 @import "lagden/btn";
 @import "lagden/site";
+
+// Media Querie
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+
+}

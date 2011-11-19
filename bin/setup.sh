@@ -32,14 +32,15 @@ DIR="$( cd -P "$( dirname "$0" )" && pwd )"
 ROOT_FOLDER=`pwd`
 
 # Installs symfony
-symfony_folder="$ROOT_FOLDER/lib/vendor"
+vendor_folder="$ROOT_FOLDER/lib/vendor"
+vendor_symfony_folder="$ROOT_FOLDER/lib/vendor/symfony"
 
-if [ ! -d $symfony_folder ]
+if [ ! -d $vendor_symfony_folder ]
 then
-    echo "Installing Symfony framework (1.4.9)"
+    echo "Installing Symfony framework (1.4.15)"
 
-    mkdir -p $symfony_folder
-    cd $symfony_folder
+    mkdir -p $vendor_folder
+    cd $vendor_folder
 
     # downloading
     echo "Downloading Symfony"
@@ -49,9 +50,9 @@ then
     tar xzf symfony.tgz
     mv 'symfony-1.4.15' symfony
     rm symfony.tgz
-    
-    cd $ROOT_FOLDER
 fi
+
+cd $ROOT_FOLDER
 
 # generate project
 if [ ! -e "$ROOT_FOLDER/config" ] && [ $IGNORE_P = 0 ]
@@ -65,10 +66,10 @@ else
     do
         if [ ! -d $folder ]
         then
-            mkdir -p -m777 $folder
+            mkdir -p -m666 $folder
             echo "Creating $folder folder."
         else
-            chmod -R 777 $folder
+            chmod -R 666 $folder
             echo "Fixing permissions on $folder"
         fi
     done

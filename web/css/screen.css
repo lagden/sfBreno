@@ -1,68 +1,3 @@
-/* line 17, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* line 20, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
-  line-height: 1;
-}
-
-/* line 22, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 24, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 26, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 28, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 101, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 30, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 114, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
 /* line 10, ../sass/screen.scss */
 .container {
   background: blue;
@@ -79,7 +14,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 20px;
   width: 140px;
 }
-/* line 147, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .container .grid_1 {
   overflow-x: hidden;
 }
@@ -90,7 +25,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 0;
   width: 140px;
 }
-/* line 147, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .container .grid_1:last-child {
   overflow-x: hidden;
 }
@@ -101,7 +36,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 20px;
   width: 300px;
 }
-/* line 147, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .container .grid_2 {
   overflow-x: hidden;
 }
@@ -112,7 +47,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 0;
   width: 300px;
 }
-/* line 147, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .container .grid_2:last-child {
   overflow-x: hidden;
 }
@@ -123,7 +58,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 20px;
   width: 460px;
 }
-/* line 147, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .container .grid_3 {
   overflow-x: hidden;
 }
@@ -134,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 0;
   width: 460px;
 }
-/* line 147, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .container .grid_3:last-child {
   overflow-x: hidden;
 }
@@ -145,7 +80,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 20px;
   width: 620px;
 }
-/* line 147, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .container .grid_4 {
   overflow-x: hidden;
 }
@@ -156,7 +91,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 0;
   width: 620px;
 }
-/* line 147, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .container .grid_4:last-child {
   overflow-x: hidden;
 }
@@ -167,7 +102,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 20px;
   width: 780px;
 }
-/* line 147, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .container .grid_5 {
   overflow-x: hidden;
 }
@@ -178,7 +113,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 0;
   width: 780px;
 }
-/* line 147, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .container .grid_5:last-child {
   overflow-x: hidden;
 }
@@ -189,7 +124,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 20px;
   width: 940px;
 }
-/* line 147, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .container .grid_6 {
   overflow-x: hidden;
 }
@@ -200,7 +135,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 0;
   width: 940px;
 }
-/* line 147, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .container .grid_6:last-child {
   overflow-x: hidden;
 }
@@ -215,35 +150,388 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background: red;
 }
 
-/* line 63, ../sass/screen.scss */
-.clear, body > header hgroup h1 {
-  clear: both;
+/* line 2, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 3, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 4, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 5, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 8, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 9, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 10, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+body, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+
+/* line 12, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 13, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 16, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+a {
+  color: #00e;
+}
+
+/* line 17, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+a:visited {
+  color: #551a8b;
+}
+
+/* line 18, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+a:hover {
+  color: #06e;
+}
+
+/* line 19, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 20, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 23, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 24, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 25, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 26, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 27, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 28, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 29, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 32, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/* line 35, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 37, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+q {
+  quotes: none;
+}
+
+/* line 38, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 40, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 42, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 43, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 44, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 47, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+/* line 48, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 49, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 52, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/* line 53, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 56, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+figure {
+  margin: 0;
+}
+
+/* line 59, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+form {
+  margin: 0;
+}
+
+/* line 60, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 62, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+label {
+  cursor: pointer;
+}
+
+/* line 64, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+}
+
+/* line 66, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 67, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 68, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+/* line 70, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 71, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 72, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 74, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 76, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/* line 79, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* line 82, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 83, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+td {
+  vertical-align: top;
+}
+
+/* =============================================================================
+Primary styles
+Author: 
+========================================================================== */
+/* =============================================================================
+Non-semantic helper classes
+Please define your styles before this section.
+========================================================================== */
+/* For image replacement */
+/* line 101, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+/* line 102, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+.ir br {
+  display: none;
+}
+
+/* Hide for both screenreaders and browsers:
+css-discuss.incutio.com/wiki/Screenreader_Visibility */
+/* line 106, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+/* line 110, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+.visuallyhidden, body > header hgroup h1 {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+/* line 113, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+.visuallyhidden.focusable:active, body > header hgroup h1.focusable:active, .visuallyhidden.focusable:focus, body > header hgroup h1.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 116, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 119, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
 .clearfix {
   zoom: 1;
 }
-/* line 79, ../sass/screen.scss */
+/* line 121, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
 .clearfix:before, .clearfix:after {
-  content: '\0020';
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
+  content: "";
+  display: table;
 }
-/* line 87, ../sass/screen.scss */
+/* line 125, /Library/WebServer/Documents/works/sfBreno/web/sass/boilerplate.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 3, ../sass/jquery/hugrid.scss */
+/* line 3, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugrid {
   width: 960px;
   /* width of webpage */
@@ -251,7 +539,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   /* to center the grid, set half of webpage width as negative value */
 }
 
-/* line 8, ../sass/jquery/hugrid.scss */
+/* line 8, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugrid div {
   margin-left: 140px;
   /* width of column */
@@ -260,7 +548,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* Default Heads-Up Grid Styles - These styles allow you to change the color and style of the lines that make the Heads-Up Grid */
-/* line 14, ../sass/jquery/hugrid.scss */
+/* line 14, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugrid div div {
   border-color: #FF00EB;
   /* color of grid line */
@@ -271,13 +559,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   /*opacity of grid line */
 }
 
-/* line 20, ../sass/jquery/hugrid.scss */
+/* line 20, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugrid div:hover {
   background-color: #36F3FF;
   /* color of gutter on :hover */
 }
 
-/* line 24, ../sass/jquery/hugrid.scss */
+/* line 24, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugrid div.mline {
   border-color: #AA82FF;
   /* color of margin line */
@@ -285,7 +573,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   /* style of margin lines (dotted, dashed, solid) */
 }
 
-/* line 29, ../sass/jquery/hugrid.scss */
+/* line 29, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugridRows {
   border-color: #AA82FF;
   /* color of top margin line */
@@ -293,7 +581,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   /* style of top margin line */
 }
 
-/* line 34, ../sass/jquery/hugrid.scss */
+/* line 34, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugridRows div.lineB {
   border-color: #5DFF35;
   /* color of row line */
@@ -304,7 +592,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   /*opacity of row line */
 }
 
-/* line 40, ../sass/jquery/hugrid.scss */
+/* line 40, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugridRows div.lineB:hover {
   border-color: #5DFF35;
   /* color of row line on :hover */
@@ -315,7 +603,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* Fixed Styles (No need to alter the below styles for standard grid needs.) */
-/* line 47, ../sass/jquery/hugrid.scss */
+/* line 47, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugrid {
   position: fixed;
   z-index: 100000;
@@ -329,7 +617,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   cursor: crosshair;
 }
 
-/* line 60, ../sass/jquery/hugrid.scss */
+/* line 60, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugrid div {
   display: block;
   float: left;
@@ -338,52 +626,52 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-width: 0;
 }
 
-/* line 68, ../sass/jquery/hugrid.scss */
+/* line 68, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugrid div div {
   margin: 0;
   width: 0;
 }
 
-/* line 73, ../sass/jquery/hugrid.scss */
+/* line 73, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugrid div div.lineL {
   float: left;
   height: 10000px;
   border-width: 0 0 0 1px;
 }
 
-/* line 79, ../sass/jquery/hugrid.scss */
+/* line 79, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugrid div div.lineR {
   float: right;
   height: 10000px;
   border-width: 0 1px 0 0;
 }
 
-/* line 85, ../sass/jquery/hugrid.scss */
+/* line 85, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugrid div.mline {
   margin: 0 0 0 -1px;
   width: 0;
   height: 100000px;
 }
 
-/* line 91, ../sass/jquery/hugrid.scss */
+/* line 91, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugrid div.mlineL {
   border-width: 0 1px 0 0;
 }
 
-/* line 95, ../sass/jquery/hugrid.scss */
+/* line 95, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugrid div.mlineR {
   float: right;
   margin-right: -1px;
   border-width: 0 0 0 1px;
 }
 
-/* line 101, ../sass/jquery/hugrid.scss */
+/* line 101, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugrid div:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
 
-/* line 106, ../sass/jquery/hugrid.scss */
+/* line 106, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugrid div:hover div.lineL,
 #hugrid div:hover div.lineR {
   border-style: solid;
@@ -391,7 +679,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   opacity: 1;
 }
 
-/* line 111, ../sass/jquery/hugrid.scss */
+/* line 111, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugridRows {
   position: absolute;
   z-index: 90000;
@@ -405,7 +693,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   cursor: crosshair;
 }
 
-/* line 124, ../sass/jquery/hugrid.scss */
+/* line 124, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugridRows div {
   display: block;
   width: 100%;
@@ -414,13 +702,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0;
 }
 
-/* line 132, ../sass/jquery/hugrid.scss */
+/* line 132, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugridRows div div.lineB {
   margin: 0;
   border-width: 0 0 1px 0;
 }
 
-/* line 137, ../sass/jquery/hugrid.scss */
+/* line 137, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugridUX {
   display: block;
   position: fixed;
@@ -434,7 +722,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-align: center;
 }
 
-/* line 150, ../sass/jquery/hugrid.scss */
+/* line 150, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugridUX div#hugridButtonBkgd {
   display: block;
   position: absolute;
@@ -453,7 +741,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   opacity: 0.3;
 }
 
-/* line 162, ../sass/jquery/hugrid.scss */
+/* line 162, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugridUX button#hugridButton {
   cursor: pointer;
   position: relative;
@@ -473,40 +761,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font: bold 11px/100% Arial, sans-serif;
 }
 
-/* line 176, ../sass/jquery/hugrid.scss */
+/* line 176, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugridUX button#hugridButton::-moz-focus-inner {
   border: 0;
 }
 
-/* line 180, ../sass/jquery/hugrid.scss */
+/* line 180, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugridUX button#hugridButton.buttonisoff {
   background: none;
   box-shadow: none;
 }
 
-/* line 185, ../sass/jquery/hugrid.scss */
+/* line 185, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugridUX button#hugridButton.buttonisoff:hover {
   background-color: #999;
 }
 
-/* line 189, ../sass/jquery/hugrid.scss */
+/* line 189, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugbuttonON {
   color: #333;
 }
 
-/* line 193, ../sass/jquery/hugrid.scss */
+/* line 193, /Library/WebServer/Documents/works/sfBreno/web/sass/jquery/hugrid.scss */
 #hugbuttonOFF {
   color: #333;
 }
 
 /* prototyping ruler */
 /* for prototyping - http://www.css-101.org/articles/trick-for-rapid-prototyping/ */
-/* line 40, ../sass/lagden/grid.scss */
+/* line 40, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/grid.scss */
 body:before {
   content: "";
   position: fixed;
   background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAOEAgMAAADMAyBpAAAAA3NCSVQICAjb4U/gAAAACVBMVEX///9mmcxmmcw+elmfAAAAA3RSTlMAd/+3CsRiAAAACXBIWXMAAAsSAAALEgHS3X78AAAAFnRFWHRDcmVhdGlvbiBUaW1lADA5LzAyLzExT1Br7wAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAs2SURBVHic7duxrV1FGEZR44CAEoiIqcL1uAqXQAkEBOAqcXZe4OBMNHtJ3wRLVzIXbY3+uW+S+fTp0x+fPo+XBBIcAgkOgQSHQIJDIMEhkOAQSHAIJDB833q9Nlk7htusAIEEh0CCQyDBIZDgEEhwCCQw3L4VS2uTtWO4zQoQSHAIJDgEEhwCCQ6BBIdAAsPtW7G0Nlk7htusAIEEh0CCQyDBIZDgEEhwCCQw3L4VS2uTtWO4zQoQSHAIJDgEEhwCCQ7Px1/++/Avv//14b/5+uX5h1//ob7x9cvzDz/+o5//r15+4+Nmff7+4V/+/PtD1vdvzz/89i/1je/fnn/48R/9/H/18hu7wR+sTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqsTdbJZO036/039tfwiECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhwCCQ4BBIYbt+KpbXJ2jHcZgUIJDgEEhwCCQ6BBIdAgkMggeH2rVham6wdw21WgECCQyDBIZDgEEhweD4Cb7w6r8KA14N7ycqs/wGT4JQikEiMEwAAAABJRU5ErkJggg%3D%3D) 50% 0;
-  z-index: 1;
+  z-index: 9999;
   top: 0;
   right: 0;
   bottom: 0;
@@ -516,7 +804,7 @@ body:before {
   pointer-events: none;
 }
 
-/* line 54, ../sass/lagden/grid.scss */
+/* line 54, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/grid.scss */
 * {
   -webkit-user-modify: read-write;
   word-wrap: break-word;
@@ -524,23 +812,23 @@ body:before {
   -webkit-line-break: after-white-space;
 }
 
-/* line 61, ../sass/lagden/grid.scss */
+/* line 61, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/grid.scss */
 a {
   -webkit-user-modify: initial;
 }
 
-/* line 3, ../sass/lagden/btn.scss */
+/* line 3, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/btn.scss */
 .btn, body > nav .wrapper ul.menu li a {
   -moz-transition-property: box-shadow;
   -webkit-transition-property: box-shadow;
   -o-transition-property: box-shadow;
   transition-property: box-shadow;
-  -moz-transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+  -moz-transition-duration: 0.45s;
+  -webkit-transition-duration: 0.45s;
+  -o-transition-duration: 0.45s;
+  transition-duration: 0.45s;
 }
-/* line 6, ../sass/lagden/btn.scss */
+/* line 6, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/btn.scss */
 .btn:hover, body > nav .wrapper ul.menu li a:hover {
   background: rgba(255, 255, 255, 0.1);
   color: #FFF;
@@ -549,7 +837,7 @@ a {
   -o-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.1);
 }
-/* line 17, ../sass/lagden/btn.scss */
+/* line 17, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/btn.scss */
 .btn.selected, body > nav .wrapper ul.menu li a.selected {
   color: #FFF;
   -moz-box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(255, 255, 0, 0.1);
@@ -564,7 +852,7 @@ a {
   src: url('fonts/sidewalk-webfont.eot?iefix') format('eot'), url('fonts/sidewalk-webfont.woff') format('woff'), url('fonts/sidewalk-webfont.ttf') format('truetype'), url('fonts/sidewalk-webfont.svg#sidewalk') format('svgm'), url('fonts/sidewalk-webfont.eot?#iefix') format('embedded-opentype');
 }
 
-/* line 4, ../sass/lagden/site.scss */
+/* line 4, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body {
   position: relative;
   background-color: #D6D1C8;
@@ -572,22 +860,22 @@ body {
   font-size: 100%/1.5;
   font-family: Helvetica, Arial, sans-serif;
 }
-/* line 10, ../sass/lagden/site.scss */
+/* line 10, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > header {
   background-color: #363636;
   padding: 1em;
 }
-/* line 13, ../sass/lagden/site.scss */
+/* line 13, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > header hgroup {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
 }
-/* line 16, ../sass/lagden/site.scss */
+/* line 16, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > header hgroup h2 {
   color: white;
 }
-/* line 19, ../sass/lagden/site.scss */
+/* line 19, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > nav {
   -moz-box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.2);
@@ -608,7 +896,7 @@ body > nav {
   background-image: -ms-linear-gradient(top, #ffd547 0%, #ffac00 100%);
   background-image: linear-gradient(top, #ffd547 0%, #ffac00 100%);
 }
-/* line 29, ../sass/lagden/site.scss */
+/* line 29, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > nav .wrapper {
   position: relative;
   padding: 1em;
@@ -616,19 +904,19 @@ body > nav .wrapper {
   max-width: 960px;
   margin: 0 auto;
 }
-/* line 33, ../sass/lagden/site.scss */
+/* line 33, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > nav .wrapper img {
   display: inline-block;
   vertical-align: middle;
   padding: .5em;
 }
-/* line 38, ../sass/lagden/site.scss */
+/* line 38, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > nav .wrapper ul.menu {
   vertical-align: middle;
   display: inline-block;
   list-style: none;
 }
-/* line 44, ../sass/lagden/site.scss */
+/* line 44, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > nav .wrapper ul.menu li {
   width: 140px;
   float: left;
@@ -637,11 +925,11 @@ body > nav .wrapper ul.menu li {
   margin: 0;
   margin-right: 20px;
 }
-/* line 51, ../sass/lagden/site.scss */
+/* line 51, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > nav .wrapper ul.menu li:last-child {
   margin-right: 0;
 }
-/* line 54, ../sass/lagden/site.scss */
+/* line 54, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > nav .wrapper ul.menu li a {
   padding: 0.6em 0.7em 0.6em 0.7em;
   border: 1px solid transparent;
@@ -658,7 +946,7 @@ body > nav .wrapper ul.menu li a {
   text-decoration: none;
   outline: none;
 }
-/* line 73, ../sass/lagden/site.scss */
+/* line 73, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > .container {
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
@@ -675,7 +963,7 @@ body > .container {
   z-index: 2;
   top: -69px;
 }
-/* line 82, ../sass/lagden/site.scss */
+/* line 82, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > footer {
   background: #111;
   border-top: 1px solid #ccc;
@@ -686,26 +974,33 @@ body > footer {
   color: #ccc;
   padding: 3em 0;
 }
-/* line 89, ../sass/lagden/site.scss */
+/* line 89, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > footer .wrapper p {
   line-height: normal;
 }
-/* line 94, ../sass/lagden/site.scss */
+/* line 94, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > footer .meta p {
   border-top: 1px dashed #333;
   padding-top: .5em;
   margin-bottom: .5em;
 }
-/* line 98, ../sass/lagden/site.scss */
+/* line 98, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > footer .meta p:first-child {
   border-top: none;
   padding-top: 0;
 }
-/* line 103, ../sass/lagden/site.scss */
+/* line 103, /Library/WebServer/Documents/works/sfBreno/web/sass/lagden/site.scss */
 body > footer .meta a {
   color: #cc0000;
 }
 /* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body > footer .meta a:hover {
   color: #333333;
+}
+
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+}
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
 }
