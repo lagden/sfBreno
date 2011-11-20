@@ -36,10 +36,9 @@ html[xmlns] .slides {display: block;}
     width: 100%;
     margin: 0 auto;
     padding: 0;
-    background: #fff;
-    border: 0 solid #fff;
+//    background: #fff;
+//    border: 0;
     position: relative;
-    @include border-radius(5px);
     zoom: 1;
     a:active{ outline: none; }
     .slides{
@@ -51,6 +50,7 @@ html[xmlns] .slides {display: block;}
         img{
             max-width: 100%;
             display: block;
+            @include border-radius(5px);
         }
     }
 }
@@ -68,6 +68,7 @@ html[xmlns] .slides {display: block;}
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
     zoom: 1;
     
+    @include border-radius(0 0 5px 5px);
     width: 100%;
     position: absolute;
     left: 0;
@@ -95,7 +96,7 @@ html[xmlns] .slides {display: block;}
             display: block;
             background: url('../assets/directionNav.png') no-repeat 0 0;
             position: absolute;
-            top: 50%;
+            top: 40%;
             cursor: pointer;
             text-indent: -9999px;
             &.next{

@@ -11,7 +11,7 @@
             gutterwidth = 20;
             pagetopmargin = 0;
             rowheight = 20;
-            gridonload = 'on';
+            gridonload = 'off';
             makehugrid();
         }
         if (browserWidth <= 768) 
@@ -36,6 +36,6 @@ jQuery(function($){
     $(window).resize(function()
     {
         definegrid();
-        console.log($(window).width());
+        log($(window).width());
     });
 });

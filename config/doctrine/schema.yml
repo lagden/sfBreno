@@ -90,22 +90,96 @@ ContentTag:
   relations:
     Tag: { local: tag_id, onDelete: CASCADE }
     Content: { local: content_id, onDelete: CASCADE }
+    
+EstateTag:
+  columns:
+    tag_id: { type: bigint, primary: true }
+    estate_id: { type: bigint, primary: true }
+  relations:
+    Tag: { local: tag_id, onDelete: CASCADE }
+    Estate: { local: estate_id, onDelete: CASCADE }
+    
+EstateDisponibilidade:
+  columns:
+    disponibilidade_id: { type: bigint, primary: true }
+    estate_id: { type: bigint, primary: true }
+  relations:
+    Disponibilidade: { local: disponibilidade_id, onDelete: CASCADE }
+    Estate: { local: estate_id, onDelete: CASCADE }
 
 # Imóvel
 Estate:
   actAs:
     Sluggable:
-      fields: [title]
+      fields: [titulo]
       canUpdate: true
       unique: true
     Timestampable: ~
   indexes:
-    estate_index: { fields: [reference] }
+    estate_index: { fields: [referencia] }
   columns:
-    title: { type: string(255), notnull: true, unique: true }
-    reference: { type: string(255), notnull: true, unique: true }
-    seo: clob
-    is_active: { type: boolean, default: 0 }
+    titulo: { type: string(255), notnull: true, unique: true }
+    referencia: { type: string(255), notnull: true, unique: true }
+    area_util: { type: integer, default: 0 }
+    area_total: { type: integer, default: 0 }
+    suites: { type: integer(1), default: 0 }
+    empregadas: { type: integer(1), default: 0 }
+    quartos: { type: integer(1), default: 0 }
+    banheiros: { type: integer(1), default: 0 }
+    vagas: { type: integer(1), default: 0 }
+    iptu: { type: 'decimal(12, 2)', default: '0.00'}
+    condominio: { type: 'decimal(12, 2)', default: '0.00'}
+    price_sale: { type: 'decimal(12, 2)', default: '0.00'}
+    price_rent: { type: 'decimal(12, 2)', default: '0.00'}
+    descricao: clob
+    destaque_chamada: clob
+    destaque: { type: boolean, default: 0 }
+    ordem: { type: integer(3), default: 0 }
+    ativo: { type: boolean, default: 0 }
+    extra: clob
+    carga: clob
+    neighborhood_id: { type: bigint }
+    type_id: { type: bigint }
+  relations:
+    Neighborhood:
+      local: neighborhood_id
+      class: Neighborhood
+      foreignAlias: Estates
+      onDelete: 'SET NULL'
+    Type:
+      local: type_id
+      class: Type
+      foreignAlias: Estates
+      onDelete: 'SET NULL'
+    Tag:
+      refClass: EstateTag
+      alias: Tags
+      foreignAlias: Estates
+    Disponibilidade:
+      refClass: EstateDisponibilidade
+      alias: Disponibilidades
+      foreignAlias: Estates
+
+# Disponibilidade
+Disponibilidade:
+  actAs:
+    Timestampable: ~
+  columns:
+    disponivel: { type: string(255), notnull: true }
+
+# Tipo
+Type:
+  actAs:
+    Timestampable: ~
+  columns:
+    tipo: { type: string(255), notnull: true }
+
+# Bairro
+Neighborhood:
+  actAs:
+    Timestampable: ~
+  columns:
+    bairro: { type: string(255), notnull: true }
 
 # Imagem
 Image:

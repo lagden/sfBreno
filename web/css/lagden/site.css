@@ -4,7 +4,7 @@
   src: url('../fonts/sidewalk-webfont.eot?iefix') format('eot'), url('../fonts/sidewalk-webfont.woff') format('woff'), url('../fonts/sidewalk-webfont.ttf') format('truetype'), url('../fonts/sidewalk-webfont.svg#sidewalk') format('svgm'), url('../fonts/sidewalk-webfont.eot?#iefix') format('embedded-opentype');
 }
 
-/* line 4, ../../sass/lagden/site.scss */
+/* line 5, ../../sass/lagden/site.scss */
 body {
   position: relative;
   background-color: #D6D1C8;
@@ -12,22 +12,22 @@ body {
   font-size: 100%/1.5;
   font-family: Helvetica, Arial, sans-serif;
 }
-/* line 10, ../../sass/lagden/site.scss */
+/* line 11, ../../sass/lagden/site.scss */
 body > header {
   background-color: #363636;
   padding: 1em;
 }
-/* line 13, ../../sass/lagden/site.scss */
+/* line 14, ../../sass/lagden/site.scss */
 body > header hgroup {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
 }
-/* line 16, ../../sass/lagden/site.scss */
+/* line 17, ../../sass/lagden/site.scss */
 body > header hgroup h2 {
   color: white;
 }
-/* line 19, ../../sass/lagden/site.scss */
+/* line 20, ../../sass/lagden/site.scss */
 body > nav {
   -moz-box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.2);
@@ -48,7 +48,7 @@ body > nav {
   background-image: -ms-linear-gradient(top, #ffd547 0%, #ffac00 100%);
   background-image: linear-gradient(top, #ffd547 0%, #ffac00 100%);
 }
-/* line 29, ../../sass/lagden/site.scss */
+/* line 30, ../../sass/lagden/site.scss */
 body > nav .wrapper {
   position: relative;
   padding: 1em;
@@ -56,19 +56,19 @@ body > nav .wrapper {
   max-width: 960px;
   margin: 0 auto;
 }
-/* line 33, ../../sass/lagden/site.scss */
+/* line 34, ../../sass/lagden/site.scss */
 body > nav .wrapper img {
   display: inline-block;
   vertical-align: middle;
   padding: .5em;
 }
-/* line 38, ../../sass/lagden/site.scss */
+/* line 39, ../../sass/lagden/site.scss */
 body > nav .wrapper ul.menu {
   vertical-align: middle;
   display: inline-block;
   list-style: none;
 }
-/* line 44, ../../sass/lagden/site.scss */
+/* line 45, ../../sass/lagden/site.scss */
 body > nav .wrapper ul.menu li {
   width: 140px;
   float: left;
@@ -77,11 +77,11 @@ body > nav .wrapper ul.menu li {
   margin: 0;
   margin-right: 20px;
 }
-/* line 51, ../../sass/lagden/site.scss */
+/* line 52, ../../sass/lagden/site.scss */
 body > nav .wrapper ul.menu li:last-child {
   margin-right: 0;
 }
-/* line 54, ../../sass/lagden/site.scss */
+/* line 55, ../../sass/lagden/site.scss */
 body > nav .wrapper ul.menu li a {
   padding: 0.6em 0.7em 0.6em 0.7em;
   border: 1px solid transparent;
@@ -98,7 +98,7 @@ body > nav .wrapper ul.menu li a {
   text-decoration: none;
   outline: none;
 }
-/* line 73, ../../sass/lagden/site.scss */
+/* line 71, ../../sass/lagden/site.scss */
 body > .container {
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
@@ -114,8 +114,9 @@ body > .container {
   position: relative;
   z-index: 2;
   top: -69px;
+  padding: 20px 10px 20px 20px;
 }
-/* line 82, ../../sass/lagden/site.scss */
+/* line 81, ../../sass/lagden/site.scss */
 body > footer {
   background: #111;
   border-top: 1px solid #ccc;
@@ -126,26 +127,182 @@ body > footer {
   color: #ccc;
   padding: 3em 0;
 }
-/* line 89, ../../sass/lagden/site.scss */
+/* line 88, ../../sass/lagden/site.scss */
 body > footer .wrapper p {
   line-height: normal;
 }
-/* line 94, ../../sass/lagden/site.scss */
+/* line 93, ../../sass/lagden/site.scss */
 body > footer .meta p {
   border-top: 1px dashed #333;
   padding-top: .5em;
   margin-bottom: .5em;
 }
-/* line 98, ../../sass/lagden/site.scss */
+/* line 97, ../../sass/lagden/site.scss */
 body > footer .meta p:first-child {
   border-top: none;
   padding-top: 0;
 }
-/* line 103, ../../sass/lagden/site.scss */
+/* line 102, ../../sass/lagden/site.scss */
 body > footer .meta a {
   color: #cc0000;
 }
 /* line 24, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body > footer .meta a:hover {
   color: #333333;
+}
+
+/* line 108, ../../sass/lagden/site.scss */
+.listing {
+  position: relative;
+}
+/* line 110, ../../sass/lagden/site.scss */
+.listing > article {
+  background-color: #f1f1f1;
+  margin-bottom: 45px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 70px;
+}
+/* line 147, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .listing > article {
+  overflow-x: hidden;
+}
+/* line 114, ../../sass/lagden/site.scss */
+.listing > article:nth-child(3n) {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 70px;
+}
+/* line 147, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .listing > article:nth-child(3n) {
+  overflow-x: hidden;
+}
+/* line 117, ../../sass/lagden/site.scss */
+.listing > article:nth-of-type(3n+1) {
+  clear: left;
+}
+/* line 120, ../../sass/lagden/site.scss */
+.listing > article .efeito {
+  width: 240px;
+  border: 3px solid #FFF;
+  margin: 0 auto;
+  -moz-border-radius: 0 0 0.5em 0.5em;
+  -webkit-border-radius: 0 0 0.5em 0.5em;
+  -o-border-radius: 0 0 0.5em 0.5em;
+  -ms-border-radius: 0 0 0.5em 0.5em;
+  -khtml-border-radius: 0 0 0.5em 0.5em;
+  border-radius: 0 0 0.5em 0.5em;
+  -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+}
+/* line 126, ../../sass/lagden/site.scss */
+.listing > article .efeito > table {
+  width: 100%;
+  margin: 1em 0;
+  font-size: .8em;
+}
+/* line 131, ../../sass/lagden/site.scss */
+.listing > article .efeito > table tr:nth-child(2n+1) {
+  background: #e1e1e1;
+  color: #333;
+}
+/* line 135, ../../sass/lagden/site.scss */
+.listing > article .efeito > table tr:hover {
+  background: #fde3ab;
+  color: #333;
+}
+/* line 139, ../../sass/lagden/site.scss */
+.listing > article .efeito > table tr td {
+  width: 46%;
+  padding: 2%;
+  text-align: left;
+}
+/* line 143, ../../sass/lagden/site.scss */
+.listing > article .efeito > table tr td:last-child {
+  text-align: right;
+}
+/* line 146, ../../sass/lagden/site.scss */
+.listing > article .efeito > table tr td a {
+  text-decoration: none;
+  color: #333333;
+}
+/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+.listing > article .efeito > table tr td a:hover {
+  text-decoration: underline;
+}
+/* line 154, ../../sass/lagden/site.scss */
+.listing > article .efeito header h3 {
+  color: #FFF;
+  font-size: .9em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -khtml-border-radius: 0.5em;
+  border-radius: 0.5em;
+  padding: .5em;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #FB0;
+}
+/* line 162, ../../sass/lagden/site.scss */
+.listing > article .efeito header h3 a {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+.listing > article .efeito header h3 a:hover {
+  text-decoration: underline;
+}
+/* line 169, ../../sass/lagden/site.scss */
+.listing > article .efeito header p {
+  font-size: .8em;
+  background-color: #EEE0C3;
+  color: #333333;
+  padding: 1em .5em;
+}
+/* line 174, ../../sass/lagden/site.scss */
+.listing > article .efeito header p a {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  color: #333333;
+  display: block;
+}
+/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+.listing > article .efeito header p a:hover {
+  text-decoration: underline;
+}
+/* line 182, ../../sass/lagden/site.scss */
+.listing > article .efeito footer {
+  text-align: center;
+  margin: 1.5em 0;
+}
+/* line 185, ../../sass/lagden/site.scss */
+.listing > article .efeito footer a {
+  padding: 0.6em 0.7em 0.6em 0.7em;
+  border: 1px solid transparent;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  outline: none;
+  color: #FFF;
 }

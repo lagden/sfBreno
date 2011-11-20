@@ -2,6 +2,9 @@
 @import "compass";
 @import "blueprint/grid";
 
+// Ellipsis
+$use-mozilla-ellipsis-binding: true;
+
 // 960
 $blueprint_grid_columns: 6;
 $blueprint_grid_width: 140px;
@@ -54,7 +57,9 @@ $blueprint-grid-margin: 20px;
 .grid_3,
 .grid_4,
 .grid_5,
-.grid_6{ background:red; }
+.grid_6{
+    // background:red;
+}
 
 // https://github.com/h5bp/html5-boilerplate
 @import "boilerplate";
@@ -63,19 +68,15 @@ $blueprint-grid-margin: 20px;
 @import "jquery/hugrid";
 
 // Helper de Grid para designer
-@import "lagden/grid";
+// @import "lagden/grid";
 
 // Site
 @import "lagden/btn";
+@import "lagden/interface";
 @import "lagden/site";
 
-// Media Querie
-@media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */
+// Media Queries
+@import "lagden/mediaQueries";
 
-}
-
-@media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
-
-}
+// Non-semantic helper classes - https://github.com/h5bp/html5-boilerplate
+@import "nonSemanticHelper";

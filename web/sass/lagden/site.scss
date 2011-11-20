@@ -1,5 +1,6 @@
 @import "compass";
 @import "lagden/mixin";
+@import "blueprint/grid";
 
 body{
     position:relative;
@@ -54,14 +55,11 @@ body{
                     a{
                         @extend .btn;
                         padding:0.6em 0.7em 0.6em 0.7em;
-//                        text-shadow:0px 1px 0px white;
                         border:1px solid transparent;
                         @include border-radius(4px);
-                        
                         font-weight: bold;
                         display: block;
                         float:left;
-                        
                         color:#5a5a5a;
                         text-decoration:none;
                         outline:none;
@@ -77,6 +75,7 @@ body{
         position:relative;
         z-index:2;
         top:-$navContainer;
+        padding:20px 10px 20px 20px;
     }
     
     > footer{
@@ -101,6 +100,99 @@ body{
                 }
             }
             a{ @include link-colors(#c00, $mainColor) };
+        }
+    }
+}
+
+// Listagem dos Imóveis
+.listing{
+    position: relative;
+    > article{
+        background-color: #f1f1f1;
+        margin-bottom:45px;
+        @include column(2);
+        &:nth-child(3n){
+            @include column(2,true);
+        }
+        &:nth-of-type(3n+1){
+            clear: left;
+        }
+        .efeito{
+            width:240px;
+            border:3px solid #FFF;
+            margin:0 auto;
+            @include border-radius(0 0 .5em .5em);
+            @include single-box-shadow(rgba(0, 0, 0, .5), 0, 0px, 10px);
+            > table{
+                width:100%;
+                margin:1em 0;
+                font-size:.8em;
+                tr{
+                    &:nth-child(2n+1){
+                        background:#e1e1e1;
+                        color:#333;
+                    }
+                    &:hover{
+                      background:#fde3ab;
+                      color:#333
+                    }
+                    td{
+                        width:46%;
+                        padding:2%;
+                        text-align:left;
+                        &:last-child{
+                            text-align:right;
+                        }
+                        a{
+                            @include hover-link;
+                            @include link_colors($mainColor);
+                        }
+                    }
+                }
+            }
+            header{
+                h3{
+                    color:#FFF;
+                    font-size:.9em;
+                    @include border-radius(.5em);
+                    padding:.5em;
+                    margin-left:5px;
+                    margin-right:5px;
+                    background-color:#FB0;
+                    a{
+                        @include ellipsis;
+                        @include hover-link;
+                        @include link_colors(#FFF);
+                        display:block;
+                    }
+                }
+                p{
+                    font-size:.8em;
+                    background-color:#EEE0C3;
+                    color:$mainColor;
+                    padding:1em .5em;
+                    a{
+                        @include ellipsis;
+                        @include hover-link;
+                        @include link_colors($mainColor);
+                        display:block;
+                    }
+                }
+            }
+            footer{
+                text-align:center;
+                margin:1.5em 0;
+                a{
+                    @extend .btn;
+                    padding:0.6em 0.7em 0.6em 0.7em;
+                    border:1px solid transparent;
+                    @include border-radius(4px);
+                    font-weight: bold;
+                    text-decoration:none;
+                    outline:none;
+                    color:#FFF;
+                }
+            }
         }
     }
 }

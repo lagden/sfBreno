@@ -43,34 +43,32 @@ html[xmlns] .slides {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  background: #fff;
-  border: 0 solid #fff;
   position: relative;
+  zoom: 1;
+}
+/* line 43, ../../sass/jquery/flexslider.scss */
+.flexslider a:active {
+  outline: none;
+}
+/* line 44, ../../sass/jquery/flexslider.scss */
+.flexslider .slides {
+  zoom: 1;
+}
+/* line 46, ../../sass/jquery/flexslider.scss */
+.flexslider .slides > li {
+  display: none;
+  position: relative;
+}
+/* line 50, ../../sass/jquery/flexslider.scss */
+.flexslider .slides img {
+  max-width: 100%;
+  display: block;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
   -khtml-border-radius: 5px;
   border-radius: 5px;
-  zoom: 1;
-}
-/* line 44, ../../sass/jquery/flexslider.scss */
-.flexslider a:active {
-  outline: none;
-}
-/* line 45, ../../sass/jquery/flexslider.scss */
-.flexslider .slides {
-  zoom: 1;
-}
-/* line 47, ../../sass/jquery/flexslider.scss */
-.flexslider .slides > li {
-  display: none;
-  position: relative;
-}
-/* line 51, ../../sass/jquery/flexslider.scss */
-.flexslider .slides img {
-  max-width: 100%;
-  display: block;
 }
 
 /* line 58, ../../sass/jquery/flexslider.scss */
@@ -91,6 +89,12 @@ html[xmlns] .slides {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
   zoom: 1;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  -khtml-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -98,7 +102,7 @@ html[xmlns] .slides {
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
 }
-/* line 77, ../../sass/jquery/flexslider.scss */
+/* line 78, ../../sass/jquery/flexslider.scss */
 .flex-caption > p {
   padding: 2%;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
@@ -107,13 +111,13 @@ html[xmlns] .slides {
 }
 
 /* Direction Nav */
-/* line 86, ../../sass/jquery/flexslider.scss */
+/* line 87, ../../sass/jquery/flexslider.scss */
 .flex-direction-nav {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 91, ../../sass/jquery/flexslider.scss */
+/* line 92, ../../sass/jquery/flexslider.scss */
 .flex-direction-nav li a {
   width: 52px;
   height: 52px;
@@ -121,20 +125,20 @@ html[xmlns] .slides {
   display: block;
   background: url("../assets/directionNav.png") no-repeat 0 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   cursor: pointer;
   text-indent: -9999px;
 }
-/* line 101, ../../sass/jquery/flexslider.scss */
+/* line 102, ../../sass/jquery/flexslider.scss */
 .flex-direction-nav li a.next {
   background-position: -52px 0;
   right: 0;
 }
-/* line 105, ../../sass/jquery/flexslider.scss */
+/* line 106, ../../sass/jquery/flexslider.scss */
 .flex-direction-nav li a.prev {
   left: 0;
 }
-/* line 106, ../../sass/jquery/flexslider.scss */
+/* line 107, ../../sass/jquery/flexslider.scss */
 .flex-direction-nav li a.disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
@@ -142,7 +146,7 @@ html[xmlns] .slides {
 }
 
 /* Control Nav */
-/* line 115, ../../sass/jquery/flexslider.scss */
+/* line 116, ../../sass/jquery/flexslider.scss */
 .flex-control-nav {
   margin: 0;
   padding: 0;
@@ -151,18 +155,18 @@ html[xmlns] .slides {
   top: 5px;
   right: 5px;
 }
-/* line 125, ../../sass/jquery/flexslider.scss */
+/* line 126, ../../sass/jquery/flexslider.scss */
 .flex-control-nav li {
   margin: 0 0 0 5px;
   zoom: 1;
   display: inline-block;
   *display: inline;
 }
-/* line 130, ../../sass/jquery/flexslider.scss */
+/* line 131, ../../sass/jquery/flexslider.scss */
 .flex-control-nav li:first-child {
   margin: 0;
 }
-/* line 131, ../../sass/jquery/flexslider.scss */
+/* line 132, ../../sass/jquery/flexslider.scss */
 .flex-control-nav li a {
   width: 13px;
   height: 13px;
@@ -171,11 +175,11 @@ html[xmlns] .slides {
   cursor: pointer;
   text-indent: -9999px;
 }
-/* line 138, ../../sass/jquery/flexslider.scss */
+/* line 139, ../../sass/jquery/flexslider.scss */
 .flex-control-nav li a:hover {
   background-position: 0 -13px;
 }
-/* line 139, ../../sass/jquery/flexslider.scss */
+/* line 140, ../../sass/jquery/flexslider.scss */
 .flex-control-nav li a.active {
   background-position: 0 -26px;
   cursor: default;

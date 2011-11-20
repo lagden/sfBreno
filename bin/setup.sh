@@ -66,10 +66,10 @@ else
     do
         if [ ! -d $folder ]
         then
-            mkdir -p -m666 $folder
+            mkdir -p -m777 $folder
             echo "Creating $folder folder."
         else
-            chmod -R 666 $folder
+            chmod -R 777 $folder
             echo "Fixing permissions on $folder"
         fi
     done

@@ -4,7 +4,7 @@
     @include transition-property(box-shadow);
     @include transition-duration(.45s);
     &:hover{
-        background: rgba(255,255,255,0.1);
+        background-color: rgba(255,255,255,0.1);
         color:#FFF;
         @include box-shadow(
             0 2px 6px rgba(0,0,0,.2),
@@ -23,5 +23,20 @@
             inset 0 10px 20px rgba(255,255,255,.25),
             inset 0 -15px 30px rgba(255,255,0,.1)
         );
+    }
+    &.orange{
+        @include transition-property(background-color);
+        color:#FFF;
+        background-color: rgba(255,182,0,.8);
+        @include box-shadow(
+            0 2px 6px rgba(255,204,0,.5),
+            inset 0 1px rgba(255,255,255,.3),
+            inset 0 10px rgba(255,255,255,.2),
+            inset 0 10px 20px rgba(255,255,255,.25),
+            inset 0 -15px 30px rgba(255,255,0,.1)
+        );
+        &:hover{
+            background-color: rgba(255,204,0,1);
+        }
     }
 }

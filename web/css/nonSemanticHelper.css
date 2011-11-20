@@ -1,0 +1,62 @@
+/* line 5, ../sass/nonSemanticHelper.scss */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0;
+}
+/* line 7, ../sass/nonSemanticHelper.scss */
+.ir br {
+  display: none;
+}
+
+/* line 11, ../sass/nonSemanticHelper.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 14, ../sass/nonSemanticHelper.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 19, ../sass/nonSemanticHelper.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 26, ../sass/nonSemanticHelper.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 29, ../sass/nonSemanticHelper.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 31, ../sass/nonSemanticHelper.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 35, ../sass/nonSemanticHelper.scss */
+.clearfix:after {
+  clear: both;
+}
