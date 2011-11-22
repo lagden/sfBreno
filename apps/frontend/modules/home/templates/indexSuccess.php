@@ -29,14 +29,14 @@ use_javascript('vendor/jquery/plugins/flexslider/init.js');
             
             
             <ul class="tabs" data-tabs="tabs">
-                <li class="active"><a href="#home">Home</a></li>
-                <li class=""><a href="#profile">Profile</a></li>
+                <li class="active"><a href="#compraOuAlugaTab">Comprar ou Alugar</a></li>
+                <li class=""><a href="#referenciaTab">Referência</a></li>
             </ul>
             <div id="my-tab-content" class="tab-content">
-                <div class="tab-pane active" id="home">
+                <div class="tab-pane active" id="compraOuAlugaTab">
                     <?php include_component('estate', 'Filter'); ?>
                 </div>
-                <div class="tab-pane" id="profile">
+                <div class="tab-pane" id="referenciaTab">
                     <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
                 </div>
             </div>

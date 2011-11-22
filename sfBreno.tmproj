@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>web/sass/lagden/btn.scss</string>
+	<string>web/sass/lagden/interface.scss</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -26,7 +26,7 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>44</integer>
+				<integer>60</integer>
 				<key>line</key>
 				<integer>28</integer>
 			</dict>
@@ -35,14 +35,28 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>apps/frontend/modules/home/actions/actions.class.php</key>
+		<key>apps/frontend/modules/estate/actions/components.class.php</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>47</integer>
+				<integer>1</integer>
 				<key>line</key>
-				<integer>14</integer>
+				<integer>17</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>apps/frontend/modules/estate/templates/_Filter.php</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>58</integer>
+				<key>line</key>
+				<integer>20</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -54,65 +68,109 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>49</integer>
+				<integer>22</integer>
 				<key>line</key>
-				<integer>17</integer>
+				<integer>37</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>10</integer>
+			<integer>18</integer>
 		</dict>
-		<key>apps/frontend/templates/layout.php</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>12</integer>
-				<key>line</key>
-				<integer>17</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>web/css/screen.css</key>
+		<key>lib/filter/doctrine/EstateFormFilter.class.php</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
+				<integer>59</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>32</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>54</integer>
+				<key>line</key>
+				<integer>66</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
 				<integer>0</integer>
+				<key>line</key>
+				<integer>59</integer>
+			</dict>
+		</dict>
+		<key>lib/model/doctrine/Estate.class.php</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>4</integer>
+				<key>line</key>
+				<integer>14</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>542</integer>
+			<integer>0</integer>
+		</dict>
+		<key>web/js/script.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>7</integer>
+				<key>line</key>
+				<integer>14</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
 		</dict>
 		<key>web/sass/lagden/btn.scss</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>36</integer>
-				<key>line</key>
 				<integer>4</integer>
+				<key>line</key>
+				<integer>2</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
+			<integer>7</integer>
+		</dict>
+		<key>web/sass/lagden/interface.scss</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>24</integer>
+				<key>line</key>
+				<integer>39</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
 			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>32</integer>
 		</dict>
 		<key>web/sass/lagden/mixin.scss</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>17</integer>
+				<integer>16</integer>
 				<key>line</key>
-				<integer>7</integer>
+				<integer>4</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -124,14 +182,28 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>67</integer>
+				<integer>1</integer>
 				<key>line</key>
-				<integer>19</integer>
+				<integer>103</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>8</integer>
+			<integer>92</integer>
+		</dict>
+		<key>web/sass/nonSemanticHelper.scss</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>24</integer>
+				<key>line</key>
+				<integer>43</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>16</integer>
 		</dict>
 		<key>web/sass/screen.scss</key>
 		<dict>
@@ -140,45 +212,33 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>1</integer>
+				<integer>67</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>18</integer>
-				<key>line</key>
-				<integer>1</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>1</integer>
-			</dict>
+			<integer>40</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>apps/frontend/modules/home/actions/actions.class.php</string>
-		<string>apps/frontend/modules/home/templates/indexSuccess.php</string>
-		<string>web/css/screen.css</string>
-		<string>web/sass/screen.scss</string>
-		<string>web/sass/lagden/btn.scss</string>
+		<string>apps/frontend/modules/estate/actions/components.class.php</string>
+		<string>apps/frontend/modules/estate/templates/_Filter.php</string>
+		<string>lib/filter/doctrine/EstateFormFilter.class.php</string>
+		<string>lib/model/doctrine/Estate.class.php</string>
 		<string>web/sass/lagden/site.scss</string>
+		<string>web/sass/lagden/interface.scss</string>
 		<string>web/sass/lagden/mixin.scss</string>
-		<string>apps/frontend/templates/layout.php</string>
+		<string>web/sass/lagden/btn.scss</string>
 		<string>apps/frontend/config/view.yml</string>
+		<string>web/sass/screen.scss</string>
+		<string>web/js/script.js</string>
+		<string>web/sass/nonSemanticHelper.scss</string>
+		<string>apps/frontend/modules/home/templates/indexSuccess.php</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
 	<key>windowFrame</key>
-	<string>{{82, 188}, {1528, 778}}</string>
+	<string>{{142, 260}, {1674, 778}}</string>
 </dict>
 </plist>

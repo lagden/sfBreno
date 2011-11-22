@@ -19,7 +19,11 @@
         </li>
         <li>
             <?php echo $form['bairros']->renderLabel(); ?>
-            <?php echo $form['bairros']->render(); ?>
+            <?php echo content_tag('button', 'Mostrar os bairros', array('type' => 'button', 'class' => 'btn orange button showBairro', "data-href"=>"#bairros_inline")) ?>
+            <div id="bairros_inline">
+                <h2>Selecione os bairros</h2>
+                <?php echo $form['bairros']->render(); ?>
+            </div>
         </li>
         <li>
             <?php echo $form['suite']->renderLabel(); ?>

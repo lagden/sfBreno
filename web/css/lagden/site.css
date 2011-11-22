@@ -140,7 +140,7 @@ body > footer .meta p:first-child {
 body > footer .meta a {
   color: #cc0000;
 }
-/* line 24, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body > footer .meta a:hover {
   color: #333333;
 }
@@ -224,7 +224,7 @@ body > footer .meta a:hover {
   text-decoration: none;
   color: #333333;
 }
-/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .listing > article .efeito > table tr td a:hover {
   text-decoration: underline;
 }
@@ -254,7 +254,7 @@ body > footer .meta a:hover {
   color: white;
   display: block;
 }
-/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .listing > article .efeito header h3 a:hover {
   text-decoration: underline;
 }
@@ -276,7 +276,7 @@ body > footer .meta a:hover {
   color: #333333;
   display: block;
 }
-/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .listing > article .efeito header p a:hover {
   text-decoration: underline;
 }
@@ -336,8 +336,31 @@ body > footer .meta a:hover {
   padding: .5em;
   margin: 0;
 }
-/* line 235, ../../sass/lagden/site.scss */
+/* line 232, ../../sass/lagden/site.scss */
+.frmBusca > ul ul.radio_list li label {
+  font-size: .9em;
+}
+/* line 238, ../../sass/lagden/site.scss */
 .frmBusca > ul ul.checkbox_list li {
+  float: left;
+  width: 48%;
+  padding: 1%;
+  margin: 0;
+}
+
+/* line 248, ../../sass/lagden/site.scss */
+#bairros_inline {
+  font-size: .8em;
+  display: none;
+}
+/* line 252, ../../sass/lagden/site.scss */
+#bairros_inline ul.checkbox_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 257, ../../sass/lagden/site.scss */
+#bairros_inline ul.checkbox_list li {
   float: left;
   width: 48%;
   padding: 1%;

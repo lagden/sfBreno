@@ -64,6 +64,9 @@ $blueprint-grid-margin: 20px;
 // https://github.com/h5bp/html5-boilerplate
 @import "boilerplate";
 
+// jQuery plugins - Fancybox 2 - http://fancyapps.com/fancybox/
+@import "jquery/fancybox.2";
+
 // jQuery plugins - HeadsUp Grid - http://bohemianalps.com/tools/grid/
 @import "jquery/hugrid";
 

@@ -229,6 +229,9 @@ body{
                 float:left;
                 padding:.5em;
                 margin:0;
+                label{
+                    font-size:.9em;
+                }
             }
         }
         ul.checkbox_list{
@@ -238,6 +241,24 @@ body{
                 padding:1%;
                 margin:0;
             }
+        }
+    }
+}
+
+#bairros_inline{
+    @extend .clearfix;
+    font-size:.8em;
+    display:none;
+    ul.checkbox_list{
+        margin:0;
+        padding:0;
+        list-style-type:none;
+        @extend .clearfix;
+        li{
+            float:left;
+            width:48%;
+            padding:1%;
+            margin:0;
         }
     }
 }
