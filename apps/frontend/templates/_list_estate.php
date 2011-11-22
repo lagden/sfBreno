@@ -25,7 +25,11 @@ while($i){
                 </tr>
                 <tr>
                     <td>Disponível</td>
-                    <td></td>
+                    <td>Venda ou Locação</td>
+                </tr>
+                <tr>
+                    <td>Suítes</td>
+                    <td>1</td>
                 </tr>
                 <tr>
                     <td>Quartos</td>

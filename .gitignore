@@ -24,6 +24,8 @@ error_log
 thumbs.db
 .*.swp
 .tmproj
+*.mwb
+*.mwb.bak
 
 # SCM files
 .arch-params

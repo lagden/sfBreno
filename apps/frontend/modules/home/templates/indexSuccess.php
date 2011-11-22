@@ -25,7 +25,7 @@ use_javascript('vendor/jquery/plugins/flexslider/init.js');
 
 <div class="container">
     <div class="clearfix">
-        <div class="grid_3">
+        <div class="grid_2">
             
             
             <ul class="tabs" data-tabs="tabs">
@@ -34,7 +34,7 @@ use_javascript('vendor/jquery/plugins/flexslider/init.js');
             </ul>
             <div id="my-tab-content" class="tab-content">
                 <div class="tab-pane active" id="home">
-                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    <?php include_component('estate', 'Filter'); ?>
                 </div>
                 <div class="tab-pane" id="profile">
                     <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
@@ -43,7 +43,7 @@ use_javascript('vendor/jquery/plugins/flexslider/init.js');
             
             
         </div>
-        <div class="grid_3">
+        <div class="grid_4">
             <div class="flexslider">
                 <ul class="slides">
                     <li>
@@ -77,30 +77,7 @@ use_javascript('vendor/jquery/plugins/flexslider/init.js');
         </div>
     </div>
     
-    <div class="clearfix">
-        <div class="grid_3">
-            <h2>Apply Settings</h2>
-            <p>You probably noticed by looking at that text that the default grid has the following properties:</p>
-            <ul>
-                <li>units for page = <b>pixels</b></li>
-                <li>units for columns = <b>pixels</b></li>
-                <li>page width = <b>960px</b></li>
-                <li>number of columns = <b>6</b></li>
-                <li>column width = <b>140px</b></li>
-                <li>gutter width = <b>24px</b></li>
-                <li>page top margin = <b>35px</b></li>
-                <li>row height = <b>20px</b></li>
-            </ul>
-            <p>Alter the numbers to create your desired grid. If you don’t need the baseline grid, set the row height to <b>0</b>. The default unit of measure is&nbsp;<b>pixels</b>.</p>
-            <p>You are now ready to get back to the real work: meticulously lining up images and text!</p>
-        </div>
-        <div class="grid_3">
-            <h2>Other Side</h2>
-            <p>You probably noticed by looking at that text that the default grid has the following properties:</p>
-        </div>
-    </div>
-    
-    <div class="clearfix listing">
+    <div class="clearfix listing someMargin top">
         <?php
         $i=9;
         while($i){
@@ -110,17 +87,11 @@ use_javascript('vendor/jquery/plugins/flexslider/init.js');
         ?>
     </div>
     
-    <div class="clearfix">
-        <div class="grid_6"><p>1 grid</p></div>
+    <div class="clearfix someMargin top">
+        <div class="grid_3"><p>Twitter</p></div>
+        <div class="grid_3"><p>Outras</p></div>
     </div>
-    <div class="clearfix">
-        <div class="grid_1"><p>1 grid</p></div>
-        <div class="grid_1"><p>1 grid</p></div>
-        <div class="grid_1"><p>1 grid</p></div>
-        <div class="grid_1"><p>1 grid</p></div>
-        <div class="grid_1"><p>1 grid</p></div>
-        <div class="grid_1"><p>1 grid</p></div>
-    </div>
+    
 </div>
 
 <footer>

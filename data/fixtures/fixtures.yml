@@ -1,17 +1,148 @@
-# # Populate this file with data to be loaded by your ORM's *:data-load task.
-# # You can create multiple files in this directory (i.e. 010_users.yml,
-# # 020_articles.yml, etc) which will be loaded in alphabetical order.
-# # 
-# # See documentation for your ORM's *:data-load task for more information.
-# 
-# User:
-#   fabien:
-#     username: fabien
-#     password: changeme
-#     name:     Fabien Potencier
-#     email:    fabien.potencier@symfony-project.com
-#   kris:
-#     username: Kris.Wallsmith
-#     password: changeme
-#     name:     Kris Wallsmith
-#     email:    kris.wallsmith@symfony-project.com
+User:
+  user_1:
+    name: Thiago Lagden
+    email: lagden@gmail.com
+    login: lagden
+    password: 123
+    phone: 11 1111-1111
+
+City:
+  city_1:
+      name: São Paulo
+
+Neighborhood:
+  neighborhood_1:
+    City: city_1
+    name: Higienópolis
+  neighborhood_2:
+    City: city_1
+    name: Perdizes
+  neighborhood_3:
+    City: city_1
+    name: Santa Cecilia
+  neighborhood_4:
+    City: city_1
+    name: Barra Funda
+  neighborhood_5:
+    City: city_1
+    name: Campos Eliseos
+  neighborhood_6:
+    City: city_1
+    name: Consolação
+  neighborhood_7:
+    City: city_1
+    name: Centro
+  neighborhood_8:
+    City: city_1
+    name: Pinheiros
+  neighborhood_9:
+    City: city_1
+    name: Alto de Pinheiros
+  neighborhood_10:
+    City: city_1
+    name: Cerqueira César
+  neighborhood_11:
+    City: city_1
+    name: Pompéia
+  neighborhood_12:
+    City: city_1
+    name: Água Branca
+  neighborhood_13:
+    City: city_1
+    name: Bela Vista
+
+Type:
+  type_1:
+      name: Apartamento
+  type_2:
+      name: Casa
+  type_3:
+      name: Comercial
+
+Disponibilidade:
+  disponibilidade_1:
+      name: Comprar
+  disponibilidade_2:
+      name: Alugar
+
+Complemento:
+  complemento_1:
+      name: Salão de Festas
+  complemento_2:
+      name: Salão de Jogos
+  complemento_3:
+      name: Sala de Ginástica
+  complemento_4:
+      name: Sauna
+  complemento_5:
+      name: Parabólica
+  complemento_6:
+      name: TV Assinatura
+  complemento_7:
+      name: Solarium
+  complemento_8:
+      name: Churrasqueira
+  complemento_9:
+      name: Quadra Poliesportiva
+  complemento_10:
+      name: Piscina Adulto
+  complemento_11:
+      name: Piscina Infantil
+  complemento_12:
+      name: Jardim
+  complemento_13:
+      name: Serviço de Praia
+  complemento_14:
+      name: Play-Ground
+  complemento_15:
+      name: Elevador p/ Cadeirante
+  complemento_16:
+      name: Entrada lateral
+  complemento_17:
+      name: Depósito
+  complemento_18:
+      name: Sacada Panorâmica
+  complemento_19:
+      name: Forno de Pão e Pizza
+  complemento_20:
+      name: Gerador de Emergência
+  complemento_21:
+      name: Quadra de Tênis
+  complemento_22:
+      name: Guarita
+  complemento_23:
+      name: Portaria
+  complemento_24:
+      name: Portão Eletrônico
+  complemento_25:
+      name: Circuito Fechado TV
+  complemento_26:
+      name: Interfone
+  complemento_27:
+      name: Alarme Monitorado
+  complemento_28:
+      name: Vigia
+  complemento_29:
+      name: Elevador Social
+  complemento_30:
+      name: Elevador Serviço
+  complemento_31:
+      name: Hall de Entrada
+  complemento_32:
+      name: Entrada de Serviço
+  complemento_33:
+      name: Central de Gás
+  complemento_34:
+      name: Garagem Privativa
+  complemento_35:
+      name: Garagem Coletiva
+  complemento_36:
+      name: Garagem Coberta
+  complemento_37:
+      name: Sacada
+  complemento_38:
+      name: Terraço
+  complemento_39:
+      name: Área de Serviço
+  complemento_40:
+      name: Garagem Fechada

@@ -3,10 +3,11 @@ User:
   actAs:
     Timestampable: ~
   indexes:
-    login_index: { fields: [email, password] }
+    login_index: { fields: [login, password] }
   columns:
     name: { type: string(255), notnull: true }
     email: { type: string(255), notnull: true, unique: true }
+    login: { type: string(255), notnull: true, unique: true }
     password: { type: string(80), notnull: true }
     phone: { type: string(50) }
     token_forgot: { type: string(40) }
@@ -107,6 +108,14 @@ EstateDisponibilidade:
     Disponibilidade: { local: disponibilidade_id, onDelete: CASCADE }
     Estate: { local: estate_id, onDelete: CASCADE }
 
+EstateComplemento:
+  columns:
+    complemento_id: { type: bigint, primary: true }
+    estate_id: { type: bigint, primary: true }
+  relations:
+    Complemento: { local: complemento_id, onDelete: CASCADE }
+    Estate: { local: estate_id, onDelete: CASCADE }
+
 # Imóvel
 Estate:
   actAs:
@@ -136,7 +145,7 @@ Estate:
     destaque: { type: boolean, default: 0 }
     ordem: { type: integer(3), default: 0 }
     ativo: { type: boolean, default: 0 }
-    extra: clob
+    seo: clob
     carga: clob
     neighborhood_id: { type: bigint }
     type_id: { type: bigint }
@@ -159,27 +168,52 @@ Estate:
       refClass: EstateDisponibilidade
       alias: Disponibilidades
       foreignAlias: Estates
+    Complemento:
+      refClass: EstateComplemento
+      alias: Complementos
+      foreignAlias: Estates
+
+# Complementos
+Complemento:
+  actAs:
+    Timestampable: ~
+  columns:
+    name: { type: string(255), notnull: true }
 
 # Disponibilidade
 Disponibilidade:
   actAs:
     Timestampable: ~
   columns:
-    disponivel: { type: string(255), notnull: true }
+    name: { type: string(255), notnull: true }
 
 # Tipo
 Type:
   actAs:
     Timestampable: ~
   columns:
-    tipo: { type: string(255), notnull: true }
+    name: { type: string(255), notnull: true }
 
 # Bairro
 Neighborhood:
   actAs:
     Timestampable: ~
   columns:
-    bairro: { type: string(255), notnull: true }
+    name: { type: string(255), notnull: true }
+    city_id: { type: bigint }
+  relations:
+    City:
+      local: city_id
+      class: City
+      foreignAlias: Cities
+      onDelete: CASCADE
+
+# Cidade
+City:
+  actAs:
+    Timestampable: ~
+  columns:
+    name: { type: string(255), notnull: true }
 
 # Imagem
 Image:
@@ -194,3 +228,22 @@ Image:
       class: Estate
       foreignAlias: Images
       onDelete: CASCADE
+
+# Log
+LogReport:
+  actAs:
+    Timestampable: ~
+  columns:
+    ip: { type: string(50) } # ipv4 || ipv6
+    report_type: { type: enum, default: notice, values: ['notice', 'warning', 'error'] }
+    action: { type: enum, default: read, values: ['create', 'read', 'update', 'delete', 'download'] }
+    message: clob
+    details: clob
+    record_id: { type: bigint }
+    user_id: bigint
+  relations:
+    User:
+      local: user_id
+      class: User
+      foreignAlias: Logs
+      onDelete: 'SET NULL'

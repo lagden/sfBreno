@@ -37,3 +37,23 @@
     }
     zoom: 1;
 }
+
+$defaulValue: 1.5em;
+
+.left{ text-align:left; }
+.right{ text-align:right; }
+.center{ text-align:center; }
+
+.someMargin{
+    &.top{margin-top:$defaulValue;}
+    &.left{margin-left:$defaulValue;}
+    &.right{margin-right:$defaulValue;}
+    &.bottom{margin-bottom:$defaulValue;}
+}
+
+.somePadding{
+    &.top{padding-top:$defaulValue;}
+    &.left{padding-left:$defaulValue;}
+    &.right{padding-right:$defaulValue;}
+    &.bottom{padding-bottom:$defaulValue;}
+}

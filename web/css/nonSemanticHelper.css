@@ -60,3 +60,52 @@
 .clearfix:after {
   clear: both;
 }
+
+/* line 43, ../sass/nonSemanticHelper.scss */
+.left {
+  text-align: left;
+}
+
+/* line 44, ../sass/nonSemanticHelper.scss */
+.right {
+  text-align: right;
+}
+
+/* line 45, ../sass/nonSemanticHelper.scss */
+.center {
+  text-align: center;
+}
+
+/* line 48, ../sass/nonSemanticHelper.scss */
+.someMargin.top {
+  margin-top: 1.5em;
+}
+/* line 49, ../sass/nonSemanticHelper.scss */
+.someMargin.left {
+  margin-left: 1.5em;
+}
+/* line 50, ../sass/nonSemanticHelper.scss */
+.someMargin.right {
+  margin-right: 1.5em;
+}
+/* line 51, ../sass/nonSemanticHelper.scss */
+.someMargin.bottom {
+  margin-bottom: 1.5em;
+}
+
+/* line 55, ../sass/nonSemanticHelper.scss */
+.somePadding.top {
+  padding-top: 1.5em;
+}
+/* line 56, ../sass/nonSemanticHelper.scss */
+.somePadding.left {
+  padding-left: 1.5em;
+}
+/* line 57, ../sass/nonSemanticHelper.scss */
+.somePadding.right {
+  padding-right: 1.5em;
+}
+/* line 58, ../sass/nonSemanticHelper.scss */
+.somePadding.bottom {
+  padding-bottom: 1.5em;
+}
