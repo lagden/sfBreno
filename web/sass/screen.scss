@@ -1,14 +1,10 @@
 // @import "compass/reset";
 @import "compass";
 @import "blueprint/grid";
+@import "lagden/mixin";
 
 // Ellipsis
 $use-mozilla-ellipsis-binding: true;
-
-// 960
-$blueprint_grid_columns: 6;
-$blueprint_grid_width: 140px;
-$blueprint-grid-margin: 20px;
 
 .container{
     background:blue;

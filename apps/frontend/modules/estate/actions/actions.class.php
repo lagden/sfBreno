@@ -30,13 +30,74 @@ class estateActions extends GeneralActions
     
     public function executeShow(sfWebRequest $request)
     {
-        //
+        return $this->renderText("awesome");
     }
     
-    // Ajax Referencia - Retorna a url do imovel se existir
+    // Ajax Disponibilidade - Retorna os valores de acordo
+    public function executeSort(sfWebRequest $request)
+    {
+        // Setup App
+        static::setup();
+        
+        // Route: estate_disponibilidade
+        $this->getResponse()->setContentType('application/json');
+
+        // Response
+        $response=array(
+            'success' => false,
+            'auth' => true,
+            'msg' => 'Erro',
+            'data' => null,
+        );
+        
+        $s = $request->getPostParameter('sort',false);
+        
+        if($s)
+        {
+            sfContext::getInstance()->getUser()->setAttribute(sfConfig::get('order_by'),$s);
+            $response['success']=true;
+        }
+        return $this->renderText(json_encode($response));
+    }
+    
+    // Referencia
+    // Via Ajax - Retorna a url do imovel se existir
+    // Normal - Redireciona para a url do imovel se existir ou vai para a home
     public function executeReferencia(sfWebRequest $request)
     {
-        //
+        // Response
+        $response=array(
+            'success' => false,
+            'auth' => true,
+            'msg' => 'Erro',
+            'data' => null,
+        );
+        
+        $form = new ReferenciaForm();
+        $r = $request->getParameter($form->getName());
+        $r = ($r) ? $r['referencia'] : $request->getPostParameter('referencia',false);
+        
+        $i = Doctrine_Core::getTable('Estate')->findOneByReferencia($r);
+        
+        $this->getContext()->getConfiguration()->loadHelpers(array('Url'));
+        if($i) $goto = url_for('estate_show',array('slug'=>$i->slug));
+        else $goto = false;
+        
+        if ($request->isXmlHttpRequest())
+        {
+            $this->getResponse()->setContentType('application/json');
+            if($goto)
+            {
+                $response['success']=true;
+                $response['data']=array('url'=>$goto);
+            }
+            return $this->renderText(json_encode($response));
+        }
+        else
+        {
+            $goto = ( $goto ) ? $goto : url_for('homepage');
+            $this->redirect($goto);
+        }
     }
     
     // Ajax Disponibilidade - Retorna os valores de acordo
@@ -81,7 +142,7 @@ class estateActions extends GeneralActions
                 
         // Filter
         sfConfig::set("formFilter",sfConfig::get("app_formfilter_estate","EstateFormFilter")); // Filter Form
-        sfConfig::set("cookie_search","{$prefix}_site_search.filters"); // Filter Form result
+        sfConfig::set("cookie_search",sfConfig::get("app_cookie_search_estate","estate_site_search.filters")); // Filter Result Cookie
         sfConfig::set("route_form_filter",sfConfig::get("app_route_form_filter","estate_filter")); // Route form submit
         sfConfig::set("route_form_filter_reset","{$prefix}_clear"); // Route clear form
         
@@ -90,7 +151,6 @@ class estateActions extends GeneralActions
         sfConfig::set("page_route","{$prefix}_page"); // Rota para paginacao
         
         // Sort
-        sfConfig::set("action_sort","{$prefix}_sort");
         sfConfig::set("order_by","{$prefix}_sort.field");
         sfConfig::set("order_by_direction","{$prefix}_sort.direction");
     }

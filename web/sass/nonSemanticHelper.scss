@@ -1,3 +1,4 @@
+@import "lagden/mixin";
 // Non-semantic helper classes
 // Please define your styles before this section.
 
@@ -27,6 +28,7 @@
 
 // Contain floats: h5bp.com/q
 .clearfix{
+    margin-right:$blueprint-grid-margin - 10;
     &:before,
     &:after{
         content: "";

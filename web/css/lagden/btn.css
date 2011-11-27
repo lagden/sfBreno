@@ -41,7 +41,7 @@
   -o-transition-property: background-color;
   transition-property: background-color;
   color: #FFF;
-  background-color: rgba(242, 133, 16, 0.8);
+  background-color: rgba(248, 181, 0, 0.7);
   -moz-box-shadow: 0 2px 6px rgba(244, 183, 78, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(255, 255, 0, 0.1);
   -webkit-box-shadow: 0 2px 6px rgba(244, 183, 78, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(255, 255, 0, 0.1);
   -o-box-shadow: 0 2px 6px rgba(244, 183, 78, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(255, 255, 0, 0.1);
@@ -49,7 +49,7 @@
 }
 /* line 41, ../../sass/lagden/btn.scss */
 .btn.orange:hover {
-  background-color: #f28510;
+  background-color: #f8b500;
 }
 /* line 45, ../../sass/lagden/btn.scss */
 .btn.button:active {

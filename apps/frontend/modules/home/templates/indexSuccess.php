@@ -15,27 +15,12 @@ use_javascript('vendor/jquery/plugins/flexslider/init.js');
                     <?php include_component('estate', 'Filter'); ?>
                 </div>
                 <div class="tab-pane" id="referenciaTab">
-                    <p>Colocar form ref.</p>
+                    <?php include_component('estate', 'Referencia'); ?>
                 </div>
             </div>
         </div>
         <div class="grid_4">
-            <div class="flexslider">
-                <ul class="slides">
-                    <?php foreach ($destaques as $destaque): ?>
-                        <li>
-                            <figure>
-                                <?php echo image_tag('demo-stuff/inacup_samoa.jpg',array('alt'=>'')); ?>
-                                <?php if ($destaque->destaque_chamada): ?>
-                                    <figcaption class="flex-caption">
-                                        <p><?php echo $destaque->destaque_chamada ?></p>
-                                    </figcaption>
-                                <?php endif ?>
-                            </figure>
-                        </li>
-                    <?php endforeach ?>
-                </ul>
-            </div>
+            <?php include_partial('global/slider',array('destaques'=>$destaques)); ?>
         </div>
     </div>
     <div class="clearfix listing someMargin top">

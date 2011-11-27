@@ -8,7 +8,7 @@
         </li>
         <li>
             <?php echo $form['Disponibilidades']->renderLabel(); ?>
-            <?php echo $form['Disponibilidades']->render(array('title'=>'Disponibilidade','class'=>'required','data-url'=>url_for('estate_disponibilidade'))); ?>
+            <?php echo $form['Disponibilidades']->render(array('title'=>$form['Disponibilidades']->renderLabelName(),'class'=>'required','data-url'=>url_for('estate_disponibilidade'))); ?>
         </li>
         <li>
             <?php echo $form['valor']->renderLabel(); ?>

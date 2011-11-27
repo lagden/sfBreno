@@ -44,6 +44,21 @@ class EstateTable extends Doctrine_Table
         '= 4' => '4',
         '> 4' => '5 ou mais',
     );
+    
+    static public $sorting = array(
+        'id' => 'Ordernar resultados por...',
+        'price_sale' => 'Preço Venda',
+        'price_rent' => 'Preço Aluguel',
+        'area_util' => 'Área Útil',
+        'neighborhood_id' => 'Bairro',
+        'quartos' => 'Nº de Quartos',
+        'vagas' => 'Nº de Vagas na garagem',
+    );
+    
+    public function getSorting()
+    {
+        return self::$sorting;
+    }
 
     public function getValorVenda()
     {
@@ -110,27 +125,27 @@ class EstateTable extends Doctrine_Table
                 switch($k)
                 {
                     case "type_id":
-                    $q->orWhere("{$alias}.{$k} = ?", $v);
+                    $q->andWhere("{$alias}.{$k} = ?", $v);
                     break;
                     
                     case "Disponibilidades":
                     $q->innerJoin("{$alias}.$k j");
-                    $q->orWhere("j.id = ?", $v);
+                    $q->andWhere("j.id = ?", $v);
                     break;
                     
                     case "valor":
                     if(isset($filters['Disponibilidades']) && $v)
                     {
-                        ($filters['Disponibilidades'] == 1) ? $q->orWhere("{$alias}.price_sale {$v}") : $q->orWhere("{$alias}.price_rent {$v}");
+                        ($filters['Disponibilidades'] == 1) ? $q->andWhere("{$alias}.price_sale {$v}") : $q->andWhere("{$alias}.price_rent {$v}");
                     }
                     break;
                     
                     case "neighborhood_id":
-                    $q->orWhereIn("{$alias}.{$k}", $v);
+                    $q->andWhereIn("{$alias}.{$k}", $v);
                     break;
                     
                     default:
-                    if($v) $q->orWhere("{$alias}.{$k} {$v}");
+                    if($v) $q->andWhere("{$alias}.{$k} {$v}");
                 }
             }
         }

@@ -1,4 +1,10 @@
-/* line 5, ../sass/nonSemanticHelper.scss */
+@font-face {
+  font-family: "sidewalk";
+  src: url('fonts/sidewalk-webfont.eot');
+  src: url('fonts/sidewalk-webfont.eot?iefix') format('eot'), url('fonts/sidewalk-webfont.woff') format('woff'), url('fonts/sidewalk-webfont.ttf') format('truetype'), url('fonts/sidewalk-webfont.svg#sidewalk') format('svgm'), url('fonts/sidewalk-webfont.eot?#iefix') format('embedded-opentype');
+}
+
+/* line 6, ../sass/nonSemanticHelper.scss */
 .ir {
   display: block;
   border: 0;
@@ -10,18 +16,18 @@
   direction: ltr;
   *line-height: 0;
 }
-/* line 7, ../sass/nonSemanticHelper.scss */
+/* line 8, ../sass/nonSemanticHelper.scss */
 .ir br {
   display: none;
 }
 
-/* line 11, ../sass/nonSemanticHelper.scss */
+/* line 12, ../sass/nonSemanticHelper.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 14, ../sass/nonSemanticHelper.scss */
+/* line 15, ../sass/nonSemanticHelper.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -32,7 +38,7 @@
   position: absolute;
   width: 1px;
 }
-/* line 19, ../sass/nonSemanticHelper.scss */
+/* line 20, ../sass/nonSemanticHelper.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -42,70 +48,71 @@
   width: auto;
 }
 
-/* line 26, ../sass/nonSemanticHelper.scss */
+/* line 27, ../sass/nonSemanticHelper.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 29, ../sass/nonSemanticHelper.scss */
+/* line 30, ../sass/nonSemanticHelper.scss */
 .clearfix {
+  margin-right: 10px;
   zoom: 1;
 }
-/* line 31, ../sass/nonSemanticHelper.scss */
+/* line 33, ../sass/nonSemanticHelper.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
-/* line 35, ../sass/nonSemanticHelper.scss */
+/* line 37, ../sass/nonSemanticHelper.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 43, ../sass/nonSemanticHelper.scss */
+/* line 45, ../sass/nonSemanticHelper.scss */
 .left {
   text-align: left;
 }
 
-/* line 44, ../sass/nonSemanticHelper.scss */
+/* line 46, ../sass/nonSemanticHelper.scss */
 .right {
   text-align: right;
 }
 
-/* line 45, ../sass/nonSemanticHelper.scss */
+/* line 47, ../sass/nonSemanticHelper.scss */
 .center {
   text-align: center;
 }
 
-/* line 48, ../sass/nonSemanticHelper.scss */
+/* line 50, ../sass/nonSemanticHelper.scss */
 .someMargin.top {
   margin-top: 1.5em;
 }
-/* line 49, ../sass/nonSemanticHelper.scss */
+/* line 51, ../sass/nonSemanticHelper.scss */
 .someMargin.left {
   margin-left: 1.5em;
 }
-/* line 50, ../sass/nonSemanticHelper.scss */
+/* line 52, ../sass/nonSemanticHelper.scss */
 .someMargin.right {
   margin-right: 1.5em;
 }
-/* line 51, ../sass/nonSemanticHelper.scss */
+/* line 53, ../sass/nonSemanticHelper.scss */
 .someMargin.bottom {
   margin-bottom: 1.5em;
 }
 
-/* line 55, ../sass/nonSemanticHelper.scss */
+/* line 57, ../sass/nonSemanticHelper.scss */
 .somePadding.top {
   padding-top: 1.5em;
 }
-/* line 56, ../sass/nonSemanticHelper.scss */
+/* line 58, ../sass/nonSemanticHelper.scss */
 .somePadding.left {
   padding-left: 1.5em;
 }
-/* line 57, ../sass/nonSemanticHelper.scss */
+/* line 59, ../sass/nonSemanticHelper.scss */
 .somePadding.right {
   padding-right: 1.5em;
 }
-/* line 58, ../sass/nonSemanticHelper.scss */
+/* line 60, ../sass/nonSemanticHelper.scss */
 .somePadding.bottom {
   padding-bottom: 1.5em;
 }

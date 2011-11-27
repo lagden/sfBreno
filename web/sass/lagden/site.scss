@@ -24,8 +24,8 @@ body{
         position:relative;
         z-index:1;
         padding-bottom: $navContainer;
-        background-color: #ffd547; // Old browsers
-        @include filter-gradient(#ffd547, #ffac00, vertical); // IE6-9
+        background-color: #ffd547;
+        @include filter-gradient(#ffd547, #ffac00, vertical);
         @include background-image(linear-gradient(top,  #ffd547 0%,#ffac00 100%));
         .wrapper{
             position:relative;
@@ -37,8 +37,6 @@ body{
                 padding:.5em;
             }
             ul.menu{
-//                position:absolute;
-//                right:20px;
                 vertical-align:middle;
                 display:inline-block;
                 list-style: none;
@@ -205,8 +203,10 @@ body{
         list-style-type:none;
         @extend .clearfix;
         li{
+            input[type=text],
             select{
                 width:90%;
+                padding:.5em;
             }
         }
     }
@@ -218,6 +218,7 @@ body{
             > label{
                 font-size:.9em;
                 display:block;
+                margin-bottom:.3em;
                 font-weight:bold;
             }
             .btn{

@@ -1,5 +1,10 @@
 @import "compass";
 
+// 960
+$blueprint_grid_columns: 6;
+$blueprint_grid_width: 140px;
+$blueprint-grid-margin: 20px;
+
 $mainColor: #333;
 $darkgray: #363636;
 $orange: #F28510;

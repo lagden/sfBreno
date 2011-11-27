@@ -109,15 +109,24 @@ html[xmlns] .slides {
   font-size: 14px;
   line-height: 18px;
 }
+/* line 83, ../../sass/jquery/flexslider.scss */
+.flex-caption > p a {
+  text-decoration: none;
+  color: white;
+}
+/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+.flex-caption > p a:hover {
+  text-decoration: underline;
+}
 
 /* Direction Nav */
-/* line 87, ../../sass/jquery/flexslider.scss */
+/* line 91, ../../sass/jquery/flexslider.scss */
 .flex-direction-nav {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 92, ../../sass/jquery/flexslider.scss */
+/* line 96, ../../sass/jquery/flexslider.scss */
 .flex-direction-nav li a {
   width: 52px;
   height: 52px;
@@ -129,16 +138,16 @@ html[xmlns] .slides {
   cursor: pointer;
   text-indent: -9999px;
 }
-/* line 102, ../../sass/jquery/flexslider.scss */
+/* line 106, ../../sass/jquery/flexslider.scss */
 .flex-direction-nav li a.next {
   background-position: -52px 0;
   right: 0;
 }
-/* line 106, ../../sass/jquery/flexslider.scss */
+/* line 110, ../../sass/jquery/flexslider.scss */
 .flex-direction-nav li a.prev {
   left: 0;
 }
-/* line 107, ../../sass/jquery/flexslider.scss */
+/* line 111, ../../sass/jquery/flexslider.scss */
 .flex-direction-nav li a.disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
@@ -146,7 +155,7 @@ html[xmlns] .slides {
 }
 
 /* Control Nav */
-/* line 116, ../../sass/jquery/flexslider.scss */
+/* line 120, ../../sass/jquery/flexslider.scss */
 .flex-control-nav {
   margin: 0;
   padding: 0;
@@ -155,18 +164,18 @@ html[xmlns] .slides {
   top: 5px;
   right: 5px;
 }
-/* line 126, ../../sass/jquery/flexslider.scss */
+/* line 130, ../../sass/jquery/flexslider.scss */
 .flex-control-nav li {
   margin: 0 0 0 5px;
   zoom: 1;
   display: inline-block;
   *display: inline;
 }
-/* line 131, ../../sass/jquery/flexslider.scss */
+/* line 135, ../../sass/jquery/flexslider.scss */
 .flex-control-nav li:first-child {
   margin: 0;
 }
-/* line 132, ../../sass/jquery/flexslider.scss */
+/* line 136, ../../sass/jquery/flexslider.scss */
 .flex-control-nav li a {
   width: 13px;
   height: 13px;
@@ -175,11 +184,11 @@ html[xmlns] .slides {
   cursor: pointer;
   text-indent: -9999px;
 }
-/* line 139, ../../sass/jquery/flexslider.scss */
+/* line 143, ../../sass/jquery/flexslider.scss */
 .flex-control-nav li a:hover {
   background-position: 0 -13px;
 }
-/* line 140, ../../sass/jquery/flexslider.scss */
+/* line 144, ../../sass/jquery/flexslider.scss */
 .flex-control-nav li a.active {
   background-position: 0 -26px;
   cursor: default;

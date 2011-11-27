@@ -43,11 +43,13 @@ class GeneralActions extends sfActions
         if(is_string($response)&&$response=="reload")return $this->renderText($response);
         else
         {
-            return $this->renderPartial(sfConfig::get("tbody",'global/tbody'),array(
-                'fields' => array('labels'=>sfConfig::get('fields_labels',array()),'names'=>sfConfig::get('fields_names',array()),'sorts'=>sfConfig::get('fields_sorts',array()),'xtras'=>sfConfig::get('fields_xtras',array()),),
-                'actions' => array('edit'=>sfConfig::get('action_edit'),'delete'=>sfConfig::get('action_delete'),'new'=>sfConfig::get('action_new'),),
-                'itens' => $response->getResults(),
-            ));
+            return $this->renderPartial(sfConfig::get("tbody",'global/tbody'),
+                array(
+                    'fields' => array('labels'=>sfConfig::get('fields_labels',array()),'names'=>sfConfig::get('fields_names',array()),'sorts'=>sfConfig::get('fields_sorts',array()),'xtras'=>sfConfig::get('fields_xtras',array()),),
+                    'actions' => array('edit'=>sfConfig::get('action_edit'),'delete'=>sfConfig::get('action_delete'),'new'=>sfConfig::get('action_new'),),
+                    'itens' => $response->getResults(),
+                )
+            );
         }
     }
 

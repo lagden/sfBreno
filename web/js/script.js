@@ -2,31 +2,35 @@
 // Parecido com o Growl
 var Roar = new Roar({position: 'upperRight', duration: 7000});
 
-var brenoTips;
-
 // Domready
 window.addEvent('domready',function()
 {
-    brenoTips = new Tips($$('.brenoTips'),
+    var brenoTips = new Tips($$('.brenoTips'),
     {
         className:'toolTip',
         fixed:true,
         offset:{x: 0, y: 16}
     });
     
-    // Formulario de busca de Imoveis Validation
-    var frmBuscaImoveisId = 'frmBuscaImoveis'
-    var frmBuscaImoveisEl = $(frmBuscaImoveisId);
-    if(frmBuscaImoveisEl)
+    var frmAccordionFormResult = $('accordionFormResult');
+    if(frmAccordionFormResult)
     {
-        ajuda.formValidation(frmBuscaImoveisId,frmEstateSearch.handler);
-        
-        // Evita o submit do form -> submit controlado pelo handler
-        $(frmBuscaImoveisId).addEvent('submit',function(e){
-            new Event(e).stop();
-            return false;
+        new Fx.Accordion(frmAccordionFormResult, '#accordionFormResult > h2', '#accordionFormResult > .content',
+        {
+            alwaysHide: true,
+            display: -1,
+            onActive: function(toggler, element){
+                jQuery(toggler).toggleClass('ativo',true);
+            },
+            onBackground: function(toggler, element){
+                jQuery(toggler).toggleClass('ativo',false);
+            }
         });
     }
+    
+    // Formulario de busca de Imoveis e de buca por Referencia
+    ajuda.addFormValidation('frmBuscaImoveis',frmEstateSearch.handler,true);
+    ajuda.addFormValidation('frmBuscaImoveisRef',frmEstateSearch.handlerRef,true);
     
     // jQuery
     (function($){
@@ -54,6 +58,11 @@ window.addEvent('domready',function()
             frmEstateSearch.disponibilidade(this.value);
         }).trigger('change');
         
+        // Ajax Sorting
+        $('#sort_sorting').change(function(){
+            frmEstateSearch.sorting(this.value);
+        });
+        
         // Paginação
         $('button.paginacao').live('click',function(e){
             var go=$(this).data('pagina');
@@ -65,6 +74,29 @@ window.addEvent('domready',function()
 
 // Formulario de Busca de Imoveis
 var frmEstateSearch={
+    sorting:function(v)
+    {
+        ajuda.alerta('Reordenando...');
+        jQuery.post(ajuda.routes('sort_sorting'),{"sort":v},frmEstateSearch.sortingCallBack,'json');
+    },
+    sortingCallBack:function(data)
+    {
+        (data.success) ? location.reload() : ajuda.alerta('Não foi possível reordenar.');
+    },
+    handlerRef:function(bool,el,submit)
+    {
+        if(bool) frmEstateSearch.referencia(jQuery('#ref_referencia').val());
+    },
+    referencia:function(v)
+    {
+        ajuda.alerta('Consultando a base. Aguarde...');
+        jQuery.post(ajuda.routes('frmBuscaImoveisRef'),{"referencia":v},frmEstateSearch.referenciaCallBack,'json');
+    },
+    referenciaCallBack:function(data)
+    {
+        ajuda.alerta('Imóvel encontrado. Aguarde...');
+        (data.success) ? location=data.data.url : ajuda.alerta('Imóvel não encontrado.');
+    },
     handler:function(bool,el,submit)
     {
         if(bool)
@@ -79,9 +111,8 @@ var frmEstateSearch={
     },
     disponibilidade:function(v)
     {
-        var _this = frmEstateSearch;
         ajuda.alerta('Consultando a base. Aguarde...');
-        jQuery.post(ajuda.routes('estate_filters_Disponibilidades'),{"disponibilidade":v},_this.disponibilidadeCallBack,'json');
+        jQuery.post(ajuda.routes('estate_filters_Disponibilidades'),{"disponibilidade":v},frmEstateSearch.disponibilidadeCallBack,'json');
     },
     disponibilidadeCallBack:function(data)
     {
@@ -111,6 +142,22 @@ var ajuda={
     {
         titulo = (titulo) ? titulo : 'Informação';
         Roar.alert(titulo,msg);
+    },
+    addFormValidation:function(f,handler,prev)
+    {
+        frm = $(f);
+        if(frm)
+        {
+            ajuda.formValidation(f,handler);
+            if(prev)
+            {
+                // Evita o submit do form -> submit controlado pelo handler
+                $(f).addEvent('submit',function(e){
+                    new Event(e).stop();
+                    return false;
+                });
+            }
+        }
     },
     formValidation:function(f,func)
     {

@@ -68,7 +68,7 @@ body > nav .wrapper ul.menu {
   display: inline-block;
   list-style: none;
 }
-/* line 45, ../../sass/lagden/site.scss */
+/* line 43, ../../sass/lagden/site.scss */
 body > nav .wrapper ul.menu li {
   width: 140px;
   float: left;
@@ -77,11 +77,11 @@ body > nav .wrapper ul.menu li {
   margin: 0;
   margin-right: 20px;
 }
-/* line 52, ../../sass/lagden/site.scss */
+/* line 50, ../../sass/lagden/site.scss */
 body > nav .wrapper ul.menu li:last-child {
   margin-right: 0;
 }
-/* line 55, ../../sass/lagden/site.scss */
+/* line 53, ../../sass/lagden/site.scss */
 body > nav .wrapper ul.menu li a {
   padding: 0.6em 0.7em 0.6em 0.7em;
   border: 1px solid transparent;
@@ -92,7 +92,7 @@ body > nav .wrapper ul.menu li a {
   text-decoration: none;
   outline: none;
 }
-/* line 70, ../../sass/lagden/site.scss */
+/* line 68, ../../sass/lagden/site.scss */
 body > .container {
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
@@ -110,7 +110,7 @@ body > .container {
   top: -69px;
   padding: 20px 10px 20px 20px;
 }
-/* line 80, ../../sass/lagden/site.scss */
+/* line 78, ../../sass/lagden/site.scss */
 body > footer {
   background: #111;
   border-top: 1px solid #ccc;
@@ -121,63 +121,63 @@ body > footer {
   color: #ccc;
   padding: 3em 0;
 }
-/* line 87, ../../sass/lagden/site.scss */
+/* line 85, ../../sass/lagden/site.scss */
 body > footer .wrapper p {
   line-height: normal;
 }
-/* line 92, ../../sass/lagden/site.scss */
+/* line 90, ../../sass/lagden/site.scss */
 body > footer .meta p {
   border-top: 1px dashed #333;
   padding-top: .5em;
   margin-bottom: .5em;
 }
-/* line 96, ../../sass/lagden/site.scss */
+/* line 94, ../../sass/lagden/site.scss */
 body > footer .meta p:first-child {
   border-top: none;
   padding-top: 0;
 }
-/* line 101, ../../sass/lagden/site.scss */
+/* line 99, ../../sass/lagden/site.scss */
 body > footer .meta a {
   color: #cc0000;
 }
-/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body > footer .meta a:hover {
   color: #333333;
 }
 
-/* line 107, ../../sass/lagden/site.scss */
+/* line 105, ../../sass/lagden/site.scss */
 .listing {
   position: relative;
 }
-/* line 109, ../../sass/lagden/site.scss */
+/* line 107, ../../sass/lagden/site.scss */
 .listing > article {
   background-color: #f1f1f1;
   margin-bottom: 45px;
   display: inline;
   float: left;
-  margin-right: 10px;
-  width: 70px;
+  margin-right: 20px;
+  width: 300px;
 }
 /* line 147, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .listing > article {
   overflow-x: hidden;
 }
-/* line 113, ../../sass/lagden/site.scss */
+/* line 111, ../../sass/lagden/site.scss */
 .listing > article:nth-child(3n) {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 70px;
+  width: 300px;
 }
 /* line 147, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .listing > article:nth-child(3n) {
   overflow-x: hidden;
 }
-/* line 116, ../../sass/lagden/site.scss */
+/* line 114, ../../sass/lagden/site.scss */
 .listing > article:nth-of-type(3n+1) {
   clear: left;
 }
-/* line 119, ../../sass/lagden/site.scss */
+/* line 117, ../../sass/lagden/site.scss */
 .listing > article .efeito {
   width: 240px;
   border: 3px solid #FFF;
@@ -193,42 +193,42 @@ body > footer .meta a:hover {
   -o-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
 }
-/* line 125, ../../sass/lagden/site.scss */
+/* line 123, ../../sass/lagden/site.scss */
 .listing > article .efeito > table {
   width: 100%;
   margin: 1em 0;
   font-size: .8em;
 }
-/* line 130, ../../sass/lagden/site.scss */
+/* line 128, ../../sass/lagden/site.scss */
 .listing > article .efeito > table tr:nth-child(2n+1) {
   background: #e1e1e1;
   color: #333;
 }
-/* line 134, ../../sass/lagden/site.scss */
+/* line 132, ../../sass/lagden/site.scss */
 .listing > article .efeito > table tr:hover {
   background: #fde3ab;
   color: #333;
 }
-/* line 138, ../../sass/lagden/site.scss */
+/* line 136, ../../sass/lagden/site.scss */
 .listing > article .efeito > table tr td {
   width: 46%;
   padding: 2%;
   text-align: left;
 }
-/* line 142, ../../sass/lagden/site.scss */
+/* line 140, ../../sass/lagden/site.scss */
 .listing > article .efeito > table tr td:last-child {
   text-align: right;
 }
-/* line 145, ../../sass/lagden/site.scss */
+/* line 143, ../../sass/lagden/site.scss */
 .listing > article .efeito > table tr td a {
   text-decoration: none;
   color: #333333;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .listing > article .efeito > table tr td a:hover {
   text-decoration: underline;
 }
-/* line 153, ../../sass/lagden/site.scss */
+/* line 151, ../../sass/lagden/site.scss */
 .listing > article .efeito header h3 {
   color: #FFF;
   font-size: .9em;
@@ -243,7 +243,7 @@ body > footer .meta a:hover {
   margin-right: 5px;
   background-color: #FB0;
 }
-/* line 161, ../../sass/lagden/site.scss */
+/* line 159, ../../sass/lagden/site.scss */
 .listing > article .efeito header h3 a {
   white-space: nowrap;
   overflow: hidden;
@@ -254,18 +254,18 @@ body > footer .meta a:hover {
   color: white;
   display: block;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .listing > article .efeito header h3 a:hover {
   text-decoration: underline;
 }
-/* line 168, ../../sass/lagden/site.scss */
+/* line 166, ../../sass/lagden/site.scss */
 .listing > article .efeito header p {
   font-size: .8em;
   background-color: #EEE0C3;
   color: #333333;
   padding: 1em .5em;
 }
-/* line 173, ../../sass/lagden/site.scss */
+/* line 171, ../../sass/lagden/site.scss */
 .listing > article .efeito header p a {
   white-space: nowrap;
   overflow: hidden;
@@ -276,16 +276,16 @@ body > footer .meta a:hover {
   color: #333333;
   display: block;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .listing > article .efeito header p a:hover {
   text-decoration: underline;
 }
-/* line 181, ../../sass/lagden/site.scss */
+/* line 179, ../../sass/lagden/site.scss */
 .listing > article .efeito footer {
   text-align: center;
   margin: 1.5em 0;
 }
-/* line 184, ../../sass/lagden/site.scss */
+/* line 182, ../../sass/lagden/site.scss */
 .listing > article .efeito footer a {
   padding: 0.6em 0.7em 0.6em 0.7em;
   border: 1px solid transparent;
@@ -300,19 +300,21 @@ body > footer .meta a:hover {
   outline: none;
 }
 
-/* line 200, ../../sass/lagden/site.scss */
+/* line 198, ../../sass/lagden/site.scss */
 .frmBusca {
   font-size: .9em;
 }
-/* line 202, ../../sass/lagden/site.scss */
+/* line 200, ../../sass/lagden/site.scss */
 .frmBusca ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 208, ../../sass/lagden/site.scss */
+/* line 207, ../../sass/lagden/site.scss */
+.frmBusca ul li input[type=text],
 .frmBusca ul li select {
   width: 90%;
+  padding: .5em;
 }
 /* line 214, ../../sass/lagden/site.scss */
 .frmBusca > ul > li {
@@ -324,23 +326,24 @@ body > footer .meta a:hover {
 .frmBusca > ul > li > label {
   font-size: .9em;
   display: block;
+  margin-bottom: .3em;
   font-weight: bold;
 }
-/* line 223, ../../sass/lagden/site.scss */
+/* line 224, ../../sass/lagden/site.scss */
 .frmBusca > ul > li .btn, body > nav .wrapper ul.menu .frmBusca > ul > li a {
   border-style: none;
 }
-/* line 228, ../../sass/lagden/site.scss */
+/* line 229, ../../sass/lagden/site.scss */
 .frmBusca > ul ul.radio_list li {
   float: left;
   padding: .5em;
   margin: 0;
 }
-/* line 232, ../../sass/lagden/site.scss */
+/* line 233, ../../sass/lagden/site.scss */
 .frmBusca > ul ul.radio_list li label {
   font-size: .9em;
 }
-/* line 238, ../../sass/lagden/site.scss */
+/* line 239, ../../sass/lagden/site.scss */
 .frmBusca > ul ul.checkbox_list li {
   float: left;
   width: 48%;
@@ -348,18 +351,18 @@ body > footer .meta a:hover {
   margin: 0;
 }
 
-/* line 248, ../../sass/lagden/site.scss */
+/* line 249, ../../sass/lagden/site.scss */
 #bairros_inline {
   font-size: .8em;
   display: none;
 }
-/* line 252, ../../sass/lagden/site.scss */
+/* line 253, ../../sass/lagden/site.scss */
 #bairros_inline ul.checkbox_list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 257, ../../sass/lagden/site.scss */
+/* line 258, ../../sass/lagden/site.scss */
 #bairros_inline ul.checkbox_list li {
   float: left;
   width: 48%;

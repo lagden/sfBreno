@@ -21,6 +21,10 @@
                     <td><?php echo $estate->joinDisponibilidades ?></td>
                 </tr>
                 <tr>
+                    <td>Bairro</td>
+                    <td><?php echo $estate->Neighborhood->name ?></td>
+                </tr>
+                <tr>
                     <td>Suítes</td>
                     <td><?php echo $estate->suites ?></td>
                 </tr>
