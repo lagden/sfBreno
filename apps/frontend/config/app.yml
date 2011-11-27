@@ -1,5 +1,23 @@
-# You can find more information about this file on the symfony website:
-# http://www.symfony-project.org/reference/1_4/en/11-App
+# all:
+#   .array:
+#     creditcards:
+#       fake:             false
+#       visa:             true
+#       americanexpress:  true
 
-# default values
-#all:
+# [php]
+# print_r(sfConfig::get('app_creditcards'));
+# 
+# Array(
+#   [fake] => false
+#   [visa] => true
+#   [americanexpress] => true
+# )
+
+all:
+  master_email: lagden@gmail.com
+  # Filter General for Estate
+  formfilter_estate: EstateFormFilter
+  route_form_filter: estate_filter
+  search:
+    max_per_page: 18

@@ -23,7 +23,7 @@ class EstateFormFilter extends BaseEstateFormFilter
             'default' => 1,
         ));
         
-        $this->widgetSchema['disponibilidade'] = new sfWidgetFormDoctrineChoice(array(
+        $this->widgetSchema['Disponibilidades'] = new sfWidgetFormDoctrineChoice(array(
             'model' => $this->getRelatedModelName('Disponibilidades'),
             'multiple' => false,
             'expanded' => false,
@@ -34,37 +34,37 @@ class EstateFormFilter extends BaseEstateFormFilter
             'choices' => array('Indiferente')
         ));
         
-        $this->widgetSchema['bairros'] = new sfWidgetFormDoctrineChoice(array(
+        $this->widgetSchema['neighborhood_id'] = new sfWidgetFormDoctrineChoice(array(
             'model' => $this->getRelatedModelName('Neighborhood'),
             'method' => 'getNeighborhoodCity',
             'multiple' => true,
             'expanded' => true,
         ));
         
-        $this->widgetSchema['suite'] = new sfWidgetFormChoice(array(
+        $this->widgetSchema['suites'] = new sfWidgetFormChoice(array(
             'choices'  => Doctrine_Core::getTable('Estate')->getNumbers(),
         ));
         
-        $this->widgetSchema['quarto'] = new sfWidgetFormChoice(array(
+        $this->widgetSchema['quartos'] = new sfWidgetFormChoice(array(
             'choices'  => Doctrine_Core::getTable('Estate')->getNumbers(),
         ));
         
-        $this->widgetSchema['vaga'] = new sfWidgetFormChoice(array(
+        $this->widgetSchema['vagas'] = new sfWidgetFormChoice(array(
             'choices'  => Doctrine_Core::getTable('Estate')->getNumbers(),
         ));
         
-        $this->widgetSchema['area'] = new sfWidgetFormChoice(array(
+        $this->widgetSchema['area_util'] = new sfWidgetFormChoice(array(
             'choices'  => Doctrine_Core::getTable('Estate')->getArea(),
         ));
         
         $this->widgetSchema['type_id']->setLabel('Selecione uma opção');
-        $this->widgetSchema['disponibilidade']->setLabel('Disponibilidade');
+        $this->widgetSchema['Disponibilidades']->setLabel('Disponibilidade');
         $this->widgetSchema['valor']->setLabel('Valor');
-        $this->widgetSchema['bairros']->setLabel('Bairros');
-        $this->widgetSchema['suite']->setLabel('Suíte');
-        $this->widgetSchema['quarto']->setLabel('Quarto');
-        $this->widgetSchema['vaga']->setLabel('Vaga');
-        $this->widgetSchema['area']->setLabel('Área');
+        $this->widgetSchema['neighborhood_id']->setLabel('Bairros');
+        $this->widgetSchema['suites']->setLabel('Suítes');
+        $this->widgetSchema['quartos']->setLabel('Quartos');
+        $this->widgetSchema['vagas']->setLabel('Vagas');
+        $this->widgetSchema['area_util']->setLabel('Área');
         
         // Validation
         // Default message errors

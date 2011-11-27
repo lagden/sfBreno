@@ -12,5 +12,12 @@
 */
 class Estate extends BaseEstate
 {
-    
+    public function getJoinDisponibilidades()
+    {
+        $arr = array();
+        foreach ($this->Disponibilidades as $disponibilidade) {
+            $arr[]=$disponibilidade->name;
+        }
+        return join(', ',$arr);
+    }
 }

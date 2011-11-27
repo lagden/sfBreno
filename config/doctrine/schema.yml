@@ -127,7 +127,7 @@ Estate:
   indexes:
     estate_index: { fields: [referencia] }
   columns:
-    titulo: { type: string(255), notnull: true, unique: true }
+    titulo: { type: string(255), notnull: true}
     referencia: { type: string(255), notnull: true, unique: true }
     area_util: { type: integer, default: 0 }
     area_total: { type: integer, default: 0 }

@@ -1,18 +1,9 @@
 <?php 
-class estateComponents extends sfComponents
+class estateComponents extends GeneralComponents
 {
-    // public function executeSorting(sfWebRequest $request)
-    // {
-    //     $getUser=sfContext::getInstance()->getUser();
-    //     $this->form = new ImageSortingFormFilter(array(
-    //         'sorting' => $getUser->getAttribute('estate.sorting', sfConfig::get('app_estate_sorting')),
-    //     ));
-    // }
-    
     public function executeFilter(sfWebRequest $request)
     {
-        $getUser=sfContext::getInstance()->getUser();
-        $filters = (array) $getUser->getAttribute('estate.filters');
-        $this->form = new EstateFormFilter($filters);
+        sfConfig::set("formFilter",sfConfig::get("app_formfilter_estate","EstateFormFilter"));
+        $this->form=Filter::execute();
     }
 }

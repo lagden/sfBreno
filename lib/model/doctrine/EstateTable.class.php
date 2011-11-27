@@ -8,65 +8,150 @@
 class EstateTable extends Doctrine_Table
 {
     static public $valor_venda = array(
-        '' => 'Inferente',
+        '' => 'Indiferente',
         '< 250000' => 'até R$250.000',
-        '250000 AND 450000' => 'de R$250.000 até R$450.000',
-        '450000 AND 650000' => 'de R$450.000 até R$650.000',
-        '650000 AND 900000' => 'de R$650.000 até R$900.000',
-        '900000 AND 1500000' => 'de R$900.000 até R$1.500.000',
+        'BETWEEN 250000 AND 450000' => 'de R$250.000 até R$450.000',
+        'BETWEEN 450000 AND 650000' => 'de R$450.000 até R$650.000',
+        'BETWEEN 650000 AND 900000' => 'de R$650.000 até R$900.000',
+        'BETWEEN 900000 AND 1500000' => 'de R$900.000 até R$1.500.000',
         '> 1500000' => 'acima de R$1.500.000',
     );
-    
+
     static public $valor_aluguel = array(
-        '' => 'Inferente',
+        '' => 'Indiferente',
         '< 1500' => 'até R$1.500',
-        '1500 AND 2000' => 'de R$1.500 até R$2.000',
-        '2000 AND 2500' => 'de R$2.000 até R$2.500',
+        'BETWEEN 1500 AND 2000' => 'de R$1.500 até R$2.000',
+        'BETWEEN 2000 AND 2500' => 'de R$2.000 até R$2.500',
         '> 2500' => 'acima de R$2.500',
     );
-    
+
     static public $area = array(
-        '' => 'Inferente',
+        '' => 'Indiferente',
         '< 50' => 'até 50m²',
-        '50 AND 100' => 'de 50m² até 100m²',
-        '100 AND 150' => 'de 100m² até 150m²',
-        '150 AND 200' => 'de 150m² até 200m²',
-        '200 AND 250' => 'de 200m² até 250m²',
-        '250 AND 300' => 'de 250m² até 300m²',
+        'BETWEEN 50 AND 100' => 'de 50m² até 100m²',
+        'BETWEEN 100 AND 150' => 'de 100m² até 150m²',
+        'BETWEEN 150 AND 200' => 'de 150m² até 200m²',
+        'BETWEEN 200 AND 250' => 'de 200m² até 250m²',
+        'BETWEEN 250 AND 300' => 'de 250m² até 300m²',
         '> 300' => 'acima de 300m²',
     );
-    
+
     static public $numbers = array(
-        '' => 'Inferente',
-        '1' => '1',
-        '2' => '2',
-        '3' => '3',
-        '4' => '4',
+        '' => 'Indiferente',
+        '= 1' => '1',
+        '= 2' => '2',
+        '= 3' => '3',
+        '= 4' => '4',
         '> 4' => '5 ou mais',
     );
-    
+
     public function getValorVenda()
     {
         return self::$valor_venda;
     }
-    
+
     public function getValorAluguel()
     {
         return self::$valor_aluguel;
     }
-    
+
     public function getArea()
     {
         return self::$area;
     }
-    
+
     public function getNumbers()
     {
         return self::$numbers;
     }
-    
+
+    // Instancia
     public static function getInstance()
     {
         return Doctrine_Core::getTable('Estate');
+    }
+    
+    // Pega imoveis aleatóriamente
+    public function getRnd($limit=12, Doctrine_Query $q = null)
+    {
+        if (null === $q) $q = $this->getListQuery();
+        $alias=$q->getRootAlias();
+        
+        $q->orderBy("RAND()");
+        $q->limit($limit);
+
+        return $q;
+    }
+    
+    // Pega imoveis em destaque
+    public function getDestaques($limit=false,Doctrine_Query $q = null)
+    {
+        if (null === $q) $q = $this->getListQuery();
+        $alias=$q->getRootAlias();
+        
+        $q->andWhere("{$alias}.destaque = ?", 1);
+        $q->orderBy("{$alias}.ordem");
+        if($limit) $q->limit($limit);
+        return $q;
+    }
+    
+    // Filtro Frontend
+    public function getFrontListFilter(array $filters, Doctrine_Query $q = null)
+    {
+        if (null === $q) $q = $this->getListQuery();
+        $alias=$q->getRootAlias();
+        
+        // print_r($filters);die;
+        
+        if (isset($filters))
+        {
+            foreach($filters as $k => $v)
+            {
+                switch($k)
+                {
+                    case "type_id":
+                    $q->orWhere("{$alias}.{$k} = ?", $v);
+                    break;
+                    
+                    case "Disponibilidades":
+                    $q->innerJoin("{$alias}.$k j");
+                    $q->orWhere("j.id = ?", $v);
+                    break;
+                    
+                    case "valor":
+                    if(isset($filters['Disponibilidades']) && $v)
+                    {
+                        ($filters['Disponibilidades'] == 1) ? $q->orWhere("{$alias}.price_sale {$v}") : $q->orWhere("{$alias}.price_rent {$v}");
+                    }
+                    break;
+                    
+                    case "neighborhood_id":
+                    $q->orWhereIn("{$alias}.{$k}", $v);
+                    break;
+                    
+                    default:
+                    if($v) $q->orWhere("{$alias}.{$k} {$v}");
+                }
+            }
+        }
+        
+        // Sort
+        $order=sfContext::getInstance()->getUser()->getAttribute(sfConfig::get('order_by'),'id');
+        $direction=sfContext::getInstance()->getUser()->getAttribute(sfConfig::get('order_by_direction'),'DESC');
+        $q->orderBy("{$alias}.{$order} $direction");
+
+        return $q;
+    }
+
+    // Filtro Backend
+    public function getListFilter(array $filters, Doctrine_Query $q = null)
+    {
+        return Filter::query($filters,sfContext::getInstance()->getUser()->getAttribute('search_list.fields'),static::getInstance());
+    }
+
+    public function getListQuery(Doctrine_Query $q = null)
+    {
+        if(null === $q)$q = $this->createQuery('a');
+        return $q;
     }
 }

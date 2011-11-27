@@ -1,45 +1,42 @@
-<!-- apps/frontend/modules/job/templates/_form.php -->
 <?php use_stylesheets_for_form($form) ?>
 <?php use_javascripts_for_form($form) ?>
- 
-<?php // echo form_tag_for($form, 'homepage') ?>
-<?php echo $form->renderFormTag(url_for('homepage'),array('method' => 'post','class' => 'frmBusca')) ?>
+<?php echo $form->renderFormTag(url_for(sfConfig::get('app_route_form_filter')),array('method' => 'post','class' => 'frmBusca','id'=>'frmBuscaImoveis')) ?>
     <ul>
         <li>
             <?php echo $form['type_id']->renderLabel(); ?>
             <?php echo $form['type_id']->render(); ?>
         </li>
         <li>
-            <?php echo $form['disponibilidade']->renderLabel(); ?>
-            <?php echo $form['disponibilidade']->render(); ?>
+            <?php echo $form['Disponibilidades']->renderLabel(); ?>
+            <?php echo $form['Disponibilidades']->render(array('title'=>'Disponibilidade','class'=>'required','data-url'=>url_for('estate_disponibilidade'))); ?>
         </li>
         <li>
             <?php echo $form['valor']->renderLabel(); ?>
             <?php echo $form['valor']->render(); ?>
         </li>
-        <li>
-            <?php echo $form['bairros']->renderLabel(); ?>
+        <li id="bairros_inline_content">
+            <?php echo $form['neighborhood_id']->renderLabel(); ?>
             <?php echo content_tag('button', 'Mostrar os bairros', array('type' => 'button', 'class' => 'btn orange button showBairro', "data-href"=>"#bairros_inline")) ?>
             <div id="bairros_inline">
                 <h2>Selecione os bairros</h2>
-                <?php echo $form['bairros']->render(); ?>
+                <?php echo $form['neighborhood_id']->render(); ?>
             </div>
         </li>
         <li>
-            <?php echo $form['suite']->renderLabel(); ?>
-            <?php echo $form['suite']->render(); ?>
+            <?php echo $form['suites']->renderLabel(); ?>
+            <?php echo $form['suites']->render(); ?>
         </li>
         <li>
-            <?php echo $form['quarto']->renderLabel(); ?>
-            <?php echo $form['quarto']->render(); ?>
+            <?php echo $form['quartos']->renderLabel(); ?>
+            <?php echo $form['quartos']->render(); ?>
         </li>
         <li>
-            <?php echo $form['vaga']->renderLabel(); ?>
-            <?php echo $form['vaga']->render(); ?>
+            <?php echo $form['vagas']->renderLabel(); ?>
+            <?php echo $form['vagas']->render(); ?>
         </li>
         <li>
-            <?php echo $form['area']->renderLabel(); ?>
-            <?php echo $form['area']->render(); ?>
+            <?php echo $form['area_util']->renderLabel(); ?>
+            <?php echo $form['area_util']->render(); ?>
         </li>
         <li class="">
             <?php echo content_tag('button', 'Encontrar', array('type' => 'submit', 'class' => 'btn orange button')) ?>

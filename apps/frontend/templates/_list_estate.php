@@ -1,56 +1,72 @@
-<?php
-$title="Amplo apartamento com 3 dormitorios em higienopolis";
-$description="APARTAMENTO REFORMADISSIMO!! Excelente Localização, Rua tranquila e arborizada, Predio recuado, portaria 24 horas, Frete, Face Norte, arejado, Janelões, pé direito alto, Amplo Living para 3 ambientes, porcelanato, 3 dormitorios sendo 1 suite com Hidro, closet, cozinha planejada, copa, area de serviço!!!! Venha conhecer!!!";
-while($i){
-    $title="{$title} Amplo apartamento com 3 dormitorios em higienopolis";
-    $i--;
-}
-?>
+<?php $qs=array('slug'=>$estate->slug); ?>
 <article>
     <div class="efeito">
-        <a href="#"><?php echo image_tag('tmp/286.jpg',array('alt'=>$title)); ?></a>
+        <?php echo link_to(image_tag('tmp/286.jpg',array('alt'=>$estate->titulo)),'estate_show',$qs); ?>
         <header>
-            <h3><a href="#"><?php echo $title ?></a></h3>
-            <p><a href="#" class="brenoTips" title="<?php echo $description ?>"><?php echo $description ?></a></p>
+            <h3><?php echo link_to("{$estate->titulo}",'estate_show',$qs); ?></h3>
+            <p><?php echo link_to("{$estate->descricao}",'estate_show',$qs,array('class'=>'brenoTips','title'=>$estate->descricao)); ?></p>
         </header>
         <table>
             <tbody>
                 <tr>
                     <td>Código</td>
-                    <td><a href="#">327</a></td>
+                    <td><a href="#"><?php echo $estate->referencia ?></a></td>
                 </tr>
                 <tr>
                     <td>Tipo</td>
-                    <td>Apartamento</td>
+                    <td><?php echo $estate->Type->name ?></td>
                 </tr>
                 <tr>
                     <td>Disponível</td>
-                    <td>Venda ou Locação</td>
+                    <td><?php echo $estate->joinDisponibilidades ?></td>
                 </tr>
                 <tr>
                     <td>Suítes</td>
-                    <td>1</td>
+                    <td><?php echo $estate->suites ?></td>
                 </tr>
                 <tr>
                     <td>Quartos</td>
-                    <td>3</td>
+                    <td><?php echo $estate->quartos ?></td>
                 </tr>
                 <tr>
                     <td>Vagas</td>
-                    <td>1</td>
+                    <td><?php echo $estate->vagas ?></td>
                 </tr>
                 <tr>
                     <td>Área útil</td>
-                    <td>230</td>
+                    <td><?php echo $estate->area_util ?></td>
                 </tr>
-                <tr>
-                    <td>Valor</td>
-                    <td>R$ 1.150.000,00</td>
-                </tr>
+                <?php foreach ($estate->Disponibilidades as $d): ?>
+                    <?php
+                    $label="";
+                    $value="";
+                    switch($d->id)
+                    {
+                        case 1:
+                        $label="Valor para compra";
+                        $value="{$estate->price_sale}";
+                        break;
+                        
+                        case 2:
+                        $label="Valor para locação";
+                        $value="{$estate->price_rent}";
+                        break;
+                        
+                        default:
+                        $label=$value=false;
+                    }
+                    ?>
+                    <?php if ($label && $value): ?>
+                        <tr>
+                            <td><?php echo $label; ?></td>
+                            <td>R$ <?php echo number_format($value, 2, ',', '.'); ?></td>
+                        </tr>
+                    <?php endif ?>
+                <?php endforeach ?>
             </tbody>
         </table>
         <footer>
-            <a href="/works/breno/show/amplo-apartamento-com-3-dormitorios-em-higienopolis" class="btn orange">+ Fotos e Detalhes</a>
+            <?php echo link_to("+ Fotos e Detalhes",'estate_show',$qs,array('class'=>'btn orange')); ?>
         </footer>
     </div>
 </article>

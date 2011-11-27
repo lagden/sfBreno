@@ -6,11 +6,64 @@ homepage:
   url:   /
   param: { module: home, action: index }
 
-# generic rules
-# please, remove them by adding more specific rules
-default_index:
-  url:   /:module
-  param: { action: index }
+# Module Estate
+estate:
+  class: sfDoctrineRouteCollection
+  options:
+    model: Estate
+    with_show: false
+    prefix_path: /imoveis
+    collection_actions:
+      filter: post
+      clear: get
 
-default:
-  url:   /:module/:action/*
+estate_page:
+  url: /imoveis/busca/pagina/:pagina
+  param: { module: estate, action: index }
+  requirements:
+    sf_method: [GET]
+
+estate_sort:
+  url: /imoveis/busca/ordena
+  param: { module: estate, action: sort }
+  requirements:
+    sf_method: [POST]
+
+estate_disponibilidade:
+  url: /imoveis/disponibilidade
+  param: { module: estate, action: disponibilidade }
+  requirements:
+    sf_method: [POST]
+
+estate_referencia:
+  url: /imoveis/referencia
+  param: { module: estate, action: referencia }
+  requirements:
+    sf_method: [POST]
+
+estate_show:
+  url: /imoveis/mostra/:slug
+  param: { module: estate, action: show }
+  requirements:
+    sf_method: [GET]
+    
+# Routes do site antigo (Evitar erros)
+estate_old_busca:
+  url: /busca
+  param: { module: estate, action: index }
+  requirements:
+    sf_method: [GET]
+
+estate_old_page:
+  url: /busca/page/:pagina
+  param: { module: estate, action: index }
+  requirements:
+    sf_method: [GET]
+    
+estate_old_show:
+  url: /show/:slug
+  param: { module: estate, action: show }
+  requirements:
+    sf_method: [GET]
+
+# End old Routes

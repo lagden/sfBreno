@@ -14,11 +14,15 @@ default:
   stylesheets:
     - screen.css
     - print.css
+    # Mootools Roar CSS
+    - /js/vendor/mootools/plugins/Roar/Roar.css
 
   javascripts:
     # Mootools
     - vendor/mootools/mootools-core.js
     - vendor/mootools/mootools-more.js
+    # Mootools - Roar
+    - vendor/mootools/plugins/Roar/Roar.js
     # jQuery
     - vendor/jquery/jquery.js
     # jQuery - Plugins
