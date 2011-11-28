@@ -49,7 +49,7 @@ class EstateTable extends Doctrine_Table
         'id' => 'Ordernar resultados por...',
         'price_sale' => 'Preço Venda',
         'price_rent' => 'Preço Aluguel',
-        'area_util' => 'Área Útil',
+        //'area_util' => 'Área Útil',
         'neighborhood_id' => 'Bairro',
         'quartos' => 'Nº de Quartos',
         'vagas' => 'Nº de Vagas na garagem',

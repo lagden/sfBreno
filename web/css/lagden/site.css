@@ -4,6 +4,86 @@
   src: url('../fonts/sidewalk-webfont.eot?iefix') format('eot'), url('../fonts/sidewalk-webfont.woff') format('woff'), url('../fonts/sidewalk-webfont.ttf') format('truetype'), url('../fonts/sidewalk-webfont.svg#sidewalk') format('svgm'), url('../fonts/sidewalk-webfont.eot?#iefix') format('embedded-opentype');
 }
 
+/* line 47, ../../sass/lagden/mixin.scss */
+.zebraNaTabela, .listing > article .efeito > table, .showDouble > table {
+  width: 100%;
+  margin: 1em 0;
+  font-size: .8em;
+}
+/* line 52, ../../sass/lagden/mixin.scss */
+.zebraNaTabela tr:nth-child(2n+1), .listing > article .efeito > table tr:nth-child(2n+1), .showDouble > table tr:nth-child(2n+1) {
+  background: #e1e1e1;
+  color: #333;
+}
+/* line 56, ../../sass/lagden/mixin.scss */
+.zebraNaTabela tr:hover, .listing > article .efeito > table tr:hover, .showDouble > table tr:hover {
+  background: #fde3ab;
+  color: #333;
+}
+/* line 60, ../../sass/lagden/mixin.scss */
+.zebraNaTabela tr td, .listing > article .efeito > table tr td, .showDouble > table tr td {
+  width: 46%;
+  padding: 2%;
+  text-align: left;
+}
+/* line 64, ../../sass/lagden/mixin.scss */
+.zebraNaTabela tr td:last-child, .listing > article .efeito > table tr td:last-child, .showDouble > table tr td:last-child {
+  text-align: right;
+}
+/* line 67, ../../sass/lagden/mixin.scss */
+.zebraNaTabela tr td a, .listing > article .efeito > table tr td a, .showDouble > table tr td a {
+  text-decoration: none;
+  color: #333333;
+}
+/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+.zebraNaTabela tr td a:hover, .listing > article .efeito > table tr td a:hover, .showDouble > table tr td a:hover {
+  text-decoration: underline;
+}
+
+/* line 75, ../../sass/lagden/mixin.scss */
+.linkDefaultWhite, body > footer a {
+  text-decoration: none;
+  color: white;
+}
+/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+.linkDefaultWhite:hover, body > footer a:hover {
+  text-decoration: underline;
+}
+/* line 18, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.linkDefaultWhite:visited, body > footer a:visited {
+  color: white;
+}
+/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.linkDefaultWhite:hover, body > footer a:hover {
+  color: #f28510;
+}
+/* line 27, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.linkDefaultWhite:active, body > footer a:active {
+  color: white;
+}
+
+/* line 80, ../../sass/lagden/mixin.scss */
+.linkDefaultBlack, .showDouble a {
+  text-decoration: none;
+  color: #f28510;
+}
+/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+.linkDefaultBlack:hover, .showDouble a:hover {
+  text-decoration: underline;
+}
+/* line 18, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.linkDefaultBlack:visited, .showDouble a:visited {
+  color: #333333;
+}
+/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.linkDefaultBlack:hover, .showDouble a:hover {
+  color: #f28510;
+}
+/* line 27, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.linkDefaultBlack:active, .showDouble a:active {
+  color: #333333;
+}
+
 /* line 5, ../../sass/lagden/site.scss */
 body {
   position: relative;
@@ -112,123 +192,81 @@ body > .container {
 }
 /* line 78, ../../sass/lagden/site.scss */
 body > footer {
-  background: #111;
-  border-top: 1px solid #ccc;
+  font-size: .9em;
+  margin: 0;
+  padding: 2em;
+  color: #BBB;
+  background-color: #363636;
+  border-top: 2px solid #FFF;
   -moz-box-shadow: 0 4em 3em 3.5em #111111;
   -webkit-box-shadow: 0 4em 3em 3.5em #111111;
   -o-box-shadow: 0 4em 3em 3.5em #111111;
   box-shadow: 0 4em 3em 3.5em #111111;
-  color: #ccc;
-  padding: 3em 0;
 }
-/* line 85, ../../sass/lagden/site.scss */
-body > footer .wrapper p {
-  line-height: normal;
-}
-/* line 90, ../../sass/lagden/site.scss */
-body > footer .meta p {
-  border-top: 1px dashed #333;
-  padding-top: .5em;
-  margin-bottom: .5em;
+/* line 89, ../../sass/lagden/site.scss */
+body > footer .fx {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 49%;
 }
 /* line 94, ../../sass/lagden/site.scss */
-body > footer .meta p:first-child {
-  border-top: none;
-  padding-top: 0;
-}
-/* line 99, ../../sass/lagden/site.scss */
-body > footer .meta a {
-  color: #cc0000;
-}
-/* line 24, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-body > footer .meta a:hover {
-  color: #333333;
+body > footer .fx:last-child {
+  margin-right: 0;
+  margin-left: 1%;
 }
 
-/* line 105, ../../sass/lagden/site.scss */
+/* line 103, ../../sass/lagden/site.scss */
 .listing {
   position: relative;
 }
-/* line 107, ../../sass/lagden/site.scss */
+/* line 105, ../../sass/lagden/site.scss */
 .listing > article {
   background-color: #f1f1f1;
   margin-bottom: 45px;
   display: inline;
   float: left;
   margin-right: 20px;
-  width: 300px;
+  width: 220px;
 }
 /* line 147, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .listing > article {
   overflow-x: hidden;
 }
-/* line 111, ../../sass/lagden/site.scss */
-.listing > article:nth-child(3n) {
+/* line 109, ../../sass/lagden/site.scss */
+.listing > article:nth-child(4n) {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 300px;
+  width: 220px;
 }
 /* line 147, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html .listing > article:nth-child(3n) {
+* html .listing > article:nth-child(4n) {
   overflow-x: hidden;
 }
-/* line 114, ../../sass/lagden/site.scss */
-.listing > article:nth-of-type(3n+1) {
+/* line 112, ../../sass/lagden/site.scss */
+.listing > article:nth-of-type(4n+1) {
   clear: left;
 }
-/* line 117, ../../sass/lagden/site.scss */
+/* line 115, ../../sass/lagden/site.scss */
 .listing > article .efeito {
-  width: 240px;
   border: 3px solid #FFF;
-  margin: 0 auto;
   -moz-border-radius: 0 0 0.5em 0.5em;
   -webkit-border-radius: 0 0 0.5em 0.5em;
   -o-border-radius: 0 0 0.5em 0.5em;
   -ms-border-radius: 0 0 0.5em 0.5em;
   -khtml-border-radius: 0 0 0.5em 0.5em;
   border-radius: 0 0 0.5em 0.5em;
-  -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
 }
-/* line 123, ../../sass/lagden/site.scss */
-.listing > article .efeito > table {
+/* line 119, ../../sass/lagden/site.scss */
+.listing > article .efeito img {
   width: 100%;
-  margin: 1em 0;
-  font-size: .8em;
 }
-/* line 128, ../../sass/lagden/site.scss */
-.listing > article .efeito > table tr:nth-child(2n+1) {
-  background: #e1e1e1;
-  color: #333;
-}
-/* line 132, ../../sass/lagden/site.scss */
-.listing > article .efeito > table tr:hover {
-  background: #fde3ab;
-  color: #333;
-}
-/* line 136, ../../sass/lagden/site.scss */
-.listing > article .efeito > table tr td {
-  width: 46%;
-  padding: 2%;
-  text-align: left;
-}
-/* line 140, ../../sass/lagden/site.scss */
-.listing > article .efeito > table tr td:last-child {
-  text-align: right;
-}
-/* line 143, ../../sass/lagden/site.scss */
-.listing > article .efeito > table tr td a {
-  text-decoration: none;
-  color: #333333;
-}
-/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
-.listing > article .efeito > table tr td a:hover {
-  text-decoration: underline;
-}
-/* line 151, ../../sass/lagden/site.scss */
+/* line 126, ../../sass/lagden/site.scss */
 .listing > article .efeito header h3 {
   color: #FFF;
   font-size: .9em;
@@ -243,49 +281,51 @@ body > footer .meta a:hover {
   margin-right: 5px;
   background-color: #FB0;
 }
-/* line 159, ../../sass/lagden/site.scss */
+/* line 134, ../../sass/lagden/site.scss */
 .listing > article .efeito header h3 a {
   white-space: nowrap;
   overflow: hidden;
   -o-text-overflow: ellipsis;
   -ms-text-overflow: ellipsis;
   text-overflow: ellipsis;
+  -moz-binding: url('../xml/ellipsis.xml#ellipsis');
   text-decoration: none;
   color: white;
   display: block;
 }
-/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .listing > article .efeito header h3 a:hover {
   text-decoration: underline;
 }
-/* line 166, ../../sass/lagden/site.scss */
+/* line 141, ../../sass/lagden/site.scss */
 .listing > article .efeito header p {
   font-size: .8em;
   background-color: #EEE0C3;
   color: #333333;
   padding: 1em .5em;
 }
-/* line 171, ../../sass/lagden/site.scss */
+/* line 146, ../../sass/lagden/site.scss */
 .listing > article .efeito header p a {
   white-space: nowrap;
   overflow: hidden;
   -o-text-overflow: ellipsis;
   -ms-text-overflow: ellipsis;
   text-overflow: ellipsis;
+  -moz-binding: url('../xml/ellipsis.xml#ellipsis');
   text-decoration: none;
   color: #333333;
   display: block;
 }
-/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .listing > article .efeito header p a:hover {
   text-decoration: underline;
 }
-/* line 179, ../../sass/lagden/site.scss */
+/* line 154, ../../sass/lagden/site.scss */
 .listing > article .efeito footer {
   text-align: center;
   margin: 1.5em 0;
 }
-/* line 182, ../../sass/lagden/site.scss */
+/* line 157, ../../sass/lagden/site.scss */
 .listing > article .efeito footer a {
   padding: 0.6em 0.7em 0.6em 0.7em;
   border: 1px solid transparent;
@@ -300,72 +340,93 @@ body > footer .meta a:hover {
   outline: none;
 }
 
-/* line 198, ../../sass/lagden/site.scss */
-.frmBusca {
-  font-size: .9em;
+/* line 171, ../../sass/lagden/site.scss */
+#bairros_inline {
+  font-size: .8em;
+  display: none;
 }
-/* line 200, ../../sass/lagden/site.scss */
-.frmBusca ul {
+/* line 175, ../../sass/lagden/site.scss */
+#bairros_inline ul.checkbox_list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 207, ../../sass/lagden/site.scss */
-.frmBusca ul li input[type=text],
-.frmBusca ul li select {
-  width: 90%;
-  padding: .5em;
-}
-/* line 214, ../../sass/lagden/site.scss */
-.frmBusca > ul > li {
-  margin: 0;
-  padding: .25em;
-  position: relative;
-}
-/* line 218, ../../sass/lagden/site.scss */
-.frmBusca > ul > li > label {
-  font-size: .9em;
-  display: block;
-  margin-bottom: .3em;
-  font-weight: bold;
-}
-/* line 224, ../../sass/lagden/site.scss */
-.frmBusca > ul > li .btn, body > nav .wrapper ul.menu .frmBusca > ul > li a {
-  border-style: none;
-}
-/* line 229, ../../sass/lagden/site.scss */
-.frmBusca > ul ul.radio_list li {
-  float: left;
-  padding: .5em;
-  margin: 0;
-}
-/* line 233, ../../sass/lagden/site.scss */
-.frmBusca > ul ul.radio_list li label {
-  font-size: .9em;
-}
-/* line 239, ../../sass/lagden/site.scss */
-.frmBusca > ul ul.checkbox_list li {
+/* line 180, ../../sass/lagden/site.scss */
+#bairros_inline ul.checkbox_list li {
   float: left;
   width: 48%;
   padding: 1%;
   margin: 0;
 }
 
-/* line 249, ../../sass/lagden/site.scss */
-#bairros_inline {
-  font-size: .8em;
-  display: none;
-}
-/* line 253, ../../sass/lagden/site.scss */
-#bairros_inline ul.checkbox_list {
+/* line 191, ../../sass/lagden/site.scss */
+.frm ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 258, ../../sass/lagden/site.scss */
-#bairros_inline ul.checkbox_list li {
+/* line 199, ../../sass/lagden/site.scss */
+.frm ul li textarea,
+.frm ul li input[type=text],
+.frm ul li select {
+  width: 90%;
+  padding: .5em;
+  font-size: .9em;
+}
+/* line 207, ../../sass/lagden/site.scss */
+.frm > ul > li {
+  margin: 0;
+  padding: .27em;
+  position: relative;
+}
+/* line 211, ../../sass/lagden/site.scss */
+.frm > ul > li > label {
+  font-size: .9em;
+  display: block;
+  margin-bottom: .3em;
+}
+/* line 216, ../../sass/lagden/site.scss */
+.frm > ul > li .btn, body > nav .wrapper ul.menu .frm > ul > li a {
+  border-style: none;
+}
+/* line 221, ../../sass/lagden/site.scss */
+.frm > ul ul.radio_list li {
+  float: left;
+  padding: .5em;
+  margin: 0;
+}
+/* line 225, ../../sass/lagden/site.scss */
+.frm > ul ul.radio_list li label {
+  font-size: .9em;
+}
+/* line 231, ../../sass/lagden/site.scss */
+.frm > ul ul.checkbox_list li {
   float: left;
   width: 48%;
   padding: 1%;
   margin: 0;
+}
+
+/* line 242, ../../sass/lagden/site.scss */
+.frmBusca {
+  font-size: .9em;
+}
+/* line 246, ../../sass/lagden/site.scss */
+.frmBusca > ul > li > label {
+  font-weight: bold;
+}
+
+/* line 253, ../../sass/lagden/site.scss */
+.showDouble {
+  font-size: .9em;
+}
+/* line 258, ../../sass/lagden/site.scss */
+.showDouble > h2 {
+  min-height: 65px;
+  color: #f8b500;
+}
+/* line 262, ../../sass/lagden/site.scss */
+.showDouble > h3 {
+  margin-top: 2em;
+  color: #777;
 }

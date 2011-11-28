@@ -41,6 +41,16 @@ estate_referencia:
   requirements:
     sf_method: [POST]
 
+estate_interessou:
+  url: /imoveis/interessou
+  param: { module: estate, action: contato }
+  requirements:
+    sf_method: [POST]
+
+estate_notfound:
+  url: /imoveis/nao-encontrado
+  param: { module: estate, action: notFound }
+
 estate_show:
   url: /imoveis/mostra/:slug
   param: { module: estate, action: show }
@@ -65,5 +75,17 @@ estate_old_show:
   param: { module: estate, action: show }
   requirements:
     sf_method: [GET]
-
 # End old Routes
+
+# Modulo contato
+contato:
+  url: /fale-conosco
+  param: { module: contato, action: index }
+  requirements:
+    sf_method: [POST]
+
+contato_envia:
+  url: /fale-conosco/envia
+  param: { module: contato, action: contato }
+  requirements:
+    sf_method: [POST]

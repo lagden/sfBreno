@@ -6,7 +6,7 @@
             <?php echo $form['referencia']->renderLabel(); ?>
             <?php echo $form['referencia']->render(array('class'=>'required','title'=>$form['referencia']->renderLabelName())); ?>
         </li>
-        <li class="">
+        <li>
             <?php echo content_tag('button', 'Encontrar', array('type' => 'submit', 'class' => 'btn orange button')) ?>
         </li>
     </ul>

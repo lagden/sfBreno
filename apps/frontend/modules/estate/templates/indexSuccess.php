@@ -1,26 +1,15 @@
 <div class="container">
     <div class="clearfix">
-        <div id="accordionFormResult">
-            <h2 class="btn orange">Comprar ou Alugar</h2>
-            <div class="content">
-                <div><?php include_component('estate', 'Filter'); ?></div>
-            </div>
-            <h2 class="btn orange">Referência</h2>
-            <div class="content">
-                <div><?php include_component('estate', 'Referencia'); ?></div>
-            </div>
-        </div>
+        <?php include_partial('global/accordion'); ?>
     </div>
-    
     <div class="clearfix">
-        <div class="grid_3 searchResultado">
+        <div class="grid_4 searchResultado">
             <p>Total de imóveis encontrado: <?php echo $pager->count(); ?></p>
         </div>
-        <div class="grid_3 sortingResultado">
+        <div class="grid_4 sortingResultado">
             <p class="right"><?php include_component('estate', 'Sorting'); ?></p>
         </div>
     </div>
-    
     <div class="clearfix listing someMargin top">
         <?php foreach($pager->getResults() as $estate) include_partial('global/list_estate',array('estate'=>$estate)); ?>
     </div>

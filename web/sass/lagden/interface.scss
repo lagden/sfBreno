@@ -31,10 +31,12 @@
         &:focus{ @extend .form_estiloso_focus; }
         &:disabled{ @extend .form_estiloso_disabled; };
     }
+    
     select,
     button{
         &:disabled{ @extend .form_estiloso_disabled; };
     }
+    
     input{
         &[type=file],
         &[type=text],
@@ -165,6 +167,7 @@ div.toolTip{
         position: relative;
         cursor: pointer;
         > a{
+            font-size:.9em;
             display: block;
             padding: 0 15px;
             margin-right: 2px;
@@ -195,7 +198,8 @@ div.toolTip{
         padding:.5em;
         background:#FFF;
         display: none;
-        min-height:370px;
+        // colocar no mq
+        min-height:391px;
     }
     > .active{ display: block; }
 }

@@ -1,6 +1,6 @@
 <?php use_stylesheets_for_form($form) ?>
 <?php use_javascripts_for_form($form) ?>
-<?php echo $form->renderFormTag(url_for(sfConfig::get('app_route_form_filter')),array('method' => 'post','class' => 'frmBusca','id'=>'frmBuscaImoveis')) ?>
+<?php echo $form->renderFormTag(url_for(sfConfig::get('app_route_form_filter')),array('method' => 'post','class' => 'frmBusca frm','id'=>'frmBuscaImoveis')) ?>
     <ul>
         <li>
             <?php echo $form['type_id']->renderLabel(); ?>
@@ -34,11 +34,13 @@
             <?php echo $form['vagas']->renderLabel(); ?>
             <?php echo $form['vagas']->render(); ?>
         </li>
+        <!-- area_util
         <li>
-            <?php echo $form['area_util']->renderLabel(); ?>
-            <?php echo $form['area_util']->render(); ?>
+            <?php // echo $form['area_util']->renderLabel(); ?>
+            <?php // echo $form['area_util']->render(); ?>
         </li>
-        <li class="">
+         -->
+        <li>
             <?php echo content_tag('button', 'Encontrar', array('type' => 'submit', 'class' => 'btn orange button')) ?>
         </li>
     </ul>

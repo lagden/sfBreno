@@ -14,6 +14,11 @@ class estateComponents extends GeneralComponents
         $this->form=new ReferenciaForm();
     }
     
+    public function executeContato(sfWebRequest $request)
+    {
+        $this->form=new ContatoForm();
+    }
+    
     public function executeSorting(sfWebRequest $request)
     {
         $this->form=new SortingForm(

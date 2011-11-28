@@ -76,27 +76,25 @@ body{
     }
     
     > footer{
-        background: #111;
-        border-top: 1px solid #ccc;
+        font-size:.9em;
+        margin:0;
+        padding:2em;
+        color:#BBB;
+        background-color: $darkgray;
+        border-top: 2px solid #FFF;
         @include single-box-shadow(#111, 0, 4em, 3em, 3.5em);
-        color: #ccc;
-        padding: 3em 0;
-        .wrapper{
-            p{
-                line-height:normal;
-            }
+        a{
+            @extend .linkDefaultWhite;
         }
-        .meta{
-            p{
-                border-top: 1px dashed #333;
-                padding-top: .5em;
-                margin-bottom: .5em;
-                &:first-child{
-                    border-top: none;
-                    padding-top: 0;
-                }
+        .fx{
+            display: inline;
+            float: left;
+            margin-right: 1%;
+            width: 49%;
+            &:last-child{
+                margin-right: 0;
+                margin-left: 1%;
             }
-            a{ @include link-colors(#c00, $mainColor) };
         }
     }
 }
@@ -108,44 +106,21 @@ body{
         background-color: #f1f1f1;
         margin-bottom:45px;
         @include column(2);
-        &:nth-child(3n){
+        &:nth-child(4n){
             @include column(2,true);
         }
-        &:nth-of-type(3n+1){
+        &:nth-of-type(4n+1){
             clear: left;
         }
         .efeito{
-            width:240px;
             border:3px solid #FFF;
-            margin:0 auto;
             @include border-radius(0 0 .5em .5em);
-            @include single-box-shadow(rgba(0, 0, 0, .5), 0, 0px, 10px);
-            > table{
+            @include single-box-shadow(rgba(0, 0, 0, .2), 0, 0px, 10px);
+            img{
                 width:100%;
-                margin:1em 0;
-                font-size:.8em;
-                tr{
-                    &:nth-child(2n+1){
-                        background:#e1e1e1;
-                        color:#333;
-                    }
-                    &:hover{
-                      background:#fde3ab;
-                      color:#333
-                    }
-                    td{
-                        width:46%;
-                        padding:2%;
-                        text-align:left;
-                        &:last-child{
-                            text-align:right;
-                        }
-                        a{
-                            @include hover-link;
-                            @include link_colors($mainColor);
-                        }
-                    }
-                }
+            }
+            > table{
+                @extend .zebraNaTabela;
             }
             header{
                 h3{
@@ -180,46 +155,63 @@ body{
                 text-align:center;
                 margin:1.5em 0;
                 a{
-                    // @extend .btn.orange;
                     padding:0.6em 0.7em 0.6em 0.7em;
                     border:1px solid transparent;
                     @include border-radius(4px);
                     font-weight: bold;
                     text-decoration:none;
                     outline:none;
-                    // color:#FFF;
                 }
             }
         }
     }
 }
 
-// Form Busca
-.frmBusca{
-    font-size:.9em;
+// Fancybox Bairro
+#bairros_inline{
+    @extend .clearfix;
+    font-size:.8em;
+    display:none;
+    ul.checkbox_list{
+        margin:0;
+        padding:0;
+        list-style-type:none;
+        @extend .clearfix;
+        li{
+            float:left;
+            width:48%;
+            padding:1%;
+            margin:0;
+        }
+    }
+}
+
+// Form Geral
+.frm{
     ul{
         margin:0;
         padding:0;
         list-style-type:none;
         @extend .clearfix;
         li{
+            textarea,
             input[type=text],
             select{
                 width:90%;
                 padding:.5em;
+                font-size:.9em;
             }
         }
     }
     > ul{
         > li{
             margin: 0;
-            padding: .25em;
+            padding: .27em;
             position: relative;
             > label{
                 font-size:.9em;
                 display:block;
                 margin-bottom:.3em;
-                font-weight:bold;
             }
             .btn{
                 border-style:none;
@@ -246,20 +238,32 @@ body{
     }
 }
 
-#bairros_inline{
-    @extend .clearfix;
-    font-size:.8em;
-    display:none;
-    ul.checkbox_list{
-        margin:0;
-        padding:0;
-        list-style-type:none;
-        @extend .clearfix;
-        li{
-            float:left;
-            width:48%;
-            padding:1%;
-            margin:0;
+// Form Busca
+.frmBusca{
+    font-size:.9em;
+    > ul{
+        > li{
+            > label{
+                font-weight:bold;
+            }
         }
+    }
+}
+
+.showDouble{
+    font-size:.9em;
+    a{
+        @extend .linkDefaultBlack;
+    }
+    > h2{
+        min-height:65px;
+        color:$orangeLight;
+    }
+    > h3{
+        margin-top:2em;
+        color:#777;
+    }
+    > table{
+        @extend .zebraNaTabela;
     }
 }

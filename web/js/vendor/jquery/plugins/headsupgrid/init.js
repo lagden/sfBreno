@@ -5,10 +5,22 @@
         {
             pageUnits = 'px';
             colUnits = 'px';
+            
+            // pagewidth = 940;
+            // columns = 6;
+            // columnwidth = 140;
+            // gutterwidth = 20;
+
+            // pagewidth = 940;
+            // columns = 12;
+            // columnwidth = 60;
+            // gutterwidth = 20;
+            
             pagewidth = 940;
-            columns = 6;
-            columnwidth = 140;
+            columns = 8;
+            columnwidth = 100;
             gutterwidth = 20;
+            
             pagetopmargin = 0;
             rowheight = 20;
             gridonload = 'off';

@@ -14,9 +14,19 @@ class Estate extends BaseEstate
 {
     public function getJoinDisponibilidades()
     {
+        return static::getJoin($this->Disponibilidades);
+    }
+    
+    public function getJoinTags()
+    {
+        return static::getJoin($this->Tags);
+    }
+    
+    static public function getJoin($es,$f='name')
+    {
         $arr = array();
-        foreach ($this->Disponibilidades as $disponibilidade) {
-            $arr[]=$disponibilidade->name;
+        foreach ($es as $e) {
+            $arr[]=$e->$f;
         }
         return join(', ',$arr);
     }

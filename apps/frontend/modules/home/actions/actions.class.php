@@ -13,7 +13,7 @@ class homeActions extends sfActions
     public function executeIndex(sfWebRequest $request)
     {
         $estateTable = Doctrine_Core::getTable('Estate');
-        $this->estates = $estateTable->getRnd()->execute();
+        $this->estates = $estateTable->getRnd(12)->execute();
         $this->destaques = $estateTable->getDestaques()->execute();
     }
 }

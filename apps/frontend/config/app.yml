@@ -15,10 +15,23 @@
 # )
 
 all:
-  master_email: lagden@gmail.com
+  seo: 'Apartamentos à venda em Higienópolis e Santa Cecília'
+  master_email: 4nothing@gmail.com # colocar de acordo com o Swift_SmtpTransport
   # Filter General for Estate
   formfilter_estate: EstateFormFilter
   app_cookie_search_estate: estate_site_search.filters
   route_form_filter: estate_filter
   search:
-    max_per_page: 18
+    max_per_page: 24
+  
+  .array:
+    footer:
+      dono: 'Breno Homara'
+      func: 'Técnico em Transações Imobiliárias'
+      email: 'brenoimoveis@uol.com.br'
+      site: 'Breno Homara Imóveis'
+      creci: 'CRECI 30231'
+      endereco: 'Rua Baronesa de Itú, 275 | Higienópolis | São Paulo | 01231-001'
+      telefone: '(11) 3667-0124 ou (11) 3667-9756'
+      dev: 'Lagden.art.br'
+      devsite: 'http://lagden.art.br/'

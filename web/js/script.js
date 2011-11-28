@@ -31,6 +31,7 @@ window.addEvent('domready',function()
     // Formulario de busca de Imoveis e de buca por Referencia
     ajuda.addFormValidation('frmBuscaImoveis',frmEstateSearch.handler,true);
     ajuda.addFormValidation('frmBuscaImoveisRef',frmEstateSearch.handlerRef,true);
+    ajuda.addFormValidation('frmContatoImovel',frmEstateSearch.handlerContato,true);
     
     // jQuery
     (function($){
@@ -82,6 +83,19 @@ var frmEstateSearch={
     sortingCallBack:function(data)
     {
         (data.success) ? location.reload() : ajuda.alerta('Não foi possível reordenar.');
+    },
+    handlerContato:function(bool,el,submit)
+    {
+        if(bool) frmEstateSearch.interessou();
+    },
+    interessou:function()
+    {
+        ajuda.alerta('Enviando email. Aguarde...');
+        jQuery.post(ajuda.routes('frmContatoImovel'),jQuery("#frmContatoImovel").serialize(),frmEstateSearch.interessouCallBack,'json');
+    },
+    interessouCallBack:function(data)
+    {
+        ajuda.alerta(data.msg);
     },
     handlerRef:function(bool,el,submit)
     {

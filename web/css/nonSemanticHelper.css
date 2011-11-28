@@ -4,6 +4,86 @@
   src: url('fonts/sidewalk-webfont.eot?iefix') format('eot'), url('fonts/sidewalk-webfont.woff') format('woff'), url('fonts/sidewalk-webfont.ttf') format('truetype'), url('fonts/sidewalk-webfont.svg#sidewalk') format('svgm'), url('fonts/sidewalk-webfont.eot?#iefix') format('embedded-opentype');
 }
 
+/* line 47, ../sass/lagden/mixin.scss */
+.zebraNaTabela {
+  width: 100%;
+  margin: 1em 0;
+  font-size: .8em;
+}
+/* line 52, ../sass/lagden/mixin.scss */
+.zebraNaTabela tr:nth-child(2n+1) {
+  background: #e1e1e1;
+  color: #333;
+}
+/* line 56, ../sass/lagden/mixin.scss */
+.zebraNaTabela tr:hover {
+  background: #fde3ab;
+  color: #333;
+}
+/* line 60, ../sass/lagden/mixin.scss */
+.zebraNaTabela tr td {
+  width: 46%;
+  padding: 2%;
+  text-align: left;
+}
+/* line 64, ../sass/lagden/mixin.scss */
+.zebraNaTabela tr td:last-child {
+  text-align: right;
+}
+/* line 67, ../sass/lagden/mixin.scss */
+.zebraNaTabela tr td a {
+  text-decoration: none;
+  color: #333333;
+}
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+.zebraNaTabela tr td a:hover {
+  text-decoration: underline;
+}
+
+/* line 75, ../sass/lagden/mixin.scss */
+.linkDefaultWhite {
+  text-decoration: none;
+  color: white;
+}
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+.linkDefaultWhite:hover {
+  text-decoration: underline;
+}
+/* line 18, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.linkDefaultWhite:visited {
+  color: white;
+}
+/* line 24, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.linkDefaultWhite:hover {
+  color: #f28510;
+}
+/* line 27, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.linkDefaultWhite:active {
+  color: white;
+}
+
+/* line 80, ../sass/lagden/mixin.scss */
+.linkDefaultBlack {
+  text-decoration: none;
+  color: #f28510;
+}
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+.linkDefaultBlack:hover {
+  text-decoration: underline;
+}
+/* line 18, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.linkDefaultBlack:visited {
+  color: #333333;
+}
+/* line 24, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.linkDefaultBlack:hover {
+  color: #f28510;
+}
+/* line 27, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.linkDefaultBlack:active {
+  color: #333333;
+}
+
 /* line 6, ../sass/nonSemanticHelper.scss */
 .ir {
   display: block;

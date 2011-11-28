@@ -7,7 +7,7 @@ use_javascript('vendor/jquery/plugins/flexslider/init.js');
     <div class="clearfix">
         <div class="grid_2">
             <ul class="tabs" data-tabs="tabs">
-                <li class="active"><a href="#compraOuAlugaTab">Comprar ou Alugar</a></li>
+                <li class="active"><a href="#compraOuAlugaTab">Pesquisar</a></li>
                 <li class=""><a href="#referenciaTab">Referência</a></li>
             </ul>
             <div id="my-tab-content" class="tab-content">
@@ -19,7 +19,7 @@ use_javascript('vendor/jquery/plugins/flexslider/init.js');
                 </div>
             </div>
         </div>
-        <div class="grid_4">
+        <div class="grid_6">
             <?php include_partial('global/slider',array('destaques'=>$destaques)); ?>
         </div>
     </div>
@@ -32,7 +32,7 @@ use_javascript('vendor/jquery/plugins/flexslider/init.js');
         ?>
     </div>
     <div class="clearfix someMargin top">
-        <div class="grid_3"><p>Twitter</p></div>
-        <div class="grid_3"><p>Outras</p></div>
+        <div class="grid_4"><p>Twitter</p></div>
+        <div class="grid_4"><p>Outras</p></div>
     </div>
 </div>

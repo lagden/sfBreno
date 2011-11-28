@@ -1,13 +1,22 @@
 @import "compass";
 
 // 960
-$blueprint_grid_columns: 6;
-$blueprint_grid_width: 140px;
+//$blueprint_grid_columns: 6;
+//$blueprint_grid_width: 140px;
+//$blueprint-grid-margin: 20px;
+
+$blueprint_grid_columns: 8;
+$blueprint_grid_width: 100px;
 $blueprint-grid-margin: 20px;
 
+// Ellipsis
+$use-mozilla-ellipsis-binding: true;
+
+// vars
 $mainColor: #333;
 $darkgray: #363636;
 $orange: #F28510;
+$orangeLight: #F8B500;
 $embedFont: "sidewalk";
 $fontsize: "100%/1.5";
 
@@ -33,4 +42,42 @@ $navContainer: 69px;
     width:100%;
     max-width:960px;
     margin:0 auto;
+}
+
+.zebraNaTabela{
+    width:100%;
+    margin:1em 0;
+    font-size:.8em;
+    tr{
+        &:nth-child(2n+1){
+            background:#e1e1e1;
+            color:#333;
+        }
+        &:hover{
+          background:#fde3ab;
+          color:#333
+        }
+        td{
+            width:46%;
+            padding:2%;
+            text-align:left;
+            &:last-child{
+                text-align:right;
+            }
+            a{
+                @include hover-link;
+                @include link_colors($mainColor);
+            }
+        }
+    }
+}
+
+.linkDefaultWhite{
+    @include hover-link;
+    @include link_colors(#FFFFFF,$orange,#FFFFFF,#FFFFFF);
+}
+
+.linkDefaultBlack{
+    @include hover-link;
+    @include link_colors($orange,$orange,$mainColor,$mainColor);
 }

@@ -53,9 +53,9 @@ class EstateFormFilter extends BaseEstateFormFilter
             'choices'  => Doctrine_Core::getTable('Estate')->getNumbers(),
         ));
         
-        $this->widgetSchema['area_util'] = new sfWidgetFormChoice(array(
-            'choices'  => Doctrine_Core::getTable('Estate')->getArea(),
-        ));
+        // $this->widgetSchema['area_util'] = new sfWidgetFormChoice(array(
+        //     'choices'  => Doctrine_Core::getTable('Estate')->getArea(),
+        // ));
         
         $this->widgetSchema['type_id']->setLabel('Selecione uma opção');
         $this->widgetSchema['Disponibilidades']->setLabel('Disponibilidade');
@@ -64,11 +64,13 @@ class EstateFormFilter extends BaseEstateFormFilter
         $this->widgetSchema['suites']->setLabel('Suítes');
         $this->widgetSchema['quartos']->setLabel('Quartos');
         $this->widgetSchema['vagas']->setLabel('Vagas');
-        $this->widgetSchema['area_util']->setLabel('Área');
+        
+        // $this->widgetSchema['area_util']->setLabel('Área');
         
         // Validation
         // Default message errors
         sfValidatorBase::setDefaultMessage('required', 'Este campo é obrigatório.');
         sfValidatorBase::setDefaultMessage('invalid', 'A informação que você digitou é inválida.');
+        
     }
 }

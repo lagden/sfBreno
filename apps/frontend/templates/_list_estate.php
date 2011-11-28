@@ -10,7 +10,7 @@
             <tbody>
                 <tr>
                     <td>Código</td>
-                    <td><a href="#"><?php echo $estate->referencia ?></a></td>
+                    <td><?php echo $estate->referencia ?></td>
                 </tr>
                 <tr>
                     <td>Tipo</td>

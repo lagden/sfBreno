@@ -1,60 +1,26 @@
 // @import "compass/reset";
 @import "compass";
 @import "blueprint/grid";
-@import "lagden/mixin";
 
-// Ellipsis
-$use-mozilla-ellipsis-binding: true;
+// vars and mixins
+@import "lagden/mixin";
 
 .container{
     background:blue;
     padding:10px 0px 10px 10px;
     @include container;
-    .grid_1{
-        @include column(1);
-        &:last-child{
-             @include column(1,true);
-        }
-    }
-    .grid_2{
-        @include column(2);
-        &:last-child{
-             @include column(2,true);
-        }
-    }
-    .grid_3{
-        @include column(3);
-        &:last-child{
-             @include column(3,true);
-        }
-    }
-    .grid_4{
-        @include column(4);
-        &:last-child{
-             @include column(4,true);
-        }
-    }
-    .grid_5{
-        @include column(5);
-        &:last-child{
-             @include column(5,true);
-        }
-    }
-    .grid_6{
-        @include column(6);
-        &:last-child{
-             @include column(6,true);
-        }
-    }
-}
 
-.grid_1,
-.grid_2,
-.grid_3,
-.grid_4,
-.grid_5,
-.grid_6{
-    // background:red;
+    $i: $blueprint_grid_columns;
+    @while $i > 0 {
+        .grid_#{$i} {
+            // background:red;
+            @include column($i);
+            &:last-child{
+                @include column($i,true);
+            }
+        }
+        $i: $i - 1;
+    }
 }
 
 // https://github.com/h5bp/html5-boilerplate

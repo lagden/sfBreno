@@ -1,7 +1,7 @@
 <header>
     <hgroup>
-        <h1>Apartamentos em Higienópolis - Breno Homara Imóveis</h1>
-        <h2>Apartamentos à venda em Higienópolis e Santa Cecília</h2>
+        <h1><?php echo sfConfig::get('title_site',$sf_response->getTitle()) ?></h1>
+        <h2><?php echo sfConfig::get('seo_site',sfConfig::get('app_seo',"Apartamentos à venda em Higienópolis e Santa Cecília")) ?></h2>
     </hgroup>
 </header>
 
@@ -13,7 +13,7 @@
             <li><a href="/busca/" class="selected">Compre ou alugue um im&oacute;vel</a></li>
             <li><a href="/venda-ou-alugue/">Venda ou alugue seu im&oacute;vel</a></li>
             <li><a href="/site/administracao-de-imoveis-e-servicos/">Administra&ccedil;&atilde;o de im&oacute;veis e servi&ccedil;os</a></li>
-            <li><a href="/fale-conosco/">Fale com a Breno Homara Imóveis</a></li>
+            <li><a href="<?php echo url_for('contato'); ?>">Fale com a Breno Homara Imóveis</a></li>
         </ul>
     </div>
 </nav>

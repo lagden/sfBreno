@@ -26,7 +26,8 @@ test:
 dev:
   mailer:
     param:
-      delivery_strategy: none
+      # delivery_strategy: none
+      delivery_strategy: realtime
 
 all:
   routing:
@@ -40,3 +41,30 @@ all:
     param:
       cache_key_use_vary_headers: true
       cache_key_use_host_name:    true
+
+  # Mail
+  mailer:
+    param:
+      transport:
+        class: Swift_SmtpTransport
+        param:
+          host: smtp.gmail.com
+          port: 465
+          encryption: ssl
+          username: 4nothing@gmail.com
+          password: big1buttgirl2
+          
+          # host: homer.seepix.com.br
+          # port: 25 
+          # username: ticket@www2.vivovoce.com.br
+          # password: ticket1212
+
+  # Mail PHP Mail
+  # mailer:
+  #   class: sfMailer
+  #   param:
+  #     logging:           %SF_LOGGING_ENABLED%
+  #     charset:           %SF_CHARSET%
+  #     delivery_strategy: realtime
+  #     transport:
+  #       class: Swift_MailTransport
