@@ -258,6 +258,9 @@ body{
     > h2{
         min-height:65px;
         color:$orangeLight;
+        &.minnulo{
+            min-height:0 !important;
+        }
     }
     > h3{
         margin-top:2em;
@@ -266,4 +269,5 @@ body{
     > table{
         @extend .zebraNaTabela;
     }
+    
 }

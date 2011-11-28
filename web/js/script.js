@@ -32,6 +32,7 @@ window.addEvent('domready',function()
     ajuda.addFormValidation('frmBuscaImoveis',frmEstateSearch.handler,true);
     ajuda.addFormValidation('frmBuscaImoveisRef',frmEstateSearch.handlerRef,true);
     ajuda.addFormValidation('frmContatoImovel',frmEstateSearch.handlerContato,true);
+    ajuda.addFormValidation('frmVendaImovel',frmEstateSearch.handlerVenda,true);
     
     // jQuery
     (function($){
@@ -75,6 +76,7 @@ window.addEvent('domready',function()
 
 // Formulario de Busca de Imoveis
 var frmEstateSearch={
+    // Combo sorting da listagem de imoveis
     sorting:function(v)
     {
         ajuda.alerta('Reordenando...');
@@ -84,33 +86,62 @@ var frmEstateSearch={
     {
         (data.success) ? location.reload() : ajuda.alerta('Não foi possível reordenar.');
     },
-    handlerContato:function(bool,el,submit)
+    
+    // Formulario de venda
+    handlerVenda:function(bool,el,submit)
     {
-        if(bool) frmEstateSearch.interessou();
+        if(bool) frmEstateSearch.venda();
     },
-    interessou:function()
+    venda:function()
     {
+        ajuda.triggerAjax(true);
         ajuda.alerta('Enviando email. Aguarde...');
-        jQuery.post(ajuda.routes('frmContatoImovel'),jQuery("#frmContatoImovel").serialize(),frmEstateSearch.interessouCallBack,'json');
+        jQuery.post(ajuda.routes('frmVendaImovel'),jQuery("#frmVendaImovel").serialize(),frmEstateSearch.vendaCallBack,'json');
     },
-    interessouCallBack:function(data)
+    vendaCallBack:function(data)
     {
+        ajuda.triggerAjax();
+        if(data.success) $('frmVendaImovel').reset();
         ajuda.alerta(data.msg);
     },
+    
+    // Formulario de contato e de interesse
+    handlerContato:function(bool,el,submit)
+    {
+        if(bool) frmEstateSearch.contato();
+    },
+    contato:function()
+    {
+        ajuda.triggerAjax(true);
+        ajuda.alerta('Enviando email. Aguarde...');
+        jQuery.post(ajuda.routes('frmContatoImovel'),jQuery("#frmContatoImovel").serialize(),frmEstateSearch.contatoCallBack,'json');
+    },
+    contatoCallBack:function(data)
+    {
+        ajuda.triggerAjax();
+        if(data.success) $('frmContatoImovel').reset();
+        ajuda.alerta(data.msg);
+    },
+    
+    // Formulario de referencia
     handlerRef:function(bool,el,submit)
     {
         if(bool) frmEstateSearch.referencia(jQuery('#ref_referencia').val());
     },
     referencia:function(v)
     {
+        ajuda.triggerAjax(true);
         ajuda.alerta('Consultando a base. Aguarde...');
         jQuery.post(ajuda.routes('frmBuscaImoveisRef'),{"referencia":v},frmEstateSearch.referenciaCallBack,'json');
     },
     referenciaCallBack:function(data)
     {
+        ajuda.triggerAjax();
         ajuda.alerta('Imóvel encontrado. Aguarde...');
         (data.success) ? location=data.data.url : ajuda.alerta('Imóvel não encontrado.');
     },
+    
+    // Formulario de busca
     handler:function(bool,el,submit)
     {
         if(bool)
@@ -125,6 +156,7 @@ var frmEstateSearch={
     },
     disponibilidade:function(v)
     {
+        ajuda.triggerAjax(true);
         ajuda.alerta('Consultando a base. Aguarde...');
         jQuery.post(ajuda.routes('estate_filters_Disponibilidades'),{"disponibilidade":v},frmEstateSearch.disponibilidadeCallBack,'json');
     },
@@ -143,11 +175,16 @@ var frmEstateSearch={
             c.append('<option value="">Indiferente</option>');
         }
         ajuda.alerta('Valores atualizados com sucesso.');
+        ajuda.triggerAjax();
     }
 }
 
 // Helpers
 var ajuda={
+    triggerAjax:function(act){
+        var bts = jQuery('button:button, button:submit');
+        (act) ? bts.css('opacity',.5).attr('disabled','disabled') : bts.css('opacity',1).removeAttr('disabled');
+    },
     routes:function(r)
     {
         return jQuery('#' + r).data('url');
@@ -180,7 +217,7 @@ var ajuda={
         {
             func = func || Function;
             Locale.use("pt-BR");
-            
+
             var frmVal = new Form.Validator(frm,{
                 stopOnFailure:true,
                 evaluateFieldsOnBlur:false,

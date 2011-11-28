@@ -35,7 +35,7 @@
   text-decoration: none;
   color: #333333;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .zebraNaTabela tr td a:hover, .listing > article .efeito > table tr td a:hover, .showDouble > table tr td a:hover {
   text-decoration: underline;
 }
@@ -45,19 +45,19 @@
   text-decoration: none;
   color: white;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .linkDefaultWhite:hover, body > footer a:hover {
   text-decoration: underline;
 }
-/* line 18, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultWhite:visited, body > footer a:visited {
   color: white;
 }
-/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultWhite:hover, body > footer a:hover {
   color: #f28510;
 }
-/* line 27, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultWhite:active, body > footer a:active {
   color: white;
 }
@@ -67,19 +67,19 @@
   text-decoration: none;
   color: #f28510;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .linkDefaultBlack:hover, .showDouble a:hover {
   text-decoration: underline;
 }
-/* line 18, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultBlack:visited, .showDouble a:visited {
   color: #333333;
 }
-/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultBlack:hover, .showDouble a:hover {
   color: #f28510;
 }
-/* line 27, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultBlack:active, .showDouble a:active {
   color: #333333;
 }
@@ -1183,7 +1183,7 @@ td {
   text-decoration: none;
   color: #333333;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .zebraNaTabela tr td a:hover, .listing > article .efeito > table tr td a:hover, .showDouble > table tr td a:hover {
   text-decoration: underline;
 }
@@ -1193,19 +1193,19 @@ td {
   text-decoration: none;
   color: white;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .linkDefaultWhite:hover, body > footer a:hover {
   text-decoration: underline;
 }
-/* line 18, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultWhite:visited, body > footer a:visited {
   color: white;
 }
-/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultWhite:hover, body > footer a:hover {
   color: #f28510;
 }
-/* line 27, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultWhite:active, body > footer a:active {
   color: white;
 }
@@ -1215,19 +1215,19 @@ td {
   text-decoration: none;
   color: #f28510;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .linkDefaultBlack:hover, .showDouble a:hover {
   text-decoration: underline;
 }
-/* line 18, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultBlack:visited, .showDouble a:visited {
   color: #333333;
 }
-/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultBlack:hover, .showDouble a:hover {
   color: #f28510;
 }
-/* line 27, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultBlack:active, .showDouble a:active {
   color: #333333;
 }
@@ -1566,7 +1566,7 @@ div.toolTip div.tip-text {
   text-decoration: none;
   color: #333333;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .zebraNaTabela tr td a:hover, .listing > article .efeito > table tr td a:hover, .showDouble > table tr td a:hover {
   text-decoration: underline;
 }
@@ -1576,19 +1576,19 @@ div.toolTip div.tip-text {
   text-decoration: none;
   color: white;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .linkDefaultWhite:hover, body > footer a:hover {
   text-decoration: underline;
 }
-/* line 18, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultWhite:visited, body > footer a:visited {
   color: white;
 }
-/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultWhite:hover, body > footer a:hover {
   color: #f28510;
 }
-/* line 27, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultWhite:active, body > footer a:active {
   color: white;
 }
@@ -1598,19 +1598,19 @@ div.toolTip div.tip-text {
   text-decoration: none;
   color: #f28510;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .linkDefaultBlack:hover, .showDouble a:hover {
   text-decoration: underline;
 }
-/* line 18, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultBlack:visited, .showDouble a:visited {
   color: #333333;
 }
-/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultBlack:hover, .showDouble a:hover {
   color: #f28510;
 }
-/* line 27, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultBlack:active, .showDouble a:active {
   color: #333333;
 }
@@ -1824,7 +1824,7 @@ body > footer .fx:last-child {
   color: white;
   display: block;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .listing > article .efeito header h3 a:hover {
   text-decoration: underline;
 }
@@ -1847,7 +1847,7 @@ body > footer .fx:last-child {
   color: #333333;
   display: block;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .listing > article .efeito header p a:hover {
   text-decoration: underline;
 }
@@ -1954,7 +1954,11 @@ body > footer .fx:last-child {
   min-height: 65px;
   color: #f8b500;
 }
-/* line 262, ../sass/lagden/site.scss */
+/* line 261, ../sass/lagden/site.scss */
+.showDouble > h2.minnulo {
+  min-height: 0 !important;
+}
+/* line 265, ../sass/lagden/site.scss */
 .showDouble > h3 {
   margin-top: 2em;
   color: #777;
@@ -1997,7 +2001,7 @@ body > footer .fx:last-child {
   text-decoration: none;
   color: #333333;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .zebraNaTabela tr td a:hover, .listing > article .efeito > table tr td a:hover, .showDouble > table tr td a:hover {
   text-decoration: underline;
 }
@@ -2007,19 +2011,19 @@ body > footer .fx:last-child {
   text-decoration: none;
   color: white;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .linkDefaultWhite:hover, body > footer a:hover {
   text-decoration: underline;
 }
-/* line 18, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultWhite:visited, body > footer a:visited {
   color: white;
 }
-/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultWhite:hover, body > footer a:hover {
   color: #f28510;
 }
-/* line 27, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultWhite:active, body > footer a:active {
   color: white;
 }
@@ -2029,19 +2033,19 @@ body > footer .fx:last-child {
   text-decoration: none;
   color: #f28510;
 }
-/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .linkDefaultBlack:hover, .showDouble a:hover {
   text-decoration: underline;
 }
-/* line 18, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultBlack:visited, .showDouble a:visited {
   color: #333333;
 }
-/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultBlack:hover, .showDouble a:hover {
   color: #f28510;
 }
-/* line 27, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultBlack:active, .showDouble a:active {
   color: #333333;
 }

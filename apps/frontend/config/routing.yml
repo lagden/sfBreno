@@ -89,3 +89,16 @@ contato_envia:
   param: { module: contato, action: contato }
   requirements:
     sf_method: [POST]
+
+# Modulo venda
+venda:
+  url: /venda-ou-alugue
+  param: { module: venda, action: index }
+  requirements:
+    sf_method: [POST]
+
+venda_envia:
+  url: /venda-ou-alugue/envia
+  param: { module: venda, action: contato }
+  requirements:
+    sf_method: [POST]

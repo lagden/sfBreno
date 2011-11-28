@@ -23,16 +23,22 @@ a:active{text-decoration: none;}
                             <tr>
                                 <td>
                                     <div><?php echo link_to(image_tag('BrenoHomaraBlack.png',array('alt'=>'','absolute'=>true)),'homepage',array(),array('absolute'=>true)); ?></div>
-                                    <h2 style="color:#F28510;"><?php echo $post['nome'] ?> se interessou por um imóvel.</h2>
+                                    <h2 style="color:#F28510;"><?php echo $post['nome'] ?> quer disponibilizar um imóvel.</h2>
+                                    <p>Eu gostaria de:<br><b><?php echo $post['disponibilidade']; ?> um imóvel</b></p>
                                     <p><b>Dados do Contato</b></p>
                                     <p>Nome:<br><?php echo $post['nome']; ?></p>
                                     <p>E-mail:<br><?php echo mail_to($post['email'],$post['email']); ?></p>
                                     <p>Telefone:<br><?php echo $post['telefone']; ?></p>
-                                    <p>Mensagem:</p>
-                                    <pre><?php echo $post['msg']; ?></pre>
-                                    <br>
-                                    <p><b>Link do imóvel</b></p>
-                                    <div><?php echo link_to("Cód. {$post['ref']}",'estate_show',array('slug'=>$post['slug']),array('absolute'=>true)); ?></div>
+                                    <p><b>Informações do imóvel</b></p>
+                                    <p>Tipo:<br><?php echo $post['tipo']; ?></p>
+                                    <p>Bairro:<br><?php echo $post['bairro']; ?></p>
+                                    <p>Quartos:<br><?php echo $post['quartos']; ?></p>
+                                    <p>Suítes:<br><?php echo $post['suites']; ?></p>
+                                    <p>Banheiros:<br><?php echo $post['banheiros']; ?></p>
+                                    <p>Vagas:<br><?php echo $post['vagas']; ?></p>
+                                    <p>Valor:<br><?php echo $post['valor']; ?></p>
+                                    <p>Descrição:</p>
+                                    <pre><?php echo $post['descricao']; ?></pre>
                                 </td>
                             </tr>
                         </tbody>

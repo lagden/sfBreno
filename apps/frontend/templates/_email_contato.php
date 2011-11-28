@@ -28,7 +28,8 @@ a:active{text-decoration: none;}
                                     <p>Nome:<br><?php echo $post['nome']; ?></p>
                                     <p>E-mail:<br><?php echo mail_to($post['email'],$post['email']); ?></p>
                                     <p>Telefone:<br><?php echo $post['telefone']; ?></p>
-                                    <p>Mensagem:<br><?php echo $post['msg']; ?></p>
+                                    <p>Mensagem:</p>
+                                    <pre><?php echo $post['msg']; ?></pre>
                                 </td>
                             </tr>
                         </tbody>
