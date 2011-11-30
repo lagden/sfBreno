@@ -23,6 +23,19 @@ test:
     etag:                   false
 
 all:
+  .actions:
+    error_404_module:       default
+    error_404_action:       error404
+ 
+    login_module:           auth
+    login_action:           index
+ 
+    secure_module:          default
+    secure_action:          secure
+ 
+    module_disabled_module: default
+    module_disabled_action: disabled
+    
   .settings:
     # Form security secret (CSRF protection)
     # csrf_secret:            59da2e7bc650d465e236ee2817658758c4122198

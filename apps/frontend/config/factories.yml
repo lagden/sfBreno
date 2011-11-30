@@ -26,7 +26,6 @@ test:
 dev:
   mailer:
     param:
-      # delivery_strategy: none
       delivery_strategy: realtime
 
 all:
@@ -53,11 +52,6 @@ all:
           encryption: ssl
           username: 4nothing@gmail.com
           password: big1buttgirl2
-          
-          # host: homer.seepix.com.br
-          # port: 25 
-          # username: ticket@www2.vivovoce.com.br
-          # password: ticket1212
 
   # Mail PHP Mail
   # mailer:

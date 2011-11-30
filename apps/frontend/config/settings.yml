@@ -23,6 +23,10 @@ test:
     etag:                   false
 
 all:
+  .actions:
+    error_404_module:       default
+    error_404_action:       error404
+    
   .settings:
     # Form security secret (CSRF protection)
     # csrf_secret:            2222d1cf96b4f5d7c4f56589675e6b2491cabecc

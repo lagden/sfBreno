@@ -6,11 +6,31 @@ homepage:
   url:   /
   param: { module: default, action: index }
 
-# generic rules
-# please, remove them by adding more specific rules
-default_index:
-  url:   /:module
-  param: { action: index }
+# Module User
+user:
+  class: sfDoctrineRouteCollection
+  options:
+    model: User
+    with_show: false
+    prefix_path: /usuario
+    collection_actions:
+      filter: post
+      clear: get
+    segment_names:
+      new: novo
+      create: cria
+      edit: edita
+      update: atualiza
+      delete: deleta
 
-default:
-  url:   /:module/:action/*
+user_page:
+  url: /usuario/pagina/:pagina
+  param: { module: user, action: index }
+  requirements:
+    sf_method: [GET]
+
+user_sort:
+  url: /usuario/ordena
+  param: { module: user, action: sort }
+  requirements:
+    sf_method: [POST]

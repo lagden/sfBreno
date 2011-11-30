@@ -1,5 +1,13 @@
-# You can find more information about this file on the symfony website:
-# http://www.symfony-project.org/reference/1_4/en/11-App
-
-# default values
-#all:
+all:
+  master_email: thiago@seepix.com.br
+  #
+  session_user_id: user_id
+  session_user_name: user_name
+  session_user_full_name: user_full_name
+  session_user_credential: user_credential
+  #
+  admin_credential: administrador
+  editor_credential: editor
+  #
+  search:
+    max_per_page: 30

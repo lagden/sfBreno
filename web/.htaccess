@@ -225,9 +225,15 @@ Options -MultiViews
   RewriteRule ^$ index.html [QSA]
   RewriteRule ^([^.]+)$ $1.html [QSA]
   
+  # api.breno
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{HTTP_HOST} ^api(.*).breno(.*)$ [NC]
   RewriteRule ^(.*)$ api_dev.php [QSA,L]
+  
+  # admin.breno
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{HTTP_HOST} ^admin(.*).breno(.*)$ [NC]
+  RewriteRule ^(.*)$ backend_dev.php [QSA,L]
   
   # no, so we redirect to our front web controller
   RewriteCond %{REQUEST_FILENAME} !-f
