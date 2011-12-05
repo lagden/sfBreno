@@ -1,10 +1,36 @@
-# You can find more information about this file on the symfony website:
-# http://www.symfony-project.org/reference/1_4/en/10-Routing
-
-# default rules
+# home
 homepage:
   url:   /
-  param: { module: default, action: index }
+  param: { module: auth, action: index }
+
+# Module Auth
+auth:
+  class: sfObjectRouteCollection
+  options:
+    model: User
+    with_show: false
+    prefix_path: /auth
+    collection_actions:
+      forgot: post
+
+auth_logout:
+  url: /auth/logout
+  param: { module: auth, action: logout }
+
+auth_login:
+  url: /auth/login.:sf_format
+  param: { module: auth, action: login, sf_format: json}
+  requirements:
+    sf_format: json
+    sf_method: [POST]
+
+auth_forgot_verify:
+  class: sfDoctrineRoute
+  url: /auth/verifica/:token_forgot
+  param: { module: auth, action: verify }
+  options: { model: User, type: object }
+  requirements:
+    sf_method: [GET]
 
 # Module User
 user:
@@ -32,5 +58,237 @@ user_page:
 user_sort:
   url: /usuario/ordena
   param: { module: user, action: sort }
+  requirements:
+    sf_method: [POST]
+
+# Module Seção
+section:
+  class: sfDoctrineRouteCollection
+  options:
+    model: Section
+    with_show: false
+    prefix_path: /secao
+    collection_actions:
+      filter: post
+      clear: get
+    segment_names:
+      new: novo
+      create: cria
+      edit: edita
+      update: atualiza
+      delete: deleta
+
+section_page:
+  url: /secao/pagina/:pagina
+  param: { module: section, action: index }
+  requirements:
+    sf_method: [GET]
+
+section_sort:
+  url: /secao/ordena
+  param: { module: section, action: sort }
+  requirements:
+    sf_method: [POST]
+
+# Module Content
+content:
+  class: sfDoctrineRouteCollection
+  options:
+    model: Content
+    with_show: false
+    prefix_path: /conteudo
+    collection_actions:
+      filter: post
+      clear: get
+    segment_names:
+      new: novo
+      create: cria
+      edit: edita
+      update: atualiza
+      delete: deleta
+
+content_page:
+  url: /conteudo/pagina/:pagina
+  param: { module: content, action: index }
+  requirements:
+    sf_method: [GET]
+
+content_sort:
+  url: /conteudo/ordena
+  param: { module: content, action: sort }
+  requirements:
+    sf_method: [POST]
+
+# Module Estate
+estate:
+  class: sfDoctrineRouteCollection
+  options:
+    model: Estate
+    with_show: false
+    prefix_path: /imovel
+    collection_actions:
+      filter: post
+      clear: get
+    segment_names:
+      new: novo
+      create: cria
+      edit: edita
+      update: atualiza
+      delete: deleta
+
+estate_page:
+  url: /imovel/pagina/:pagina
+  param: { module: estate, action: index }
+  requirements:
+    sf_method: [GET]
+
+estate_sort:
+  url: /imovel/ordena
+  param: { module: estate, action: sort }
+  requirements:
+    sf_method: [POST]
+
+# Module City
+city:
+  class: sfDoctrineRouteCollection
+  options:
+    model: City
+    with_show: false
+    prefix_path: /cidade
+    collection_actions:
+      filter: post
+      clear: get
+    segment_names:
+      new: novo
+      create: cria
+      edit: edita
+      update: atualiza
+      delete: deleta
+
+city_page:
+  url: /cidade/pagina/:pagina
+  param: { module: city, action: index }
+  requirements:
+    sf_method: [GET]
+
+city_sort:
+  url: /cidade/ordena
+  param: { module: city, action: sort }
+  requirements:
+    sf_method: [POST]
+
+# Module Neighborhood
+neighborhood:
+  class: sfDoctrineRouteCollection
+  options:
+    model: Neighborhood
+    with_show: false
+    prefix_path: /bairro
+    collection_actions:
+      filter: post
+      clear: get
+    segment_names:
+      new: novo
+      create: cria
+      edit: edita
+      update: atualiza
+      delete: deleta
+
+neighborhood_page:
+  url: /bairro/pagina/:pagina
+  param: { module: neighborhood, action: index }
+  requirements:
+    sf_method: [GET]
+
+neighborhood_sort:
+  url: /bairro/ordena
+  param: { module: neighborhood, action: sort }
+  requirements:
+    sf_method: [POST]
+
+# Module Type
+type:
+  class: sfDoctrineRouteCollection
+  options:
+    model: Type
+    with_show: false
+    prefix_path: /tipo-do-imovel
+    collection_actions:
+      filter: post
+      clear: get
+    segment_names:
+      new: novo
+      create: cria
+      edit: edita
+      update: atualiza
+      delete: deleta
+
+type_page:
+  url: /tipo-do-imovel/pagina/:pagina
+  param: { module: type, action: index }
+  requirements:
+    sf_method: [GET]
+
+type_sort:
+  url: /tipo-do-imovel/ordena
+  param: { module: type, action: sort }
+  requirements:
+    sf_method: [POST]
+
+# Module Disponibilidade
+disponibilidade:
+  class: sfDoctrineRouteCollection
+  options:
+    model: Disponibilidade
+    with_show: false
+    prefix_path: /disponibilidade
+    collection_actions:
+      filter: post
+      clear: get
+    segment_names:
+      new: novo
+      create: cria
+      edit: edita
+      update: atualiza
+      delete: deleta
+
+disponibilidade_page:
+  url: /disponibilidade/pagina/:pagina
+  param: { module: disponibilidade, action: index }
+  requirements:
+    sf_method: [GET]
+
+disponibilidade_sort:
+  url: /disponibilidade/ordena
+  param: { module: disponibilidade, action: sort }
+  requirements:
+    sf_method: [POST]
+
+# Module Tag
+tag:
+  class: sfDoctrineRouteCollection
+  options:
+    model: Tag
+    with_show: false
+    prefix_path: /tag
+    collection_actions:
+      filter: post
+      clear: get
+    segment_names:
+      new: novo
+      create: cria
+      edit: edita
+      update: atualiza
+      delete: deleta
+
+tag_page:
+  url: /tag/pagina/:pagina
+  param: { module: tag, action: index }
+  requirements:
+    sf_method: [GET]
+
+tag_sort:
+  url: /tag/ordena
+  param: { module: tag, action: sort }
   requirements:
     sf_method: [POST]

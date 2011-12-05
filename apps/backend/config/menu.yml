@@ -1,0 +1,28 @@
+menu:
+  user:
+    route: user
+    label: Usuário
+  site:
+    route: false
+    label: Site
+    class: dropdown
+    a_class: dropdown-toggle
+    children: 
+      - { route: section, label: Seção }
+      - { route: content, label: Conteúdo }
+  estate:
+    route: false
+    label: Imóveis e informações
+    class: dropdown
+    a_class: dropdown-toggle
+    children: 
+      - { route: estate, label: Cadastro }
+      - { route: false, class: divider }
+      - { route: city, label: Cidade }
+      - { route: neighborhood, label: Bairro }
+      - { route: false, class: divider }
+      - { route: type, label: Tipo do imóvel }
+      - { route: disponibilidade, label: Disponibilidade }
+  tag:
+    route: tag
+    label: Tag

@@ -5,6 +5,12 @@ User:
     login: lagden
     password: 123
     phone: 11 1111-1111
+  user_2:
+    name: Sabrina
+    email: binamack@gmail.com
+    login: sabrina
+    password: 123
+    phone: 22 2222-2222
 
 City:
   city_1:

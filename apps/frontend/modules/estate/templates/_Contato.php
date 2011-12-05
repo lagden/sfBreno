@@ -1,7 +1,7 @@
 <?php use_stylesheets_for_form($form) ?>
 <?php use_javascripts_for_form($form) ?>
 <?php $contatoRota = sfConfig::get('contato_route','contato_envia') ?>
-<?php echo $form->renderFormTag(url_for($contatoRota),array('method' => 'post','class' => 'frm','id'=>'frmContatoImovel','data-url'=>url_for($contatoRota))) ?>
+<?php echo $form->renderFormTag(url_for($contatoRota),array('method' => 'post','class' => 'frm frmFull','id'=>'frmContatoImovel','data-url'=>url_for($contatoRota))) ?>
     <?php
     $form->setDefault('ref',sfConfig::get('curr_ref'));
     echo $form['ref']->render();

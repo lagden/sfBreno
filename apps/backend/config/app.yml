@@ -1,9 +1,8 @@
 all:
-  master_email: thiago@seepix.com.br
+  master_email: lagden@gmail.com
   #
   session_user_id: user_id
   session_user_name: user_name
-  session_user_full_name: user_full_name
   session_user_credential: user_credential
   #
   admin_credential: administrador

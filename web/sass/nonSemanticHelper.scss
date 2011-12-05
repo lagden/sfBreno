@@ -47,15 +47,17 @@ $defaulValue: 1.5em;
 .center{ text-align:center; }
 
 .someMargin{
-    &.top{margin-top:$defaulValue;}
-    &.left{margin-left:$defaulValue;}
-    &.right{margin-right:$defaulValue;}
-    &.bottom{margin-bottom:$defaulValue;}
+    &.mtop{margin-top:$defaulValue;}
+    &.mleft{margin-left:$defaulValue;}
+    &.mright{margin-right:$defaulValue;}
+    &.mbottom{margin-bottom:$defaulValue;}
+    &.mfull{margin:$defaulValue;}
 }
 
 .somePadding{
-    &.top{padding-top:$defaulValue;}
-    &.left{padding-left:$defaulValue;}
-    &.right{padding-right:$defaulValue;}
-    &.bottom{padding-bottom:$defaulValue;}
+    &.ptop{padding-top:$defaulValue;}
+    &.pleft{padding-left:$defaulValue;}
+    &.pright{padding-right:$defaulValue;}
+    &.pbottom{padding-bottom:$defaulValue;}
+    &.pfull{padding:$defaulValue;}
 }

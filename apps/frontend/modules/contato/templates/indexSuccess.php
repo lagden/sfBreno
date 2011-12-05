@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="clearfix someMargin bottom">
+    <div class="clearfix someMargin mbottom">
         <div class="grid_4 showDouble">
             <h2 class="minnulo">Fale Conosco</h2>
             <h3><?php echo "{$info['site']} - {$info['creci']}" ?></h3>

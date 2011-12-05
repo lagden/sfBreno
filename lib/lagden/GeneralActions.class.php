@@ -48,6 +48,7 @@ class GeneralActions extends sfActions
                     'fields' => array('labels'=>sfConfig::get('fields_labels',array()),'names'=>sfConfig::get('fields_names',array()),'sorts'=>sfConfig::get('fields_sorts',array()),'xtras'=>sfConfig::get('fields_xtras',array()),),
                     'actions' => array('edit'=>sfConfig::get('action_edit'),'delete'=>sfConfig::get('action_delete'),'new'=>sfConfig::get('action_new'),),
                     'itens' => $response->getResults(),
+                    'lastId' => $this->getUser()->getAttribute(sfConfig::get('last_edited')),
                 )
             );
         }

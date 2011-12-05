@@ -1,6 +1,14 @@
-<header>
-  <hgroup class="hasflex horizontalflex">
-    <div class="aside boxflex0"><!-- <h1>Dock Admin</h1> --></div>
-    <div class="title boxflex1"><h2 class="sp_center"><?php echo sfConfig::get('section','Dashboard') ?></h2></div>
-  </hgroup>
-</header>
+<?php $menu = sfYaml::load(sfConfig::get('sf_app_config_dir'). DIRECTORY_SEPARATOR ."menu.yml"); ?>
+<div id="topbarBackend" class="topbar" data-dropdown="dropdown">
+    <div class="topbar-inner">
+        <div class="container">
+            <h3><?php echo link_to("Breno Homara Imóveis",'homepage'); ?></h3>
+            <?php if ($sf_user->isAuthenticated()): ?>
+                <?php echo Menu::dropdown($menu['menu'],$_SERVER['REQUEST_URI']) ?>
+                <ul class="nav secondary-nav">
+                    <li><a href="<?php echo url_for('auth_logout') ?>">Sair</a></li>
+                </ul>
+            <?php endif ?>
+        </div>
+    </div>
+</div>

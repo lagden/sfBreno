@@ -1,18 +1,9 @@
-<?php
-// foreach ($itens as $v):
-// print_r($v->id);
-// endforeach;
-// echo $lastId;
-// die;
-?>
-
 <?php foreach ($itens as $item): ?>
     <?php if($lastId==$item->id): ?>
-    <tr class="set">
+        <tr class="set">
     <?php else: ?>
-    <tr>
+        <tr>
     <?php endif; ?>
-    
     <?php foreach ($fields['names'] as $name): ?>
         <?php
         if($name=='id')

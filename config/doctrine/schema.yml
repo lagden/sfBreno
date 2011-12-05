@@ -7,9 +7,9 @@ User:
   columns:
     name: { type: string(255), notnull: true }
     email: { type: string(255), notnull: true, unique: true }
+    phone: { type: string(50) }
     login: { type: string(255), notnull: true, unique: true }
     password: { type: string(80), notnull: true }
-    phone: { type: string(50) }
     token_forgot: { type: string(40) }
 
 # Seção
@@ -21,15 +21,13 @@ Section:
       canUpdate: true
       unique: true
     Timestampable: ~
-  indexes:
-    route_index: { fields: [route] }
   columns:
+    route: { type: string(255) }
     title: { type: string(255), notnull: true, unique: true }
     description: clob
     content: clob
     seo: clob
     is_active: { type: boolean, default: 0 }
-    route: { type: string(255) }
   relations:
     Tag:
       refClass: SectionTag
@@ -47,12 +45,12 @@ Content:
       unique: true
     Timestampable: ~
   columns:
+    section_id: { type: bigint }
     title: { type: string(255), notnull: true, unique: true }
     description: clob
     content: clob
     seo: clob
     is_active: { type: boolean, default: 0 }
-    section_id: { type: bigint }
   relations:
     Tag:
       refClass: ContentTag
@@ -199,8 +197,8 @@ Neighborhood:
   actAs:
     Timestampable: ~
   columns:
-    name: { type: string(255), notnull: true }
     city_id: { type: bigint }
+    name: { type: string(255), notnull: true }
   relations:
     City:
       local: city_id

@@ -1,3 +1,6 @@
 [submodule "plugins/csDoctrineActAsSortablePlugin"]
 	path = plugins/csDoctrineActAsSortablePlugin
 	url = git://github.com/bshaffer/csDoctrineActAsSortablePlugin.git
+[submodule "web/js/vendor/jquery/plugins/tag-it"]
+	path = web/js/vendor/jquery/plugins/tag-it
+	url = git://github.com/lagden/tag-it.git

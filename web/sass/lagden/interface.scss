@@ -1,6 +1,9 @@
 @import "compass";
 @import "lagden/mixin";
-@import "lagden/btn";
+@import "lagden/glass";
+
+$sitecolor: $orange;
+$bRadius: 7px;
 
 .form_estiloso
 {
@@ -10,19 +13,20 @@
     outline:0;
     @include box-shadow(0 0 1em rgba(0,0,0, 0.1));
     @include border-radius(.5em);
-    background-color: #ffffff; // Old browsers
-    @include filter-gradient(#ffffff, #ffffff, vertical); // IE6-9
-    @include background-image(linear-gradient(top,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%));
+
+    background-color: rgb(255,255,255);
+    @include filter-gradient(#ffffff, #ededed, vertical);
+    @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%));
 }
 
 .form_estiloso_focus{
-    background-color: #ffffff;
-    @include filter-gradient(#ffffff, #f6f6f6, vertical);
-    @include background-image(linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%));
+    background-color: rgb(255,255,255);
+    @include filter-gradient(#ffffff, #e5e5e5, vertical);
+    @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%));
 }
 
 .form_estiloso_disabled{
-    @include opacity(.5);
+    @include opacity(50);
 }
 
 .frm{
@@ -31,12 +35,12 @@
         &:focus{ @extend .form_estiloso_focus; }
         &:disabled{ @extend .form_estiloso_disabled; };
     }
-    
+
     select,
     button{
         &:disabled{ @extend .form_estiloso_disabled; };
     }
-    
+
     input{
         &[type=file],
         &[type=text],
@@ -59,6 +63,41 @@
         &[type=tel]:disabled,
         &[type=password]:focus{ @extend .form_estiloso_disabled; }
     }
+}
+
+// Pagination
+div.pagination{
+    text-align:center;
+    color:$mainColor;
+    background:none;
+    span{
+        display:none;
+    }
+    .next, .prior{
+        background:$sitecolor + 50;
+        color:#FFF;
+    }
+    button.paginacaoUI{
+        background-color:$mainColor + 170;
+        @include transition-property(background-color);
+        @include transition-duration(.45s);
+        padding:.3em;
+        margin-right:.25em;
+        width:2em;
+        height:2em;
+        border:0;
+        @include border-radius($bRadius);
+        &:hover{
+            background-color:$sitecolor;
+            color:#FFF;
+        }
+        &:first-child,
+        &:last-child{
+            width:auto;
+        }
+    }
+    button.paginacaoSelecionado{color:$sitecolor;background-color:inherit}
+    .paginacaoDisabled{ @include opacity(40); }
 }
 
 // Accordion
@@ -88,45 +127,8 @@
             background-color:#FFF;
             padding:1em;
             margin:.5em 0;
-            > form#frmBuscaImoveisRef{
-                ul{
-                    li{
-                        display:inline;
-                    }
-                }
-                label{
-                    display:inline;
-                }
-                input{
-                    width:150px;
-                    padding:.5em;
-                    margin-left:.3em;
-                }
-            }
         }
     }
-}
-
-// Pagination
-div.pagination{
-    text-align:center;
-    color:#000;
-    background:none;
-    span{
-        display:none;
-    }
-    .next, .prior{
-        background:#999;
-    }
-    button.paginacaoUI{
-        @extend .btn;
-        padding:.3em;
-        margin-right:.25em;
-        width:2em;
-        height:2em;
-    }
-    button.paginacaoSelecionado{color:#FFBB00;background-color:inherit}
-    .paginacaoDisabled{ @include opacity(.6); }
 }
 
 // ToolTip
@@ -147,59 +149,4 @@ div.toolTip{
     }
     // rel="conteudo do box"
     div.tip-text{ display:none; }
-}
-
-// Tab
-.tabs{
-    position:relative;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    zoom: 1;
-    &:before, &:after{
-        display: table;
-        content: "";
-        zoom: 1;
-    }
-    &:after{ clear: both; }
-    > li{
-        float: left;
-        position: relative;
-        cursor: pointer;
-        > a{
-            font-size:.9em;
-            display: block;
-            padding: 0 15px;
-            margin-right: 2px;
-            line-height: 34px;
-            text-decoration: none;
-            @include border-radius(4px 4px 0 0);
-            @include link-colors($orange, $mainColor);
-            &:hover{
-                text-decoration: none;
-                background-color: #ddd;
-            }
-        }
-    }
-    > li.active{
-        > a{
-            background-color: #fff;
-            &:hover{
-                text-decoration: none;
-                @include link-colors($orange, $mainColor);
-            }
-        }
-    }
-}
-
-.tab-content{
-    > .tab-pane, > div{
-        @include border-radius(0 5px 5px 5px);
-        padding:.5em;
-        background:#FFF;
-        display: none;
-        // colocar no mq
-        min-height:391px;
-    }
-    > .active{ display: block; }
 }

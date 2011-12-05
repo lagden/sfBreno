@@ -58,6 +58,6 @@ class userActions extends GeneralActions
         // Table List
         sfConfig::set("fields_labels",array("Ação","Nome","Email","Telefone","Login"));
         sfConfig::set("fields_names",array("id","name","email","phone","login"));
-        //sfConfig::set("fields_sorts",array("id","name","email","phone","login"));
+        sfConfig::set("fields_sorts",array("id","name","email","phone","login"));
     }
 }

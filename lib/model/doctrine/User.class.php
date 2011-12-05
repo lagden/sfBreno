@@ -14,12 +14,15 @@ class User extends BaseUser
 {
     public function setPassword($password)
     {
-        if ($password) $this->_set('password', static::encryptPassword($password));
+        if ($password)
+        {
+            $this->_set('password', self::encryptPassword($password));
+        }
         return $this;
     }
 
     public static function encryptPassword($password)
     {
-        return strrev(sha1(strtolower($password)).sha1(strtoupper($password)));
+        return strrev(sha1(strtolower($password)).sha1(strtoupper($password))); 
     }
 }

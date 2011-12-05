@@ -45,9 +45,7 @@ class Xtras
     {
         // Verifica a sessão
         $auth = sfContext::getInstance()->getUser()->isAuthenticated();
-        if(!$auth){
-            return "reload";
-        }
+        if(!$auth) return "reload";
 
         sfContext::getInstance()->getUser()->setAttribute(sfConfig::get('order_by'), $request->getParameter('field','id'));
         sfContext::getInstance()->getUser()->setAttribute(sfConfig::get('order_by_direction'), $request->getParameter('direction','DESC'));

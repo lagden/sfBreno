@@ -11,18 +11,18 @@ class UserTable extends Doctrine_Table
         return Doctrine_Core::getTable('User');
     }
 
-    // public function getValidatedUserQuery($email, $password, Doctrine_Query $q = null)
-    // {
-    //     if (null === $q) $q = $this->getListQuery();
-    //     $q->andWhere($q->getRootAlias().'.email = ?', $email);
-    //     $q->andWhere($q->getRootAlias().'.password = ?', User::encryptPassword($password));
-    //     return $q;
-    // }
+    public function getValidatedUserQuery($login, $password, Doctrine_Query $q = null)
+    {
+        if (null === $q) $q = $this->getListQuery();
+        $q->andWhere($q->getRootAlias().'.login = ?', $login);
+        $q->andWhere($q->getRootAlias().'.password = ?', User::encryptPassword($password));
+        return $q;
+    }
 
-    // public function getValidatedUser($email, $password)
-    // {
-    //     return $this->getValidatedUserQuery($email, $password)->fetchOne();
-    // }
+    public function getValidatedUser($login, $password)
+    {
+        return $this->getValidatedUserQuery($login, $password)->fetchOne();
+    }
 
     // Filtro
     public function getListFilter(array $filters, Doctrine_Query $q = null)

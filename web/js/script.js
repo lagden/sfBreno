@@ -34,8 +34,29 @@ window.addEvent('domready',function()
     ajuda.addFormValidation('frmContatoImovel',frmEstateSearch.handlerContato,true);
     ajuda.addFormValidation('frmVendaImovel',frmEstateSearch.handlerVenda,true);
     
+    // Backend Form Auth
+    ajuda.addFormValidation('formValidationLogin',backendFunc.handlerAuth,true);
+    
+    // Backend Form Validation
+    ajuda.addFormValidation('formValidationGeneral');
+    
+    // Backend Tagit
+    var tagitFull=JSON.decode($('tagit_full_list').get('html'),true);
+    var tagitModel=JSON.decode($('tagit_model_list').get('html'),true);
+    var tag=jQuery("#form_tags_list");
+
+    tag.tagit({
+        fieldName:tag.data('name'),
+        availableTags:(tagitFull) ? tagitFull : [],
+        setTags:(tagitModel) ? tagitModel : [],
+        allowSpaces:true
+    });
+    
     // jQuery
     (function($){
+        // Backend - menu
+        $('#topbarBackend').dropdown();
+        
         // Init tabs
         $('.tabs').tabs();
         
@@ -70,9 +91,148 @@ window.addEvent('domready',function()
             var go=$(this).data('pagina');
             if(go) location=go;
         });
+        
+        // Backend - Busca
+        $('button.limpar').live('click',function(e){
+            location=$(this).data('url');
+        });
+
+        // Backend - List
+        $('button.new').live('click',function(e){
+            location=$(this).data('url');
+        });
+
+        $('button.lastedit').live('click',function(e){
+            location=$(this).data('url');
+        });
+
+        $('div#tableList > table.zebra-striped > thead > tr > th').live('click',function(e){
+            SortableList.sort(this);
+        });
+
+        SortableList.setSort(jQuery('div#tableList > table.zebra-striped'));
+        
+        // Backend Deletar Registro
+        $('button.deletar').live('click',function(e){
+            if(confirm('Deseja remover este registro?'))
+            {
+                var _this=this;
+                $.post($(_this).data('url'),{"sf_method":"delete"},function(r)
+                {
+                    if(r)
+                    {
+                        if(r.success)
+                        {
+                            alert(r.msg);
+                            location=jQuery(_this).data('list');
+                        }
+                        else ajuda.alerta(r.msg);
+
+                        // Verifica se a sessão é válida
+                        if( !r.auth )
+                        {
+                            alert(r.msg);
+                            location.reload();
+                        }
+                    }
+                    else alert('Erro na resposta.');
+                }
+                ,"json");
+            }
+        });
+        
+        // Backend - User
+        $('input#user_change:checkbox').bind('click custom',function(){backendFunc.changePasswd(this);});
+        $('input#user_change').trigger('custom');
+        
     })
     (jQuery);
 });
+
+var backendFunc={
+    // Formulario de venda
+    handlerAuth:function(bool,el,submit)
+    {
+        if(bool) backendFunc.auth();
+    },
+    auth:function()
+    {
+        ajuda.triggerAjax(true);
+        ajuda.alerta('Verificando. Aguarde...');
+        jQuery.post(ajuda.routes('formValidationLogin'),jQuery("#formValidationLogin").serialize(),backendFunc.authCallBack,'json');
+    },
+    authCallBack:function(r)
+    {
+        ajuda.triggerAjax();
+        log('awesome');
+        if(r)
+        {
+            if(r.success)
+            {
+                location=r.data.url;
+            }
+            else ajuda.alerta(r.msg);
+        }
+        else ajuda.alerta('Erro na resposta.');
+    },
+    
+    changePasswd:function(el)
+    {
+        var passwd = jQuery('input#user_password');
+        passwd.get(0).disabled = !el.checked;
+        passwd.val('');
+    }
+}
+
+// Backend - SortableList
+var SortableList={
+    sort:function(_this)
+    {
+        var col = jQuery(_this);
+        var colField = col.data('field');
+        var table = col.parent().parent().parent();
+        var tableUrl = table.data('url');
+
+        SortableList.removeClasses(table);
+
+        var cr=Cookie.read('sorttable.menu'+tableUrl+colField);
+        if(cr==null)cr='ASC';
+        cr=(cr=='DESC')?'ASC':'DESC';
+        Cookie.write('sorttable.menu'+tableUrl+colField,cr);
+
+        jQuery.post(tableUrl,{"field":colField,"direction":cr,"pagina":col.data('pagina')},function(r)
+        {
+            if(r&&r!='reload')
+            {
+                table.find('tbody').empty().append(r);
+                col.addClass(cr);
+            }
+            else if(r=='reload')
+            {
+                alert('Sessão expirada. Efetue o login novamente.');
+                location.reload();
+            }
+            else ajuda.alerta('Erro na resposta.');
+        }
+        ,"html");
+    },
+    removeClasses:function(table)
+    {
+        table.find('thead > tr > th').each(function(idx,el){
+            jQuery(el).removeClass('DESC');
+            jQuery(el).removeClass('ASC');
+        });
+    },
+    setSort:function(table)
+    {
+        SortableList.removeClasses(table);
+        table.find('thead > tr > th[data-field='+SortableList.addslashes(table.data('field'))+']').addClass(table.data('direction'));
+    },
+    addslashes:function(str)
+    {
+        return (str + '').replace(/[\\"'.]/g, '\\$&').replace(/\u0000/g, '\\0');
+    }
+}
 
 // Formulario de Busca de Imoveis
 var frmEstateSearch={

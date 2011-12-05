@@ -4,33 +4,159 @@
   src: url('../fonts/sidewalk-webfont.eot?iefix') format('eot'), url('../fonts/sidewalk-webfont.woff') format('woff'), url('../fonts/sidewalk-webfont.ttf') format('truetype'), url('../fonts/sidewalk-webfont.svg#sidewalk') format('svgm'), url('../fonts/sidewalk-webfont.eot?#iefix') format('embedded-opentype');
 }
 
-/* line 47, ../../sass/lagden/mixin.scss */
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx10 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 89%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx10:last-child {
+  width: 9%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx20 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 79%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx20:last-child {
+  width: 19%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx30 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 69%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx30:last-child {
+  width: 29%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx40 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 59%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx40:last-child {
+  width: 39%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx50 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 49%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx50:last-child {
+  width: 49%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx60 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 39%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx60:last-child {
+  width: 59%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx70 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 29%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx70:last-child {
+  width: 69%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx80 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 19%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx80:last-child {
+  width: 79%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx90 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 9%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx90:last-child {
+  width: 89%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 64, ../../sass/lagden/mixin.scss */
 .zebraNaTabela {
   width: 100%;
   margin: 1em 0;
   font-size: .8em;
 }
-/* line 52, ../../sass/lagden/mixin.scss */
+/* line 69, ../../sass/lagden/mixin.scss */
 .zebraNaTabela tr:nth-child(2n+1) {
   background: #e1e1e1;
   color: #333;
 }
-/* line 56, ../../sass/lagden/mixin.scss */
+/* line 73, ../../sass/lagden/mixin.scss */
 .zebraNaTabela tr:hover {
   background: #fde3ab;
   color: #333;
 }
-/* line 60, ../../sass/lagden/mixin.scss */
+/* line 77, ../../sass/lagden/mixin.scss */
 .zebraNaTabela tr td {
-  width: 46%;
-  padding: 2%;
+  width: 50%;
+  padding: .5em;
   text-align: left;
 }
-/* line 64, ../../sass/lagden/mixin.scss */
+/* line 81, ../../sass/lagden/mixin.scss */
 .zebraNaTabela tr td:last-child {
   text-align: right;
 }
-/* line 67, ../../sass/lagden/mixin.scss */
+/* line 84, ../../sass/lagden/mixin.scss */
 .zebraNaTabela tr td a {
   text-decoration: none;
   color: #333333;
@@ -40,7 +166,7 @@
   text-decoration: underline;
 }
 
-/* line 75, ../../sass/lagden/mixin.scss */
+/* line 92, ../../sass/lagden/mixin.scss */
 .linkDefaultWhite {
   text-decoration: none;
   color: white;
@@ -62,7 +188,7 @@
   color: white;
 }
 
-/* line 80, ../../sass/lagden/mixin.scss */
+/* line 97, ../../sass/lagden/mixin.scss */
 .linkDefaultBlack {
   text-decoration: none;
   color: #f28510;

@@ -1,7 +1,12 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/patterns";
+
 @import "compass";
 @import "lagden/mixin";
 @import "blueprint/grid";
 
+// Frontend Base
 body{
     position:relative;
     background-color: #D6D1C8;
@@ -18,13 +23,13 @@ body{
         }
     }
     > nav{
-        @include box-shadow(inset 0px -5px 20px 0px rgba(0, 0, 0, .2));
         border-top:5px solid #FFF;
         border-bottom:2px solid #FFF;
         position:relative;
         z-index:1;
         padding-bottom: $navContainer;
         background-color: #ffd547;
+        @include box-shadow(inset 0px -5px 20px 0px rgba(0, 0, 0, .2));
         @include filter-gradient(#ffd547, #ffac00, vertical);
         @include background-image(linear-gradient(top,  #ffd547 0%,#ffac00 100%));
         .wrapper{
@@ -51,9 +56,9 @@ body{
                         margin-right:0;
                     }
                     a{
-                        @extend .btn;
+                        @extend .glass;
+                        // border:1px solid rgba(255,213,71,.5);
                         padding:0.6em 0.7em 0.6em 0.7em;
-                        border:1px solid transparent;
                         font-weight: bold;
                         display: block;
                         float:left;
@@ -74,7 +79,7 @@ body{
         top:-$navContainer;
         padding:20px 10px 20px 20px;
     }
-    
+
     > footer{
         font-size:.9em;
         margin:0;
@@ -83,19 +88,8 @@ body{
         background-color: $darkgray;
         border-top: 2px solid #FFF;
         @include single-box-shadow(#111, 0, 4em, 3em, 3.5em);
-        a{
-            @extend .linkDefaultWhite;
-        }
-        .fx{
-            display: inline;
-            float: left;
-            margin-right: 1%;
-            width: 49%;
-            &:last-child{
-                margin-right: 0;
-                margin-left: 1%;
-            }
-        }
+        a{ @extend .linkDefaultWhite; }
+        .fx{ @extend .fx50; }
     }
 }
 
@@ -105,6 +99,7 @@ body{
     > article{
         background-color: #f1f1f1;
         margin-bottom:45px;
+        // Grid System
         @include column(2);
         &:nth-child(4n){
             @include column(2,true);
@@ -116,8 +111,16 @@ body{
             border:3px solid #FFF;
             @include border-radius(0 0 .5em .5em);
             @include single-box-shadow(rgba(0, 0, 0, .2), 0, 0px, 10px);
-            img{
+            a.img{
+                display:block;
                 width:100%;
+                height:160px;
+                overflow:hidden;
+                img{
+                    max-width:214px;
+                    display:block;
+                    margin:0 auto;
+                }
             }
             > table{
                 @extend .zebraNaTabela;
@@ -154,6 +157,9 @@ body{
             footer{
                 text-align:center;
                 margin:1.5em 0;
+                padding:0;
+                border:0;
+                @extend .clearfix;
                 a{
                     padding:0.6em 0.7em 0.6em 0.7em;
                     border:1px solid transparent;
@@ -167,7 +173,149 @@ body{
     }
 }
 
-// Fancybox Bairro
+// Form Geral
+.btn{
+    &.orange{
+        color: $white;
+        @include gradientBar( ($orange + 70), ($orange + 20) );
+    }
+}
+
+.frm{
+    ul{
+        margin:0;
+        padding:0;
+        list-style-type:none;
+        @extend .clearfix;
+        > li{
+            color:$mainColor + 20;
+            font-size:.9em;
+            margin: 0;
+            padding: .5em;
+            position: relative;
+            > label{
+                display:block;
+                font-weight:bold;
+                margin-bottom:.3em;
+                &.obr:before{
+                    content:"* ";
+                }
+            }
+            ul.radio_list{
+                li{
+                    float:left;
+                    padding:.5em;
+                    margin:0;
+                    label{
+                        display:inline;
+                        font-weight:normal;
+                    }
+                }
+            }
+            ul.checkbox_list{
+                li{
+                    display:block;
+                    padding:.5em;
+                    margin:0;
+                    label{
+                        display:inline;
+                        font-weight:normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Form Full
+.frmFull{
+    li{
+        textarea,
+        input[type=text],
+        select{
+            width:90%;
+            padding:.5em;
+        }
+    }
+}
+
+// Form Busca
+.frmBusca{
+    @extend .frmFull;
+    font-size:.9em;
+    ul{
+        > li{
+            padding: .27em;
+            > label{
+                font-weight:bold;
+            }
+        }
+    }
+}
+
+// Tab
+.tabs{
+    position:relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    zoom: 1;
+    &:before, &:after{
+        display: table;
+        content: "";
+        zoom: 1;
+        border: 0;
+    }
+    &:after{ clear: both; }
+    > li{
+        float: left;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 0;
+        > a{
+            border:0;
+            font-size:.9em;
+            display: block;
+            padding: 0 15px;
+            margin-right: 2px;
+            line-height: 34px;
+            text-decoration: none;
+            @include border-radius(4px 4px 0 0);
+            @include link-colors($orange, $mainColor);
+            &:hover{
+                text-decoration: none;
+                background-color: #ddd;
+                border: 0;
+            }
+        }
+    }
+    > li.active{
+        > a{
+            background-color: #fff;
+            border:0;
+            &:hover{
+                border: 0;
+                text-decoration: none;
+                @include link-colors($orange, $mainColor);
+            }
+        }
+    }
+}
+
+.tab-content{
+    > .tab-pane, > div{
+        @include border-radius(0 5px 5px 5px);
+        padding:.5em;
+        background:#FFF;
+        display: none;
+        // colocar no media querie
+        min-height:391px;
+    }
+    > .active{ display: block; }
+}
+
+// Fancybox Bairro Checkbox
 #bairros_inline{
     @extend .clearfix;
     font-size:.8em;
@@ -186,88 +334,40 @@ body{
     }
 }
 
-// Form Geral
-.frm{
-    ul{
-        margin:0;
-        padding:0;
-        list-style-type:none;
-        @extend .clearfix;
-        li{
-            textarea,
-            input[type=text],
-            select{
-                width:90%;
-                padding:.5em;
-                font-size:.9em;
-            }
-        }
-    }
-    > ul{
-        > li{
-            margin: 0;
-            padding: .27em;
-            position: relative;
-            > label{
-                font-size:.9em;
-                display:block;
-                margin-bottom:.3em;
-            }
-            .btn{
-                border-style:none;
-            }
-        }
-        ul.radio_list{
-            li{
-                float:left;
-                padding:.5em;
-                margin:0;
-                label{
-                    font-size:.9em;
-                }
-            }
-        }
-        ul.checkbox_list{
-            li{
-                float:left;
-                width:48%;
-                padding:1%;
-                margin:0;
-            }
-        }
-    }
-}
-
-// Form Busca
-.frmBusca{
-    font-size:.9em;
-    > ul{
-        > li{
-            > label{
-                font-weight:bold;
-            }
-        }
-    }
-}
-
 .showDouble{
     font-size:.9em;
-    a{
-        @extend .linkDefaultBlack;
-    }
+    a{ @extend .linkDefaultBlack; }
     > h2{
         min-height:65px;
         color:$orangeLight;
-        &.minnulo{
-            min-height:0 !important;
-        }
+        &.minnulo{ min-height:0 !important; }
     }
     > h3{
         margin-top:2em;
         color:#777;
     }
-    > table{
-        @extend .zebraNaTabela;
+    > table{ @extend .zebraNaTabela; }
+}
+
+// Accordion
+#accordionFormResult{
+    > div.content{
+        > div{
+            > form#frmBuscaImoveisRef{
+                ul{
+                    li{
+                        display:inline;
+                    }
+                }
+                label{
+                    display:inline;
+                }
+                input{
+                    width:150px;
+                    padding:.5em;
+                    margin-left:.3em;
+                }
+            }
+        }
     }
-    
 }

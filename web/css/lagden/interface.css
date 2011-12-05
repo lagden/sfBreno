@@ -4,33 +4,159 @@
   src: url('../fonts/sidewalk-webfont.eot?iefix') format('eot'), url('../fonts/sidewalk-webfont.woff') format('woff'), url('../fonts/sidewalk-webfont.ttf') format('truetype'), url('../fonts/sidewalk-webfont.svg#sidewalk') format('svgm'), url('../fonts/sidewalk-webfont.eot?#iefix') format('embedded-opentype');
 }
 
-/* line 47, ../../sass/lagden/mixin.scss */
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx10 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 89%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx10:last-child {
+  width: 9%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx20 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 79%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx20:last-child {
+  width: 19%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx30 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 69%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx30:last-child {
+  width: 29%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx40 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 59%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx40:last-child {
+  width: 39%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx50 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 49%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx50:last-child {
+  width: 49%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx60 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 39%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx60:last-child {
+  width: 59%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx70 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 29%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx70:last-child {
+  width: 69%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx80 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 19%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx80:last-child {
+  width: 79%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 50, ../../sass/lagden/mixin.scss */
+.fx90 {
+  display: inline;
+  float: left;
+  margin-right: 1%;
+  width: 9%;
+}
+/* line 55, ../../sass/lagden/mixin.scss */
+.fx90:last-child {
+  width: 89%;
+  margin-right: 0;
+  margin-left: 1%;
+}
+
+/* line 64, ../../sass/lagden/mixin.scss */
 .zebraNaTabela {
   width: 100%;
   margin: 1em 0;
   font-size: .8em;
 }
-/* line 52, ../../sass/lagden/mixin.scss */
+/* line 69, ../../sass/lagden/mixin.scss */
 .zebraNaTabela tr:nth-child(2n+1) {
   background: #e1e1e1;
   color: #333;
 }
-/* line 56, ../../sass/lagden/mixin.scss */
+/* line 73, ../../sass/lagden/mixin.scss */
 .zebraNaTabela tr:hover {
   background: #fde3ab;
   color: #333;
 }
-/* line 60, ../../sass/lagden/mixin.scss */
+/* line 77, ../../sass/lagden/mixin.scss */
 .zebraNaTabela tr td {
-  width: 46%;
-  padding: 2%;
+  width: 50%;
+  padding: .5em;
   text-align: left;
 }
-/* line 64, ../../sass/lagden/mixin.scss */
+/* line 81, ../../sass/lagden/mixin.scss */
 .zebraNaTabela tr td:last-child {
   text-align: right;
 }
-/* line 67, ../../sass/lagden/mixin.scss */
+/* line 84, ../../sass/lagden/mixin.scss */
 .zebraNaTabela tr td a {
   text-decoration: none;
   color: #333333;
@@ -40,7 +166,7 @@
   text-decoration: underline;
 }
 
-/* line 75, ../../sass/lagden/mixin.scss */
+/* line 92, ../../sass/lagden/mixin.scss */
 .linkDefaultWhite {
   text-decoration: none;
   color: white;
@@ -62,7 +188,7 @@
   color: white;
 }
 
-/* line 80, ../../sass/lagden/mixin.scss */
+/* line 97, ../../sass/lagden/mixin.scss */
 .linkDefaultBlack {
   text-decoration: none;
   color: #f28510;
@@ -84,8 +210,8 @@
   color: #333333;
 }
 
-/* line 3, ../../sass/lagden/btn.scss */
-.btn, div.pagination button.paginacaoUI {
+/* line 3, ../../sass/lagden/glass.scss */
+.glass {
   border: 0;
   background: none;
   -moz-border-radius: 4px;
@@ -103,8 +229,8 @@
   -o-transition-duration: 0.45s;
   transition-duration: 0.45s;
 }
-/* line 9, ../../sass/lagden/btn.scss */
-.btn:hover, div.pagination button.paginacaoUI:hover {
+/* line 9, ../../sass/lagden/glass.scss */
+.glass:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: #FFF;
   -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.1);
@@ -112,16 +238,16 @@
   -o-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.1);
 }
-/* line 20, ../../sass/lagden/btn.scss */
-.btn.selected, div.pagination button.selected.paginacaoUI {
+/* line 20, ../../sass/lagden/glass.scss */
+.glass.selected {
   color: #FFF;
   -moz-box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(255, 255, 0, 0.1);
   -webkit-box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(255, 255, 0, 0.1);
   -o-box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(255, 255, 0, 0.1);
   box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(255, 255, 0, 0.1);
 }
-/* line 30, ../../sass/lagden/btn.scss */
-.btn.orange, div.pagination button.orange.paginacaoUI {
+/* line 30, ../../sass/lagden/glass.scss */
+.glass.orange {
   -moz-transition-property: background-color;
   -webkit-transition-property: background-color;
   -o-transition-property: background-color;
@@ -133,17 +259,17 @@
   -o-box-shadow: 0 2px 6px rgba(244, 183, 78, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(255, 255, 0, 0.1);
   box-shadow: 0 2px 6px rgba(244, 183, 78, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(255, 255, 0, 0.1);
 }
-/* line 41, ../../sass/lagden/btn.scss */
-.btn.orange:hover, div.pagination button.orange.paginacaoUI:hover {
+/* line 41, ../../sass/lagden/glass.scss */
+.glass.orange:hover {
   background-color: #f8b500;
 }
-/* line 45, ../../sass/lagden/btn.scss */
-.btn.button:active, div.pagination button.button.paginacaoUI:active {
+/* line 45, ../../sass/lagden/glass.scss */
+.glass.button:active {
   position: relative;
   top: 1px;
 }
 
-/* line 6, ../../sass/lagden/interface.scss */
+/* line 9, ../../sass/lagden/interface.scss */
 .form_estiloso, .frm textarea, .frm input[type=file], .frm input[type=text], .frm input[type=email], .frm input[type=url], .frm input[type=tel], .frm input[type=password] {
   margin: 0;
   padding: .5em;
@@ -159,38 +285,96 @@
   -ms-border-radius: 0.5em;
   -khtml-border-radius: 0.5em;
   border-radius: 0.5em;
-  background-color: #ffffff;
+  background-color: white;
   *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFFFFFFF');
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #f3f3f3), color-stop(51%, #ededed), color-stop(100%, #ffffff));
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%);
-  background-image: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%);
-  background-image: -o-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%);
-  background-image: -ms-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%);
-  background-image: linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFEDEDED');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(47%, #f6f6f6), color-stop(100%, #ededed));
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+  background-image: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
 }
 
-/* line 18, ../../sass/lagden/interface.scss */
+/* line 22, ../../sass/lagden/interface.scss */
 .form_estiloso_focus, .frm textarea:focus, .frm input[type=file]:focus, .frm input[type=text]:focus, .frm input[type=email]:focus, .frm input[type=url]:focus, .frm input[type=tel]:focus, .frm input[type=password]:focus {
-  background-color: #ffffff;
+  background-color: white;
   *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFF6F6F6');
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #f1f1f1), color-stop(51%, #e1e1e1), color-stop(100%, #f6f6f6));
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
-  background-image: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
-  background-image: -o-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
-  background-image: -ms-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
-  background-image: linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFE5E5E5');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e5e5e5));
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+  background-image: -ms-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
 }
 
-/* line 24, ../../sass/lagden/interface.scss */
+/* line 28, ../../sass/lagden/interface.scss */
 .form_estiloso_disabled, .frm textarea:disabled, .frm select:disabled,
 .frm button:disabled, .frm input[type=file]:disabled, .frm input[type=text]:disabled, .frm input[type=email]:disabled, .frm input[type=url]:disabled, .frm input[type=tel]:disabled, .frm input[type=password]:focus {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=5000);
+  opacity: 50;
 }
 
-/* line 66, ../../sass/lagden/interface.scss */
+/* line 69, ../../sass/lagden/interface.scss */
+div.pagination {
+  text-align: center;
+  color: #333333;
+  background: none;
+}
+/* line 73, ../../sass/lagden/interface.scss */
+div.pagination span {
+  display: none;
+}
+/* line 76, ../../sass/lagden/interface.scss */
+div.pagination .next, div.pagination .prior {
+  background: #ffb742;
+  color: #FFF;
+}
+/* line 80, ../../sass/lagden/interface.scss */
+div.pagination button.paginacaoUI {
+  background-color: #dddddd;
+  -moz-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -moz-transition-duration: 0.45s;
+  -webkit-transition-duration: 0.45s;
+  -o-transition-duration: 0.45s;
+  transition-duration: 0.45s;
+  padding: .3em;
+  margin-right: .25em;
+  width: 2em;
+  height: 2em;
+  border: 0;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  border-radius: 7px;
+}
+/* line 90, ../../sass/lagden/interface.scss */
+div.pagination button.paginacaoUI:hover {
+  background-color: #f28510;
+  color: #FFF;
+}
+/* line 95, ../../sass/lagden/interface.scss */
+div.pagination button.paginacaoUI:first-child, div.pagination button.paginacaoUI:last-child {
+  width: auto;
+}
+/* line 99, ../../sass/lagden/interface.scss */
+div.pagination button.paginacaoSelecionado {
+  color: #f28510;
+  background-color: inherit;
+}
+/* line 100, ../../sass/lagden/interface.scss */
+div.pagination .paginacaoDisabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=4000);
+  opacity: 40;
+}
+
+/* line 105, ../../sass/lagden/interface.scss */
 #accordionFormResult > h2 {
   cursor: pointer;
   font-size: 1.1em;
@@ -198,7 +382,7 @@
   padding: .5em;
   border: 1px solid #f8b500;
 }
-/* line 72, ../../sass/lagden/interface.scss */
+/* line 111, ../../sass/lagden/interface.scss */
 #accordionFormResult > h2.ativo {
   -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.1);
@@ -208,7 +392,7 @@
   background: none;
   border: 1px solid #dddddd;
 }
-/* line 86, ../../sass/lagden/interface.scss */
+/* line 125, ../../sass/lagden/interface.scss */
 #accordionFormResult > div.content > div {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -220,54 +404,8 @@
   padding: 1em;
   margin: .5em 0;
 }
-/* line 93, ../../sass/lagden/interface.scss */
-#accordionFormResult > div.content > div > form#frmBuscaImoveisRef ul li {
-  display: inline;
-}
-/* line 97, ../../sass/lagden/interface.scss */
-#accordionFormResult > div.content > div > form#frmBuscaImoveisRef label {
-  display: inline;
-}
-/* line 100, ../../sass/lagden/interface.scss */
-#accordionFormResult > div.content > div > form#frmBuscaImoveisRef input {
-  width: 150px;
-  padding: .5em;
-  margin-left: .3em;
-}
 
-/* line 111, ../../sass/lagden/interface.scss */
-div.pagination {
-  text-align: center;
-  color: #000;
-  background: none;
-}
-/* line 115, ../../sass/lagden/interface.scss */
-div.pagination span {
-  display: none;
-}
-/* line 118, ../../sass/lagden/interface.scss */
-div.pagination .next, div.pagination .prior {
-  background: #999;
-}
-/* line 121, ../../sass/lagden/interface.scss */
-div.pagination button.paginacaoUI {
-  padding: .3em;
-  margin-right: .25em;
-  width: 2em;
-  height: 2em;
-}
-/* line 128, ../../sass/lagden/interface.scss */
-div.pagination button.paginacaoSelecionado {
-  color: #FFBB00;
-  background-color: inherit;
-}
-/* line 129, ../../sass/lagden/interface.scss */
-div.pagination .paginacaoDisabled {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-}
-
-/* line 133, ../../sass/lagden/interface.scss */
+/* line 135, ../../sass/lagden/interface.scss */
 div.toolTip {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF000000', endColorstr='#FF000000');
@@ -287,7 +425,7 @@ div.toolTip {
   padding: .5em;
   z-index: 999;
 }
-/* line 141, ../../sass/lagden/interface.scss */
+/* line 143, ../../sass/lagden/interface.scss */
 div.toolTip div.tip-title {
   font-height: normal;
   color: #FFF;
@@ -295,88 +433,7 @@ div.toolTip div.tip-title {
   font-size: .9em;
   line-height: 1.2em;
 }
-/* line 149, ../../sass/lagden/interface.scss */
+/* line 151, ../../sass/lagden/interface.scss */
 div.toolTip div.tip-text {
   display: none;
-}
-
-/* line 153, ../../sass/lagden/interface.scss */
-.tabs {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  zoom: 1;
-}
-/* line 159, ../../sass/lagden/interface.scss */
-.tabs:before, .tabs:after {
-  display: table;
-  content: "";
-  zoom: 1;
-}
-/* line 164, ../../sass/lagden/interface.scss */
-.tabs:after {
-  clear: both;
-}
-/* line 165, ../../sass/lagden/interface.scss */
-.tabs > li {
-  float: left;
-  position: relative;
-  cursor: pointer;
-}
-/* line 169, ../../sass/lagden/interface.scss */
-.tabs > li > a {
-  font-size: .9em;
-  display: block;
-  padding: 0 15px;
-  margin-right: 2px;
-  line-height: 34px;
-  text-decoration: none;
-  -moz-border-radius: 4px 4px 0 0;
-  -webkit-border-radius: 4px 4px 0 0;
-  -o-border-radius: 4px 4px 0 0;
-  -ms-border-radius: 4px 4px 0 0;
-  -khtml-border-radius: 4px 4px 0 0;
-  border-radius: 4px 4px 0 0;
-  color: #f28510;
-}
-/* line 24, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.tabs > li > a:hover {
-  color: #333333;
-}
-/* line 178, ../../sass/lagden/interface.scss */
-.tabs > li > a:hover {
-  text-decoration: none;
-  background-color: #ddd;
-}
-/* line 185, ../../sass/lagden/interface.scss */
-.tabs > li.active > a {
-  background-color: #fff;
-}
-/* line 187, ../../sass/lagden/interface.scss */
-.tabs > li.active > a:hover {
-  text-decoration: none;
-  color: #f28510;
-}
-/* line 24, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.tabs > li.active > a:hover:hover {
-  color: #333333;
-}
-
-/* line 196, ../../sass/lagden/interface.scss */
-.tab-content > .tab-pane, .tab-content > div {
-  -moz-border-radius: 0 5px 5px 5px;
-  -webkit-border-radius: 0 5px 5px 5px;
-  -o-border-radius: 0 5px 5px 5px;
-  -ms-border-radius: 0 5px 5px 5px;
-  -khtml-border-radius: 0 5px 5px 5px;
-  border-radius: 0 5px 5px 5px;
-  padding: .5em;
-  background: #FFF;
-  display: none;
-  min-height: 391px;
-}
-/* line 204, ../../sass/lagden/interface.scss */
-.tab-content > .active {
-  display: block;
 }
