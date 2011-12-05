@@ -16,7 +16,29 @@ class TagTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Tag');
     }
-    
+
+    public function findByNameOrCreate($tags)
+    {
+        if (! is_array($tags))
+        {
+            $tags = preg_split('/\s*,\s*/', $tags, null, PREG_SPLIT_NO_EMPTY);
+        }
+
+        $output = array();
+        foreach ($tags as $tagName)
+        {
+            $tag = $this->findOneByName($tagName);
+            if (! $tag)
+            {
+                $tag = new Tag;
+                $tag->name = $tagName;
+                $tag->save();
+            }
+            $output[]=$tag->id;
+        }
+        return $output;
+    }
+
     // Filtro
     public function getListFilter(array $filters, Doctrine_Query $q = null)
     {

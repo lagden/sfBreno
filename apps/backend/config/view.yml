@@ -15,6 +15,9 @@ default:
     - backend.css
     # Mootools Roar CSS
     - /js/vendor/mootools/plugins/Roar/Roar.css
+    # jQuery
+    - /js/vendor/jquery/jquery-ui.css
+    - /js/vendor/jquery/plugins/tag-it/jquery.ui.tagit.css
 
   javascripts:
     # Mootools
@@ -24,7 +27,9 @@ default:
     - vendor/mootools/plugins/Roar/Roar.js
     # jQuery
     - vendor/jquery/jquery.js
+    - vendor/jquery/jquery-ui.min.js
     # jQuery - Plugins
+    - vendor/jquery/plugins/tag-it/jquery.ui.tagit.js
     # - vendor/jquery/plugins/headsupgrid/hugrid.js
     # - vendor/jquery/plugins/headsupgrid/init.js
     # jQuery - Plugins - Fancybox

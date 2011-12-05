@@ -59,14 +59,14 @@ class sectionActions extends GeneralActions
         // Form
         sfConfig::set("form_model","{$prefix_uc}Form");
         sfConfig::set("form_id","{$prefix}Form");
-
+        
         // Fields Searchable
         $fields=array("title","description","route");
         sfContext::getInstance()->getUser()->setAttribute("search_list.fields", $fields);
 
         // Table List
-        sfConfig::set("fields_labels",array("Ação","Seção","Descrição","Rota"));
-        sfConfig::set("fields_names",array("id","title","description","route"));
-        sfConfig::set("fields_sorts",array("id","title","description","route"));
+        sfConfig::set("fields_labels",array("Ação","Seção","Descrição","Rota","Ativado"));
+        sfConfig::set("fields_names",array("id","title","description","route","ativado"));
+        sfConfig::set("fields_sorts",array("id","title","description","route","is_active"));
     }
 }

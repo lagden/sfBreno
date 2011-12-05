@@ -8,11 +8,14 @@ class Tags
     */
     public static function modelo($m,$id)
     {
-        $obj = Doctrine_Core::getTable($m)->find($id);
         $tagArray = array();
-        foreach($obj->Tags as $tag)
+        $obj = Doctrine_Core::getTable($m)->find($id);
+        if($obj)
         {
-            $tagArray[]=$tag->name;
+            foreach($obj->Tags as $tag)
+            {
+                $tagArray[]=$tag->name;
+            }
         }
         return json_encode($tagArray);
     }

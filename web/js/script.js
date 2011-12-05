@@ -39,19 +39,7 @@ window.addEvent('domready',function()
     
     // Backend Form Validation
     ajuda.addFormValidation('formValidationGeneral');
-    
-    // Backend Tagit
-    var tagitFull=JSON.decode($('tagit_full_list').get('html'),true);
-    var tagitModel=JSON.decode($('tagit_model_list').get('html'),true);
-    var tag=jQuery("#form_tags_list");
-
-    tag.tagit({
-        fieldName:tag.data('name'),
-        availableTags:(tagitFull) ? tagitFull : [],
-        setTags:(tagitModel) ? tagitModel : [],
-        allowSpaces:true
-    });
-    
+        
     // jQuery
     (function($){
         // Backend - menu
@@ -140,6 +128,18 @@ window.addEvent('domready',function()
                 ,"json");
             }
         });
+        
+        // Backend Tagit
+        var tagitFull=$.parseJSON($('#tagit_full_list').html());
+        var tagitModel=$.parseJSON($('#tagit_model_list').html());
+        var tag=$("#form_tags_list");
+        tag.tagit({
+            fieldName:tag.data('name'),
+            availableTags:(tagitFull) ? tagitFull : [],
+            setTags:(tagitModel) ? tagitModel : [],
+            allowSpaces:true
+        });
+        
         
         // Backend - User
         $('input#user_change:checkbox').bind('click custom',function(){backendFunc.changePasswd(this);});

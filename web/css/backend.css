@@ -3813,3 +3813,8 @@ body {
 #tableList table tbody tr.set td, #tableList table tbody tr.set:hover td {
   background-color: #ffc8c8;
 }
+
+/* line 64, ../sass/backend.scss */
+.frm ul, .frm ol {
+  margin: 0;
+}
