@@ -16,9 +16,9 @@ class SectionForm extends BaseSectionForm
         
         $this->widgetSchema['route']->setLabel('Rota');
         $this->widgetSchema['title']->setLabel('Título')->setAttributes(array("title"=>"Título","class"=>"required"));
-        $this->widgetSchema['description']->setLabel('Descrição')->setAttributes(array("title"=>"Descrição","class"=>"required"));
-        $this->widgetSchema['content']->setLabel('Conteúdo');
-        $this->widgetSchema['seo']->setLabel('SEO');
+        $this->widgetSchema['description']->setLabel('Descrição')->setAttributes(array("title"=>"Descrição","class"=>"required xxlarge"));
+        $this->widgetSchema['content']->setLabel('Conteúdo')->setAttributes(array("class"=>"xxlarge tinymce"));
+        $this->widgetSchema['seo']->setLabel('SEO')->setAttributes(array("class"=>"xxlarge"));
         $this->widgetSchema['is_active']->setLabel('Ativado');
         $this->widgetSchema['tags_list']->setLabel('Tags');
         

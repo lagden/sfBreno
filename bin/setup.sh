@@ -61,7 +61,7 @@ then
     cp lib/vendor/symfony/data/bin/symfony ./
     ./symfony configure:database "mysql:host=localhost;dbname=db" root
 else
-    required_folders="log cache data web/uploads"
+    required_folders="log cache data web/uploads web/tiny_uploads"
     for folder in $required_folders
     do
         if [ ! -d $folder ]

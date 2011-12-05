@@ -13,6 +13,9 @@
     <![endif]-->
 </head>
 <body>
+    
+    <div class="hidden" id="publicPath" data-url="<?php echo public_path('/') ?>"></div>
+    
     <?php include_partial('global/header'); ?>
     <div class="container">
         <?php echo $sf_content ?>

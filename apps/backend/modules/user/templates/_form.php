@@ -5,12 +5,10 @@ use_javascripts_for_form($form);
 <?php
 $action = ($form->getObject()->isNew()) ? url_for(sfConfig::get('action_create')) : url_for(sfConfig::get('action_update'),array('id'=>$form->getObject()->getId()));
 echo $form->renderFormTag($action,array('method' => 'post','class' => 'frm clearfix','id' => 'formValidationGeneral'));
-$ignores = array('id');
+$ignores = array('id','change');
 ?>
     <?php if (!$form->getObject()->isNew()): ?>
         <input type="hidden" name="sf_method" value="put" />
-    <?php else: ?>
-        <?php array_push($ignores,'change') ?>
     <?php endif; ?>
     
     <?php echo $form->renderHiddenFields(); ?>
@@ -30,6 +28,22 @@ $ignores = array('id');
         }
     endforeach;
     ?>
+    
+    <?php if (!$form->getObject()->isNew()): ?>
+        <div class="clearfix">
+            <div class="input">
+                <ul class="inputs-list">
+                    <li>
+                        <label>
+                            <?php echo $form['change']->render(); ?>
+                            <span><?php echo $form['change']->renderLabelName(); ?></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <?php endif; ?>
+    
     <div class="actions">
         <?php echo tag('input', array('type' => 'submit', 'class' => 'btn primary', 'value' => 'Enviar')) ?>
         <?php echo tag('input',array('type'=>'button','class'=>'btn','value'=>'Voltar','onclick'=>'history.back();')); ?>

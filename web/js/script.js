@@ -2,6 +2,8 @@
 // Parecido com o Growl
 var Roar = new Roar({position: 'upperRight', duration: 7000});
 
+var PublicPath;
+
 // Domready
 window.addEvent('domready',function()
 {
@@ -42,6 +44,9 @@ window.addEvent('domready',function()
         
     // jQuery
     (function($){
+        
+        PublicPath = ajuda.routes('publicPath');
+        
         // Backend - menu
         $('#topbarBackend').dropdown();
         

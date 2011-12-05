@@ -3,6 +3,7 @@
 DIR="$( cd -P "$( dirname "$0" )" && pwd )"
 
 `sudo rm -rf web/uploads/*`
+`sudo rm -rf web/tiny_uploads/*`
 echo "Folders are clean."
 
 CMD="./symfony"
