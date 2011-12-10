@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
+
 THIS=$(basename $0)
+DIR="$( cd -P "$( dirname "$0" )" && pwd )"
+CURR_FOLDER=`pwd`
 
 usage()
 {
@@ -10,30 +13,36 @@ This script prepare the symfony project.
 
 OPTIONS:
    -h      Show this message
-   -p      Project name, default is 'sfProject'
-   -i      Ignore project
+   -p      Project name - eg.: ./setup -p sfProject
+   -a      Author name - eg.: ./setup -p sfProject -a Me
+   -f      Creating and fixing folders permissions
 EOF
-exit 1
 }
 
 IGNORE_P=0
-PROJECT="sfProject"
+AUTHOR="Thiago Lagden"
+PROJECT=false
 
-while getopts "hp:i" OPT; do
-    case $OPT in
-    "h") usage;;
-    "i") IGNORE_P=1;;
-    "p") PROJECT=$OPTARG;;
-    "?") exit -2;;
+while getopts "hp:a:f" OPT; do
+    case $OPT in    
+    f) IGNORE_P=1; PROJECT=true;;
+    p) PROJECT=$OPTARG;;
+    a) AUTHOR=$OPTARG;;
+    h|\?) usage; exit;;
     esac
 done
 
-DIR="$( cd -P "$( dirname "$0" )" && pwd )"
-ROOT_FOLDER=`pwd`
+if [[ $PROJECT == false ]]; then
+    usage
+    exit
+fi
 
-# Installs symfony
-vendor_folder="$ROOT_FOLDER/lib/vendor"
-vendor_symfony_folder="$ROOT_FOLDER/lib/vendor/symfony"
+# Go
+cd $CURR_FOLDER
+
+# Installs symfony anyway
+vendor_folder="$CURR_FOLDER/lib/vendor"
+vendor_symfony_folder="$CURR_FOLDER/lib/vendor/symfony"
 
 if [ ! -d $vendor_symfony_folder ]
 then
@@ -52,15 +61,23 @@ then
     rm symfony.tgz
 fi
 
-cd $ROOT_FOLDER
+# Go
+cd $CURR_FOLDER
 
 # generate project
-if [ ! -e "$ROOT_FOLDER/config" ] && [ $IGNORE_P = 0 ]
+if [ ! -e "$CURR_FOLDER/config" ] && [ $IGNORE_P = 0 ]
 then
-    lib/vendor/symfony/data/bin/symfony generate:project $PROJECT "Thiago Lagden"
+    lib/vendor/symfony/data/bin/symfony generate:project "$PROJECT" "$AUTHOR"
     cp lib/vendor/symfony/data/bin/symfony ./
     ./symfony configure:database "mysql:host=localhost;dbname=db" root
 else
+    echo "Project already exists"
+fi
+
+# Go
+cd $CURR_FOLDER
+
+if [ $IGNORE_P = 1 ] && [ -e "$CURR_FOLDER/config" ]; then
     required_folders="log cache data web/uploads web/tiny_uploads"
     for folder in $required_folders
     do
@@ -75,12 +92,26 @@ else
     done
 fi
 
+# Go
+cd $CURR_FOLDER
+
 # linking the sf web resources
-# cd "$ROOT_FOLDER/web"
-if [ ! -e "$ROOT_FOLDER/web/sf" ]
+if [ ! -e "$CURR_FOLDER/web/sf" ] && [ -d "$CURR_FOLDER/web" ]
 then
     echo "Creating link to /sf resources"
-    ln -sf ../lib/vendor/symfony/data/web/sf "$ROOT_FOLDER/web/sf"
+    cd "$CURR_FOLDER/web"
+    ln -sf ../lib/vendor/symfony/data/web/sf "$CURR_FOLDER/web/sf"
 fi
 
-exit 0
+# Go
+cd $CURR_FOLDER
+
+# Compass
+# remove sass cache
+cacheSASS="$CURR_FOLDER/web/.sass-cache"
+if [ -d $cacheSASS ]
+    then
+    rm -rf cacheSASS
+fi
+
+exit

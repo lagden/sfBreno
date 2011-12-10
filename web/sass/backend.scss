@@ -42,6 +42,7 @@ $bgSetColor:rgb(255, 0, 0);
 #tableList{
     table{
         th{
+            white-space:nowrap;
             &.ASC{
                 background-color:$bgThColor;
                 &:after{ content:' ▴'; }

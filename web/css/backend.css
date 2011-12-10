@@ -4233,28 +4233,32 @@ body {
   background: none;
 }
 
-/* line 45, ../sass/backend.scss */
+/* line 44, ../sass/backend.scss */
+#tableList table th {
+  white-space: nowrap;
+}
+/* line 46, ../sass/backend.scss */
 #tableList table th.ASC {
   background-color: #fff6d9;
 }
-/* line 47, ../sass/backend.scss */
+/* line 48, ../sass/backend.scss */
 #tableList table th.ASC:after {
   content: ' ▴';
 }
-/* line 49, ../sass/backend.scss */
+/* line 50, ../sass/backend.scss */
 #tableList table th.DESC {
   background-color: #fff6d9;
 }
-/* line 51, ../sass/backend.scss */
+/* line 52, ../sass/backend.scss */
 #tableList table th.DESC:after {
   content: ' ▾';
 }
-/* line 57, ../sass/backend.scss */
+/* line 58, ../sass/backend.scss */
 #tableList table tbody tr.set td, #tableList table tbody tr.set:hover td {
   background-color: #ffc8c8;
 }
 
-/* line 66, ../sass/backend.scss */
+/* line 67, ../sass/backend.scss */
 .frm ul, .frm ol {
   margin: 0;
 }

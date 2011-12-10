@@ -1,25 +1,25 @@
 <?php
 
 /**
-* section actions.
+* estate actions.
 *
 * @package    sfProject
-* @subpackage section
+* @subpackage estate
 * @author     Thiago Lagden
 * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
 */
-class sectionActions extends GeneralActions
+class estateActions extends GeneralActions
 {
     static public function setup()
     {
         // Vars
-        $prefix="section";
-        $prefix_uc="Section";
-        $single="seção";
-        $single_uc="Seção";
-        $plural="seções";
-        $plural_uc="Seções";
-        $new = (false) ? 'Novo':'Nova';
+        $prefix="estate";
+        $prefix_uc="Estate";
+        $single="imóvel";
+        $single_uc="Imóvel";
+        $plural="imóveis";
+        $plural_uc="Imóveis";
+        $new = (true) ? 'Novo':'Nova';
 
         // Filtro
         sfConfig::set("formFilter","SearchFormFilter"); // Formulario que sera utilizado no filtro
@@ -61,12 +61,12 @@ class sectionActions extends GeneralActions
         sfConfig::set("form_id","{$prefix}Form");
         
         // Fields Searchable
-        $fields=array("title","description","route");
+        $fields=array("Section.title","title","descricao");
         sfContext::getInstance()->getUser()->setAttribute("search_list.fields", $fields);
 
         // Table List
-        sfConfig::set("fields_labels",array("Ação","Seção","Rota","Posição","Ativado"));
-        sfConfig::set("fields_names",array("id","title","route","position","ativado"));
-        sfConfig::set("fields_sorts",array("id","title","route","position","is_active"));
+        sfConfig::set("fields_labels",array("Ação","Título","Referência","Preço Venda","Preço Aluguel","Disponível","Destaque","Ativado"));
+        sfConfig::set("fields_names",array("id","titulo","referencia","ValorVenda","ValorAluga","JoinDisponibilidades","EmDestaque","Ativado"));
+        sfConfig::set("fields_sorts",array("id","titulo","referencia","price_sale","price_rent","Disponibilidades.id","destaque","ativo"));
     }
 }

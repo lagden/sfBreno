@@ -65,8 +65,8 @@ class contentActions extends GeneralActions
         sfContext::getInstance()->getUser()->setAttribute("search_list.fields", $fields);
 
         // Table List
-        sfConfig::set("fields_labels",array("Ação","Seção","Conteúdo","Descrição","Ativado"));
-        sfConfig::set("fields_names",array("id","Section","title","description","ativado"));
-        sfConfig::set("fields_sorts",array("id","Section.title","title","description","is_active"));
+        sfConfig::set("fields_labels",array("Ação","Seção","Conteúdo","Posição","Ativado"));
+        sfConfig::set("fields_names",array("id","Section","title","position","ativado"));
+        sfConfig::set("fields_sorts",array("id","Section.title","title","position","is_active"));
     }
 }

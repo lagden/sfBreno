@@ -48,12 +48,12 @@
                     {
                         case 1:
                         $label="Valor para compra";
-                        $value="{$estate->price_sale}";
+                        $value="{$estate->ValorVenda}";
                         break;
                         
                         case 2:
                         $label="Valor para locação";
-                        $value="{$estate->price_rent}";
+                        $value="{$estate->ValorAluga}";
                         break;
                         
                         default:
@@ -63,7 +63,7 @@
                     <?php if ($label && $value): ?>
                         <tr>
                             <td><?php echo $label; ?></td>
-                            <td>R$ <?php echo number_format($value, 2, ',', '.'); ?></td>
+                            <td>R$ <?php echo $value; ?></td>
                         </tr>
                     <?php endif ?>
                 <?php endforeach ?>

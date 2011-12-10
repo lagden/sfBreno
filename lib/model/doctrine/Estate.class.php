@@ -22,6 +22,36 @@ class Estate extends BaseEstate
         return static::getJoin($this->Tags);
     }
     
+    public function getValorVenda()
+    {
+        return static::getCurrency($this->price_sale);
+    }
+    
+    public function getValorAluga()
+    {
+        return static::getCurrency($this->price_rent);
+    }
+    
+    public function getAtivado()
+    {
+        return static::getBool($this->ativo);
+    }
+    
+    public function getEmDestaque()
+    {
+        return static::getBool($this->destaque);
+    }
+    
+    static public function getBool($v)
+    {
+        return ($v) ? "Sim" : "Não";
+    }
+    
+    static public function getCurrency($v)
+    {
+        return number_format($v, 2, ',', '.'); 
+    }
+    
     static public function getJoin($es,$f='name')
     {
         $arr = array();
