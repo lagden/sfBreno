@@ -2,8 +2,6 @@
 use_stylesheets_for_form($form);
 use_javascripts_for_form($form);
 
-include_partial('global/tiny_mce');
-
 $action = ($form->getObject()->isNew()) ? url_for(sfConfig::get('action_create')) : url_for(sfConfig::get('action_update'),array('id'=>$form->getObject()->getId()));
 echo $form->renderFormTag($action,array('method' => 'post','class' => 'frm clearfix','id' => 'formValidationGeneral'));
 $ignores = array('id','tags_list','ativo','destaque');
@@ -47,7 +45,22 @@ $ignores = array('id','tags_list','ativo','destaque');
         </div>
     </div>
     
+    <?php if(!$form->getObject()->isNew()): ?>
+    <hr/>
+    <div class="clearfix">
+        <h3>Upload de imagens</h3>
+            <div id="uploader-container"
+                data-plupload-target-url="<?php //echo url_for('upload_upload',array(),array('absolute'=>true)) ?>"
+                data-plupload-swf-url="<?php echo javascript_path('vendor/plupload/plupload.flash.swf',array('absolute'=>true)) ?>"
+                data-plupload-estate="<?php echo $form['id']->getValue(); ?>"
+                data-plupload-rnd="<?php echo mt_rand(); ?>"
+                ><p>Seu navegador não tem suporte para HTML5, Flash.</p>
+            </div>
+    </div>
+    <?php endif; ?>
+    
     <div class="actions">
+        <?php echo tag('input', array('id'=>'enviarEditar','type' => 'button', 'class' => 'btn primary', 'value' => 'Enviar e Editar')) ?>
         <?php echo tag('input', array('type' => 'submit', 'class' => 'btn primary', 'value' => 'Enviar')) ?>
         <?php echo tag('input',array('type'=>'button','class'=>'btn','value'=>'Voltar','onclick'=>'history.back();')); ?>
         <?php if (!$form->getObject()->isNew()): ?>

@@ -1,0 +1,10 @@
+editSuccess:
+  stylesheets:
+    - /js/vendor/plupload/jquery.plupload.queue/css/jquery.plupload.queue.css
+  javascripts:
+    - vendor/plupload/plupload.js
+    - vendor/plupload/plupload.flash.js
+    - vendor/plupload/plupload.html5.js
+    - vendor/plupload/jquery.plupload.queue/jquery.plupload.queue.js
+    - vendor/plupload/i18n/pt-br.js
+    - plupload.js

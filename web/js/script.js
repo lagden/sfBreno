@@ -7,6 +7,8 @@ var PublicPath;
 // Domready
 window.addEvent('domready',function()
 {
+    ajuda.flashNotice();
+    
     var brenoTips = new Tips($$('.brenoTips'),
     {
         className:'toolTip',
@@ -40,7 +42,7 @@ window.addEvent('domready',function()
     ajuda.addFormValidation('formValidationLogin',backendFunc.handlerAuth,true);
     
     // Backend Form Validation
-    ajuda.addFormValidation('formValidationGeneral');
+    var backendFrm = ajuda.addFormValidation('formValidationGeneral');
         
     // jQuery
     (function($){
@@ -145,11 +147,19 @@ window.addEvent('domready',function()
             allowSpaces:true
         });
         
-        
         // Backend - User
         $('input#user_change:checkbox').bind('click custom',function(){backendFunc.changePasswd(this);});
         $('input#user_change').trigger('custom');
         
+        // Backend - Enviar e Editar
+        $('input#enviarEditar').click(function(){
+            var validado = backendFrm.validate();
+            if(validado)
+            {
+                Cookie.write('salvaEdita',1);
+                $(this).parent().parent().submit();
+            }
+        });
     })
     (jQuery);
 });
@@ -346,6 +356,10 @@ var frmEstateSearch={
 
 // Helpers
 var ajuda={
+    flashNotice:function(){
+        var msg = jQuery('#flash_notice').text();
+        if(msg) ajuda.alerta(msg);
+    },
     triggerAjax:function(act){
         var bts = jQuery('button:button, button:submit');
         (act) ? bts.css('opacity',.5).attr('disabled','disabled') : bts.css('opacity',1).removeAttr('disabled');
@@ -364,15 +378,14 @@ var ajuda={
         frm = $(f);
         if(frm)
         {
-            ajuda.formValidation(f,handler);
             if(prev)
             {
                 // Evita o submit do form -> submit controlado pelo handler
                 $(f).addEvent('submit',function(e){
-                    new Event(e).stop();
-                    return false;
+                    e.preventDefault();
                 });
             }
+            return ajuda.formValidation(f,handler);
         }
     },
     formValidation:function(f,func)
@@ -398,6 +411,14 @@ var ajuda={
                 },
                 onFormValidate: func
             });
+            
+            frmVal.add('validate-currency-real', {
+                errorMsg: 'Digite um valor em dinheiro válido. Exemplo: 1.100,00',
+                test: function(element){
+                    return Form.Validator.getValidator('IsEmpty').test(element) || (/^(\d{1,3}(\.\d{3})*|(\d+))(\,\d{2})?$/).test(element.get('value'))
+                }
+            });
+            
             return frmVal;
         }
         else return false;

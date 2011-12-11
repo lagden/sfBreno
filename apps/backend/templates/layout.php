@@ -16,6 +16,9 @@
     
     <div class="hidden" id="publicPath" data-url="<?php echo public_path('/') ?>"></div>
     
+    <!-- Notice -->
+    <?php include_partial('global/flash_notice'); ?>
+    
     <?php include_partial('global/header'); ?>
     <div class="container">
         <?php echo $sf_content ?>

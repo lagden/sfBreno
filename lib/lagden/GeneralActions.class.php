@@ -127,7 +127,7 @@ class GeneralActions extends sfActions
     private function processForm(sfWebRequest $request, sfForm $form)
     {
         $post=Xtras::helper($request,$form);
-
+        
         $form->bind($post, $request->getFiles($form->getName()));
         if ($form->isValid())
         {
@@ -137,7 +137,13 @@ class GeneralActions extends sfActions
                 $notice = 'Dados gravados com sucesso.';
                 $this->getUser()->setFlash('notice', "{$notice}", true);
                 $this->getUser()->setAttribute(sfConfig::get('last_edited'), $obj->id);
-                $this->redirect(sfConfig::get('redirect_index'));
+                $saveEdit=$request->getCookie('salvaEdita',false);
+                if($saveEdit)
+                {
+                    sfContext::getInstance()->getResponse()->setCookie('salvaEdita',null);
+                    $this->redirect(sfConfig::get('action_edit'),array('id' => $obj->id));
+                }
+                else $this->redirect(sfConfig::get('redirect_index'));
             }
             else
             {

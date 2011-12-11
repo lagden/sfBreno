@@ -12,46 +12,87 @@
 */
 class Estate extends BaseEstate
 {
+    public function setPriceRent($price)
+    {
+        if($price) $this->_set('price_rent', static::floatPrice($price));
+        return $this;
+    }
+
+    public function setPriceSale($price)
+    {
+        if($price) $this->_set('price_sale', static::floatPrice($price));
+        return $this;
+    }
+
+    public function setIptu($price)
+    {
+        if($price) $this->_set('iptu', static::floatPrice($price));
+        return $this;
+    }
+
+    public function setCondominio($price)
+    {
+        if($price) $this->_set('condominio', static::floatPrice($price));
+        return $this;
+    }
+
     public function getJoinDisponibilidades()
     {
         return static::getJoin($this->Disponibilidades);
     }
-    
+
     public function getJoinTags()
     {
         return static::getJoin($this->Tags);
     }
-    
+
     public function getValorVenda()
     {
         return static::getCurrency($this->price_sale);
     }
-    
+
     public function getValorAluga()
     {
         return static::getCurrency($this->price_rent);
     }
-    
+
     public function getAtivado()
     {
         return static::getBool($this->ativo);
     }
-    
+
     public function getEmDestaque()
     {
         return static::getBool($this->destaque);
     }
-    
+
+    static public function floatPrice($v)
+    {
+        $r = str_replace('.','',$v);
+        $r = str_replace(',','.',$r);
+        return $r;
+    }
+
     static public function getBool($v)
     {
         return ($v) ? "Sim" : "Não";
     }
-    
-    static public function getCurrency($v)
+
+    static public function getCurrency($v,$t="real")
     {
-        return number_format($v, 2, ',', '.'); 
+        $r=0;
+        switch($t)
+        {
+            case 'dollar':
+            $r=number_format($v, 2, '.', ',');
+            break;
+
+            default:
+            $r=number_format($v, 2, ',', '.');
+        }
+        return $r; 
     }
-    
+
     static public function getJoin($es,$f='name')
     {
         $arr = array();

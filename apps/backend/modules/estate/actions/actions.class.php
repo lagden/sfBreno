@@ -61,7 +61,7 @@ class estateActions extends GeneralActions
         sfConfig::set("form_id","{$prefix}Form");
         
         // Fields Searchable
-        $fields=array("Section.title","title","descricao");
+        $fields=array("id","titulo","referencia","price_sale","price_rent","Disponibilidades.id","destaque","ativo");
         sfContext::getInstance()->getUser()->setAttribute("search_list.fields", $fields);
 
         // Table List
