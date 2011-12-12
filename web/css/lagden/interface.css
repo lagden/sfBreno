@@ -310,8 +310,7 @@
 }
 
 /* line 28, ../../sass/lagden/interface.scss */
-.form_estiloso_disabled, .frm textarea:disabled, .frm select:disabled,
-.frm button:disabled, .frm input[type=file]:disabled, .frm input[type=text]:disabled, .frm input[type=email]:disabled, .frm input[type=url]:disabled, .frm input[type=tel]:disabled, .frm input[type=password]:focus {
+.form_estiloso_disabled, .frm textarea:disabled, .frm select:disabled, .frm button:disabled, .frm input[type=file]:disabled, .frm input[type=text]:disabled, .frm input[type=email]:disabled, .frm input[type=url]:disabled, .frm input[type=tel]:disabled, .frm input[type=password]:focus {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=5000);
   opacity: 50;
 }
@@ -436,4 +435,54 @@ div.toolTip div.tip-title {
 /* line 151, ../../sass/lagden/interface.scss */
 div.toolTip div.tip-text {
   display: none;
+}
+
+/* line 156, ../../sass/lagden/interface.scss */
+.plupload > .plupload_header {
+  display: none;
+}
+/* line 168, ../../sass/lagden/interface.scss */
+.plupload .plupload_filelist_header {
+  background-color: #eeeeee;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: -o-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: -ms-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  -moz-border-radius: 7px 7px 0 0;
+  -webkit-border-radius: 7px 7px 0 0;
+  -o-border-radius: 7px 7px 0 0;
+  -ms-border-radius: 7px 7px 0 0;
+  -khtml-border-radius: 7px 7px 0 0;
+  border-radius: 7px 7px 0 0;
+}
+/* line 173, ../../sass/lagden/interface.scss */
+.plupload .plupload_filelist_header > div {
+  font-size: 1.3em;
+}
+/* line 178, ../../sass/lagden/interface.scss */
+.plupload .plupload_filelist_footer {
+  background-color: #eeeeee;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: -o-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: -ms-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  -moz-border-radius: 0 0 7px 7px;
+  -webkit-border-radius: 0 0 7px 7px;
+  -o-border-radius: 0 0 7px 7px;
+  -ms-border-radius: 0 0 7px 7px;
+  -khtml-border-radius: 0 0 7px 7px;
+  border-radius: 0 0 7px 7px;
+  padding: 2em;
+}
+/* line 184, ../../sass/lagden/interface.scss */
+.plupload .plupload_filelist_footer > div {
+  font-size: 1.3em;
 }

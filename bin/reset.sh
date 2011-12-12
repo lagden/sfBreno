@@ -10,7 +10,8 @@ cd $CURR_FOLDER
 echo "sudo mode!!!"
 
 `sudo rm -rf web/uploads/*`
-`sudo rm -rf web/tiny_uploads/*`
+`sudo rm -rf web/tiny/*`
+`sudo rm -rf web/estates/*`
 `rm -rf log/`
 `rm -rf cache/`
 

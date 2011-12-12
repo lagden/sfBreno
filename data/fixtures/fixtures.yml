@@ -12,6 +12,22 @@ User:
     password: 123
     phone: 22 2222-2222
 
+Format:
+  format_original:
+    name: Original
+  format_large:
+    name: Large     # 1023 x 767
+  format_medium1:
+    name: Medium1   # 640 x 480
+  format_medium2:
+    name: Medium2   # 500 x 375
+  format_small:
+    name: Small     # 240 x 180
+  format_th:
+    name: Thumbnail # 100 x 75
+  format_sq:
+    name: Square    # (75 x 75)
+
 City:
   city_1:
       name: São Paulo

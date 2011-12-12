@@ -1,7 +1,10 @@
 <?php $qs=array('slug'=>$estate->slug); ?>
 <article>
     <div class="efeito">
-        <?php echo link_to(image_tag('tmp/p'.((rand()%2)?1:2).'.jpg',array('alt'=>$estate->titulo)),'estate_show',$qs,array('class'=>'img')); ?>
+        <?php
+        $currImg = ($estate->image_destaque) ? "/estates/{$estate->image_destaque->small->file}" : 'assets/noimage.gif';
+        echo link_to(image_tag("{$currImg}",array('alt'=>$estate->titulo)),'estate_show',$qs,array('class'=>'img'));
+        ?>
         <header>
             <h3><?php echo link_to("{$estate->titulo}",'estate_show',$qs); ?></h3>
             <p><?php echo link_to("{$estate->descricao}",'estate_show',$qs,array('class'=>'brenoTips','title'=>$estate->descricao)); ?></p>

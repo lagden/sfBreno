@@ -34,6 +34,7 @@ body{ padding-top: 40px; }
 
 .actions{
     background:none;
+    padding:17px 20px 18px 0;
 }
 
 $bgThColor:rgb(255, 246, 217);
@@ -65,4 +66,32 @@ $bgSetColor:rgb(255, 0, 0);
 
 .frm{
     ul, ol { margin: 0; }
+}
+
+// Image e Album List
+div.ib_img{
+    margin:5px;
+    display:block;
+    float:left;
+    position:relative;
+    img{
+        cursor:pointer;
+        &.file{
+            padding:5px;
+            display:block;
+            background-color:$sitecolor+100;
+            &:hover{
+                background-color:$sitecolor;
+            }
+        }
+        &.destaque{
+            background-color:#009;
+        }
+    }
+    .removeImage{
+        top:-2px;
+        right:-2px;
+        position:absolute;
+        cursor:pointer;
+    }
 }

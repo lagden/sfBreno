@@ -2045,6 +2045,56 @@ div.toolTip div.tip-text {
   display: none;
 }
 
+/* line 156, ../sass/lagden/interface.scss */
+.plupload > .plupload_header {
+  display: none;
+}
+/* line 168, ../sass/lagden/interface.scss */
+.plupload .plupload_filelist_header {
+  background-color: #eeeeee;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: -o-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: -ms-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  -moz-border-radius: 7px 7px 0 0;
+  -webkit-border-radius: 7px 7px 0 0;
+  -o-border-radius: 7px 7px 0 0;
+  -ms-border-radius: 7px 7px 0 0;
+  -khtml-border-radius: 7px 7px 0 0;
+  border-radius: 7px 7px 0 0;
+}
+/* line 173, ../sass/lagden/interface.scss */
+.plupload .plupload_filelist_header > div {
+  font-size: 1.3em;
+}
+/* line 178, ../sass/lagden/interface.scss */
+.plupload .plupload_filelist_footer {
+  background-color: #eeeeee;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: -o-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: -ms-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background-image: linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  -moz-border-radius: 0 0 7px 7px;
+  -webkit-border-radius: 0 0 7px 7px;
+  -o-border-radius: 0 0 7px 7px;
+  -ms-border-radius: 0 0 7px 7px;
+  -khtml-border-radius: 0 0 7px 7px;
+  border-radius: 0 0 7px 7px;
+  padding: 2em;
+}
+/* line 184, ../sass/lagden/interface.scss */
+.plupload .plupload_filelist_footer > div {
+  font-size: 1.3em;
+}
+
 /* variables.scss
  * Variables and mixins to pre-ignite any new web development project
  * ------------------------------------------------------------------ */
@@ -2103,9 +2153,7 @@ div.toolTip div.tip-text {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 /* line 29, ../sass/bootstrap/patterns.scss */
-.topbar h3 a:hover,
-.topbar .brand:hover,
-.topbar ul .active > a {
+.topbar h3 a:hover, .topbar .brand:hover, .topbar ul .active > a {
   background-color: #333;
   background-color: rgba(255, 255, 255, 0.05);
   color: white;
@@ -2116,8 +2164,7 @@ div.toolTip div.tip-text {
   position: relative;
 }
 /* line 42, ../sass/bootstrap/patterns.scss */
-.topbar h3 a,
-.topbar .brand {
+.topbar h3 a, .topbar .brand {
   float: left;
   display: block;
   padding: 8px 20px 12px;
@@ -2265,18 +2312,14 @@ div.toolTip div.tip-text {
   margin-right: 0;
 }
 /* line 165, ../sass/bootstrap/patterns.scss */
-.topbar div > ul.secondary-nav .menu-dropdown,
-.topbar div > ul.secondary-nav .dropdown-menu,
+.topbar div > ul.secondary-nav .menu-dropdown, .topbar div > ul.secondary-nav .dropdown-menu,
 .nav.secondary-nav .menu-dropdown,
 .nav.secondary-nav .dropdown-menu {
   right: 0;
   border: 0;
 }
 /* line 175, ../sass/bootstrap/patterns.scss */
-.topbar div > ul a.menu:hover,
-.topbar div > ul li.open .menu,
-.topbar div > ul .dropdown-toggle:hover,
-.topbar div > ul .dropdown.open .dropdown-toggle,
+.topbar div > ul a.menu:hover, .topbar div > ul li.open .menu, .topbar div > ul .dropdown-toggle:hover, .topbar div > ul .dropdown.open .dropdown-toggle,
 .nav a.menu:hover,
 .nav li.open .menu,
 .nav .dropdown-toggle:hover,
@@ -2285,17 +2328,13 @@ div.toolTip div.tip-text {
   background: rgba(255, 255, 255, 0.05);
 }
 /* line 181, ../sass/bootstrap/patterns.scss */
-.topbar div > ul .menu-dropdown,
-.topbar div > ul .dropdown-menu,
+.topbar div > ul .menu-dropdown, .topbar div > ul .dropdown-menu,
 .nav .menu-dropdown,
 .nav .dropdown-menu {
   background-color: #333;
 }
 /* line 185, ../sass/bootstrap/patterns.scss */
-.topbar div > ul .menu-dropdown a.menu,
-.topbar div > ul .menu-dropdown .dropdown-toggle,
-.topbar div > ul .dropdown-menu a.menu,
-.topbar div > ul .dropdown-menu .dropdown-toggle,
+.topbar div > ul .menu-dropdown a.menu, .topbar div > ul .menu-dropdown .dropdown-toggle, .topbar div > ul .dropdown-menu a.menu, .topbar div > ul .dropdown-menu .dropdown-toggle,
 .nav .menu-dropdown a.menu,
 .nav .menu-dropdown .dropdown-toggle,
 .nav .dropdown-menu a.menu,
@@ -2303,10 +2342,7 @@ div.toolTip div.tip-text {
   color: white;
 }
 /* line 187, ../sass/bootstrap/patterns.scss */
-.topbar div > ul .menu-dropdown a.menu.open,
-.topbar div > ul .menu-dropdown .dropdown-toggle.open,
-.topbar div > ul .dropdown-menu a.menu.open,
-.topbar div > ul .dropdown-menu .dropdown-toggle.open,
+.topbar div > ul .menu-dropdown a.menu.open, .topbar div > ul .menu-dropdown .dropdown-toggle.open, .topbar div > ul .dropdown-menu a.menu.open, .topbar div > ul .dropdown-menu .dropdown-toggle.open,
 .nav .menu-dropdown a.menu.open,
 .nav .menu-dropdown .dropdown-toggle.open,
 .nav .dropdown-menu a.menu.open,
@@ -2315,16 +2351,14 @@ div.toolTip div.tip-text {
   background: rgba(255, 255, 255, 0.05);
 }
 /* line 192, ../sass/bootstrap/patterns.scss */
-.topbar div > ul .menu-dropdown li a,
-.topbar div > ul .dropdown-menu li a,
+.topbar div > ul .menu-dropdown li a, .topbar div > ul .dropdown-menu li a,
 .nav .menu-dropdown li a,
 .nav .dropdown-menu li a {
   color: #999;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 /* line 195, ../sass/bootstrap/patterns.scss */
-.topbar div > ul .menu-dropdown li a:hover,
-.topbar div > ul .dropdown-menu li a:hover,
+.topbar div > ul .menu-dropdown li a:hover, .topbar div > ul .dropdown-menu li a:hover,
 .nav .menu-dropdown li a:hover,
 .nav .dropdown-menu li a:hover {
   background-color: #191919;
@@ -2340,15 +2374,13 @@ div.toolTip div.tip-text {
   color: white;
 }
 /* line 200, ../sass/bootstrap/patterns.scss */
-.topbar div > ul .menu-dropdown .active a,
-.topbar div > ul .dropdown-menu .active a,
+.topbar div > ul .menu-dropdown .active a, .topbar div > ul .dropdown-menu .active a,
 .nav .menu-dropdown .active a,
 .nav .dropdown-menu .active a {
   color: white;
 }
 /* line 203, ../sass/bootstrap/patterns.scss */
-.topbar div > ul .menu-dropdown .divider,
-.topbar div > ul .dropdown-menu .divider,
+.topbar div > ul .menu-dropdown .divider, .topbar div > ul .dropdown-menu .divider,
 .nav .menu-dropdown .divider,
 .nav .dropdown-menu .divider {
   background-color: #222;
@@ -2467,8 +2499,7 @@ a.menu:after,
 }
 
 /* line 310, ../sass/bootstrap/patterns.scss */
-.open .menu,
-.open .dropdown-toggle,
+.open .menu, .open .dropdown-toggle,
 .dropdown.open .menu,
 .dropdown.open .dropdown-toggle {
   color: white;
@@ -2476,8 +2507,7 @@ a.menu:after,
   background: rgba(0, 0, 0, 0.3);
 }
 /* line 317, ../sass/bootstrap/patterns.scss */
-.open .menu-dropdown,
-.open .dropdown-menu,
+.open .menu-dropdown, .open .dropdown-menu,
 .dropdown.open .menu-dropdown,
 .dropdown.open .dropdown-menu {
   display: block;
@@ -2543,8 +2573,7 @@ a.menu:after,
   border-color: #eee #eee #ddd;
 }
 /* line 364, ../sass/bootstrap/patterns.scss */
-.tabs .active > a,
-.tabs .active > a:hover {
+.tabs .active > a, .tabs .active > a:hover {
   color: gray;
   background-color: white;
   border: 1px solid #ddd;
@@ -2553,8 +2582,7 @@ a.menu:after,
 }
 
 /* line 377, ../sass/bootstrap/patterns.scss */
-.tabs .menu-dropdown,
-.tabs .dropdown-menu {
+.tabs .menu-dropdown, .tabs .dropdown-menu {
   top: 35px;
   border-width: 1px;
   -webkit-border-radius: 0 6px 6px 6px;
@@ -2562,20 +2590,17 @@ a.menu:after,
   border-radius: 0 6px 6px 6px;
 }
 /* line 384, ../sass/bootstrap/patterns.scss */
-.tabs a.menu:after,
-.tabs .dropdown-toggle:after {
+.tabs a.menu:after, .tabs .dropdown-toggle:after {
   border-top-color: #999;
   margin-top: 15px;
   margin-left: 5px;
 }
 /* line 391, ../sass/bootstrap/patterns.scss */
-.tabs li.open.menu .menu,
-.tabs .open.dropdown .dropdown-toggle {
+.tabs li.open.menu .menu, .tabs .open.dropdown .dropdown-toggle {
   border-color: #999;
 }
 /* line 396, ../sass/bootstrap/patterns.scss */
-.tabs li.open a.menu:after,
-.tabs .dropdown.open .dropdown-toggle:after {
+.tabs li.open a.menu:after, .tabs .dropdown.open .dropdown-toggle:after {
   border-top-color: #555;
 }
 
@@ -2704,7 +2729,7 @@ footer {
 }
 
 /* line 522, ../sass/bootstrap/patterns.scss */
-.btn.danger, .btn.danger:hover, .btn.error, .btn.error:hover, .btn.success, .btn.success:hover, .btn.info, .btn.info:hover,
+.btn.danger, .plupload .danger.plupload_button, .btn.danger:hover, .plupload .danger.plupload_button:hover, .btn.error, .plupload .error.plupload_button, .btn.error:hover, .plupload .error.plupload_button:hover, .btn.success, .plupload .success.plupload_button, .btn.success:hover, .plupload .success.plupload_button:hover, .btn.info, .plupload .info.plupload_button, .plupload .plupload_button.plupload_add, .plupload .plupload_button.plupload_start, .plupload .plupload_button.plupload_disabled, .btn.info:hover, .plupload .info.plupload_button:hover, .plupload .plupload_button.plupload_add:hover, .plupload .plupload_button.plupload_start:hover, .plupload .plupload_button.plupload_disabled:hover,
 .alert-message.danger,
 .alert-message.danger:hover,
 .alert-message.error,
@@ -2716,13 +2741,13 @@ footer {
   color: white;
 }
 /* line 526, ../sass/bootstrap/patterns.scss */
-.btn .close,
+.btn .close, .plupload .plupload_button .close,
 .alert-message .close {
   font-family: Arial, sans-serif;
   line-height: 18px;
 }
 /* line 532, ../sass/bootstrap/patterns.scss */
-.btn.danger, .btn.error,
+.btn.danger, .plupload .danger.plupload_button, .btn.error, .plupload .error.plupload_button,
 .alert-message.danger,
 .alert-message.error {
   background-color: #c43c35;
@@ -2740,7 +2765,7 @@ footer {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 /* line 536, ../sass/bootstrap/patterns.scss */
-.btn.success,
+.btn.success, .plupload .success.plupload_button,
 .alert-message.success {
   background-color: #57a957;
   background-repeat: repeat-x;
@@ -2757,7 +2782,7 @@ footer {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 /* line 540, ../sass/bootstrap/patterns.scss */
-.btn.info,
+.btn.info, .plupload .info.plupload_button, .plupload .plupload_button.plupload_add, .plupload .plupload_button.plupload_start, .plupload .plupload_button.plupload_disabled,
 .alert-message.info {
   background-color: #339bb9;
   background-repeat: repeat-x;
@@ -2775,7 +2800,7 @@ footer {
 }
 
 /* line 546, ../sass/bootstrap/patterns.scss */
-.btn {
+.btn, .plupload .plupload_button {
   cursor: pointer;
   display: inline-block;
   background-color: #e6e6e6;
@@ -2807,17 +2832,17 @@ footer {
   transition: 0.1s linear all;
 }
 /* line 562, ../sass/bootstrap/patterns.scss */
-.btn:hover {
+.btn:hover, .plupload .plupload_button:hover {
   background-position: 0 -15px;
   color: #333;
   text-decoration: none;
 }
 /* line 569, ../sass/bootstrap/patterns.scss */
-.btn:focus {
+.btn:focus, .plupload .plupload_button:focus {
   outline: 1px dotted #666;
 }
 /* line 574, ../sass/bootstrap/patterns.scss */
-.btn.primary {
+.btn.primary, .plupload .primary.plupload_button {
   color: white;
   background-color: #0064cd;
   background-repeat: repeat-x;
@@ -2834,13 +2859,13 @@ footer {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 /* line 584, ../sass/bootstrap/patterns.scss */
-.btn.active, .btn:active {
+.btn.active, .plupload .active.plupload_button, .btn:active, .plupload .plupload_button:active {
   -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* line 588, ../sass/bootstrap/patterns.scss */
-.btn.disabled {
+.btn.disabled, .plupload .disabled.plupload_button {
   cursor: default;
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -2853,7 +2878,7 @@ footer {
   box-shadow: none;
 }
 /* line 595, ../sass/bootstrap/patterns.scss */
-.btn[disabled] {
+.btn[disabled], .plupload [disabled].plupload_button {
   cursor: default;
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -2866,7 +2891,7 @@ footer {
   box-shadow: none;
 }
 /* line 606, ../sass/bootstrap/patterns.scss */
-.btn.large {
+.btn.large, .plupload .large.plupload_button {
   font-size: 15px;
   line-height: normal;
   padding: 9px 14px 9px;
@@ -2875,20 +2900,24 @@ footer {
   border-radius: 6px;
 }
 /* line 612, ../sass/bootstrap/patterns.scss */
-.btn.small {
+.btn.small, .plupload .small.plupload_button {
   padding: 7px 9px 7px;
   font-size: 11px;
 }
 
 /* line 619, ../sass/bootstrap/patterns.scss */
 :root .alert-message,
-:root .btn {
+:root .btn,
+:root .plupload .plupload_button, .plupload
+:root .plupload_button {
   border-radius: 0 \0;
 }
 
 /* line 626, ../sass/bootstrap/patterns.scss */
-button.btn::-moz-focus-inner,
-input[type=submit].btn::-moz-focus-inner {
+button.btn::-moz-focus-inner, .plupload button.plupload_button::-moz-focus-inner,
+input[type=submit].btn::-moz-focus-inner,
+.plupload input[type=submit].plupload_button::-moz-focus-inner, .plupload
+input[type=submit].plupload_button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
@@ -2974,7 +3003,7 @@ input[type=submit].btn::-moz-focus-inner {
   line-height: 28px;
 }
 /* line 697, ../sass/bootstrap/patterns.scss */
-.alert-message .btn {
+.alert-message .btn, .alert-message .plupload .plupload_button, .plupload .alert-message .plupload_button {
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
@@ -3066,13 +3095,11 @@ input[type=submit].btn::-moz-focus-inner {
   text-decoration: none;
 }
 /* line 779, ../sass/bootstrap/patterns.scss */
-.pagination a:hover,
-.pagination .active a {
+.pagination a:hover, .pagination .active a {
   background-color: #c7eefe;
 }
 /* line 783, ../sass/bootstrap/patterns.scss */
-.pagination .disabled a,
-.pagination .disabled a:hover {
+.pagination .disabled a, .pagination .disabled a:hover {
   background-color: transparent;
   color: #bfbfbf;
 }
@@ -3208,7 +3235,7 @@ input[type=submit].btn::-moz-focus-inner {
   clear: both;
 }
 /* line 871, ../sass/bootstrap/patterns.scss */
-.modal-footer .btn {
+.modal-footer .btn, .modal-footer .plupload .plupload_button, .plupload .modal-footer .plupload_button {
   float: right;
   margin-left: 5px;
 }
@@ -3863,10 +3890,11 @@ body > footer {
 /* line 119, ../sass/lagden/site.scss */
 .listing > article .efeito a.img img {
   max-width: 214px;
+  min-height: 160px;
   display: block;
   margin: 0 auto;
 }
-/* line 129, ../sass/lagden/site.scss */
+/* line 130, ../sass/lagden/site.scss */
 .listing > article .efeito header h3 {
   color: #FFF;
   font-size: .9em;
@@ -3881,7 +3909,7 @@ body > footer {
   margin-right: 5px;
   background-color: #FB0;
 }
-/* line 137, ../sass/lagden/site.scss */
+/* line 138, ../sass/lagden/site.scss */
 .listing > article .efeito header h3 a {
   white-space: nowrap;
   overflow: hidden;
@@ -3897,14 +3925,14 @@ body > footer {
 .listing > article .efeito header h3 a:hover {
   text-decoration: underline;
 }
-/* line 144, ../sass/lagden/site.scss */
+/* line 145, ../sass/lagden/site.scss */
 .listing > article .efeito header p {
   font-size: .8em;
   background-color: #EEE0C3;
   color: #333333;
   padding: 1em .5em;
 }
-/* line 149, ../sass/lagden/site.scss */
+/* line 150, ../sass/lagden/site.scss */
 .listing > article .efeito header p a {
   white-space: nowrap;
   overflow: hidden;
@@ -3920,14 +3948,14 @@ body > footer {
 .listing > article .efeito header p a:hover {
   text-decoration: underline;
 }
-/* line 157, ../sass/lagden/site.scss */
+/* line 158, ../sass/lagden/site.scss */
 .listing > article .efeito footer {
   text-align: center;
   margin: 1.5em 0;
   padding: 0;
   border: 0;
 }
-/* line 163, ../sass/lagden/site.scss */
+/* line 164, ../sass/lagden/site.scss */
 .listing > article .efeito footer a {
   padding: 0.6em 0.7em 0.6em 0.7em;
   border: 1px solid transparent;
@@ -3942,8 +3970,8 @@ body > footer {
   outline: none;
 }
 
-/* line 178, ../sass/lagden/site.scss */
-.btn.orange {
+/* line 179, ../sass/lagden/site.scss */
+.btn.orange, .plupload .orange.plupload_button {
   color: white;
   background-color: #ff9924;
   background-repeat: repeat-x;
@@ -3960,13 +3988,13 @@ body > footer {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
-/* line 185, ../sass/lagden/site.scss */
+/* line 186, ../sass/lagden/site.scss */
 .frm ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 190, ../sass/lagden/site.scss */
+/* line 191, ../sass/lagden/site.scss */
 .frm ul > li {
   color: #474747;
   font-size: .9em;
@@ -3974,63 +4002,59 @@ body > footer {
   padding: .5em;
   position: relative;
 }
-/* line 196, ../sass/lagden/site.scss */
+/* line 197, ../sass/lagden/site.scss */
 .frm ul > li > label {
   display: block;
   font-weight: bold;
   margin-bottom: .3em;
 }
-/* line 200, ../sass/lagden/site.scss */
+/* line 201, ../sass/lagden/site.scss */
 .frm ul > li > label.obr:before {
   content: "* ";
 }
-/* line 205, ../sass/lagden/site.scss */
+/* line 206, ../sass/lagden/site.scss */
 .frm ul > li ul.radio_list li {
   float: left;
   padding: .5em;
   margin: 0;
 }
-/* line 209, ../sass/lagden/site.scss */
+/* line 210, ../sass/lagden/site.scss */
 .frm ul > li ul.radio_list li label {
   display: inline;
   font-weight: normal;
 }
-/* line 216, ../sass/lagden/site.scss */
+/* line 217, ../sass/lagden/site.scss */
 .frm ul > li ul.checkbox_list li {
   display: block;
   padding: .5em;
   margin: 0;
 }
-/* line 220, ../sass/lagden/site.scss */
+/* line 221, ../sass/lagden/site.scss */
 .frm ul > li ul.checkbox_list li label {
   display: inline;
   font-weight: normal;
 }
 
-/* line 235, ../sass/lagden/site.scss */
-.frmFull li textarea, .frmBusca li textarea,
-.frmFull li input[type=text],
-.frmBusca li input[type=text],
-.frmFull li select,
-.frmBusca li select {
+/* line 236, ../sass/lagden/site.scss */
+.frmFull li textarea, .frmBusca li textarea, .frmFull li input[type=text], .frmBusca li input[type=text], .frmFull li select, .frmBusca li select {
   width: 90%;
   padding: .5em;
 }
 
-/* line 243, ../sass/lagden/site.scss */
+/* line 244, ../sass/lagden/site.scss */
 .frmBusca {
   font-size: .9em;
 }
-/* line 247, ../sass/lagden/site.scss */
+/* line 248, ../sass/lagden/site.scss */
 .frmBusca ul > li {
   padding: .27em;
 }
-/* line 249, ../sass/lagden/site.scss */
+/* line 250, ../sass/lagden/site.scss */
 .frmBusca ul > li > label {
   font-weight: bold;
 }
 
-/* line 257, ../sass/lagden/site.scss */
+/* line 258, ../sass/lagden/site.scss */
 .tabs {
   position: relative;
   margin: 0;
@@ -4039,25 +4063,25 @@ body > footer {
   list-style: none;
   zoom: 1;
 }
-/* line 264, ../sass/lagden/site.scss */
+/* line 265, ../sass/lagden/site.scss */
 .tabs:before, .tabs:after {
   display: table;
   content: "";
   zoom: 1;
   border: 0;
 }
-/* line 270, ../sass/lagden/site.scss */
+/* line 271, ../sass/lagden/site.scss */
 .tabs:after {
   clear: both;
 }
-/* line 271, ../sass/lagden/site.scss */
+/* line 272, ../sass/lagden/site.scss */
 .tabs > li {
   float: left;
   position: relative;
   cursor: pointer;
   margin-bottom: 0;
 }
-/* line 276, ../sass/lagden/site.scss */
+/* line 277, ../sass/lagden/site.scss */
 .tabs > li > a {
   border: 0;
   font-size: .9em;
@@ -4078,18 +4102,18 @@ body > footer {
 .tabs > li > a:hover {
   color: #333333;
 }
-/* line 286, ../sass/lagden/site.scss */
+/* line 287, ../sass/lagden/site.scss */
 .tabs > li > a:hover {
   text-decoration: none;
   background-color: #ddd;
   border: 0;
 }
-/* line 294, ../sass/lagden/site.scss */
+/* line 295, ../sass/lagden/site.scss */
 .tabs > li.active > a {
   background-color: #fff;
   border: 0;
 }
-/* line 297, ../sass/lagden/site.scss */
+/* line 298, ../sass/lagden/site.scss */
 .tabs > li.active > a:hover {
   border: 0;
   text-decoration: none;
@@ -4100,7 +4124,7 @@ body > footer {
   color: #333333;
 }
 
-/* line 307, ../sass/lagden/site.scss */
+/* line 308, ../sass/lagden/site.scss */
 .tab-content > .tab-pane, .tab-content > div {
   -moz-border-radius: 0 5px 5px 5px;
   -webkit-border-radius: 0 5px 5px 5px;
@@ -4113,23 +4137,23 @@ body > footer {
   display: none;
   min-height: 391px;
 }
-/* line 315, ../sass/lagden/site.scss */
+/* line 316, ../sass/lagden/site.scss */
 .tab-content > .active {
   display: block;
 }
 
-/* line 319, ../sass/lagden/site.scss */
+/* line 320, ../sass/lagden/site.scss */
 #bairros_inline {
   font-size: .8em;
   display: none;
 }
-/* line 323, ../sass/lagden/site.scss */
+/* line 324, ../sass/lagden/site.scss */
 #bairros_inline ul.checkbox_list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 328, ../sass/lagden/site.scss */
+/* line 329, ../sass/lagden/site.scss */
 #bairros_inline ul.checkbox_list li {
   float: left;
   width: 48%;
@@ -4137,34 +4161,34 @@ body > footer {
   margin: 0;
 }
 
-/* line 337, ../sass/lagden/site.scss */
+/* line 338, ../sass/lagden/site.scss */
 .showDouble {
   font-size: .9em;
 }
-/* line 340, ../sass/lagden/site.scss */
+/* line 341, ../sass/lagden/site.scss */
 .showDouble > h2 {
   min-height: 65px;
   color: #f8b500;
 }
-/* line 343, ../sass/lagden/site.scss */
+/* line 344, ../sass/lagden/site.scss */
 .showDouble > h2.minnulo {
   min-height: 0 !important;
 }
-/* line 345, ../sass/lagden/site.scss */
+/* line 346, ../sass/lagden/site.scss */
 .showDouble > h3 {
   margin-top: 2em;
   color: #777;
 }
 
-/* line 358, ../sass/lagden/site.scss */
+/* line 359, ../sass/lagden/site.scss */
 #accordionFormResult > div.content > div > form#frmBuscaImoveisRef ul li {
   display: inline;
 }
-/* line 362, ../sass/lagden/site.scss */
+/* line 363, ../sass/lagden/site.scss */
 #accordionFormResult > div.content > div > form#frmBuscaImoveisRef label {
   display: inline;
 }
-/* line 365, ../sass/lagden/site.scss */
+/* line 366, ../sass/lagden/site.scss */
 #accordionFormResult > div.content > div > form#frmBuscaImoveisRef input {
   width: 150px;
   padding: .5em;

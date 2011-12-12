@@ -13,9 +13,11 @@ config/databases.yml
 # web/*_dev.php
 web/.sass-cache
 web/uploads/*
-web/tiny_uploads/*
+web/tiny/*
+web/estates/*
 !web/uploads/.htaccess
-!web/tiny_uploads/.htaccess
+!web/tiny/.htaccess
+!web/estates/.htaccess
 
 # cpanel
 cgi-bin

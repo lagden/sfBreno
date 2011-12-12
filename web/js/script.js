@@ -140,12 +140,15 @@ window.addEvent('domready',function()
         var tagitFull=$.parseJSON($('#tagit_full_list').html());
         var tagitModel=$.parseJSON($('#tagit_model_list').html());
         var tag=$("#form_tags_list");
-        tag.tagit({
-            fieldName:tag.data('name'),
-            availableTags:(tagitFull) ? tagitFull : [],
-            setTags:(tagitModel) ? tagitModel : [],
-            allowSpaces:true
-        });
+        if(tag.length>0)
+        {
+            tag.tagit({
+                fieldName:tag.data('name'),
+                availableTags:(tagitFull) ? tagitFull : [],
+                setTags:(tagitModel) ? tagitModel : [],
+                allowSpaces:true
+            });
+        }
         
         // Backend - User
         $('input#user_change:checkbox').bind('click custom',function(){backendFunc.changePasswd(this);});

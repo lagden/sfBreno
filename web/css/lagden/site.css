@@ -1816,10 +1816,11 @@ body > footer {
 /* line 119, ../../sass/lagden/site.scss */
 .listing > article .efeito a.img img {
   max-width: 214px;
+  min-height: 160px;
   display: block;
   margin: 0 auto;
 }
-/* line 129, ../../sass/lagden/site.scss */
+/* line 130, ../../sass/lagden/site.scss */
 .listing > article .efeito header h3 {
   color: #FFF;
   font-size: .9em;
@@ -1834,7 +1835,7 @@ body > footer {
   margin-right: 5px;
   background-color: #FB0;
 }
-/* line 137, ../../sass/lagden/site.scss */
+/* line 138, ../../sass/lagden/site.scss */
 .listing > article .efeito header h3 a {
   white-space: nowrap;
   overflow: hidden;
@@ -1850,14 +1851,14 @@ body > footer {
 .listing > article .efeito header h3 a:hover {
   text-decoration: underline;
 }
-/* line 144, ../../sass/lagden/site.scss */
+/* line 145, ../../sass/lagden/site.scss */
 .listing > article .efeito header p {
   font-size: .8em;
   background-color: #EEE0C3;
   color: #333333;
   padding: 1em .5em;
 }
-/* line 149, ../../sass/lagden/site.scss */
+/* line 150, ../../sass/lagden/site.scss */
 .listing > article .efeito header p a {
   white-space: nowrap;
   overflow: hidden;
@@ -1873,14 +1874,14 @@ body > footer {
 .listing > article .efeito header p a:hover {
   text-decoration: underline;
 }
-/* line 157, ../../sass/lagden/site.scss */
+/* line 158, ../../sass/lagden/site.scss */
 .listing > article .efeito footer {
   text-align: center;
   margin: 1.5em 0;
   padding: 0;
   border: 0;
 }
-/* line 163, ../../sass/lagden/site.scss */
+/* line 164, ../../sass/lagden/site.scss */
 .listing > article .efeito footer a {
   padding: 0.6em 0.7em 0.6em 0.7em;
   border: 1px solid transparent;
@@ -1895,7 +1896,7 @@ body > footer {
   outline: none;
 }
 
-/* line 178, ../../sass/lagden/site.scss */
+/* line 179, ../../sass/lagden/site.scss */
 .btn.orange {
   color: white;
   background-color: #ff9924;
@@ -1913,13 +1914,13 @@ body > footer {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
-/* line 185, ../../sass/lagden/site.scss */
+/* line 186, ../../sass/lagden/site.scss */
 .frm ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 190, ../../sass/lagden/site.scss */
+/* line 191, ../../sass/lagden/site.scss */
 .frm ul > li {
   color: #474747;
   font-size: .9em;
@@ -1927,40 +1928,40 @@ body > footer {
   padding: .5em;
   position: relative;
 }
-/* line 196, ../../sass/lagden/site.scss */
+/* line 197, ../../sass/lagden/site.scss */
 .frm ul > li > label {
   display: block;
   font-weight: bold;
   margin-bottom: .3em;
 }
-/* line 200, ../../sass/lagden/site.scss */
+/* line 201, ../../sass/lagden/site.scss */
 .frm ul > li > label.obr:before {
   content: "* ";
 }
-/* line 205, ../../sass/lagden/site.scss */
+/* line 206, ../../sass/lagden/site.scss */
 .frm ul > li ul.radio_list li {
   float: left;
   padding: .5em;
   margin: 0;
 }
-/* line 209, ../../sass/lagden/site.scss */
+/* line 210, ../../sass/lagden/site.scss */
 .frm ul > li ul.radio_list li label {
   display: inline;
   font-weight: normal;
 }
-/* line 216, ../../sass/lagden/site.scss */
+/* line 217, ../../sass/lagden/site.scss */
 .frm ul > li ul.checkbox_list li {
   display: block;
   padding: .5em;
   margin: 0;
 }
-/* line 220, ../../sass/lagden/site.scss */
+/* line 221, ../../sass/lagden/site.scss */
 .frm ul > li ul.checkbox_list li label {
   display: inline;
   font-weight: normal;
 }
 
-/* line 235, ../../sass/lagden/site.scss */
+/* line 236, ../../sass/lagden/site.scss */
 .frmFull li textarea, .frmBusca li textarea,
 .frmFull li input[type=text],
 .frmBusca li input[type=text],
@@ -1970,20 +1971,20 @@ body > footer {
   padding: .5em;
 }
 
-/* line 243, ../../sass/lagden/site.scss */
+/* line 244, ../../sass/lagden/site.scss */
 .frmBusca {
   font-size: .9em;
 }
-/* line 247, ../../sass/lagden/site.scss */
+/* line 248, ../../sass/lagden/site.scss */
 .frmBusca ul > li {
   padding: .27em;
 }
-/* line 249, ../../sass/lagden/site.scss */
+/* line 250, ../../sass/lagden/site.scss */
 .frmBusca ul > li > label {
   font-weight: bold;
 }
 
-/* line 257, ../../sass/lagden/site.scss */
+/* line 258, ../../sass/lagden/site.scss */
 .tabs {
   position: relative;
   margin: 0;
@@ -1992,25 +1993,25 @@ body > footer {
   list-style: none;
   zoom: 1;
 }
-/* line 264, ../../sass/lagden/site.scss */
+/* line 265, ../../sass/lagden/site.scss */
 .tabs:before, .tabs:after {
   display: table;
   content: "";
   zoom: 1;
   border: 0;
 }
-/* line 270, ../../sass/lagden/site.scss */
+/* line 271, ../../sass/lagden/site.scss */
 .tabs:after {
   clear: both;
 }
-/* line 271, ../../sass/lagden/site.scss */
+/* line 272, ../../sass/lagden/site.scss */
 .tabs > li {
   float: left;
   position: relative;
   cursor: pointer;
   margin-bottom: 0;
 }
-/* line 276, ../../sass/lagden/site.scss */
+/* line 277, ../../sass/lagden/site.scss */
 .tabs > li > a {
   border: 0;
   font-size: .9em;
@@ -2031,18 +2032,18 @@ body > footer {
 .tabs > li > a:hover {
   color: #333333;
 }
-/* line 286, ../../sass/lagden/site.scss */
+/* line 287, ../../sass/lagden/site.scss */
 .tabs > li > a:hover {
   text-decoration: none;
   background-color: #ddd;
   border: 0;
 }
-/* line 294, ../../sass/lagden/site.scss */
+/* line 295, ../../sass/lagden/site.scss */
 .tabs > li.active > a {
   background-color: #fff;
   border: 0;
 }
-/* line 297, ../../sass/lagden/site.scss */
+/* line 298, ../../sass/lagden/site.scss */
 .tabs > li.active > a:hover {
   border: 0;
   text-decoration: none;
@@ -2053,7 +2054,7 @@ body > footer {
   color: #333333;
 }
 
-/* line 307, ../../sass/lagden/site.scss */
+/* line 308, ../../sass/lagden/site.scss */
 .tab-content > .tab-pane, .tab-content > div {
   -moz-border-radius: 0 5px 5px 5px;
   -webkit-border-radius: 0 5px 5px 5px;
@@ -2066,23 +2067,23 @@ body > footer {
   display: none;
   min-height: 391px;
 }
-/* line 315, ../../sass/lagden/site.scss */
+/* line 316, ../../sass/lagden/site.scss */
 .tab-content > .active {
   display: block;
 }
 
-/* line 319, ../../sass/lagden/site.scss */
+/* line 320, ../../sass/lagden/site.scss */
 #bairros_inline {
   font-size: .8em;
   display: none;
 }
-/* line 323, ../../sass/lagden/site.scss */
+/* line 324, ../../sass/lagden/site.scss */
 #bairros_inline ul.checkbox_list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 328, ../../sass/lagden/site.scss */
+/* line 329, ../../sass/lagden/site.scss */
 #bairros_inline ul.checkbox_list li {
   float: left;
   width: 48%;
@@ -2090,34 +2091,34 @@ body > footer {
   margin: 0;
 }
 
-/* line 337, ../../sass/lagden/site.scss */
+/* line 338, ../../sass/lagden/site.scss */
 .showDouble {
   font-size: .9em;
 }
-/* line 340, ../../sass/lagden/site.scss */
+/* line 341, ../../sass/lagden/site.scss */
 .showDouble > h2 {
   min-height: 65px;
   color: #f8b500;
 }
-/* line 343, ../../sass/lagden/site.scss */
+/* line 344, ../../sass/lagden/site.scss */
 .showDouble > h2.minnulo {
   min-height: 0 !important;
 }
-/* line 345, ../../sass/lagden/site.scss */
+/* line 346, ../../sass/lagden/site.scss */
 .showDouble > h3 {
   margin-top: 2em;
   color: #777;
 }
 
-/* line 358, ../../sass/lagden/site.scss */
+/* line 359, ../../sass/lagden/site.scss */
 #accordionFormResult > div.content > div > form#frmBuscaImoveisRef ul li {
   display: inline;
 }
-/* line 362, ../../sass/lagden/site.scss */
+/* line 363, ../../sass/lagden/site.scss */
 #accordionFormResult > div.content > div > form#frmBuscaImoveisRef label {
   display: inline;
 }
-/* line 365, ../../sass/lagden/site.scss */
+/* line 366, ../../sass/lagden/site.scss */
 #accordionFormResult > div.content > div > form#frmBuscaImoveisRef input {
   width: 150px;
   padding: .5em;

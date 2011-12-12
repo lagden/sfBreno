@@ -150,3 +150,39 @@ div.toolTip{
     // rel="conteudo do box"
     div.tip-text{ display:none; }
 }
+
+// Customizando o plupload
+.plupload{
+    > .plupload_header{
+        display:none;
+    }
+    .plupload_button{
+        @extend .btn;
+        &.plupload_add,
+        &.plupload_start,
+        &.plupload_disabled{
+            // background:none !important;
+            @extend .btn.info;
+        }
+    }
+    .plupload_filelist_header{
+        background-color: rgb(238,238,238);
+        @include filter-gradient(#eeeeee, #cccccc, vertical);
+        @include background-image(linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%));
+        @include border-radius($bRadius $bRadius 0 0);
+        > div{
+            font-size:1.3em;
+        }
+    }
+    
+    .plupload_filelist_footer{
+        background-color: rgb(238,238,238);
+        @include filter-gradient(#eeeeee, #cccccc, vertical);
+        @include background-image(linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%));
+        @include border-radius(0 0 $bRadius $bRadius);
+        padding:2em;
+        > div{
+            font-size:1.3em;
+        }
+    }
+}

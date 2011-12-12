@@ -78,7 +78,7 @@ fi
 cd $CURR_FOLDER
 
 if [ $IGNORE_P = 1 ] && [ -e "$CURR_FOLDER/config" ]; then
-    required_folders="log cache data web/uploads web/tiny_uploads"
+    required_folders="log cache data web/uploads web/tiny web/estates"
     for folder in $required_folders
     do
         if [ ! -d $folder ]

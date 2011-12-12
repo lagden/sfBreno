@@ -12,6 +12,12 @@
 */
 class Estate extends BaseEstate
 {
+    public function getImageDestaque()
+    {
+        return Doctrine_Core::getTable('Image')->findOneByEstateIdAndDestaque($this->id,1);
+        return false;
+    }
+    
     public function setPriceRent($price)
     {
         if($price) $this->_set('price_rent', static::floatPrice($price));

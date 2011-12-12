@@ -141,8 +141,8 @@ Estate:
     descricao: clob
     destaque_chamada: clob
     destaque: { type: boolean, default: 0 }
-    ordem: { type: integer(3), default: 0 }
     ativo: { type: boolean, default: 0 }
+    ordem: { type: integer(3), default: 0 }
     seo: clob
     carga: clob
     neighborhood_id: { type: bigint }
@@ -219,11 +219,35 @@ Image:
     Timestampable: ~
   columns:
     file: { type: string(255) }
+    destaque: { type: boolean, default: 0 }
     estate_id: { type: bigint }
   relations:
     Estate:
       local: estate_id
       class: Estate
+      foreignAlias: Images
+      onDelete: CASCADE
+
+# Imagem Formato
+Format:
+  actAs:
+    Sluggable: { fields: [name] }
+  columns:
+    name:  { type: string(255), unique: true }
+
+# Imagem Version
+ImageVersion:
+  columns:
+    image_id: { type: bigint, primary: true }
+    format_id: { type: bigint, primary: true }
+    file: { type: string(255) }
+  relations:
+    Image:
+      local: image_id
+      foreignAlias: Versions
+      onDelete: CASCADE
+    Format:
+      local: format_id
       foreignAlias: Images
       onDelete: CASCADE
 

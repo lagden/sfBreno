@@ -292,3 +292,25 @@ tag_sort:
   param: { module: tag, action: sort }
   requirements:
     sf_method: [POST]
+
+# Module Upload
+upload:
+  url: /upload
+  param: { module: upload, action: uploading }
+
+upload_add:
+  url: /upload/add
+  param: { module: upload, action: addFile }
+
+upload_destaque:
+  url: /upload/destaque
+  param: { module: upload, action: destaque }
+  requirements:
+    sf_method: [POST]
+
+upload_remove:
+  url: /upload/remove.:sf_format
+  param: { module: upload, action: removeFile, sf_format: json }
+  requirements:
+    sf_format: (?:html|json)
+    sf_method: [DELETE]
