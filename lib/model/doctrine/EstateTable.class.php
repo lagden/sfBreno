@@ -86,6 +86,17 @@ class EstateTable extends Doctrine_Table
         return Doctrine_Core::getTable('Estate');
     }
     
+    public function getByTag($tag, $active=1, Doctrine_Query $q = null)
+    {
+        if (null === $q) $q = $this->getListQuery();
+        $alias=$q->getRootAlias();
+        $q->innerJoin("{$alias}.Tags t");
+        $q->andWhere("t.slug = ?", $tag);
+        $q->andWhere("{$alias}.ativo = ?", $active);
+        $q->orderBy("{$alias}.id DESC");        
+        return $q;
+    }
+    
     // Pega imoveis aleatóriamente
     public function getRnd($limit=12, Doctrine_Query $q = null)
     {

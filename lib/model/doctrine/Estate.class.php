@@ -44,12 +44,12 @@ class Estate extends BaseEstate
 
     public function getJoinDisponibilidades()
     {
-        return static::getJoin($this->Disponibilidades);
+        return Utils::getJoin($this->Disponibilidades);
     }
 
     public function getJoinTags()
     {
-        return static::getJoin($this->Tags);
+        return Utils::getJoin($this->Tags);
     }
 
     public function getValorVenda()

@@ -16,4 +16,9 @@ class Section extends BaseSection
     {
         return ($this->is_active) ? "Sim" : "Não";
     }
+    
+    public function getJoinTags()
+    {
+        return Utils::getJoin($this->Tags);
+    }
 }

@@ -17,15 +17,23 @@ class SectionTable extends Doctrine_Table
         return Doctrine_Core::getTable('Section');
     }
     
-    // Pega imoveis aleatóriamente
+    public function getByTag($tag, $active=1, Doctrine_Query $q = null)
+    {
+        if (null === $q) $q = $this->getListQuery();
+        $alias=$q->getRootAlias();
+        $q->innerJoin("{$alias}.Tags t");
+        $q->andWhere("t.slug = ?", $tag);
+        $q->andWhere("{$alias}.is_active = ?", $active);
+        $q->orderBy("{$alias}.position ASC");        
+        return $q;
+    }
+    
     public function getSections($active=1, Doctrine_Query $q = null)
     {
         if (null === $q) $q = $this->getListQuery();
         $alias=$q->getRootAlias();
-        
         $q->andWhere("{$alias}.is_active = ?", $active);
-        $q->orderBy("{$alias}.id ASC");
-
+        $q->orderBy("{$alias}.position ASC");
         return $q;
     }
     

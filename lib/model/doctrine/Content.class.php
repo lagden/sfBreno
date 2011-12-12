@@ -16,4 +16,9 @@ class Content extends BaseContent
     {
         return ($this->is_active) ? "Sim" : "Não";
     }
+    
+    public function getJoinTags()
+    {
+        return Utils::getJoin($this->Tags);
+    }
 }

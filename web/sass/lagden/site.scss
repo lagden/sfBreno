@@ -388,3 +388,43 @@ div.estateImg{
         }
     }
 }
+
+.conteudoSite{
+    h2{
+        color:$orangeLight;
+        a{
+            @include hover-link;
+            @include link_colors($orangeLight);
+        }
+    }
+    h3{
+        color:#777;
+    }
+}
+
+.vejatb{
+    ul{
+        list-style:square;
+//        margin:0;
+//        padding:0;
+        li{
+            a{
+                @include hover-link;
+                @include link_colors($orange);
+            }
+        }
+    }    
+}
+
+.tags{
+    ul{
+        &.breadcrumb{
+            li{
+                a{
+                    @include hover-link;
+                    @include link_colors($orange);
+                }
+            }
+        }
+    }
+}
