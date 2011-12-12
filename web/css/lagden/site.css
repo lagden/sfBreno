@@ -1592,7 +1592,7 @@ input[type=submit].btn::-moz-focus-inner {
   text-decoration: none;
   color: #333333;
 }
-/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .zebraNaTabela tr td a:hover, .listing > article .efeito > table tr td a:hover, .showDouble > table tr td a:hover {
   text-decoration: underline;
 }
@@ -1602,19 +1602,19 @@ input[type=submit].btn::-moz-focus-inner {
   text-decoration: none;
   color: white;
 }
-/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .linkDefaultWhite:hover, body > footer a:hover {
   text-decoration: underline;
 }
-/* line 18, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultWhite:visited, body > footer a:visited {
   color: white;
 }
-/* line 24, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultWhite:hover, body > footer a:hover {
   color: #f28510;
 }
-/* line 27, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultWhite:active, body > footer a:active {
   color: white;
 }
@@ -1624,21 +1624,30 @@ input[type=submit].btn::-moz-focus-inner {
   text-decoration: none;
   color: #f28510;
 }
-/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .linkDefaultBlack:hover, .showDouble a:hover {
   text-decoration: underline;
 }
-/* line 18, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultBlack:visited, .showDouble a:visited {
   color: #333333;
 }
-/* line 24, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultBlack:hover, .showDouble a:hover {
   color: #f28510;
 }
-/* line 27, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .linkDefaultBlack:active, .showDouble a:active {
   color: #333333;
+}
+
+/* line 103, ../../sass/lagden/mixin.scss */
+.imageEnfeite, div.estateImg a img {
+  border: 5px solid #FFF;
+  -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* line 10, ../../sass/lagden/site.scss */
@@ -1815,7 +1824,6 @@ body > footer {
 }
 /* line 119, ../../sass/lagden/site.scss */
 .listing > article .efeito a.img img {
-  max-width: 214px;
   min-height: 160px;
   display: block;
   margin: 0 auto;
@@ -1847,7 +1855,7 @@ body > footer {
   color: white;
   display: block;
 }
-/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .listing > article .efeito header h3 a:hover {
   text-decoration: underline;
 }
@@ -1870,7 +1878,7 @@ body > footer {
   color: #333333;
   display: block;
 }
-/* line 4, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .listing > article .efeito header p a:hover {
   text-decoration: underline;
 }
@@ -2028,7 +2036,7 @@ body > footer {
   border-radius: 4px 4px 0 0;
   color: #f28510;
 }
-/* line 24, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .tabs > li > a:hover {
   color: #333333;
 }
@@ -2049,7 +2057,7 @@ body > footer {
   text-decoration: none;
   color: #f28510;
 }
-/* line 24, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, /usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .tabs > li.active > a:hover:hover {
   color: #333333;
 }
@@ -2110,15 +2118,32 @@ body > footer {
   color: #777;
 }
 
+/* line 354, ../../sass/lagden/site.scss */
+div.estateImg {
+  margin: 5px;
+  display: block;
+  float: left;
+  position: relative;
+}
 /* line 359, ../../sass/lagden/site.scss */
+div.estateImg a {
+  display: block;
+}
+/* line 361, ../../sass/lagden/site.scss */
+div.estateImg a img {
+  cursor: pointer;
+  display: block;
+}
+
+/* line 375, ../../sass/lagden/site.scss */
 #accordionFormResult > div.content > div > form#frmBuscaImoveisRef ul li {
   display: inline;
 }
-/* line 363, ../../sass/lagden/site.scss */
+/* line 379, ../../sass/lagden/site.scss */
 #accordionFormResult > div.content > div > form#frmBuscaImoveisRef label {
   display: inline;
 }
-/* line 366, ../../sass/lagden/site.scss */
+/* line 382, ../../sass/lagden/site.scss */
 #accordionFormResult > div.content > div > form#frmBuscaImoveisRef input {
   width: 150px;
   padding: .5em;

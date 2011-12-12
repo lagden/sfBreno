@@ -98,3 +98,9 @@ $i: 10;
     @include hover-link;
     @include link_colors($orange,$orange,$mainColor,$mainColor);
 }
+
+.imageEnfeite
+{
+    border:5px solid #FFF;
+    @include single-box-shadow(rgba(0, 0, 0, .2), 0, 0px, 10px);    
+}

@@ -92,6 +92,7 @@ class EstateTable extends Doctrine_Table
         if (null === $q) $q = $this->getListQuery();
         $alias=$q->getRootAlias();
         
+        $q->andWhere("{$alias}.ativo = ?", 1);
         $q->orderBy("RAND()");
         $q->limit($limit);
 
@@ -105,6 +106,7 @@ class EstateTable extends Doctrine_Table
         $alias=$q->getRootAlias();
         
         $q->andWhere("{$alias}.destaque = ?", 1);
+        $q->andWhere("{$alias}.ativo = ?", 1);
         $q->orderBy("{$alias}.ordem");
         if($limit) $q->limit($limit);
         return $q;
@@ -115,8 +117,6 @@ class EstateTable extends Doctrine_Table
     {
         if (null === $q) $q = $this->getListQuery();
         $alias=$q->getRootAlias();
-        
-        // print_r($filters);die;
         
         if (isset($filters))
         {
@@ -149,6 +149,9 @@ class EstateTable extends Doctrine_Table
                 }
             }
         }
+        
+        // Ativo
+        $q->andWhere("{$alias}.ativo = ?", 1);
         
         // Sort
         $order=sfContext::getInstance()->getUser()->getAttribute(sfConfig::get('order_by'),'id');

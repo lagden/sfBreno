@@ -41,7 +41,7 @@ class Menu
         return $drop;
     }
 
-    static public function match($a,$uri,$c)
+    static public function match($a,$uri,$c=false)
     {
         $classes=array();
         $regex= '/<a(.*)href=(\'|")([\?\=\-a-zA-Z-0-9_%\.:\/]*)/i';

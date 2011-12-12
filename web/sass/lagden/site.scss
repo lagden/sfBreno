@@ -117,7 +117,7 @@ body{
                 height:160px;
                 overflow:hidden;
                 img{
-                    max-width:214px;
+                    //max-width:214px;
                     min-height:160px;
                     display:block;
                     margin:0 auto;
@@ -348,6 +348,22 @@ body{
         color:#777;
     }
     > table{ @extend .zebraNaTabela; }
+}
+
+// Image List
+div.estateImg{
+    margin:5px;
+    display:block;
+    float:left;
+    position:relative;
+    a{
+        display:block;
+        img{
+            cursor:pointer;
+            display:block;
+            @extend .imageEnfeite;
+        }
+    }
 }
 
 // Accordion

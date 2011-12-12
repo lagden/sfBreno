@@ -210,6 +210,15 @@
   color: #333333;
 }
 
+/* line 103, ../sass/lagden/mixin.scss */
+.imageEnfeite, div.estateImg a img {
+  border: 5px solid #FFF;
+  -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* line 8, ../sass/screen.scss */
 .container {
   background: blue;
@@ -1425,6 +1434,15 @@ td {
   color: #333333;
 }
 
+/* line 103, ../sass/lagden/mixin.scss */
+.imageEnfeite, div.estateImg a img {
+  border: 5px solid #FFF;
+  -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* line 6, ../sass/nonSemanticHelper.scss */
 .ir {
   display: block;
@@ -1575,7 +1593,7 @@ td {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.1);
 }
 /* line 20, ../sass/lagden/glass.scss */
-.glass.selected, body > nav .wrapper ul.menu li a.selected {
+.glass.active, body > nav .wrapper ul.menu li a.active {
   color: #FFF;
   -moz-box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(255, 255, 0, 0.1);
   -webkit-box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(255, 255, 0, 0.1);
@@ -1817,6 +1835,15 @@ td {
   color: #333333;
 }
 
+/* line 103, ../sass/lagden/mixin.scss */
+.imageEnfeite, div.estateImg a img {
+  border: 5px solid #FFF;
+  -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* line 3, ../sass/lagden/glass.scss */
 .glass, body > nav .wrapper ul.menu li a {
   border: 0;
@@ -1846,7 +1873,7 @@ td {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.1);
 }
 /* line 20, ../sass/lagden/glass.scss */
-.glass.selected, body > nav .wrapper ul.menu li a.selected {
+.glass.active, body > nav .wrapper ul.menu li a.active {
   color: #FFF;
   -moz-box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(255, 255, 0, 0.1);
   -webkit-box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(255, 255, 0, 0.1);
@@ -1917,8 +1944,7 @@ td {
 }
 
 /* line 28, ../sass/lagden/interface.scss */
-.form_estiloso_disabled, .frm textarea:disabled, .frm select:disabled,
-.frm button:disabled, .frm input[type=file]:disabled, .frm input[type=text]:disabled, .frm input[type=email]:disabled, .frm input[type=url]:disabled, .frm input[type=tel]:disabled, .frm input[type=password]:focus {
+.form_estiloso_disabled, .frm textarea:disabled, .frm select:disabled, .frm button:disabled, .frm input[type=file]:disabled, .frm input[type=text]:disabled, .frm input[type=email]:disabled, .frm input[type=url]:disabled, .frm input[type=tel]:disabled, .frm input[type=password]:focus {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=5000);
   opacity: 50;
 }
@@ -3715,6 +3741,15 @@ input[type=submit].plupload_button::-moz-focus-inner {
   color: #333333;
 }
 
+/* line 103, ../sass/lagden/mixin.scss */
+.imageEnfeite, div.estateImg a img {
+  border: 5px solid #FFF;
+  -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* line 10, ../sass/lagden/site.scss */
 body {
   position: relative;
@@ -3889,7 +3924,6 @@ body > footer {
 }
 /* line 119, ../sass/lagden/site.scss */
 .listing > article .efeito a.img img {
-  max-width: 214px;
   min-height: 160px;
   display: block;
   margin: 0 auto;
@@ -4036,7 +4070,11 @@ body > footer {
 }
 
 /* line 236, ../sass/lagden/site.scss */
-.frmFull li textarea, .frmBusca li textarea, .frmFull li input[type=text], .frmBusca li input[type=text], .frmFull li select, .frmBusca li select {
+.frmFull li textarea, .frmBusca li textarea,
+.frmFull li input[type=text],
+.frmBusca li input[type=text],
+.frmFull li select,
+.frmBusca li select {
   width: 90%;
   padding: .5em;
 }
@@ -4180,15 +4218,32 @@ body > footer {
   color: #777;
 }
 
+/* line 354, ../sass/lagden/site.scss */
+div.estateImg {
+  margin: 5px;
+  display: block;
+  float: left;
+  position: relative;
+}
 /* line 359, ../sass/lagden/site.scss */
+div.estateImg a {
+  display: block;
+}
+/* line 361, ../sass/lagden/site.scss */
+div.estateImg a img {
+  cursor: pointer;
+  display: block;
+}
+
+/* line 375, ../sass/lagden/site.scss */
 #accordionFormResult > div.content > div > form#frmBuscaImoveisRef ul li {
   display: inline;
 }
-/* line 363, ../sass/lagden/site.scss */
+/* line 379, ../sass/lagden/site.scss */
 #accordionFormResult > div.content > div > form#frmBuscaImoveisRef label {
   display: inline;
 }
-/* line 366, ../sass/lagden/site.scss */
+/* line 382, ../sass/lagden/site.scss */
 #accordionFormResult > div.content > div > form#frmBuscaImoveisRef input {
   width: 150px;
   padding: .5em;

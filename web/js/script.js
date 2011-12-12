@@ -71,6 +71,16 @@ window.addEvent('domready',function()
             });
         });
         
+        // Fancy Images
+        $(".showImageEstate").fancybox({
+            fitToView   : true,
+            width       : '90%',
+            height      : '90%',
+            autoSize    : true,
+            openEffect  : 'elastic',
+            closeEffect : 'elastic'
+        });
+        
         // Ajax Disponibilidade -> Valor
         $('#estate_filters_Disponibilidades').change(function(){
             frmEstateSearch.disponibilidade(this.value);

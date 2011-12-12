@@ -102,3 +102,10 @@ venda_envia:
   param: { module: venda, action: contato }
   requirements:
     sf_method: [POST]
+
+# Modulo site
+site:
+  url: /site/:slug
+  param: { module: site, action: index }
+  requirements:
+    sf_method: [GET]
