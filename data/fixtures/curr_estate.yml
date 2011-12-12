@@ -1,0 +1,3425 @@
+Estate:
+  -
+    titulo: "Apartamento Duplex com 1 dormitório próximo ao Mackenzie"
+    referencia: 209
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 70
+    area_total: 80
+    quartos: 1
+    banheiros: 2
+    vagas: 2
+    condominio: 350.00
+    price_sale: 540000.00
+    price_rent: 0.00
+    descricao: "Santa Cecilia NOVO, Apartamento Duplex, Living com terraço, Lavabo, Cozinha Americana, 1 Suite com closet, 2 vagas, proximo Mackenzie, Santa Casa e Metro!!! \r\n\r\n"
+    seo: ""
+    destaque_chamada: "Lindo apartamento Duplex Novo, predio com lazer total prox do Mackenzie, Metro e Santa Casa!"
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios em Higienópolis Reformado"
+    referencia: 217
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 150
+    area_total: 200
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 750.00
+    price_sale: 650000.00
+    price_rent: 0.00
+    descricao: "Higienopolis/Santa Cecilia, Living com janelão, sala de jantar, Frente, 3 dormitorios sendo 1 suite, rico em armarios, REFORMADO, portaria 24 horas, vaga demarcada!!! "
+    seo: ""
+    destaque_chamada: "Higienopolis/Santa Cecilia\r\n"
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios em Higienopolis próximo ao shopping e metro"
+    referencia: 227
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 136
+    area_total: 150
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 780.00
+    price_sale: 750000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, Rua tranquila e arborizada, Predio Procuradissimo, Living para 3 ambientes, 3 dormitorios com armarios sendo 1 suite!!!! Apartamento em estado original com Janelões, pé direito alto e bem claro!!!! Proximo ao Shopping e tudo que há de bom no bairro!!!\r\n\r\n"
+    seo: ""
+    destaque_chamada: "Apartamento em estado original com Janelões, pé direito alto e bem claro!!!! Proximo ao Shopping e tudo que há de bom no bairro!!!\r\n\r\n"
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios em Higienópolis rua nobre"
+    referencia: 234
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 260
+    area_total: 320
+    quartos: 3
+    banheiros: 4
+    vagas: 4
+    condominio: 2500.00
+    price_sale: 1800000.00
+    price_rent: 0.00
+    descricao: "Otimo apartamento, Localização privilegiada (Rua Bahia), apartamento com amplo Living com terraço, sala de jantar, Home Theater, 3 dormitorios sendo 2 suites com closet masculino e feminino, otima cozinha, sala de almoço, despensa, dependencias de empregada, 260m2 uteis, 4 Vagas de Garagem, predio com lazer total.!!! "
+    seo: ""
+    destaque_chamada: "Apartamento com amplo Living com terraço, sala de jantar, Home Theater, 3 dormitorios sendo 2 suites com closet masculino e feminino"
+    destaque: 0
+    ordem: 4
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios em Higienópolis próximo a Praça Buenos Aires"
+    referencia: 265
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 237
+    area_total: 280
+    quartos: 3
+    banheiros: 3
+    vagas: 2
+    condominio: 1000.00
+    price_sale: 1200000.00
+    price_rent: 0.00
+    descricao: "Otima Localização, Excelente apartamento com 230 m2 de areas uteis, amplo living com terraço de 11 metros de comprimento, REFORMADO, andar alto, frente, janelões, pe direito alto, todos dormitorios de frente para o terraço. otima cozinha, 2 vagas demarcadas.. "
+    seo: ""
+    destaque_chamada: "Excelente apartamento com 230 m2 de areas uteis, amplo living com terraço de 11 metros de comprimento, REFORMADO"
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Cobertura Penthouse em Santa Cecília"
+    referencia: 271
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 172
+    area_total: 190
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 590.00
+    price_sale: 475000.00
+    price_rent: 0.00
+    descricao: "Cobertura Penthouse, Living para 2 ambientes, amplo terraço, 3 dormitorios com armarios, piso taco, pé direito alto, 1 vaga, ensolarado, bem arejado, proximo ao metro, !! Em otimo estado de conservação!!!!\r\n"
+    seo: "Apartamento em Higienopolis"
+    destaque_chamada: "Living para 2 ambientes, amplo terraço, 3 dormitorios com armarios, piso taco, pé direito alto, 1 vaga!!!"
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento em Higienopolis com 3 dormitorios R$ 800.000,00"
+    referencia: 206
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 120
+    area_total: 160
+    quartos: 3
+    banheiros: 4
+    vagas: 2
+    condominio: 950.00
+    price_sale: 800000.00
+    price_rent: 0.00
+    descricao: "Rua tranquila e arborizada, Predio recuado, Portaria 24 horas, Proximo ao Shopping, claro, arejado, pé direito alto, janelões, Living para 3 ambientes, lavabo, 3 dormitorios com armarios sendo 1 suite, banheiro com box blindex, cozinha planejada, 2 Vagas de garagem!!!!"
+    seo: "Apartamento em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento reformado com 3 dormitorios em Higienopolis"
+    referencia: 293
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 150
+    area_total: 170
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 750.00
+    price_sale: 900000.00
+    price_rent: 0.00
+    descricao: "Otimo apartamento a 200 metros do shopping, totalmente reformado e decorado com muito bom gosto, apartamento claro, janelões, living para 2 ambientes, 3 dormitorios, lavabo, wc, 150m2, cozinha planejada, ampla area de serviço com dependencias de empregada."
+    seo: "Apartamento proximo Shopping Higienopolis"
+    destaque_chamada: "Otimo apartamento a 200 metros do shopping, totalmente reformado e decorado com muito bom gosto!!!"
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento novo com 3 dormitorios em Higienopolis"
+    referencia: 295
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 198
+    area_total: 300
+    quartos: 3
+    banheiros: 5
+    vagas: 3
+    condominio: 2400.00
+    price_sale: 1750000.00
+    price_rent: 0.00
+    descricao: "Apartamento novo, Living para 3 ambientes, vários terraços, 3 Suites sendo 1 master, Lazer Total, Local Nobre!!!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios em Santa Cecilia"
+    referencia: 224
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 90
+    area_total: 125
+    quartos: 3
+    banheiros: 4
+    vagas: 1
+    condominio: 520.00
+    price_sale: 430000.00
+    price_rent: 0.00
+    descricao: "Living para 2 ambientes, piso em taco, lavabo, 4 banheiros, quarto de empregada, Lazer completo, claro, janelões de aluminio, pé direito alto, proximo ao Metro e Faculdade Oswaldo Cruz!!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 quartos em Higienopolis proximo a FAAP"
+    referencia: 297
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 305
+    area_total: 400
+    quartos: 3
+    banheiros: 6
+    vagas: 6
+    condominio: 3000.00
+    price_sale: 1650000.00
+    price_rent: 0.00
+    descricao: "Excepcional apartamento localizado em rua particular, proximo a FAAP, Amplo Living com terraço, sala de jantar, lavabo, 3 suites sendo 1 com closet, Home Teather, sala de almoço, otima cozinha, ampla area de serviço com dependecia de empregada, Linda Vista para o  Vale do Pacaembu!!! "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Imóvel com 3 quartos em Higienópolis"
+    referencia: 252
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 242
+    area_total: 280
+    quartos: 3
+    banheiros: 4
+    vagas: 2
+    condominio: 2500.00
+    price_sale: 1300000.00
+    price_rent: 0.00
+    descricao: "Rua arborizada proximo ao Hospital Samaritano, Predio Recuado, Prédio Ano 70, 1 apor andar, ajardinado, Amplo Living para 3 ambientes, jardim de inverno, 3 dormitorios sendo 1 suite, ampla cozinha repleta de armarios, area de serviço planejada, Pronto pra Morar!! Obs: Vende-se com tudo dentro!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento de 2 dormitórios em Higienópolis"
+    referencia: 266
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 82
+    area_total: 130
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 660.00
+    price_sale: 500000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, rua tranquila e arborizada, prédio recuado, portaria 24 horas, 2 dormitorios sendo 1 suite, terraço, REFORMADO, alto claro, janelões, armários, tudo novo!! Proximo do Shopping, Samaritano e FAAP!!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios e duas vagas na região nobre de Higienópolis "
+    referencia: 304
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 208
+    area_total: 240
+    quartos: 3
+    banheiros: 5
+    vagas: 2
+    condominio: 1900.00
+    price_sale: 1150000.00
+    price_rent: 0.00
+    descricao: "Excelente apartamento,todo reformado; amplo living para 3 ambientes com piso de taco de duas cores e janelões, terraço, 3 dormitórios, sendo 2 suítes com armários embutidos, banheiro social, lavabo, copa, cozinha com excelente área de serviço e wc, 2 vagas, 1 por andar."
+    seo: "Apartamento em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios em Higienopolis próximo ao Hospital Samaritano"
+    referencia: 240
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_2]
+    area_util: 140
+    area_total: 160
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 850.00
+    price_sale: 0.00
+    price_rent: 3500.00
+    descricao: "Apartamento totalmente Reformado, Pronto para morar, Proximo ao Hospital Samaritano."
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento em Higienopolis com 3 quartos"
+    referencia: 314
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 180
+    area_total: 220
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 1400.00
+    price_sale: 900000.00
+    price_rent: 0.00
+    descricao: "Próximo ao Shopping, Living para 2 ambientes, home teather, 3 dormitórios sendo 1 suite, closet, repleto de armários, cozinha planejada, elevador privativo, janelão, ensolarado, ótimo estado!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios em Higienópolis"
+    referencia: 315
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 200
+    area_total: 230
+    quartos: 3
+    banheiros: 4
+    vagas: 1
+    condominio: 1600.00
+    price_sale: 950000.00
+    price_rent: 0.00
+    descricao: "Amplo Living para 3 ambientes com janelão, lavabo, 3 dormitórios sendo 1 suite, repleto de armários, elevador privativo, gás encanado, prédio com caldeira, vaga demarcada, ótimo estado de conservação, próximo a Shopping, Academia, Metro e comércio em geral!!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Amplo apartamento com 3 dormitorios em higienopolis"
+    referencia: 327
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 230
+    area_total: 260
+    quartos: 3
+    banheiros: 5
+    vagas: 1
+    condominio: 1450.00
+    price_sale: 1150000.00
+    price_rent: 0.00
+    descricao: "Amplo Living com terraço, lavabo, 3 dormitorios sendo 1 suite com sacada, repleto de armarios, cozinha integrada com copa, dependencias de empregada, otimo estado de conservação, claro, predio recuado, elevador privativo, 1 vaga de garagem, 2º alugada incluida no condominio, portaria 24 horas, proximo ao Shopping e Samaritano!! Localização Nobre!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 quartos em Higienópolis"
+    referencia: 334
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 200
+    area_total: 277
+    quartos: 3
+    banheiros: 4
+    vagas: 1
+    condominio: 1600.00
+    price_sale: 1100000.00
+    price_rent: 0.00
+    descricao: "Living para 4 ambientes com piso em granito, 3 dormitórios sendo 1 suite master com closet, piso em madeira, cozinha planejada, esquadrias de aluminio branco, claro, alto, pé direito alto, próximo ao Shopping e comércio em geral!!! Uma Vaga!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Lindo apartamento com 4 dormitorios em Higienopolis"
+    referencia: 336
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 230
+    area_total: 270
+    quartos: 4
+    banheiros: 6
+    vagas: 3
+    condominio: 1500.00
+    price_sale: 1500000.00
+    price_rent: 0.00
+    descricao: "Excepcional apartamento em Localização privilegiada, Amplo Living com terraço, lavabo, sala de jantar, sala de estar, 4 suites com armarios, otima cozinha, ampla area de serviço com 2 quartos de empregada + WC!!! 3 vagas demarcadas!!!  "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Surpreendente imóvel com terraço"
+    referencia: 338
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 260
+    area_total: 320
+    quartos: 4
+    banheiros: 4
+    vagas: 3
+    condominio: 1800.00
+    price_sale: 1650000.00
+    price_rent: 0.00
+    descricao: "Living para 4 ambientes, 4 dormitorios sendo 1 suite com closet, cozinha planejada, terraço, ótimo estado de conservação. Excelente Localização, Predio recuado, portaria 24 horas, um por andar, 3 garagens demarcadas, próximo a Sinagogas, ótimos colégios e faculdades, hospitais e shopping Pateo Higienopolis!!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 1
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento 3 dormitorios em Higienopolis Lindo"
+    referencia: 340
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 143
+    area_total: 170
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 800.00
+    price_sale: 790000.00
+    price_rent: 0.00
+    descricao: "Andar alto, janelões, claro, 145 m2 area util, amplo living, 3 dormitorios com armarios embutidos, 2 wc, otima cozinha, dependencias de empregada, bom estado!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento em Higienopolis com 2 dormitórios totalmente reformado"
+    referencia: 210
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 137
+    area_total: 170
+    quartos: 2
+    banheiros: 3
+    vagas: 1
+    condominio: 1150.00
+    price_sale: 820000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, rua tranquila e arborizada, predio Recuado, Portaria 24 horas, proximo ao Shopping, metro e comercio em geral!!!! Apartamento totalmente reformado, Living para 3 ambientes, cozinha planejada, janelões, 2 Suites com armarios!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitórios na Barra Funda Reformado"
+    referencia: 245
+    Type: type_1
+    Neighborhood: neighborhood_4
+    Disponibilidades: [disponibilidade_1]
+    area_util: 126
+    area_total: 130
+    quartos: 2
+    banheiros: 2
+    vagas: 0
+    condominio: 400.00
+    price_sale: 300000.00
+    price_rent: 0.00
+    descricao: "Amplo Hall de entrada, 2  dormitorios, living para 2 ambientes, armarios, DE, pé direito alto, Reformado, aquecimento a gás, Iptu isento."
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Imóvel com 2 quartos em Higienópolis próximo ao Shopping"
+    referencia: 260
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 90
+    area_total: 110
+    quartos: 2
+    banheiros: 3
+    vagas: 0
+    condominio: 490.00
+    price_sale: 530000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, Rua tranquila e arborizada, Recuado, Prédio Procuradissimo, andar alto, claro, janelão, pé direito alto, Apartamento totalmente reformado, Living para 2 ambientes, 2 dormitorios sendo 1 suite com closet, cozinha planejada, LINDO!!!! Proximo ao Shopping!!!"
+    seo: "Lazer com Quadra e Salão de Festas!"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitórios em Campos Eliseos Entrar e Morar"
+    referencia: 273
+    Type: type_1
+    Neighborhood: neighborhood_5
+    Disponibilidades: [disponibilidade_1]
+    area_util: 75
+    area_total: 90
+    quartos: 2
+    banheiros: 1
+    vagas: 0
+    condominio: 220.00
+    price_sale: 280000.00
+    price_rent: 0.00
+    descricao: "Apartamento bonito, Living para 2 ambientes, piso em Lajota, dormitorios com armarios embutidos, cozinha azulejada com armarios e area de serviço!! Frente, andar alto, Ensolarado e Arejado!!! Pronto para Morar!!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Imóvel com 4 dormitórios em Higienopolis"
+    referencia: 280
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 170
+    area_total: 200
+    quartos: 4
+    banheiros: 3
+    vagas: 1
+    condominio: 1200.00
+    price_sale: 850000.00
+    price_rent: 0.00
+    descricao: "Amplo Living para 3 ambientes, 3 dormitorios amplos + escritorio, Janelões, proximo ao comercio geral, Competition e Shopping, andar alto, claro, um por andar!! "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 quartos em Higienopolis próximo ao Metro"
+    referencia: 286
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 95
+    area_total: 110
+    quartos: 2
+    banheiros: 1
+    vagas: 0
+    condominio: 450.00
+    price_sale: 600000.00
+    price_rent: 0.00
+    descricao: "Predio Recuado, andar alto, ensolarado, Living com janelão, cozinha americana, area de serviço. 2 dormitorios com armarios embutidos, escritorio, piso em porcelanato, Solarium, gás encanado, proximo ao shopping, metro e comercio em geral!!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Imóvel com 2 dormitorios em Santa Cecilia"
+    referencia: 307
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 130
+    area_total: 150
+    quartos: 2
+    banheiros: 2
+    vagas: 0
+    condominio: 450.00
+    price_sale: 410000.00
+    price_rent: 0.00
+    descricao: "Reformado, Living para 2 ambientes, lavabo, 2 dormitorios com armarios, terraço, banheiro com hidro, cozinha planejada e copa, piso em tabuas largas, pé direito alto, face norte, excelente localização, cond baixo!!! Proximo ao Metro!!! "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento em Higienopolis com 2 quartos proximo ao Mackenzie"
+    referencia: 301
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 100
+    area_total: 130
+    quartos: 2
+    banheiros: 3
+    vagas: 1
+    condominio: 650.00
+    price_sale: 520000.00
+    price_rent: 0.00
+    descricao: "Proximo ao Mackenzie, Santa Casa e Metro, Reformado, Living para 2 ambientes, 2 dormitorios sendo 1 suite, armarios embutidos, cozinha planejada, DE, Frente, Claro, 1 vaga de garagem, Mobiliado!!! "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento reformado com 2 dormitorios em Higienopolis"
+    referencia: 289
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 90
+    area_total: 120
+    quartos: 2
+    banheiros: 2
+    vagas: 0
+    condominio: 600.00
+    price_sale: 490000.00
+    price_rent: 0.00
+    descricao: "Proximo ao Metro, Reformado, cozinha planejada, 2 dormitorios, Living em L para 2 ambientes!!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Conjunto comercial para consultorio em Higienopolis"
+    referencia: 341
+    Type: type_3
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 95
+    area_total: 140
+    quartos: 0
+    banheiros: 3
+    vagas: 1
+    condominio: 1200.00
+    price_sale: 635000.00
+    price_rent: 0.00
+    descricao: "Conjunto Comercial para consultório, Ampla sala para diversas divisões, 3 banheiros, Copa, Totalmente Reformado!!!!! Proximo a Praça Buenos Aires!!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 4 dormitorios em Higienopolis"
+    referencia: 330
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 210
+    area_total: 250
+    quartos: 4
+    banheiros: 4
+    vagas: 1
+    condominio: 1300.00
+    price_sale: 1100000.00
+    price_rent: 0.00
+    descricao: "Otimo local, proximo ao Shopping, apartamento claro, 4 amplos dormitorios sendo 1 suite, 1 vaga de garagem + 1 alugada, copa, cozinha e dependencia de empregada!! \r\n"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios em Higienópolis"
+    referencia: 229
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 190
+    area_total: 220
+    quartos: 3
+    banheiros: 4
+    vagas: 2
+    condominio: 850.00
+    price_sale: 1060000.00
+    price_rent: 0.00
+    descricao: "Living para 3 ambientes com janelão, lavabo, amplo hall de distribuição, 3 dormitorios sendo 1 suite com closet, repleto de armarios, ampla cozinha, dependencia de empregada, 2 vagas demarcadas, portaria 24 horas, excelente estado de conservação!!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Higienópolis 3 dormitórios unificado"
+    referencia: 344
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 200
+    area_total: 250
+    quartos: 3
+    banheiros: 4
+    vagas: 2
+    condominio: 1000.00
+    price_sale: 950000.00
+    price_rent: 0.00
+    descricao: "Otima Localização, ao lado do Shopping, amplo living com terraço, sala de almoço, 3 amplos dormitorios com armarios, 2 banheiros sociais, otima cozinha, dependencia de empregada, 2 vagas demarcadas, condominio baixo!! "
+    seo: "Apartamento em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitorios em higienopolis proximo samaritano-347"
+    referencia: 347
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 150
+    area_total: 180
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 800.00
+    price_sale: 750000.00
+    price_rent: 0.00
+    descricao: "Proximo ao Shopping e Samaritano, Predio Recuado, Portaria 24 horas, Living para 2 ambientes com terraço, lavabo, cozinha com armarios, 3 dormitorios sendo 1 suite, vaga demarcada, frente, andar alto, claro!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento Reformado com 3 dormitorios em higienopolis ao lado do Shopping-348"
+    referencia: 348
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 170
+    area_total: 200
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 1000.00
+    price_sale: 960000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, rua tranquila e arborizada, predio recuado, portaria 24 horas, Janelões, pé direito alto, claro, Living para 3 ambientes, 3 dormitorios sendo 1 suite com terraço, cozinha planejada, lavabo, 1 vaga de garagem!! Entrar e Morar!"
+    seo: "Apartamento em Higienopolis"
+    destaque_chamada: "Living para 3 ambientes, 3 dormitorios sendo 1 suite com terraço, cozinha planejada, lavabo, 1 vaga de garagem!! Entrar e Morar!!"
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitorios em higienopolis proximo samaritano"
+    referencia: 349
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 160
+    area_total: 190
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 1260.00
+    price_sale: 1060000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, Ao lado do Samaritano, predio procuradissimo, Living para 3 ambientes, 3 dormitorios sendo 1 suite, rico em armarios, 1 vaga de garagem!!! Reformadissimo!!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "apartamento com 2 dormitorios na frei caneca"
+    referencia: 350
+    Type: type_1
+    Neighborhood: neighborhood_10
+    Disponibilidades: [disponibilidade_1]
+    area_util: 93
+    area_total: 120
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 500.00
+    price_sale: 450000.00
+    price_rent: 0.00
+    descricao: "Otimo apartamento com 93m2 de area util, localizado na rua Frei Caneca com 2 otimos dormitorios, amplo living para 2 ambientes, banheiro social, cozinha, area de serviço e dependencias de empregada. 1 Vaga demarcada e Lazer completo!!!! Apartamento para reforma, proximo ao Shopping Frei Caneca!!"
+    seo: "Apartamento próximo do Mackenzie"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Cobertura Penthouse com 2 dormitórios em Higienopolis"
+    referencia: 351
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 180
+    area_total: 230
+    quartos: 2
+    banheiros: 3
+    vagas: 2
+    condominio: 1220.00
+    price_sale: 1300000.00
+    price_rent: 0.00
+    descricao: "Cobertura diferenciada em Higienopolis com 180m2 uteis, Localização Nobre, lavabo, Living para 3 ambiente, ampla varanda com 30 m2, janelões, ensolarado, pé direito alto, 2 dormitorios com armarios sendo 1 suite, copa, cozinha, 2 vagas de garagem!! Proximo ao Shopping e Hospital Samaritano!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "apartamento em santa cecilia com 2 dormitorios e lazer completo"
+    referencia: 353
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 65
+    area_total: 90
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 440.00
+    price_sale: 371000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, proximo ao Metro, Rua tranquila, Predio recuado, portaria 24 horas, Lazer completo, condominio baixo, living para 2 ambientes com varanda, cozinha planejada, 2 dormitorios, banheiro social com box blindex, area de serviço e banheiro de empregada!!! 1 vaga de garagem!! Oportunidade Unica na Região!!!"
+    seo: "Apartamento próximo de Higienopolis"
+    destaque_chamada: "Apartamento próximo ao Metro com 2 dormitórios e 1 vaga de garagem, Prédio Procurado e com lazer completo! Vale a pena conhecer!"
+    destaque: 0
+    ordem: 3
+    ativo: 1
+  -
+    titulo: "apartamento com 3 dormitorios em higienopolis"
+    referencia: 354
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 145
+    area_total: 170
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 880.00
+    price_sale: 690000.00
+    price_rent: 0.00
+    descricao: "Living para 3 ambientes, 3 dormitorios com armarios, piso de taco, area de serviço com wc, região nobre proximo ao shopping, frente, claro, 1 vaga de garagem!!! "
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "apartamento com 2 dormitorios em higienopolis proximo ao Samaritano"
+    referencia: 355
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 97
+    area_total: 140
+    quartos: 2
+    banheiros: 2
+    vagas: 2
+    condominio: 1200.00
+    price_sale: 690000.00
+    price_rent: 0.00
+    descricao: "Living para 2 ambientes com terraço, cozinha planejada, 2 vagas demarcadas, 2 dormitorios sendo 1 suite master com closet, banheiro social com box blindex, lazer completo!!! Proximo ao Samaritano!!"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "apartamento com 3 dormitorios na Santa Cecilia"
+    referencia: 363
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 100
+    area_total: 120
+    quartos: 3
+    banheiros: 3
+    vagas: 0
+    condominio: 320.00
+    price_sale: 315000.00
+    price_rent: 0.00
+    descricao: "Apartamento totalmente REFORMADO, Living para 2 ambientes, 3 dormitorios com armarios sendo 1 suite, banheiros com box blindex, piso em taco, area de serviço com wc, claro, janelões, pé direito alto, Proximo ao Metro Marechal!!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "apartamento com 2 dormitorios em higienopolis em predio renomado"
+    referencia: 365
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 90
+    area_total: 140
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 500.00
+    price_sale: 600000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, Prédio Procuradissimo, Recuado, Ajardinado, Arquitetura Renomada, claro, Janelões, pé direito alto, Living para 2 ambientes, 2 dormitorios com armarios, cozinha planejada, banheiro social com box blindex, area de serviço com dependencias de empregada, boa divisão interna, cond baixo, lazer completo!! Predio com vagas Opcionais!!! Proximo ao Shopping e Mackenzie!! "
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "apartamento com 3 dormitorios em higienopolis proximo a avenida paulista"
+    referencia: 366
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 190
+    area_total: 230
+    quartos: 3
+    banheiros: 4
+    vagas: 1
+    condominio: 1220.00
+    price_sale: 1060000.00
+    price_rent: 0.00
+    descricao: "Apartamento totalmente Reformado, Living com terraço para 5 ambientes, lavabo, 3 dormitorios com armario, sendo 1 suite com closet, piso em porcelanato, cozinha ampla e planejada, area de serviço, cabeamento para internet e Tv em todos os comodos, proximo a Avenida Paulista!!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "apartamento com 1 dormitorio em higienopolis"
+    referencia: 367
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 40
+    area_total: 50
+    quartos: 1
+    banheiros: 1
+    vagas: 0
+    condominio: 285.00
+    price_sale: 300000.00
+    price_rent: 0.00
+    descricao: "Proximo a Praça Buenos Aires e futuro Metro, bom estado de conservação, andar alto, claro, cond baixo, rico em armarios, banheiro reformado, 3 por andar, Angelica x Mato Grosso!!! "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitorios em Higienopolis proximo ao Shopping, Praça Buenos Aires e Mackenzie diferenciado"
+    referencia: 368
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 160
+    area_total: 200
+    quartos: 2
+    banheiros: 3
+    vagas: 1
+    condominio: 650.00
+    price_sale: 710000.00
+    price_rent: 0.00
+    descricao: "Otima Localização, proximo a praça Buenos Aires, Mackenzie, Faap, condução facil, amplo terraço no living e dormitorios, armários, super claro, pé direito alto, Procuradissimo, Precisa de reforma!! Obs: Planta diferenciada, várias opções para reforma-lo, valorização imediata!!!"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Imóvel com 4 dormitorios na região de Higienopolis nobre"
+    referencia: 401
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 151
+    area_total: 200
+    quartos: 4
+    banheiros: 3
+    vagas: 2
+    condominio: 1200.00
+    price_sale: 825000.00
+    price_rent: 0.00
+    descricao: "Apartamento localizado na região nobre de Higienopolis com Amplo Living para 2 ou 3 ambientes com janelões, lavabo, 4 dormitórios com armários sendo 1 suite, cozinha ampla e clara com armários, espaçosa área de serviço com dependências de empregada! Apartamento super claro e original!! 2 Vagas de garagem, playground e Salão de Festas!! Próximo ao Shopping, Praça Buenos Aires e Mackenzie!! "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitorios e 2 vagas em Higienopolis"
+    referencia: 402
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 96
+    area_total: 120
+    quartos: 3
+    banheiros: 3
+    vagas: 2
+    condominio: 900.00
+    price_sale: 650000.00
+    price_rent: 0.00
+    descricao: "Excelente Imóvel com 3 dormitórios com armários sendo 2 suítes, Living com terraço, cozinha planejada, área de serviço, 2 vagas de garagem, prédio com piscina, churrasqueira, playground, salão de festas. TOTALMENTE REFORMADO!! "
+    seo: "apartamento em Higienopolis"
+    destaque_chamada: "Excelente Imóvel com 3 dormitórios com armários sendo 2 suítes, Living com terraço, cozinha planejada, área de serviço, 2 vagas de garagem!!"
+    destaque: 0
+    ordem: 2
+    ativo: 1
+  -
+    titulo: "apartamento com 3 dormitorios em higienopolis"
+    referencia: 406
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 120
+    area_total: 150
+    quartos: 3
+    banheiros: 2
+    vagas: 1
+    condominio: 700.00
+    price_sale: 750000.00
+    price_rent: 0.00
+    descricao: "Otima Localização, ao lado da Praça Buenos Aires, andar alto, super claro, boa divisao interna, pé direito alto, bom estado de conservação!! "
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitorios na rua Bahia"
+    referencia: 410
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 128
+    area_total: 150
+    quartos: 3
+    banheiros: 3
+    vagas: 2
+    condominio: 600.00
+    price_sale: 750000.00
+    price_rent: 0.00
+    descricao: "Otimo apartamento com localização nobre, Proximo a Praça Buenos Aires, Janelões, pé direito Alto, rico em armarios, otima distribuição, 2 vagas de garagem, REFORMADISSIMO!!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 4 dormitórios em Higienopolis próximo a Praça Buenos Aires"
+    referencia: 412
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_2]
+    area_util: 345
+    area_total: 390
+    quartos: 4
+    banheiros: 5
+    vagas: 3
+    condominio: 2500.00
+    price_sale: 0.00
+    price_rent: 6000.00
+    descricao: "Rua Arborizada, Prédio Recuado, Próximo a Praça Buenos Aires, Frente, claro, um por andar, Living para 3 ambientes com terraço, hall de entrada, 4 dormitorios sendo 1 suite, rico em armarios, sala de jantar, cozinha e copa, ampla área de serviço com dependência de empregada. "
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitórios próximo ao Shopping em Santa Cecilia"
+    referencia: 416
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 70
+    area_total: 80
+    quartos: 2
+    banheiros: 1
+    vagas: 0
+    condominio: 160.00
+    price_sale: 340000.00
+    price_rent: 0.00
+    descricao: "Otima Localização a 300 metros do Shopping, cond baixo, boa distribuição, ao lado de todo comercio, silencioso, pé direito alto!!! "
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "    Apartamento em Higienópolis"
+    referencia: 419
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 165
+    area_total: 0
+    quartos: 3
+    banheiros: 3
+    vagas: 2
+    condominio: 1000.00
+    price_sale: 1000000.00
+    price_rent: 0.00
+    descricao: "Próximo ao shopping Higienópolis e hospital Samaritano, Living para 2 ambientes, 3 dorm com armários embutidos, sendo 1 suíte, cozinha planejada com muitos armários, AS com DE e WC . Apartamento com pé direito alto, com 2 vagas demarcadas . Agende uma visita !!"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento excelente Higienópolis"
+    referencia: 421
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 248
+    area_total: 320
+    quartos: 4
+    banheiros: 4
+    vagas: 2
+    condominio: 1170.00
+    price_sale: 1350000.00
+    price_rent: 0.00
+    descricao: "Apartamento próximo ao shopping;Living amplo para 4 ambientes, com lavabo;janelões; rico em armários, de frente. Agende uma visita !"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Excelente apartamento novo- Higienópolis"
+    referencia: 425
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 80
+    area_total: 0
+    quartos: 3
+    banheiros: 3
+    vagas: 2
+    condominio: 0.00
+    price_sale: 750000.00
+    price_rent: 0.00
+    descricao: "Apartamento novo,próximo ao shopping e Hospital Samaritano, Living c/ Terraço e lavabo,  2 suítes ; escritório , escritório ; 2 vagas ; lazer completo."
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartmento Higienópolis - São Paulo"
+    referencia: 426
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 105
+    area_total: 0
+    quartos: 3
+    banheiros: 2
+    vagas: 1
+    condominio: 450.00
+    price_sale: 700000.00
+    price_rent: 0.00
+    descricao: "Ótimo apartamento, com Living, 3 dorm , WC , cozinha, AS com DE E WC , 1 vaga de garagem.Ótima localização, próximo a praça Buenos Aires, andar alto. "
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Condominio anos 50 - Higienópolis"
+    referencia: 427
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 135
+    area_total: 0
+    quartos: 3
+    banheiros: 2
+    vagas: 1
+    condominio: 800.00
+    price_sale: 845000.00
+    price_rent: 0.00
+    descricao: "Condomínio anos 50; Arquitetura diferenciada; Com muitas vagas de garagem. Living para 2 ambientes, com janelões; Teto com sanca; Pé direito alto; Piso novo todo em taco duas cores; Dorms. com A.E , sendo 1 suíte e 3° dorm como sala de TV; Cozinha planejada, com muitos armários, AS com WC. Apartamento lindo, ensolarado . Lazer completo, com churrasqueira e fitness . Próximo ao shopping! Agende uma visita!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento em Santa Cecília"
+    referencia: 431
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 113
+    area_total: 0
+    quartos: 2
+    banheiros: 2
+    vagas: 0
+    condominio: 417.00
+    price_sale: 365000.00
+    price_rent: 0.00
+    descricao: "Living p/ 2 ambientes; 2 dorms com A.E ; Piso em taco; Cozinha ( precisando de reforma); AS com WC e DE ; Quintal. Próximo ao metrô, sacolão e comércio em geral!Agende uma visita!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento Próximo ao Mackenzie"
+    referencia: 434
+    Type: type_1
+    Neighborhood: neighborhood_6
+    Disponibilidades: [disponibilidade_1]
+    area_util: 130
+    area_total: 0
+    quartos: 3
+    banheiros: 2
+    vagas: 4
+    condominio: 780.00
+    price_sale: 530000.00
+    price_rent: 0.00
+    descricao: "Ótimo apartamento, localizado à uma quadra do Mackenzie, com amplo living, sala de jantar , 3 dorms, 2 WC´s, cozinha; AS com QE E WC ; 1 vaga de garagem; Apartamento ensolarado, janelões . Agende uma visita!"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento Impecável "
+    referencia: 435
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 190
+    area_total: 0
+    quartos: 3
+    banheiros: 2
+    vagas: 1
+    condominio: 1100.00
+    price_sale: 1280000.00
+    price_rent: 0.00
+    descricao: "Maravilhoso apartamento, com amplo Living e sala de jantar, com lavabo, 3 dorms com AE, 2 WC´s , ampla copa/cozinha, AS com QE e WC . Ótimo prédio, com salão de festas, quadra, playground. Ótima localização, próximo ao shopping. Apartamento claro e arejado. Agende uma visita!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitorios em Santa Cecilia proximo a Santa Casa"
+    referencia: 436
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 120
+    area_total: 150
+    quartos: 3
+    banheiros: 2
+    vagas: 1
+    condominio: 600.00
+    price_sale: 450000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, Proximo ao Metro e Santa Casa, Andar Intermediario, Claro, Janelões, pé direito alto, Bom estado de conservação!!"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios em Santa Cecilia ao lado do Metro"
+    referencia: 437
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 230
+    area_total: 250
+    quartos: 3
+    banheiros: 3
+    vagas: 0
+    condominio: 680.00
+    price_sale: 480000.00
+    price_rent: 0.00
+    descricao: "Apartamento Duplex proximo ao Largo da Santa Cecilia, Andar Alto, Frente, janelões, ensolarado, Living para 3 ambientes, cozinha e copa, dependencia de empregada, 3 dormitorios com armarios sendo 1 suite, pé direito alto, ao lado do metro, Estuda Negociação, Precisa de reforma!!! "
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitorios em Santa Cecilia Proximo a Santa Casa"
+    referencia: 438
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 87
+    area_total: 100
+    quartos: 2
+    banheiros: 1
+    vagas: 0
+    condominio: 400.00
+    price_sale: 340000.00
+    price_rent: 0.00
+    descricao: "Living para 2 ambientes, 2 dormitorios sendo 1 com armario embutido, cozinha, copa e area de serviço. face norte, ensolarado, arejado, piso frio. Proximo ao Metro e Santa Casa!! "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitorios em Higienopolis ao lado da Santa Casa"
+    referencia: 442
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 65
+    area_total: 90
+    quartos: 2
+    banheiros: 3
+    vagas: 1
+    condominio: 700.00
+    price_sale: 450000.00
+    price_rent: 0.00
+    descricao: "Otimo apartamento proximo a Santa Casa, Mackenzie e Metro, Excelente Living com terraço, rico em armários, claro, andar alto. "
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitorios na Consolação"
+    referencia: 445
+    Type: type_1
+    Neighborhood: neighborhood_6
+    Disponibilidades: [disponibilidade_1]
+    area_util: 144
+    area_total: 180
+    quartos: 3
+    banheiros: 3
+    vagas: 2
+    condominio: 860.00
+    price_sale: 750000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, Rua tranquila e arborizada, Proximo ao Mackenzie, Shopping Frei Caneca e Paulista, Predio recuado, Portaria 24 horas, Apartamento Totalmente Reformado, Living para 3 ambientes, 3 dormitorios com armarios sendo 1 suite Master, banheiro com box blindex, cozinha planejada, ampla área de serviço, wc de empregada, 2 vagas demarcadas!!! "
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 4 Suites em Higienopolis Nobre"
+    referencia: 454
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 240
+    area_total: 300
+    quartos: 4
+    banheiros: 6
+    vagas: 4
+    condominio: 1800.00
+    price_sale: 1600000.00
+    price_rent: 0.00
+    descricao: "Magnifico apartamento com 4 Suites, 4 vagas demarcadas, 4 sacadas, lareira, churrasqueira com area gourmet, 2 quartos de empregada, otimo sistema de segurança, predio com sauna, playground e quadra, a 150 metros do Shopping Higienópolis!! Agende uma visita!!"
+    seo: "Higienópolis Nobre"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Higienópolis com 4 dormitórios sendo 1 suite"
+    referencia: 455
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 160
+    area_total: 190
+    quartos: 4
+    banheiros: 3
+    vagas: 1
+    condominio: 800.00
+    price_sale: 750000.00
+    price_rent: 0.00
+    descricao: "Amplo apartamento com 160m2, 4 dormitórios sendo 1 suite, escritório, lavabo, amplo Living para 3 ambientes, banheiro social com box blindex, andar alto, Face Norte, ensolarado, arejado, ótimo estado de conservação, 1 vaga de garagem!! Uma quadra do Shopping!!"
+    seo: "Ao lado do Shopping"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitórios na Barra Funda com lazer Completo"
+    referencia: 457
+    Type: type_1
+    Neighborhood: neighborhood_4
+    Disponibilidades: [disponibilidade_1]
+    area_util: 53
+    area_total: 90
+    quartos: 2
+    banheiros: 1
+    vagas: 2
+    condominio: 400.00
+    price_sale: 375000.00
+    price_rent: 0.00
+    descricao: "Living para 2 ambientes com terraço, cozinha americana planejada com area de serviço, 2 dormitorios com armarios embutido, banheiro social com box blindex! Andar Alto, claro, arejado, Próximo ao Metro Marechal Deodoro, 2 Vagas de Garagem!! Predio Novo com Lazer Completo!!! "
+    seo: "Predio Novo!!"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitórios em Santa Cecilia ótimo para renda"
+    referencia: 461
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 58
+    area_total: 80
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 370.00
+    price_sale: 410000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, rua tranquila e arborizada, Prédio com Lazer completo, Andar alto, claro, Living para 2 ambientes com varanda, 2 dormitorios sendo 1 suite e sacada, banheiro social com box blindex, cozinha planejada, area de serviço e uma vaga de garagem!! Próximo ao Metro, Santa Casa, Mackenzie e Shopping!! Excelente para Renda ou Moradia!!"
+    seo: "próximo a Santa Casa e higienopolis"
+    destaque_chamada: "Excelente apartamento próximo ao Metro, Santa Casa e Mackenzie, Ótimo para renda como Moradia!!!! R$ 380.000,00"
+    destaque: 1
+    ordem: 3
+    ativo: 1
+  -
+    titulo: "Apartamento Santa Cecília próximo ao metrô"
+    referencia: 462
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 91
+    area_total: 0
+    quartos: 2
+    banheiros: 2
+    vagas: 0
+    condominio: 350.00
+    price_sale: 370000.00
+    price_rent: 0.00
+    descricao: "Living p/ 2 ambientes, 2 dorms , sendo 1 suíte , cozinha com AS. Andar alto , claro, próximo ao metrô e comércio em geral ."
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Belíssimo  Apartamento - Higienópolis"
+    referencia: 465
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 145
+    area_total: 0
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 920.00
+    price_sale: 875000.00
+    price_rent: 0.00
+    descricao: "Reformado, inclusive hidráulica e elétrica;com HE ; Living p/ 2 ambientes  com jardim de inverno;Piso em taco; Sala de jantar com piso de madeira; Suíte com closet e hidromassagem; Rico em armários; Cozinha Planejada; AS com DE e WC . Região nobre de Higienópolis . Apartamento lindo! Agende uma visita!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Imóvel de 2 dormitórios em Santa Cecilia"
+    referencia: 468
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 96
+    area_total: 115
+    quartos: 2
+    banheiros: 3
+    vagas: 1
+    condominio: 600.00
+    price_sale: 410000.00
+    price_rent: 0.00
+    descricao: "Living para 2 ambientes, piso de taco, 2 dormitórios sendo 1 suite, banheiro social, ampla cozinha, excelente area de serviço com WC e DE, frente, andar intermediário, salão de jogos, Fitness, churrasqueira e salão de festas. Agende uma visita!!"
+    seo: "Excelente apartamento em Santa Cecilia"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento de 4 dormitórios em Pinheiros"
+    referencia: 469
+    Type: type_1
+    Neighborhood: neighborhood_8
+    Disponibilidades: [disponibilidade_1]
+    area_util: 227
+    area_total: 250
+    quartos: 4
+    banheiros: 4
+    vagas: 1
+    condominio: 1100.00
+    price_sale: 900000.00
+    price_rent: 0.00
+    descricao: "Apartamento bonito, Ensolarado, Living para 2 ambientes, lavabo, 4º dormitório feito sala de jantar, piso de taco, 3 dormitórios com armarios embutidos sendo 1 suite master, banheiro social, cozinha com armarios, area de serviço e dependencia de empregada. Lazer com Quadra, salão de festas e Brinquedoteca. Agende uma visita!! "
+    seo: "Lindo apartamento em Pinheiros"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "apartamento com 3 dormitorios em Higienopolis com Vista Panoramica"
+    referencia: 470
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 182
+    area_total: 230
+    quartos: 3
+    banheiros: 4
+    vagas: 2
+    condominio: 1100.00
+    price_sale: 890000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, Rua tranquila e arborizada, Prédio recuado, Portaria 24 horas, Andar Alto, Frente, Ensolarado, Arejado, um por andar, Vista Panorâmica, Amplo Living para 3 ambientes com varanda, lavabo, copa e cozinha, 3 dormitórios com armários sendo 1 suite, banheiro social, 2 vagas de garagem demarcadas. "
+    seo: "Apartamento em Higienópolis próximo ao Shopping"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitórios na Santa Cecilia próximo ao Metro Marechal e Santa Casa"
+    referencia: 472
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 45
+    area_total: 70
+    quartos: 2
+    banheiros: 2
+    vagas: 0
+    condominio: 368.00
+    price_sale: 320000.00
+    price_rent: 0.00
+    descricao: "Rua Tranquila, Prédio recuado, Portaria 24 horas, Ao lado do Metro e Santa Casa, Living para 2 ambientes, 2 dormitórios com armários, banheiro social, cozinha e área de serviço! Apartamento em estado original!!"
+    seo: "Próximo ao Mackenzie"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitório na Consolação próximo ao Mackenzie"
+    referencia: 477
+    Type: type_1
+    Neighborhood: neighborhood_6
+    Disponibilidades: [disponibilidade_1]
+    area_util: 80
+    area_total: 100
+    quartos: 2
+    banheiros: 1
+    vagas: 0
+    condominio: 600.00
+    price_sale: 425000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, rua tranquila e arborizada, Prédio recuado, portaria 24 horas, Andar alto, Frente, Ensolarado, Arejado, Amplo Living para 2 ambientes, 2 dormitórios com armários, banheiro social, cozinha e área de serviço!!! Apartamento em estado original!! "
+    seo: "Apartamento próximo ao Mackenzie"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitórios em Higienopolis excelente para Renda"
+    referencia: 480
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 65
+    area_total: 90
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 530.00
+    price_sale: 425000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, Rua tranquila, Prédio Procuradissimo, Portaria 24 horas, Andar Alto, Claro, Living para 2 ambientes com varanda, cozinha planejada, 2 dormitórios com armários, banheiro com box blindex, Otimo estado de conservação!!! Próximo ao Shopping e Metro!! "
+    seo: "Próximo ao Shopping Higienopolis"
+    destaque_chamada: "Living para 2 ambientes com sacada, 2 dormitórios com armários, banheiro com box blindex, cozinha planejada, vaga de garagem! R$ 425 Mil!"
+    destaque: 1
+    ordem: 5
+    ativo: 1
+  -
+    titulo: "Apartamento reformado com 3 dormitorios em Santa Cecilia"
+    referencia: 481
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 130
+    area_total: 147
+    quartos: 3
+    banheiros: 3
+    vagas: 0
+    condominio: 534.00
+    price_sale: 550000.00
+    price_rent: 0.00
+    descricao: "Apartamento Totalmente reformado, próximo ao Metro, Santa Casa e Mackenzie, Frente, claro, janelões, pé direito alto, Living para 2 ambientes, cozinha americana, 3 dormitórios sendo 1 suite, despensa,, dependencia de empregada!!! "
+    seo: "Apartamento próximo de Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento de 2 dormitórios em Santa Cecilia com lazer completo"
+    referencia: 482
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 65
+    area_total: 100
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 400.00
+    price_sale: 425000.00
+    price_rent: 0.00
+    descricao: "Otimo apartamento com 65m2, Face Norte, ensolarado, Vista privilegiada de São Paulo, Living com terraço, 2 dormitórios sendo 1 suite, cozinha planejada, Rico em armários de 1º qualidade, 1 vaga de garagem, LAZER COMPLETO!!! Próximo ao Metro Marechal, Shopping Higienópolis e Faculdade Oswaldo Cruz!"
+    seo: "Apartamento em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Santa Cecilia 2 dormitório Diferenciado"
+    referencia: 488
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 120
+    area_total: 150
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 520.00
+    price_sale: 635000.00
+    price_rent: 0.00
+    descricao: "Apartamento diferenciado com fino acabamento, piso em porcelanato, Living e sala de estar com janelão, cozinha americana planejada, Suite Master, vaga de garagem, ensolarado, face Norte, próximo ao Boni Consilii, Melhor região da Barão de Limeira!!!"
+    seo: "Apartamento proximo a Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitório em Higienópolis sem Vaga"
+    referencia: 490
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 94
+    area_total: 100
+    quartos: 2
+    banheiros: 2
+    vagas: 0
+    condominio: 370.00
+    price_sale: 530000.00
+    price_rent: 0.00
+    descricao: "Higienópolis próximo ao Shopping, Excelente apartamento com 94m2 de area uteis, 2 dormitórios sendo 1 com terraço, Amplo Living, WC, ótima cozinha, area de serviços com dependencia de empregada, excelente Localização em rua tranquila e arborizada."
+    seo: "Apartamento próximo ao Shopping Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios em Higienópolis proximo ao Shopping ll"
+    referencia: 493
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 130
+    area_total: 160
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 1100.00
+    price_sale: 760000.00
+    price_rent: 0.00
+    descricao: "Andar alto, frente, Living para 2 ambientes, 3 dormitórios com armarios embutidos sendo 1 suite, banheiro social, cozinha ampla com armários, area de serviços com dependecia de empregada e uma vaga!!! Lazer com salão de festas, Playground e Quadra!!! Proximo ao Shopping e Metro!!!"
+    seo: "Apartamento em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento de 3 dormitórios em Higienopolis com terração"
+    referencia: 495
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 120
+    area_total: 160
+    quartos: 3
+    banheiros: 2
+    vagas: 1
+    condominio: 620.00
+    price_sale: 700000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, Andar alto, Frente, Face Norte, Claro, Proximo ao Shopping e Metro, Amplo Living para 3 ambientes, cozinha planejada, banheiro social com Hidromassagem, 2 dormitórios com terraço e Armários, Escritório, 1 vaga de garagem!! Totalmente Reformado!!! "
+    seo: "Apartamento em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Kit em Santa Cecilia"
+    referencia: 497
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 28
+    area_total: 50
+    quartos: 1
+    banheiros: 1
+    vagas: 1
+    condominio: 180.00
+    price_sale: 170000.00
+    price_rent: 0.00
+    descricao: "Kit Todo mobiliado com vaga de garagem, Rico em armários, frente, próximo ao Metro, Uninove e Avenida Pacaembu!! "
+    seo: "Apartamento próximo a Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios em Santa Cecilia proximo a Santa Casa e Mackenzie"
+    referencia: 498
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 90
+    area_total: 120
+    quartos: 3
+    banheiros: 2
+    vagas: 1
+    condominio: 680.00
+    price_sale: 500000.00
+    price_rent: 0.00
+    descricao: "Apartamento ensolarado, frente, situado proximo ao metro Santa Cecilia, Santa Casa, Mackenzie e Shopping, Hall de entrada, Living para 2 ambientes com janelão, Lavabo, 3 dormitorios com armarios, banheiro social, cozinha planejada, 1 vaga de garagem!! 3º dormitorio aberto para sala com possibilidade de fechar!!! "
+    seo: "Apartamento próximo de Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Localização Nobre "
+    referencia: 499
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 70
+    area_total: 89
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 520.00
+    price_sale: 420000.00
+    price_rent: 0.00
+    descricao: "Excelente localização; próximo ao Shopping e Hospital Samaritano, Sinagogas; ótimos colégios; faculdades; apartamento modificado com living e sala de jantar, lavabo, banheiro social, 2 dormitorios com armários, piso taco, cozinha planejada com armários; 1 vaga de garagem. "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios na Vila Romana"
+    referencia: 500
+    Type: type_1
+    Neighborhood: neighborhood_11
+    Disponibilidades: [disponibilidade_1]
+    area_util: 92
+    area_total: 188
+    quartos: 3
+    banheiros: 3
+    vagas: 2
+    condominio: 600.00
+    price_sale: 650000.00
+    price_rent: 0.00
+    descricao: "Apartamento pra Entrar e Morar, Piso Porcelanato no Living, cozinha e área de serviço, Piso Laminado nos quartos, Sanca de Gesso e iluminação, box nos banheiros e armários de 1º linha!! Prédio Novo com lazer!!! 02 vagas de garagem!! "
+    seo: "Apartamento próximo a Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios e 2 vagas em Higienópolis"
+    referencia: 502
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 190
+    area_total: 250
+    quartos: 3
+    banheiros: 3
+    vagas: 2
+    condominio: 1100.00
+    price_sale: 1200000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, Rua tranquila e arborizada, Prédio Procuradissimo, Recuado, Andar Alto, Frente, Face Norte, Hall de entrada Independente, Amplo Living para 3 ambientes com terraço, Cozinha e Copa repleto de armários, 3 Dormitórios sendo 1 suite com armários, Closet, 02 vagas de garagem!!! "
+    seo: "Apartamento próximo ao Shopping Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento de 2 dormitórios em Santa Cecilia-Higienopolis"
+    referencia: 505
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 90
+    area_total: 120
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 460.00
+    price_sale: 400000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, Prédio Recuado, Frente, Claro, Apartamento Reformado, Living para 2 ambientes, cozinha Planejada, área de serviço com dependência de empregada 2 dormitórios com armários, banheiro com box blindex, 1 vaga de garagem. Próximo ao Shopping Higienopolis, Santa Casa, Metro e Mackenzie!!"
+    seo: "Apartamento em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitórios na frente da Santa Casa em Higienópolis"
+    referencia: 506
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 105
+    area_total: 130
+    quartos: 2
+    banheiros: 3
+    vagas: 1
+    condominio: 640.00
+    price_sale: 560000.00
+    price_rent: 0.00
+    descricao: "Otimo apartamento com excelente estado de conservação, Living para 2 ambientes com lavabo, alto, claro, próximo ao Metro, Santa Casa e Mackenzie!!! "
+    seo: "Apartamento em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Cobertura Duplex em Higienopolis"
+    referencia: 512
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 290
+    area_total: 350
+    quartos: 3
+    banheiros: 5
+    vagas: 1
+    condominio: 1040.00
+    price_sale: 1500000.00
+    price_rent: 0.00
+    descricao: "Maravilhosa Cobertura em Higienopolis com 290 m2 de areas uteis sendo embaixo: 3 dormitorios sendo 1 suite com terraço, rico em armários, ótimo living com terraço, lavabo, banheiro social com box, cozinha planejada, dependencia de empregada. Superior: Sala de estar, amplo terraço com 120m2, churrasqueira e Vista Maravilhosa. "
+    seo: "Apartamento em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Sobrado em Higienopolis"
+    referencia: 513
+    Type: type_2
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 180
+    area_total: 200
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 0.00
+    price_sale: 990000.00
+    price_rent: 0.00
+    descricao: "Sobrado em Higienopolis totalmente Reformado com 180m2 de área construída, amplo quintal, Living com lavabo, 3 dormitórios com armários, sala de jantar, cozinha planejada, uma vaga!!! Excelente para Moradia ou Comercial!!!"
+    seo: "Casa em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitórios em Higienopolis procurado"
+    referencia: 515
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 90
+    area_total: 100
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 450.00
+    price_sale: 500000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, Rua tranquila e arborizada, Recuado, Prédio procuradissimo, Living para 2 ambientes, 2 dormitórios com armários, banheiro social reformado com box blindex, cozinha reformada, área de serviço e wc de empregada!!! 01 vaga de garagem!!! "
+    seo: "Apartamento em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitorios em Santa Cecilia para investimento"
+    referencia: 517
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 60
+    area_total: 80
+    quartos: 2
+    banheiros: 1
+    vagas: 0
+    condominio: 400.00
+    price_sale: 280000.00
+    price_rent: 0.00
+    descricao: "Ótimo para investimento, Living para 2 ambientes com sanca de gesso, 2 dormitórios, banheiro social com banheira, Piso em porcelanato polido, Todo reformado com Hidráulica e elétrica novas. Apartamento Locado por R$ 1.300,00.. Próximo ao Metro!"
+    seo: "Apartamento em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Imóvel com 3 dormitórios em Higienópolis"
+    referencia: 518
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 130
+    area_total: 150
+    quartos: 3
+    banheiros: 4
+    vagas: 2
+    condominio: 1200.00
+    price_sale: 740000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, Rua tranquila e arborizada, Prédio Procurado, Recuado, Portaria 24 horas, Andar alto, Face Norte, Amplo Living para 2 ambientes, lavabo, cozinha, 3 dormitórios com armários sendo 1 suite, 2 vagas de garagem!!!"
+    seo: "Apartamento em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento a 100 m do Shopping Higienópolis"
+    referencia: 519
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 147
+    area_total: 170
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 1100.00
+    price_sale: 1000000.00
+    price_rent: 0.00
+    descricao: "Ótimo apartamento com 147 m2 de área útil, amplo Living com varanda, 3 dormitórios sendo 1 suite, sala de almoço, cozinha com armários, dependências de empregada, 1 vaga de garagem, ótimo prédio, recuado, a 100 do metros do Shopping!! Localização Privilegiada!!! "
+    seo: "Apartamento em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com possibilidade de 03 Vagas em Higienópolis"
+    referencia: 520
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 170
+    area_total: 250
+    quartos: 3
+    banheiros: 3
+    vagas: 2
+    condominio: 1100.00
+    price_sale: 850000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, Rua tranquila e arborizada, Prédio Bem recuado, Portaria 24 horas, Apartamento de Frente com 170m2 de área útil, Amplo Living em L para 3 ambientes, 3 dormitórios com armários sendo 1 suite( reformado), Banheiro social com box Blindex (reformado), Copa e Cozinha planejada com armários (reformado), área de serviço e dependência de empregada!!! 02 vagas de garagem com possibilidade de adquirir mais uma no valor de 50 Mil reias!!! "
+    seo: "Apartamento em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Higienopolis com 3 Suites próximo ao Shopping"
+    referencia: 521
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 260
+    area_total: 300
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 650.00
+    price_sale: 690000.00
+    price_rent: 0.00
+    descricao: "Ótimo apartamento em Santa Cecilia de Frente, face Norte, 3 suites sendo 1 com Hidromassagem, Living com varanda, sala de jantar, lavabo, cozinha com área de serviço e 115m2 de quintal. Próximo ao Metro e Shopping. "
+    seo: "Apartamento em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento de 3 dormitórios em Higienopolis Oportunidade"
+    referencia: 523
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 110
+    area_total: 150
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 600.00
+    price_sale: 580000.00
+    price_rent: 0.00
+    descricao: "Apartamento totalmente Reformado, Andar alto, claro, Living para 2 ambientes, 3 dormitórios sendo 1 suite com closet, cozinha com armários, dependência de empregada, garagem demarcada, cond baixo, próximo ao Shopping e Metro!! "
+    seo: "Apartamento em Higienópolis"
+    destaque_chamada: "Apartamento totalmente Reformado, próximo ao Shopping e Metro!! Oportunidade �?nica, R$ 580.000,00"
+    destaque: 1
+    ordem: 4
+    ativo: 1
+  -
+    titulo: "Sobrado na Barra Funda"
+    referencia: 522
+    Type: type_2
+    Neighborhood: neighborhood_4
+    Disponibilidades: [disponibilidade_1]
+    area_util: 150
+    area_total: 180
+    quartos: 3
+    banheiros: 2
+    vagas: 1
+    condominio: 0.00
+    price_sale: 550000.00
+    price_rent: 0.00
+    descricao: "Sobrado em excelente estado de conservação com 2 salas, 3 dormitórios, terraço, banheiro social, cozinha e copa azulejadas, Quintal, dependencia de empregada e área de serviço, 1 vaga de garagem!!! Imóvel excelente também para escritório.Próximo a Alameda Eduardo Prado!!!"
+    seo: "Próximo a Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento ao lado do Shopping Higienopolis"
+    referencia: 526
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 176
+    area_total: 210
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 1250.00
+    price_sale: 855000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, Prédio procurado ao lado do Mackenzie, ótimo para renda ou moradia, frente, claro, Living com varanda, cozinha americana com armários, 2 dormitórios, armários, banheiro com box blindex, 01 vaga de garagem!!! Lazer com piscina e churrasqueira!!! Próximo ao Metro, Shopping e tudo que há de bom no bairro!!!"
+    seo: "Apartamento Lindo em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento Diferenciado em Higienopolis"
+    referencia: 527
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 200
+    area_total: 280
+    quartos: 4
+    banheiros: 4
+    vagas: 3
+    condominio: 1300.00
+    price_sale: 1800000.00
+    price_rent: 0.00
+    descricao: "Apartamento Diferenciado, fino acabamento com piso e tijolo e demolição, Amplo Living para 3 ambientes com varanda, lavabo, 4 Dormitórios com armários sendo 2 suítes, cozinha Planejada com armários em porcelanato, Ampla Varanda (55 m2) com Jacuzzi para 8 pessoas e totalmente coberta, 03 vagas demarcadas!! Prédio Novo e com lazer completo!!! Próximo ao Shopping Higienópolis, Metro, Sinagogas, Supermercado, Padarias e tudo que há de bom no Bairro!!! VENDE COM TODAS AS MOBILIAS!!! "
+    seo: "Apartamento com Jacuzzi em Higienopolis"
+    destaque_chamada: "Lindo apartamento em fino acabamento para pessoas de bom gosto, com ampla varanda(55m2), Jacuzzi para 8 pessoas, 4 dormitórios sendo 2 suítes..."
+    destaque: 1
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios próximo ao Hospital Samaritano"
+    referencia: 528
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 127
+    area_total: 160
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 1300.00
+    price_sale: 680000.00
+    price_rent: 0.00
+    descricao: "Excelente Localização, rua tranquila e arborizada, Prédio Recuado, Frente, Claro, Janelões, pé direito alto, boa divisão interna, Living para 2 ambientes, 3 dormitórios com armários sendo 1 suíte, banheiro social, cozinha, 01 vaga de garagem, Apartamento em estado original próximo ao Shopping e Hospital Samaritano!! "
+    seo: "Apartamento em Estado Original em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 2 dormitórios em Perdizes"
+    referencia: 529
+    Type: type_1
+    Neighborhood: neighborhood_2
+    Disponibilidades: [disponibilidade_1]
+    area_util: 58
+    area_total: 90
+    quartos: 2
+    banheiros: 2
+    vagas: 2
+    condominio: 500.00
+    price_sale: 385000.00
+    price_rent: 0.00
+    descricao: "Living com terraço, 2 dormitórios sendo 1 suite, cozinha americana, 02 vagas de garagem. Rua residencial, tranquila, próximo a colégios!!! "
+    seo: "Apartamento em Perdizes com 02 Vagas"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios em Higienópolis reformado"
+    referencia: 533
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 139
+    area_total: 247
+    quartos: 3
+    banheiros: 3
+    vagas: 2
+    condominio: 950.00
+    price_sale: 795000.00
+    price_rent: 0.00
+    descricao: "Excelente apartamento, com 3 dorms, 2 vagas demarcadas, cozinha com armários, sala para dois ambientes, banheiro, lavabo, Suite Master com closet, Completamente reformado. Pronto para morar.Total conforto.  Bem localizado. Oportunidade. Visite nosso site brenoimoveis.com.br"
+    seo: "Apartamento em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios em Higienópolis "
+    referencia: 534
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 176
+    area_total: 206
+    quartos: 3
+    banheiros: 1
+    vagas: 1
+    condominio: 1250.00
+    price_sale: 1300000.00
+    price_rent: 0.00
+    descricao: "Excelente apartamento, todo reformado, pé direito alto, amplo living em L, lavabo, 3 dorms sendo 1 suíte com closet, cozinha planejada e ampla area de serviço. Elevador privativo, lazer com academia, ao lado do Shopping Higienópolis."
+    seo: "Apartamento para venda em Higienópolis."
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento de alto padrão em Higienópolis"
+    referencia: 538
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 180
+    area_total: 200
+    quartos: 4
+    banheiros: 4
+    vagas: 3
+    condominio: 1300.00
+    price_sale: 1400000.00
+    price_rent: 0.00
+    descricao: "Excelente apartamento amplo living para 3 ambientes com sacada, lavabo, sala de jantar, cozinha planejada, 4 dorms sendo 2 suítes, vista panorâmica para o Vale do Pacaembu, 3 vagas de garagem. Próximo ao Samaritano."
+    seo: "Apartamento de alto padrão em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento  para venda na Barra Funda"
+    referencia: 540
+    Type: type_1
+    Neighborhood: neighborhood_4
+    Disponibilidades: [disponibilidade_1]
+    area_util: 67
+    area_total: 87
+    quartos: 3
+    banheiros: 1
+    vagas: 2
+    condominio: 260.00
+    price_sale: 370000.00
+    price_rent: 0.00
+    descricao: "Ótimo apartamento, com 3 dorms, armários embutidos, living  para 2 ambientes, com terraço, wc, cozinha planejada. Andar alto e 2 vagas de garagem."
+    seo: "Apartamento para venda em Santa Cecilia"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 1 dorm em Higienopolis ."
+    referencia: 541
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 35
+    area_total: 55
+    quartos: 1
+    banheiros: 1
+    vagas: 1
+    condominio: 400.00
+    price_sale: 325000.00
+    price_rent: 0.00
+    descricao: "Apartamento todo reformado, andar alto, 1 vaga de garagem, cozinha americana com armário, banheiro com box, lavanderia inclusa no condomínio, rua arborizada e tranquila. Próximo ao Metrô Marechal e Shopping."
+    seo: "Apartamento em Higienopolis ao lado do Shopping"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios em Higienópolis  praça Vila Boim/FAAP"
+    referencia: 543
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 150
+    area_total: 190
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 1400.00
+    price_sale: 950000.00
+    price_rent: 0.00
+    descricao: "Maravilhoso apartamento totalmente reformado e decorado, localização privilegiada, entre a Praça Vila Boim, Rua Rio de Janeiro e FAAP, com 3 dorms, (está com 2 suítes) armário embutidos, amplo living com terraço, lavabo, cozinha planejada, área de serviço com dependencia de empregada, apartamento claro e com 1 vaga de garagem."
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Condomínio Novo em Santa Cecilia"
+    referencia: 544
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 81
+    area_total: 101
+    quartos: 3
+    banheiros: 2
+    vagas: 2
+    condominio: 480.00
+    price_sale: 540000.00
+    price_rent: 0.00
+    descricao: "Condomínio novo, lazer completo com atelie de arte, sauna, cinema, living para 2 ambientes, 3 dormitórios  sendo 1 suíte, 1 banheiro social, 3º dorm aberto para o living, terraço, cozinha, área de serviço, 02 vagas de garagem, andar alto. Próximo ao Metrô Marechal Deodoro."
+    seo: "Apartamento na Barra Funda"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento de 1 dorm em Santa Cecilia"
+    referencia: 545
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 50
+    area_total: 70
+    quartos: 1
+    banheiros: 1
+    vagas: 0
+    condominio: 250.00
+    price_sale: 270000.00
+    price_rent: 0.00
+    descricao: "Apartamento próximo a Santa Casa, Mackenzie, Metrô, 1 dorm, living, cozinha, hidráulica e elétrica novos, com gás de rua. Ideal para estudantes e médicos."
+    seo: "Apartamento para venda em Santa Cecilia"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento em Higienopolis com 1 dorm 2 "
+    referencia: 546
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 45
+    area_total: 65
+    quartos: 1
+    banheiros: 1
+    vagas: 0
+    condominio: 380.00
+    price_sale: 315000.00
+    price_rent: 0.00
+    descricao: "Apartamento próximo ao Shopping/Sinagoga, com área privativa de 45m, sendo 1 dorm, living para 2 ambientes, repleto de armários, esquadrilhas todas de alumínio, andar alto, claro, 400m da FAAP."
+    seo: "Apartamento para venda em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento  em Higienopolis com 2 dormitórios"
+    referencia: 548
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_2]
+    area_util: 90
+    area_total: 110
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 900.00
+    price_sale: 0.00
+    price_rent: 2300.00
+    descricao: "Apartamento em ótimo estado, amplo living em L (para 2 ambientes),2 dorms  com armários, ampla área de serviço, dormitório e wc de empregada, ampla área de serviço, 1 vaga de garagem."
+    seo: "Apartamento para locação em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento novo na Consolação"
+    referencia: 549
+    Type: type_1
+    Neighborhood: neighborhood_6
+    Disponibilidades: [disponibilidade_1]
+    area_util: 56
+    area_total: 76
+    quartos: 2
+    banheiros: 2
+    vagas: 2
+    condominio: 506.00
+    price_sale: 550000.00
+    price_rent: 0.00
+    descricao: "Condomínio novo, próximo ao Shopping Frei Caneca, andar alto, living com terraço, 2 dorms sendo 1 suíte com terraço, e armários embutidos, banheiro social, cozinha americana com armários planejados e área de serviço, aquecedor à gás,2 vagas de garagem e lazer completo."
+    seo: "Apartamento para Venda na Consolação"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento em Higienópolis de 2 dorms"
+    referencia: 550
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_2]
+    area_util: 100
+    area_total: 120
+    quartos: 2
+    banheiros: 1
+    vagas: 1
+    condominio: 630.00
+    price_sale: 0.00
+    price_rent: 2500.00
+    descricao: "Apartamento em ótimo estado, com taco de madeira no living e no dorm, cozinha com armários, banheiro, 1 vaga de garagem. Bem localizado, próximo ao Mackenzie"
+    seo: "Apartamento para locação em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento em Santa Cecilia de 2 doms."
+    referencia: 551
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 48
+    area_total: 68
+    quartos: 2
+    banheiros: 1
+    vagas: 0
+    condominio: 380.00
+    price_sale: 250000.00
+    price_rent: 0.00
+    descricao: "Excelente apartamento com living para 2 ambientes, dormitórios ensolarados, cozinha planejada rica em armários, área de serviço. Oportunidade, próximo ao Metrô, Shopping, Santa Casa e Mackenzie. "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento em Higienópolis com 3 dormitórios"
+    referencia: 552
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_2]
+    area_util: 160
+    area_total: 180
+    quartos: 3
+    banheiros: 2
+    vagas: 1
+    condominio: 800.00
+    price_sale: 0.00
+    price_rent: 3800.00
+    descricao: "Apartamento em bom estado, banheiro e cozinha original, dormitórios com armários, piso (taco de madeira), ampla varanda com 30m, 1 vaga de garagem. Ótima localização, próximo a Praça Buenos Aires e Mackenzie. Oportunidade."
+    seo: "Apartamento para locação em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento em Santa Cecilia para alugar"
+    referencia: 555
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_2]
+    area_util: 60
+    area_total: 80
+    quartos: 2
+    banheiros: 1
+    vagas: 1
+    condominio: 400.00
+    price_sale: 0.00
+    price_rent: 2000.00
+    descricao: "Apartamento todo reformado, piso (taco de madeira), cozinha planejada, banheiro com box, 1 vaga de garagem. Aluga mobiliado, Tv, 2 armários, fogão e geladeira.Oportunidade."
+    seo: "Apartamento para locação em Santa Cecilia"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento  com 2 dormitórios em Prédio Novo em Santa Cecilia"
+    referencia: 559
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 52
+    area_total: 72
+    quartos: 2
+    banheiros: 1
+    vagas: 1
+    condominio: 344.00
+    price_sale: 325000.00
+    price_rent: 0.00
+    descricao: "Excelente apartamento, living com terraço, 2 dormitórios, cozinha, área de serviço, 1 banheiro com box. Andar alto, face norte próximo ao colégio Boni Concilli e metrô Marechal Deodoro. Oportunidade."
+    seo: "Apartamento em Santa Cecilia"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Imóvel residencial/comercial para comprar em Higienopolis"
+    referencia: 561
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 47
+    area_total: 67
+    quartos: 0
+    banheiros: 1
+    vagas: 0
+    condominio: 0.00
+    price_sale: 210000.00
+    price_rent: 0.00
+    descricao: "Excelente imóvel comercial ou residencial,localizado próximo ao Metrô Santa Cecilia. Com anti-sala, cozinha americana, mais uma ampla sala e banheiro. Bem localizado Oportunidade!!!Aproveite."
+    seo: "Imóvel para comprar em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Cobertura alto padrão em Higienópolis"
+    referencia: 563
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 164
+    area_total: 220
+    quartos: 2
+    banheiros: 2
+    vagas: 2
+    condominio: 950.00
+    price_sale: 885000.00
+    price_rent: 0.00
+    descricao: "Cobertura duplex em Higienópolis, ótima vista, andar de baixo 2 dormitórios,1 suíte, terraço, living para e ambientes, armários, em cima sala co lavabo, terração, piscina e churrasqueira.Próximo a Praça Buenos Aires e Mackenzie. "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento 3 dormitórios; ensolarado em Higienópolis"
+    referencia: 565
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 125
+    area_total: 145
+    quartos: 3
+    banheiros: 3
+    vagas: 0
+    condominio: 1000.00
+    price_sale: 500000.00
+    price_rent: 0.00
+    descricao: "Excelente apartamento, piso todo em taco de madeira, 3 dormitórios com armários embutidos, living para 2 ambientes com janelões, sala de jantar, 2 banheiros sociais, com armários, área de serviço com wc. de empregada. ótima localização, próximo ao Metrô Marechal, Shopping Higienópolis, Hospital Samaritano. Muito Ensolarado. Oportunidade."
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Amplo apartamento próximo ao Shopping Higienopolis"
+    referencia: 566
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 170
+    area_total: 190
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 1100.00
+    price_sale: 1000000.00
+    price_rent: 0.00
+    descricao: "Ótimo apartamento com 3 amplos dormitórios, 2 banheiros sociais, varanda, andar alto, com vista, com boa área de lazer, localizado em rua tranquila e arborizada, próximo ao Shopping."
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento  2 dormitórios com suíte na Barra Funda"
+    referencia: 567
+    Type: type_1
+    Neighborhood: neighborhood_4
+    Disponibilidades: [disponibilidade_1]
+    area_util: 62
+    area_total: 82
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 450.00
+    price_sale: 380000.00
+    price_rent: 0.00
+    descricao: "Apartamento em andar alto, com living para 2 ambientes e terraço, 2 dorms sendo 1 suíte, cozinha planejada com armários e área de serviço. Lazer completo."
+    seo: "Apartamento para comprar na Barra Funda."
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Higienópolis Novo"
+    referencia: 568
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_2]
+    area_util: 183
+    area_total: 203
+    quartos: 3
+    banheiros: 4
+    vagas: 3
+    condominio: 2000.00
+    price_sale: 0.00
+    price_rent: 5380.00
+    descricao: "Apartamento novo nunca habitado, living para 3 ambientes com varanda, face norte, lavabo, 3 suítes sendo 1 master, 3 vagas de garagem. Prédio com lazer na cobertura, aceita somente Fiador ou Seguro Fiança. Próximo ao Shopping e Samaritano."
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Cobertura duplex, alto padrão em Higienópolis"
+    referencia: 569
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_2]
+    area_util: 150
+    area_total: 170
+    quartos: 3
+    banheiros: 4
+    vagas: 3
+    condominio: 790.00
+    price_sale: 0.00
+    price_rent: 4000.00
+    descricao: "Apartamento em bom estado, rico em armários, living para 2 ambientes, 3 dormitórios sendo 2 suítes, banheiro social, cozinha planejada, sala de estar, varanda, escritório. Condomínio baixo, 3 vagas de garagem. Bem localizado, na Av. Higienópolis"
+    seo: "Cobertura duplex para alugar na Av Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Higienópilis indescritivel"
+    referencia: 570
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 252
+    area_total: 272
+    quartos: 3
+    banheiros: 2
+    vagas: 2
+    condominio: 1250.00
+    price_sale: 1700000.00
+    price_rent: 0.00
+    descricao: "Ótimo apartamento, com living para 3 ambientes, com lavabo e terraço, com 3 dorms sendo 1 suíte, mais escritório, lazer com salão de festa, quadra poliespotiva e playgroundar. Andar alto com vista.Próximo a colégio, faculdade e metrô. Rua tanquila e arborizada."
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Kit com vaga em Higienópolis"
+    referencia: 571
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 28
+    area_total: 48
+    quartos: 1
+    banheiros: 1
+    vagas: 1
+    condominio: 340.00
+    price_sale: 265000.00
+    price_rent: 0.00
+    descricao: "Ótimo estado, armários planejados, cozinha, banheiro com box, vaga, lazer completo com piscina, fitness, sauna e salão de festa. Condomínio com lavanderia. Próximo a metrô, shopping Higienópolis.Perfeita para moradia ou renda\r\n"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento Diferenciado em Higienópolis"
+    referencia: 574
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 130
+    area_total: 180
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 600.00
+    price_sale: 680000.00
+    price_rent: 0.00
+    descricao: "Apartamento reformado, vários armários, cozinha completa, pisos de taco e granito, alto e claro, próximo ao metrô, shopping, colégios, faculdades. Condução fácil. Lazer com quadra e playground. "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "1dorm com vaga na Consolação"
+    referencia: 572
+    Type: type_1
+    Neighborhood: neighborhood_6
+    Disponibilidades: [disponibilidade_1]
+    area_util: 57
+    area_total: 67
+    quartos: 1
+    banheiros: 1
+    vagas: 0
+    condominio: 480.00
+    price_sale: 380000.00
+    price_rent: 0.00
+    descricao: "Apartamento próximo a Santa Casa, Mackenzie, metrô, living para 2 ambientes, 1 dorm com armário embutido, 1 banheiro, cozinha, piso se taco de madeira, original,andar alto. Ótima localização em rua arborizada."
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Lindo Apartamento Santa Cecilia"
+    referencia: 575
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 52
+    area_total: 72
+    quartos: 1
+    banheiros: 1
+    vagas: 0
+    condominio: 0.00
+    price_sale: 250000.00
+    price_rent: 0.00
+    descricao: "Ótimo apartamento,1 dorm com armário embutido, 1 banheiro, living para 2 ambientes, cozinha rica em armários, piso com taco de madeira. Bem localizado, próximo à padarias, bancos, farmácias e supermercados.Oportunidade"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Próximo ao Metrô em Santa Cecilia"
+    referencia: 577
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 84
+    area_total: 104
+    quartos: 1
+    banheiros: 2
+    vagas: 0
+    condominio: 290.00
+    price_sale: 235000.00
+    price_rent: 0.00
+    descricao: "Living com terraço, 1 dorm, cozinha, área de serviço com wc, pé direito alto, ensolarado. Ótimo estado."
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Higienopolis próximo ao Shopping"
+    referencia: 579
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 180
+    area_total: 200
+    quartos: 4
+    banheiros: 3
+    vagas: 2
+    condominio: 1200.00
+    price_sale: 1250000.00
+    price_rent: 0.00
+    descricao: "Andar alto, claro, 4 dorms, sendo 1 suite, piso de madeira, ampla cozinha com área de serviço, wc e dependencia de empregada, 2 vagas de garagem demarcadas, rua arborizada.Totalmente reformado."
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Av Higienopolis Nobre"
+    referencia: 580
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_2]
+    area_util: 250
+    area_total: 270
+    quartos: 4
+    banheiros: 3
+    vagas: 1
+    condominio: 1700.00
+    price_sale: 0.00
+    price_rent: 6500.00
+    descricao: "Prédio procurado, amplo jardim, silencioso, andar intermediário, frente, prédio alto, amplo living para 3 ambientes com varanda, sala de jantar, sala de tv, lavabo, 4 dorms sendo 1 suite, banheiro, rico em armários, copa e cozinha, dependência de empregada. Prédio com quadra e salão de festa. Próximo ao Shopping e FAAP."
+    seo: "Apartamento para alugar em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitorios em Higienopolis"
+    referencia: 581
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 140
+    area_total: 160
+    quartos: 3
+    banheiros: 2
+    vagas: 1
+    condominio: 800.00
+    price_sale: 930000.00
+    price_rent: 0.00
+    descricao: "Excelente apartamento em Higienopolis, amplo living para 3 ambientes, 2 banheiros sociais, 3 dormitórios, cozinha, área de serviço e dependência de empregada. Prédio com amplo jardim, quadra e salão de festas, 1 vaga de garagem. Próximo ao Shoppnig e FAAP"
+    seo: "Apartamento para comprar em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Duplex em Higienopolis"
+    referencia: 582
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_2]
+    area_util: 75
+    area_total: 95
+    quartos: 2
+    banheiros: 3
+    vagas: 2
+    condominio: 750.00
+    price_sale: 0.00
+    price_rent: 3500.00
+    descricao: "Apartamento impecável, living com varanda, cozinha planejada, lavabo, 2 suítes, 2 vagas. Para pessoas de bom gosto. Próximo ao Hospital Samaritano e Shopping."
+    seo: "Duplex em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Próximo Mackenzie com 3 dorm e 1 suíte"
+    referencia: 583
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 90
+    area_total: 135
+    quartos: 3
+    banheiros: 2
+    vagas: 1
+    condominio: 600.00
+    price_sale: 760000.00
+    price_rent: 0.00
+    descricao: "Apartamento sendo reformado, cozinha americana, área de serviço, living para 2 ambientes. Andar alto. Com piscina e salão de festa."
+    seo: "Apartamento para comprar em higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Higienopolis decorado"
+    referencia: 584
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 140
+    area_total: 200
+    quartos: 4
+    banheiros: 3
+    vagas: 1
+    condominio: 1000.00
+    price_sale: 1100000.00
+    price_rent: 0.00
+    descricao: "Maravilhoso apartamento com 4 dorm com armários embutidos, 1 suite, ótimo living para 3 ambientes com terraço, lavabo mais 2 wc, cozinha planejada, dep de empregada, garagem, 140m² uteis. Vende mobiliado, impecável, prédio com o melhor lazer do bairro(piscina aquecida, quadra, sala  de ginastica, salão de festas,playground,etc). OPORTUNIDADE!!!!"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Novo em Santa Cecilia 3 dorms com suite"
+    referencia: 585
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 68
+    area_total: 88
+    quartos: 3
+    banheiros: 2
+    vagas: 1
+    condominio: 420.00
+    price_sale: 460000.00
+    price_rent: 0.00
+    descricao: "Living com terraço gourmet, 3 dorms sendo 1 suite, cozinha americana, andar alto, face norte de frente. Excelente área de lazer com piscina, salão de festa, fitness, quadra, brinquedoteca. Próximo metrô, Teatro São Pedro, Faculdade Osvaldo Cruz. "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Excelente apartamento em Higienopolis  com 3 dorms e esritório"
+    referencia: 586
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 220
+    area_total: 240
+    quartos: 3
+    banheiros: 3
+    vagas: 1
+    condominio: 1300.00
+    price_sale: 1050000.00
+    price_rent: 0.00
+    descricao: "Lindo apartamento, living para 2 ambientes, sala de jantar com janelões,escritório, claro, piso de madeira, 3 dorms com armários embutidos sendo 1 suite master, lavabo, banheiro social, cozinha planejada, ótima área de serviço com armário embutido e wc de empregada. 1 vaga de garagem, podendo alugar vagas. Excelente localização."
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Lindo Duplex em Santa Cecilia"
+    referencia: 587
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 280
+    area_total: 300
+    quartos: 4
+    banheiros: 4
+    vagas: 0
+    condominio: 600.00
+    price_sale: 750000.00
+    price_rent: 0.00
+    descricao: "Apartamento diferenciado e lindo:\r\nAndar de baixo:Living para dois ambientes; sala de jantar com janelões; escritório; lavabo; cozinha planejada com janelões e AE;área de serviço com WC.\r\nAndar de cima: Hall com armários; 4 dorms com AE; terraço, sendo 1 suíte master; banheiro social.\r\n"
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Higienopolis lazer total"
+    referencia: 588
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 140
+    area_total: 200
+    quartos: 4
+    banheiros: 4
+    vagas: 1
+    condominio: 1000.00
+    price_sale: 1050000.00
+    price_rent: 0.00
+    descricao: "Excepcional apartamento; 4 dorms; (1 aberto para sala), suíte; ótimo living com terraço; sala de jantar; lavabo; mais 2 WC; cozinha com armários. Prédio com lazer total: piscina aquecida; quadra. sala de ginástica; salão de festa; playground; etc."
+    seo: "Apartamento de 4 dorms para comprar em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Maravilhoso 2 dorms"
+    referencia: 589
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 95
+    area_total: 130
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 610.00
+    price_sale: 460000.00
+    price_rent: 0.00
+    descricao: "Maravilhoso 2 dorms,com armários, living para 2 ambientes, cozinha planejada, 2 WC, ampla área de serviço, garagem, andar alto, claro e ensolarado. Excelente estado..."
+    seo: "Apartamento de 2 dorms em Santa Cecilia"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Perdizes proximo a Uninove e Parque da Agua Branca"
+    referencia: 439
+    Type: type_1
+    Neighborhood: neighborhood_2
+    Disponibilidades: [disponibilidade_1]
+    area_util: 101
+    area_total: 120
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 450.00
+    price_sale: 430000.00
+    price_rent: 0.00
+    descricao: "Ótimo apartamento. Living para 2 ambientes, piso de madeira, 2 dormitorios com armarios, banheiro com box blindex, cozinha planejada com area de serviço e dependecia de empregada, vaga demarcada. Lazer com playground, salão de festas, churrasqueira e solarium!!! "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Amplo apartamento diferenciado em Higienopolis"
+    referencia: 590
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_2]
+    area_util: 360
+    area_total: 380
+    quartos: 3
+    banheiros: 3
+    vagas: 2
+    condominio: 1900.00
+    price_sale: 0.00
+    price_rent: 6000.00
+    descricao: "Amplo living para 3 ambientes com quintal, sala de almoço, escritório, copa, cozinha, lavabo, 3 dorms sendo 1 suíte, 360m² de área útil, 2 vagas de garagem. Apartamento para pessoas que gostam de espaço. Próximo ao Shopping, Praça Buenos Aires e Mackenzie."
+    seo: "Apartamento em Higienopolis para alugar"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Linda kit em Santa Cecilia"
+    referencia: 591
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 30
+    area_total: 50
+    quartos: 1
+    banheiros: 1
+    vagas: 0
+    condominio: 190.00
+    price_sale: 190000.00
+    price_rent: 0.00
+    descricao: "Ótima kit, mobiliada, reformada, dormitório, sala e cozinha, bem localizada. Em excelente estado. Diferenciada, para pessaos especias!!! Aproveite!!! Agende uma visita."
+    seo: "kit em Santa Cecilia para comprar"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Novo na Barra Funda com 2 dorms"
+    referencia: 592
+    Type: type_1
+    Neighborhood: neighborhood_4
+    Disponibilidades: [disponibilidade_1]
+    area_util: 52
+    area_total: 72
+    quartos: 2
+    banheiros: 1
+    vagas: 1
+    condominio: 328.00
+    price_sale: 530000.00
+    price_rent: 0.00
+    descricao: "Living com terraço; cozinha americana; 2 dorms com armários; 1 vaga de garagem; 1 banheiro. Próximo Uninove; Parque da Água Branca e Metrô."
+    seo: "Apartamento para comprar na Barra Funda"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Kit em Santa Cecilia"
+    referencia: 599
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 57
+    area_total: 77
+    quartos: 1
+    banheiros: 1
+    vagas: 0
+    condominio: 280.00
+    price_sale: 240000.00
+    price_rent: 0.00
+    descricao: "Kit em Santa Cecilia, toda reformada com terraço ao lado da Santa Casa. Excelente para renda ou moradia. Próximo ao metrô, shopping e Mackenzie. Somente a vista."
+    seo: "Kit em Santa Cecilia"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Higienopolis ao lado do Shopping"
+    referencia: 607
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 70
+    area_total: 130
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 465.00
+    price_sale: 650000.00
+    price_rent: 0.00
+    descricao: "Higienópolis prédio procurado; localização privilegiada; 2 dorms com armários embutidos; ótimo living;lavabo; WC; cozinha co armários, área de serviço quarto e banheiro de empregada com 1 vaga de garagem; apto claro e ensolarado.Prédio com ampla área verde."
+    seo: "Apartamento para comprar em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 1 dorm em Santa Cecilia"
+    referencia: 596
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 45
+    area_total: 70
+    quartos: 1
+    banheiros: 1
+    vagas: 1
+    condominio: 400.00
+    price_sale: 180000.00
+    price_rent: 0.00
+    descricao: "Excelente divisão, amplo dorm com armários, cozinha com armários, área de serviço, wc de empregada, vaga de garagem demarcada, andar alto. Próximo ao Metrô Marechal Deodoro."
+    seo: "Apartamento com 1 dorm em Santa Cecilia"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Lindo apartamento em Higienópoils"
+    referencia: 595
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 196
+    area_total: 250
+    quartos: 3
+    banheiros: 4
+    vagas: 1
+    condominio: 1200.00
+    price_sale: 950000.00
+    price_rent: 0.00
+    descricao: "Amplo apartamento com 196m²; living; sala de jantar; escritório; 3 suítes; lavabo; cozinha planejada; área de serviço com wc; totalmente reformado; a 2 quadras do Shopping. "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 1 dormitórios em Santa Cecilia"
+    referencia: 598
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_2]
+    area_util: 38
+    area_total: 48
+    quartos: 1
+    banheiros: 1
+    vagas: 1
+    condominio: 200.00
+    price_sale: 0.00
+    price_rent: 2000.00
+    descricao: "Apartamento de 1 dorm em Santa Cecilia, prédio novo co lazer, living com varanda, cozinha americana, banheiro social, dormitório com armário, vaga de garagem. Em fino acabamento e com vista panorâmica. Próximo ao Shopping, Metrô e Santa Casa. Aceita apenas Fiador de São Paulo e demais estados."
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 3 dormitórios em Higienópolis"
+    referencia: 600
+    Type: type_1
+    Neighborhood: neighborhood_3
+    Disponibilidades: [disponibilidade_1]
+    area_util: 145
+    area_total: 200
+    quartos: 3
+    banheiros: 2
+    vagas: 0
+    condominio: 850.00
+    price_sale: 530000.00
+    price_rent: 0.00
+    descricao: "Amplo living para 3 ambientes; 3 dorms com armários; 2 banheiros sociais; pé direito alto; copa/cozinha; dep de empregada; andar alto (vaga de garagem rotativa). Próximo ao shopping."
+    seo: "Apartamento com 3 dormitórios em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Duplex 2 suites em Higienópolis"
+    referencia: 601
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_2]
+    area_util: 180
+    area_total: 220
+    quartos: 4
+    banheiros: 3
+    vagas: 3
+    condominio: 3500.00
+    price_sale: 0.00
+    price_rent: 6000.00
+    descricao: "Ótima localização; próximo da FAAP; Hospital Samaritano! Living com terraço; lavabo ;lareira; piso de madeira; cozinha planejada com AS; QE e WC; 4 dorms sendo 2 suítes com terraços, 1 com closet; banheiro social."
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Duplex 2 suites em Higienópolis"
+    referencia: 602
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 180
+    area_total: 220
+    quartos: 4
+    banheiros: 3
+    vagas: 3
+    condominio: 3500.00
+    price_sale: 1500000.00
+    price_rent: 0.00
+    descricao: "Ótima localização; próximo da FAAP; Hospital Samaritano! Living com terraço; lavabo; piso de madeira; cozinha planejada com AS; QE e WC; 4 dorms sendo 2 suítes com terraços, 1 com closet; banheiro social. "
+    seo: "Duplex 2 suites em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento com 4 dormitórios em Higienópolis"
+    referencia: 603
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 146
+    area_total: 166
+    quartos: 4
+    banheiros: 3
+    vagas: 1
+    condominio: 1200.00
+    price_sale: 850000.00
+    price_rent: 0.00
+    descricao: "Ótimo apartamento; com 4 dorms sendo 1 suite; 3 banheiros; 1 vaga de garagem; amplo living com 146m². Ótima localização próximo ao shopping."
+    seo: "Apartamento com 4 dormitórios em Higienópolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Sala comercial junto ao Forun Trabalhista da Barra Funda"
+    referencia: 604
+    Type: type_1
+    Neighborhood: neighborhood_4
+    Disponibilidades: [disponibilidade_1]
+    area_util: 62
+    area_total: 72
+    quartos: 0
+    banheiros: 1
+    vagas: 1
+    condominio: 500.00
+    price_sale: 650000.00
+    price_rent: 0.00
+    descricao: "Sala com 62m²; 1 banheiro; 1 vaga de garagem."
+    seo: "Sala comercial junto ao Forun Trabalhista da Barra Funda"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "3 dorms com suíte próx.Parque Água Branca"
+    referencia: 605
+    Type: type_1
+    Neighborhood: neighborhood_2
+    Disponibilidades: [disponibilidade_1]
+    area_util: 70
+    area_total: 90
+    quartos: 3
+    banheiros: 2
+    vagas: 1
+    condominio: 380.00
+    price_sale: 470000.00
+    price_rent: 0.00
+    descricao: "Living com terraço; 3 dorms sendo 1 suíte; banheiro social, cozinha americana,; área de serviço. Prédio novo."
+    seo: "3 dorms com suíte próx.Parque Água Branca"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Sala comercial junto ao Forun Trabalhista da Barra Funda"
+    referencia: 606
+    Type: type_1
+    Neighborhood: neighborhood_4
+    Disponibilidades: [disponibilidade_2]
+    area_util: 62
+    area_total: 72
+    quartos: 0
+    banheiros: 1
+    vagas: 1
+    condominio: 500.00
+    price_sale: 0.00
+    price_rent: 3600.00
+    descricao: "Sala com 62m²; 1 banheiro; 1 vaga de garagem."
+    seo: "Sala comercial junto ao Forun Trabalhista da Barra Funda"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Lindo apto na região nobre de Higienopolis"
+    referencia: 608
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 258
+    area_total: 278
+    quartos: 4
+    banheiros: 6
+    vagas: 4
+    condominio: 2200.00
+    price_sale: 1650000.00
+    price_rent: 0.00
+    descricao: "1 por andar; terraços; andar alto; living para 2 ambientes; lavabo; sala de jantar; copa; cozinha; área de serviço com 2 quartos de empregada e WC; 4 suítes sendo 1 suite master.  Repleto de armários, ensolarado."
+    seo: "Lindo apto na região nobre de Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Higienópolis  ao lado da Pça B. Aires"
+    referencia: 609
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 70
+    area_total: 110
+    quartos: 2
+    banheiros: 2
+    vagas: 1
+    condominio: 670.00
+    price_sale: 590000.00
+    price_rent: 0.00
+    descricao: "Ótimo apartamento; ao lado da Praça Buenos Aires; com 2 terraços; andar alto; de frente; rico em armários; com QE e WC. Lazer com piscina, único na região. "
+    seo: "Higienópolis  ao lado da Pça B. Aires"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "3 suítes; 2 vagas; 1 por andar em Higienopolis"
+    referencia: 610
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 188
+    area_total: 333
+    quartos: 3
+    banheiros: 5
+    vagas: 2
+    condominio: 1800.00
+    price_sale: 1100000.00
+    price_rent: 0.00
+    descricao: "Próximo da FAAP; Hospital Samaritano, living para 2 ambientes com terraço; lavabo;piso de tacão; cozinha planejada; sala de almoço. área de serviço com QE e WC; 3 suites , sendo 1 master. Prédio com 23 anos de idade."
+    seo: "3 suítes; 2 vagas; 1 por andar em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apto original com excelente planta nos jardins"
+    referencia: 611
+    Type: type_1
+    Neighborhood: neighborhood_10
+    Disponibilidades: [disponibilidade_1]
+    area_util: 142
+    area_total: 162
+    quartos: 3
+    banheiros: 3
+    vagas: 0
+    condominio: 1050.00
+    price_sale: 985000.00
+    price_rent: 0.00
+    descricao: "Apartamento com excelente planta; living para 2 ambientes com terraço; 3 dorms sendo 1 suite com terraço; cozinha ampla com ótima A.S; WC e Q.E. Bem localizado; próximo ao Hospital Clinicas; Rua Oscar Freire."
+    seo: "Apto original com excelente planta nos jardins"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Prédio em Higienópolis rua arborizada"
+    referencia: 612
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 136
+    area_total: 200
+    quartos: 3
+    banheiros: 2
+    vagas: 1
+    condominio: 780.00
+    price_sale: 730000.00
+    price_rent: 0.00
+    descricao: "Ótimo apartamento, bem localizado e rua arborizada e tranquila. Prédio  com área ajardinada."
+    seo: "Higienopolis rua arborizada"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento diferenciado em Campos Eliseos"
+    referencia: 613
+    Type: type_1
+    Neighborhood: neighborhood_5
+    Disponibilidades: [disponibilidade_1]
+    area_util: 35
+    area_total: 60
+    quartos: 1
+    banheiros: 1
+    vagas: 1
+    condominio: 250.00
+    price_sale: 265000.00
+    price_rent: 0.00
+    descricao: "Ótimo estado de conservação; living com terraço; carpete de madeira; cozinha planejada; dorm com terraço com A.E; 1 vaga de garagem; lavanderia no condomínio; lazer com piscina; ginástica; salão de festas; churrasqueira. Andar alto; condomínio baixo, excelente localização; próximo ao Metrô Marechal Deodoro."
+    seo: "Apartamento diferenciado em Campos Eliseos"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Apartamento original em excelente estado em Higienopolis"
+    referencia: 614
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_2]
+    area_util: 180
+    area_total: 200
+    quartos: 3
+    banheiros: 3
+    vagas: 2
+    condominio: 980.00
+    price_sale: 0.00
+    price_rent: 4500.00
+    descricao: "Apartamento em excelente estado de conservação, com 3 dorms sendo 1 suíte, armários embutidos, escritório, cozinha arejada com armário embutido, área de serviço com banheiro de empregada. Opcional aluguel de 1 vaga da garagem. Ótima localização."
+    seo: "Apartamento original em excelente estado em Higienopolis"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Higienopolis ao lado do Shopping"
+    referencia: 615
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 130
+    area_total: 170
+    quartos: 4
+    banheiros: 3
+    vagas: 1
+    condominio: 1000.00
+    price_sale: 800000.00
+    price_rent: 0.00
+    descricao: "Living para 2 ambientes; piso frio,janelões, frente, 3 dorms, suíte, armários, janelas anti ruido, elevador privativo, dep de empregada, copa e cozinha planejada. Apartamento de primeira. Localização, ao lado do Shopping, Sinagoga, FAAP, Samaritano."
+    seo: "Higienopolis ao lado do Shopping"
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Maravilhoso apartamento"
+    referencia: 616
+    Type: type_1
+    Neighborhood: neighborhood_1
+    Disponibilidades: [disponibilidade_1]
+    area_util: 226
+    area_total: 260
+    quartos: 3
+    banheiros: 1
+    vagas: 2
+    condominio: 1650.00
+    price_sale: 1400000.00
+    price_rent: 0.00
+    descricao: "Excelente apartamento, ótima localização. Próximo ao Shopping Higinópolis. Ensolarado, arejado, living para 2 ambientes, varanda, 3 dorms sendo 1 suite. Pronto para morar. Oportunidade."
+    seo: ""
+    destaque_chamada: ""
+    destaque: 1
+    ordem: 0
+    ativo: 1
+  -
+    titulo: "Casa em condomínio na Pompéia"
+    referencia: 597
+    Type: type_1
+    Neighborhood: neighborhood_11
+    Disponibilidades: [disponibilidade_1]
+    area_util: 130
+    area_total: 180
+    quartos: 3
+    banheiros: 4
+    vagas: 2
+    condominio: 200.00
+    price_sale: 720000.00
+    price_rent: 0.00
+    descricao: "130m²; 3 andares: Baixo:2 garagens cobertas; sala de estar; área de serviço com wc e terraço;piso frio; Térreo: Living para 2 ambientes; lavabo; sala de tv; cozinha americana com armários; piso de madeira; 1º andar:3 dorms, sendo1 suite com terraço; escritório; closet; AE; carpete de madeira; banheiro social.Próximo ao Hospital São Camilo.Excelente imóvel diferenciado. "
+    seo: ""
+    destaque_chamada: ""
+    destaque: 0
+    ordem: 0
+    ativo: 1

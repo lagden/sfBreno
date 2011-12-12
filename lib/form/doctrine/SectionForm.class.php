@@ -12,7 +12,7 @@ class SectionForm extends BaseSectionForm
 {
     public function configure()
     {
-        $this->useFields(array('route','title','description','content','seo','tags_list','is_active'));
+        $this->useFields(array('route','title','description','content','seo','tags_list','is_active','position'));
         
         $this->widgetSchema['route']->setLabel('Rota');
         $this->widgetSchema['title']->setLabel('Título')->setAttributes(array("title"=>"Título","class"=>"required"));
@@ -21,6 +21,7 @@ class SectionForm extends BaseSectionForm
         $this->widgetSchema['seo']->setLabel('SEO')->setAttributes(array("class"=>"xxlarge"));
         $this->widgetSchema['is_active']->setLabel('Ativado');
         $this->widgetSchema['tags_list']->setLabel('Tags');
+        $this->widgetSchema['position']->setLabel('Posição');
         
         // Validation
         // Default message errors
@@ -34,5 +35,6 @@ class SectionForm extends BaseSectionForm
         $this->validatorSchema['seo'] = new sfValidatorString(array('required' => false));
         $this->validatorSchema['is_active'] = new sfValidatorBoolean(array('required' => false));
         $this->validatorSchema['tags_list'] = new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Tag', 'required' => false));
+        $this->validatorSchema['position'] = new sfValidatorInteger(array('required' => false));
     }
 }
