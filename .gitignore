@@ -15,6 +15,7 @@ web/.sass-cache
 web/uploads/*
 web/tiny/*
 web/estates/*
+web/flickr/*
 !web/uploads/.htaccess
 !web/tiny/.htaccess
 !web/estates/.htaccess
@@ -27,7 +28,7 @@ error_log
 .DS_Store
 thumbs.db
 .*.swp
-.tmproj
+*.tmproj
 *.mwb
 *.mwb.bak
 

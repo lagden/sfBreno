@@ -41,42 +41,51 @@ class Image extends BaseImage
     {
         return self::getItemVersion('square');
     }
-
+    
     public function save(Doctrine_Connection $conn = null)
     {
-        // if there is no / in the filename, then it's a new file
-        if ($this->file && strpos($this->file, '/') === false)
+        // No id, no FUN
+        if ($this->isNew())
         {
-            // No id, no FUN
-            if ($this->isNew()) parent::save($conn);
-
+            parent::save($conn);
+        }
+        self::saveFile('file',true,'{*.jpg,*.jpeg,*.png,*.gif}');
+        return parent::save($conn);
+    }
+    
+    public function saveFile($name,$exec=false,$clean=false)
+    {
+        if($this->$name)
+        {
+            $ds=DIRECTORY_SEPARATOR;
             $recordDir = static::dir().$this->id;
 
-            // if present, delete all the items in the folder
-            if (is_dir($recordDir))
+            if (is_dir($recordDir) && $clean!=false)
             {
-                foreach (glob($recordDir . '/*') as $file)
-                {
-                    if (is_file($file)) @unlink($file);
-                }
+                GetFile::cleanDir($recordDir,$clean);
             }
             else
             {
                 mkdir($recordDir, 0777, true);
             }
-
+            
             // move the original file to the record folder
-            $newFilename=$this->generateVersionFilename();
-            rename($this->getUploadedOriginalFile(),$recordDir . '/' . $newFilename);
+            $uploaded=$this->getUploadedFile($name);
+            $parts=pathinfo($uploaded);
+            $newFilename = ($exec) ? "original.{$parts['extension']}" : basename($uploaded);
+            copy($uploaded,"{$recordDir}{$ds}{$newFilename}");
+            // rename($uploaded,"{$recordDir}{$ds}{$newFilename}");
 
-            $this->file = $this->id . '/' . $newFilename;
-
-            // Replace the current versions
-            $this->Versions->delete();
-            $this->Versions = $this->generateVersions();
+            // Gera outros tamanhos
+            if($exec)
+            {
+                // Replace the current versions
+                $this->Versions->delete();
+                $this->Versions = $this->generateVersions();
+            }
+            
+            $this->$name = "{$this->id}/{$newFilename}";
         }
-
-        return parent::save($conn);
     }
 
     public function delete(Doctrine_Connection $conn = null)
@@ -99,10 +108,11 @@ class Image extends BaseImage
         $rnd=mt_rand();
         return "{$base}_{$rnd}{$ext}";
     }
-
-    public function getUploadedOriginalFile()
+    
+    // pego o arquivo com o path orgiginal
+    public function getUploadedFile($name)
     {
-        return sfConfig::get('sf_upload_dir').'/'.$this->file;
+        return GetFile::getUploadBasePath().$this->$name;
     }
 
     public function getOriginalFile()
@@ -110,18 +120,10 @@ class Image extends BaseImage
         return static::dir().$this->file;
     }
 
-    public function generateVersionFilename($version = 'original', $extension = null)
-    {
-        return 
-            ($version ? $version : '').
-            '.'.
-            ($extension ? $extension : substr(strrchr($this->file, '.'), 1));
-    }
-
     protected function generateVersions()
     {
         $versions = new Doctrine_Collection('ImageVersion');
-        $formats = Doctrine_Core::getTable('Format')->findAll();
+        $formats = static::loadFormats();
 
         $ds=DIRECTORY_SEPARATOR;
         $bin=sfConfig::get('sf_root_dir')."{$ds}bin{$ds}";
@@ -137,7 +139,7 @@ class Image extends BaseImage
                     $filename = "{$this->id}/$file";
 
                     // Generate the version
-                    $version = new ImageVersion;
+                    $version = new ImageVersion();
                     $version
                         ->setImage($this)
                         ->setFormat($format)
@@ -148,6 +150,24 @@ class Image extends BaseImage
             }
         }
         return $versions;
+    }
+    
+    static protected function loadFormats()
+    {
+        $fmts = Doctrine_Core::getTable('Format')->findAll();
+        if($fmts->count()==0)
+        {
+            $fmts = new Doctrine_Collection('Format');
+            $formats = array('Original','Large','Medium1','Medium2','Small','Thumbnail','Square');
+            foreach($formats as $format)
+            {
+                $f = new Format();
+                $f->name=$format;
+                $f->save();
+                $fmts->add($f);
+            }
+        }
+        return $fmts;
     }
 
     protected function getItemVersion($type="square")

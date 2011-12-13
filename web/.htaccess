@@ -243,10 +243,9 @@ Options -MultiViews
 # Increase cookie security
 <IfModule php5_module>
   php_value session.cookie_httponly true
-  
-  # php_value upload_max_filesize 300M
-  # php_value memory_limit 320M
-  # php_value post_max_size 300M
-  # php_value session.gc_maxlifetime 18000
+  php_value upload_max_filesize 300M
+  php_value memory_limit 320M
+  php_value post_max_size 300M
+  php_value session.gc_maxlifetime 18000
   # php_value session.save_path "/home/latapack/symfony/sessoes"
 </IfModule>

@@ -1,0 +1,66 @@
+# Format:
+#   format_original:
+#     name: Original
+#   format_large:
+#     name: Large     # 1023 x 767
+#   format_medium1:
+#     name: Medium1   # 640 x 480
+#   format_medium2:
+#     name: Medium2   # 500 x 375
+#   format_small:
+#     name: Small     # 240 x 180
+#   format_th:
+#     name: Thumbnail # 100 x 75
+#   format_sq:
+#     name: Square    # (75 x 75)
+# Image:
+#   image_99:
+#     Estate: estate_209
+#     file: ../flickr/AA209/5fcbdb9e259321f2f90c982346758738.jpg
+#     Versions:
+#       -
+#         file: file.jpg
+#         Format: format_original
+#       -
+#         file: file.jpg
+#         Format: format_large
+#       -
+#         file: file.jpg
+#         Format: format_medium1
+#       -
+#         file: file.jpg
+#         Format: format_medium2
+#       -
+#         file: file.jpg
+#         Format: format_small
+#       -
+#         file: file.jpg
+#         Format: format_th
+#       -
+#         file: file.jpg
+#         Format: format_sq
+#   image_98:
+#     Estate: estate_209
+#     file: ../flickr/AA209/5684a8e2165521801ca3a8676d4eee5b.jpg
+#     Versions:
+#       -
+#         file: file.jpg
+#         Format: format_original
+#       -
+#         file: file.jpg
+#         Format: format_large
+#       -
+#         file: file.jpg
+#         Format: format_medium1
+#       -
+#         file: file.jpg
+#         Format: format_medium2
+#       -
+#         file: file.jpg
+#         Format: format_small
+#       -
+#         file: file.jpg
+#         Format: format_th
+#       -
+#         file: file.jpg
+#         Format: format_sq
