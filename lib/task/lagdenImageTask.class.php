@@ -42,6 +42,8 @@ EOF;
         $itens = glob("{$dir}{*.jpg,*.jpeg,*.png,*.gif}",GLOB_BRACE);
         if($itens)
         {
+            $total = count($itens);
+            $cc=1;
             foreach($itens as $item)
             {
                 if(is_file($item))
@@ -52,6 +54,8 @@ EOF;
                         $image = new Image();
                         $image->file = $file;
                         $image->estate_id = $options['id'];
+                        $image->destaque = ($cc==$total) ? 1 : 0;
+                        $image->external = 1;
                         $image->save();
                         $image->free(true);
                         $image = null;
@@ -63,11 +67,14 @@ EOF;
                     }
                     $file=null;
                 }
+                $cc++;
             }
         }
         else $return=false;
 
         $ds=null;
+        $total=null;
+        $cc=null;
         $webdir=null;
         $ref=null;
         $dir=null;

@@ -220,6 +220,7 @@ Image:
   columns:
     file: { type: string(255) }
     destaque: { type: boolean, default: 0 }
+    external: { type: boolean, default: 0 }
     estate_id: { type: bigint }
   relations:
     Estate:

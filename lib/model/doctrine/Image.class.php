@@ -55,7 +55,7 @@ class Image extends BaseImage
     
     public function saveFile($name,$exec=false,$clean=false)
     {
-        if($this->$name)
+        if ( $this->$name && (strpos($this->$name, '/') === false || $this->external == 1) )
         {
             $ds=DIRECTORY_SEPARATOR;
             $recordDir = static::dir().$this->id;
@@ -74,7 +74,7 @@ class Image extends BaseImage
             $parts=pathinfo($uploaded);
             $newFilename = ($exec) ? "original.{$parts['extension']}" : basename($uploaded);
             copy($uploaded,"{$recordDir}{$ds}{$newFilename}");
-            // rename($uploaded,"{$recordDir}{$ds}{$newFilename}");
+            //rename($uploaded,"{$recordDir}{$ds}{$newFilename}");
 
             // Gera outros tamanhos
             if($exec)
@@ -84,6 +84,7 @@ class Image extends BaseImage
                 $this->Versions = $this->generateVersions();
             }
             
+            $this->external = 0;
             $this->$name = "{$this->id}/{$newFilename}";
         }
     }

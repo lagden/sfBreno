@@ -22,8 +22,10 @@ Estate:
     # Images:
     #   -
     #     file: ../flickr/AA209/5fcbdb9e259321f2f90c982346758738.jpg
+    #     external: 1
     #   -
     #     file: ../flickr/AA209/650fb27c58e3f10cafe9bca52dc53fef.jpg
+    #     external: 1
 
   estate_217:
     titulo: "Apartamento com 3 dormitórios em Higienópolis Reformado"
