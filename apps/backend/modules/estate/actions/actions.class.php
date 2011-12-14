@@ -66,7 +66,7 @@ class estateActions extends GeneralActions
 
         // Table List
         sfConfig::set("fields_labels",array("Ação","Título","Referência","Preço Venda","Preço Aluguel","Disponível","Destaque","Ativado"));
-        sfConfig::set("fields_names",array("id","titulo","referencia","ValorVenda","ValorAluga","JoinDisponibilidades","destaque","Ativado"));
+        sfConfig::set("fields_names",array("id","titulo","referencia","ValorVenda","ValorAluga","JoinDisponibilidades","EmDestaque","Ativado"));
         sfConfig::set("fields_sorts",array("id","titulo","referencia","price_sale","price_rent","Disponibilidades.id","destaque","ativo"));
     }
 }

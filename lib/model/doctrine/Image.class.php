@@ -73,8 +73,8 @@ class Image extends BaseImage
             $uploaded=$this->getUploadedFile($name);
             $parts=pathinfo($uploaded);
             $newFilename = ($exec) ? "original.{$parts['extension']}" : basename($uploaded);
-            copy($uploaded,"{$recordDir}{$ds}{$newFilename}");
-            //rename($uploaded,"{$recordDir}{$ds}{$newFilename}");
+            //copy($uploaded,"{$recordDir}{$ds}{$newFilename}");
+            rename($uploaded,"{$recordDir}{$ds}{$newFilename}");
 
             // Gera outros tamanhos
             if($exec)

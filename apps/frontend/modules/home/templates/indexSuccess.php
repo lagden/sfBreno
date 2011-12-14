@@ -31,8 +31,10 @@ use_javascript('vendor/jquery/plugins/flexslider/init.js');
         }
         ?>
     </div>
+    <!--
     <div class="clearfix someMargin mtop">
         <div class="grid_4"><p>Twitter</p></div>
         <div class="grid_4"><p>Outras</p></div>
     </div>
+    -->
 </div>
