@@ -9,20 +9,19 @@ class EstateTable extends Doctrine_Table
 {
     static public $valor_venda = array(
         '' => 'Indiferente',
-        '< 250000' => 'até R$250.000',
-        'BETWEEN 250000 AND 450000' => 'de R$250.000 até R$450.000',
-        'BETWEEN 450000 AND 650000' => 'de R$450.000 até R$650.000',
-        'BETWEEN 650000 AND 900000' => 'de R$650.000 até R$900.000',
-        'BETWEEN 900000 AND 1500000' => 'de R$900.000 até R$1.500.000',
-        '> 1500000' => 'acima de R$1.500.000',
+        '< 400000' => 'até R$400.000',
+        'BETWEEN 400000 AND 800000' => 'de R$400.000 até R$800.000',
+        'BETWEEN 800000 AND 1200000' => 'de R$800.000 até R$1.200.000',
+        'BETWEEN 1200000 AND 2000000' => 'de R$1.200.000 até R$2.000.000',
+        '> 2000000' => 'acima de R$2.000.000',
     );
 
     static public $valor_aluguel = array(
         '' => 'Indiferente',
-        '< 1500' => 'até R$1.500',
-        'BETWEEN 1500 AND 2000' => 'de R$1.500 até R$2.000',
-        'BETWEEN 2000 AND 2500' => 'de R$2.000 até R$2.500',
-        '> 2500' => 'acima de R$2.500',
+        '< 2000' => 'até R$2.000',
+        'BETWEEN 2000 AND 3500' => 'de R$2.000 até R$3.500',
+        'BETWEEN 3500 AND 5000' => 'de R$3.500 até R$5.000',
+        '> 5000' => 'acima de R$5.000',
     );
 
     static public $area = array(

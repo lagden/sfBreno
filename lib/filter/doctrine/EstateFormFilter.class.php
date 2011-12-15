@@ -49,6 +49,10 @@ class EstateFormFilter extends BaseEstateFormFilter
             'choices'  => Doctrine_Core::getTable('Estate')->getNumbers(),
         ));
         
+        $this->widgetSchema['banheiros'] = new sfWidgetFormChoice(array(
+            'choices'  => Doctrine_Core::getTable('Estate')->getNumbers(),
+        ));
+        
         $this->widgetSchema['vagas'] = new sfWidgetFormChoice(array(
             'choices'  => Doctrine_Core::getTable('Estate')->getNumbers(),
         ));
@@ -63,6 +67,7 @@ class EstateFormFilter extends BaseEstateFormFilter
         $this->widgetSchema['neighborhood_id']->setLabel('Bairros');
         $this->widgetSchema['suites']->setLabel('Suítes');
         $this->widgetSchema['quartos']->setLabel('Quartos');
+        $this->widgetSchema['banheiros']->setLabel('Banheiros');
         $this->widgetSchema['vagas']->setLabel('Vagas');
         
         // $this->widgetSchema['area_util']->setLabel('Área');

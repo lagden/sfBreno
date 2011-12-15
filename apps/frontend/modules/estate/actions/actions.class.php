@@ -66,6 +66,7 @@ class estateActions extends GeneralActions
             'iptu'=>'IPTU',
             'suites'=>'Suítes',
             'quartos'=>'Quartos',
+            'banheiros'=>'Banheiros',
             'vagas'=>'Vagas',
             'area_util'=>'Área útil',
             'area_total'=>'Área total',

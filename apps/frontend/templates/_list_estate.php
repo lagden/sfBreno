@@ -36,6 +36,10 @@
                     <td><?php echo $estate->quartos ?></td>
                 </tr>
                 <tr>
+                    <td>Banheiros</td>
+                    <td><?php echo $estate->banheiros ?></td>
+                </tr>
+                <tr>
                     <td>Vagas</td>
                     <td><?php echo $estate->vagas ?></td>
                 </tr>

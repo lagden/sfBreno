@@ -31,6 +31,10 @@
             <?php echo $form['quartos']->render(); ?>
         </li>
         <li>
+            <?php echo $form['banheiros']->renderLabel(); ?>
+            <?php echo $form['banheiros']->render(); ?>
+        </li>
+        <li>
             <?php echo $form['vagas']->renderLabel(); ?>
             <?php echo $form['vagas']->render(); ?>
         </li>

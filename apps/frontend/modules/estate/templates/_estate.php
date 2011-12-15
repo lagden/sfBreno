@@ -28,7 +28,7 @@
 
     <h3>Referência</h3>
     <hr/>
-    <p><?php echo "{$estate->Type->name} - Cód. {$estate->referencia}" ?></p>
+    <p><b><?php echo "{$estate->Type->name} - Cód. {$estate->referencia}" ?></b></p>
 
     <h3><?php echo "Bairro - {$estate->Neighborhood->name}" ?></h3>
     <hr/>
@@ -86,7 +86,7 @@
         }
         ?>
         <?php if ($label && $value): ?>
-            <p><b><?php echo $label; ?>:</b> R$ <?php echo $value; ?></p>
+            <p><b><?php echo $label; ?>: R$ <?php echo $value; ?></b></p>
         <?php endif ?>
     <?php endforeach ?>
 </div>
