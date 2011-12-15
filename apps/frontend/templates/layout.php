@@ -26,17 +26,17 @@
         <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
     <![endif]-->
     
-    <!--[if lte IE 8]>
+    <!--[if lte IE 9]>
         <?php echo javascript_include_tag('vendor/libs/selectivizr.js'); ?>
     <![endif]-->
     
     <script>
         jQuery.noConflict();
         
-        // var _gaq=[['_setAccount','UA-22331976-1'],['_trackPageview']];
-        // (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-        // g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        // s.parentNode.insertBefore(g,s)}(document,'script'));
+        var _gaq=[['_setAccount','UA-22331976-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
         
         // Facebook
         // (function(d, s, id) {
