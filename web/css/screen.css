@@ -3762,19 +3762,20 @@ body {
 /* line 16, ../sass/lagden/site.scss */
 body > header {
   background-color: #363636;
-  padding: 1em;
+  padding: .75em;
 }
 /* line 19, ../sass/lagden/site.scss */
 body > header hgroup {
+  font-size: 70%;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
 }
-/* line 22, ../sass/lagden/site.scss */
+/* line 23, ../sass/lagden/site.scss */
 body > header hgroup h2 {
   color: white;
 }
-/* line 25, ../sass/lagden/site.scss */
+/* line 26, ../sass/lagden/site.scss */
 body > nav {
   border-top: 5px solid #FFF;
   border-bottom: 2px solid #FFF;
@@ -3795,7 +3796,7 @@ body > nav {
   background-image: -ms-linear-gradient(top, #ffd547 0%, #ffac00 100%);
   background-image: linear-gradient(top, #ffd547 0%, #ffac00 100%);
 }
-/* line 35, ../sass/lagden/site.scss */
+/* line 36, ../sass/lagden/site.scss */
 body > nav .wrapper {
   position: relative;
   padding: 1em;
@@ -3803,19 +3804,22 @@ body > nav .wrapper {
   max-width: 960px;
   margin: 0 auto;
 }
-/* line 39, ../sass/lagden/site.scss */
+/* line 40, ../sass/lagden/site.scss */
 body > nav .wrapper img {
   display: inline-block;
   vertical-align: middle;
   padding: .5em;
 }
-/* line 44, ../sass/lagden/site.scss */
+/* line 45, ../sass/lagden/site.scss */
 body > nav .wrapper ul.menu {
   vertical-align: middle;
   display: inline-block;
   list-style: none;
+  position: absolute;
+  right: 0;
+  top: 47px;
 }
-/* line 48, ../sass/lagden/site.scss */
+/* line 52, ../sass/lagden/site.scss */
 body > nav .wrapper ul.menu li {
   width: 140px;
   float: left;
@@ -3824,12 +3828,13 @@ body > nav .wrapper ul.menu li {
   margin: 0;
   margin-right: 20px;
 }
-/* line 55, ../sass/lagden/site.scss */
+/* line 59, ../sass/lagden/site.scss */
 body > nav .wrapper ul.menu li:last-child {
   margin-right: 0;
 }
-/* line 58, ../sass/lagden/site.scss */
+/* line 62, ../sass/lagden/site.scss */
 body > nav .wrapper ul.menu li a {
+  border: 1px solid rgba(255, 213, 71, 0.7);
   padding: 0.6em 0.7em 0.6em 0.7em;
   font-weight: bold;
   display: block;
@@ -3838,7 +3843,7 @@ body > nav .wrapper ul.menu li a {
   text-decoration: none;
   outline: none;
 }
-/* line 73, ../sass/lagden/site.scss */
+/* line 77, ../sass/lagden/site.scss */
 body > .container {
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
@@ -3856,7 +3861,7 @@ body > .container {
   top: -69px;
   padding: 20px 10px 20px 20px;
 }
-/* line 83, ../sass/lagden/site.scss */
+/* line 87, ../sass/lagden/site.scss */
 body > footer {
   font-size: .9em;
   margin: 0;
@@ -3870,11 +3875,11 @@ body > footer {
   box-shadow: 0 4em 3em 3.5em #111111;
 }
 
-/* line 97, ../sass/lagden/site.scss */
+/* line 101, ../sass/lagden/site.scss */
 .listing {
   position: relative;
 }
-/* line 99, ../sass/lagden/site.scss */
+/* line 103, ../sass/lagden/site.scss */
 .listing > article {
   background-color: #f1f1f1;
   margin-bottom: 45px;
@@ -3887,7 +3892,7 @@ body > footer {
 * html .listing > article {
   overflow-x: hidden;
 }
-/* line 104, ../sass/lagden/site.scss */
+/* line 108, ../sass/lagden/site.scss */
 .listing > article:nth-child(4n) {
   display: inline;
   float: left;
@@ -3898,11 +3903,11 @@ body > footer {
 * html .listing > article:nth-child(4n) {
   overflow-x: hidden;
 }
-/* line 107, ../sass/lagden/site.scss */
+/* line 111, ../sass/lagden/site.scss */
 .listing > article:nth-of-type(4n+1) {
   clear: left;
 }
-/* line 110, ../sass/lagden/site.scss */
+/* line 114, ../sass/lagden/site.scss */
 .listing > article .efeito {
   border: 3px solid #FFF;
   -moz-border-radius: 0 0 0.5em 0.5em;
@@ -3916,20 +3921,20 @@ body > footer {
   -o-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
 }
-/* line 114, ../sass/lagden/site.scss */
+/* line 118, ../sass/lagden/site.scss */
 .listing > article .efeito a.img {
   display: block;
   width: 100%;
   height: 160px;
   overflow: hidden;
 }
-/* line 119, ../sass/lagden/site.scss */
+/* line 123, ../sass/lagden/site.scss */
 .listing > article .efeito a.img img {
   min-height: 160px;
   display: block;
   margin: 0 auto;
 }
-/* line 130, ../sass/lagden/site.scss */
+/* line 134, ../sass/lagden/site.scss */
 .listing > article .efeito header h3 {
   color: #FFF;
   font-size: .9em;
@@ -3944,7 +3949,7 @@ body > footer {
   margin-right: 5px;
   background-color: #FB0;
 }
-/* line 138, ../sass/lagden/site.scss */
+/* line 142, ../sass/lagden/site.scss */
 .listing > article .efeito header h3 a {
   white-space: nowrap;
   overflow: hidden;
@@ -3960,14 +3965,14 @@ body > footer {
 .listing > article .efeito header h3 a:hover {
   text-decoration: underline;
 }
-/* line 145, ../sass/lagden/site.scss */
+/* line 149, ../sass/lagden/site.scss */
 .listing > article .efeito header p {
   font-size: .8em;
   background-color: #EEE0C3;
   color: #333333;
   padding: 1em .5em;
 }
-/* line 150, ../sass/lagden/site.scss */
+/* line 154, ../sass/lagden/site.scss */
 .listing > article .efeito header p a {
   white-space: nowrap;
   overflow: hidden;
@@ -3983,14 +3988,14 @@ body > footer {
 .listing > article .efeito header p a:hover {
   text-decoration: underline;
 }
-/* line 158, ../sass/lagden/site.scss */
+/* line 162, ../sass/lagden/site.scss */
 .listing > article .efeito footer {
   text-align: center;
   margin: 1.5em 0;
   padding: 0;
   border: 0;
 }
-/* line 164, ../sass/lagden/site.scss */
+/* line 168, ../sass/lagden/site.scss */
 .listing > article .efeito footer a {
   padding: 0.6em 0.7em 0.6em 0.7em;
   border: 1px solid transparent;
@@ -4005,7 +4010,7 @@ body > footer {
   outline: none;
 }
 
-/* line 179, ../sass/lagden/site.scss */
+/* line 183, ../sass/lagden/site.scss */
 .btn.orange, .plupload .orange.plupload_button {
   color: white;
   background-color: #ff9924;
@@ -4023,13 +4028,13 @@ body > footer {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
-/* line 186, ../sass/lagden/site.scss */
+/* line 190, ../sass/lagden/site.scss */
 .frm ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 191, ../sass/lagden/site.scss */
+/* line 195, ../sass/lagden/site.scss */
 .frm ul > li {
   color: #474747;
   font-size: .9em;
@@ -4037,59 +4042,59 @@ body > footer {
   padding: .5em;
   position: relative;
 }
-/* line 197, ../sass/lagden/site.scss */
+/* line 201, ../sass/lagden/site.scss */
 .frm ul > li > label {
   display: block;
   font-weight: bold;
   margin-bottom: .3em;
 }
-/* line 201, ../sass/lagden/site.scss */
+/* line 205, ../sass/lagden/site.scss */
 .frm ul > li > label.obr:before {
   content: "* ";
 }
-/* line 206, ../sass/lagden/site.scss */
+/* line 210, ../sass/lagden/site.scss */
 .frm ul > li ul.radio_list li {
   float: left;
   padding: .5em;
   margin: 0;
 }
-/* line 210, ../sass/lagden/site.scss */
+/* line 214, ../sass/lagden/site.scss */
 .frm ul > li ul.radio_list li label {
   display: inline;
   font-weight: normal;
 }
-/* line 217, ../sass/lagden/site.scss */
+/* line 221, ../sass/lagden/site.scss */
 .frm ul > li ul.checkbox_list li {
   display: block;
   padding: .5em;
   margin: 0;
 }
-/* line 221, ../sass/lagden/site.scss */
+/* line 225, ../sass/lagden/site.scss */
 .frm ul > li ul.checkbox_list li label {
   display: inline;
   font-weight: normal;
 }
 
-/* line 236, ../sass/lagden/site.scss */
+/* line 240, ../sass/lagden/site.scss */
 .frmFull li textarea, .frmBusca li textarea, .frmFull li input[type=text], .frmBusca li input[type=text], .frmFull li select, .frmBusca li select {
   width: 90%;
   padding: .5em;
 }
 
-/* line 244, ../sass/lagden/site.scss */
+/* line 248, ../sass/lagden/site.scss */
 .frmBusca {
   font-size: .9em;
 }
-/* line 248, ../sass/lagden/site.scss */
+/* line 252, ../sass/lagden/site.scss */
 .frmBusca ul > li {
   padding: .27em;
 }
-/* line 250, ../sass/lagden/site.scss */
+/* line 254, ../sass/lagden/site.scss */
 .frmBusca ul > li > label {
   font-weight: bold;
 }
 
-/* line 258, ../sass/lagden/site.scss */
+/* line 262, ../sass/lagden/site.scss */
 .tabs {
   position: relative;
   margin: 0;
@@ -4098,25 +4103,25 @@ body > footer {
   list-style: none;
   zoom: 1;
 }
-/* line 265, ../sass/lagden/site.scss */
+/* line 269, ../sass/lagden/site.scss */
 .tabs:before, .tabs:after {
   display: table;
   content: "";
   zoom: 1;
   border: 0;
 }
-/* line 271, ../sass/lagden/site.scss */
+/* line 275, ../sass/lagden/site.scss */
 .tabs:after {
   clear: both;
 }
-/* line 272, ../sass/lagden/site.scss */
+/* line 276, ../sass/lagden/site.scss */
 .tabs > li {
   float: left;
   position: relative;
   cursor: pointer;
   margin-bottom: 0;
 }
-/* line 277, ../sass/lagden/site.scss */
+/* line 281, ../sass/lagden/site.scss */
 .tabs > li > a {
   border: 0;
   font-size: .9em;
@@ -4137,18 +4142,18 @@ body > footer {
 .tabs > li > a:hover {
   color: #333333;
 }
-/* line 287, ../sass/lagden/site.scss */
+/* line 291, ../sass/lagden/site.scss */
 .tabs > li > a:hover {
   text-decoration: none;
   background-color: #ddd;
   border: 0;
 }
-/* line 295, ../sass/lagden/site.scss */
+/* line 299, ../sass/lagden/site.scss */
 .tabs > li.active > a {
   background-color: #fff;
   border: 0;
 }
-/* line 298, ../sass/lagden/site.scss */
+/* line 302, ../sass/lagden/site.scss */
 .tabs > li.active > a:hover {
   border: 0;
   text-decoration: none;
@@ -4159,7 +4164,7 @@ body > footer {
   color: #333333;
 }
 
-/* line 308, ../sass/lagden/site.scss */
+/* line 312, ../sass/lagden/site.scss */
 .tab-content > .tab-pane, .tab-content > div {
   -moz-border-radius: 0 5px 5px 5px;
   -webkit-border-radius: 0 5px 5px 5px;
@@ -4172,23 +4177,23 @@ body > footer {
   display: none;
   min-height: 391px;
 }
-/* line 316, ../sass/lagden/site.scss */
+/* line 320, ../sass/lagden/site.scss */
 .tab-content > .active {
   display: block;
 }
 
-/* line 320, ../sass/lagden/site.scss */
+/* line 324, ../sass/lagden/site.scss */
 #bairros_inline {
   font-size: .8em;
   display: none;
 }
-/* line 324, ../sass/lagden/site.scss */
+/* line 328, ../sass/lagden/site.scss */
 #bairros_inline ul.checkbox_list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 329, ../sass/lagden/site.scss */
+/* line 333, ../sass/lagden/site.scss */
 #bairros_inline ul.checkbox_list li {
   float: left;
   width: 48%;
@@ -4196,62 +4201,62 @@ body > footer {
   margin: 0;
 }
 
-/* line 338, ../sass/lagden/site.scss */
+/* line 342, ../sass/lagden/site.scss */
 .showDouble {
   font-size: .9em;
 }
-/* line 341, ../sass/lagden/site.scss */
+/* line 345, ../sass/lagden/site.scss */
 .showDouble > h2 {
   min-height: 65px;
   color: #f8b500;
 }
-/* line 344, ../sass/lagden/site.scss */
+/* line 348, ../sass/lagden/site.scss */
 .showDouble > h2.minnulo {
   min-height: 0 !important;
 }
-/* line 346, ../sass/lagden/site.scss */
+/* line 350, ../sass/lagden/site.scss */
 .showDouble > h3 {
   margin-top: 2em;
   color: #777;
 }
 
-/* line 354, ../sass/lagden/site.scss */
+/* line 358, ../sass/lagden/site.scss */
 div.estateImg {
   margin: 5px;
   display: block;
   float: left;
   position: relative;
 }
-/* line 359, ../sass/lagden/site.scss */
+/* line 363, ../sass/lagden/site.scss */
 div.estateImg a {
   display: block;
 }
-/* line 361, ../sass/lagden/site.scss */
+/* line 365, ../sass/lagden/site.scss */
 div.estateImg a img {
   cursor: pointer;
   display: block;
 }
 
-/* line 375, ../sass/lagden/site.scss */
+/* line 379, ../sass/lagden/site.scss */
 #accordionFormResult > div.content > div > form#frmBuscaImoveisRef ul li {
   display: inline;
 }
-/* line 379, ../sass/lagden/site.scss */
+/* line 383, ../sass/lagden/site.scss */
 #accordionFormResult > div.content > div > form#frmBuscaImoveisRef label {
   display: inline;
 }
-/* line 382, ../sass/lagden/site.scss */
+/* line 386, ../sass/lagden/site.scss */
 #accordionFormResult > div.content > div > form#frmBuscaImoveisRef input {
   width: 150px;
   padding: .5em;
   margin-left: .3em;
 }
 
-/* line 393, ../sass/lagden/site.scss */
+/* line 397, ../sass/lagden/site.scss */
 .conteudoSite h2 {
   color: #f8b500;
 }
-/* line 395, ../sass/lagden/site.scss */
+/* line 399, ../sass/lagden/site.scss */
 .conteudoSite h2 a {
   text-decoration: none;
   color: #f8b500;
@@ -4260,16 +4265,16 @@ div.estateImg a img {
 .conteudoSite h2 a:hover {
   text-decoration: underline;
 }
-/* line 400, ../sass/lagden/site.scss */
+/* line 404, ../sass/lagden/site.scss */
 .conteudoSite h3 {
   color: #777;
 }
 
-/* line 406, ../sass/lagden/site.scss */
+/* line 410, ../sass/lagden/site.scss */
 .vejatb ul {
   list-style: square;
 }
-/* line 411, ../sass/lagden/site.scss */
+/* line 415, ../sass/lagden/site.scss */
 .vejatb ul li a {
   text-decoration: none;
   color: #f28510;
@@ -4279,7 +4284,7 @@ div.estateImg a img {
   text-decoration: underline;
 }
 
-/* line 423, ../sass/lagden/site.scss */
+/* line 427, ../sass/lagden/site.scss */
 .tags ul.breadcrumb li a {
   text-decoration: none;
   color: #f28510;
@@ -4287,4 +4292,85 @@ div.estateImg a img {
 /* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 .tags ul.breadcrumb li a:hover {
   text-decoration: underline;
+}
+
+/* line 439, ../sass/lagden/site.scss */
+.homebox {
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -khtml-border-radius: 0.5em;
+  border-radius: 0.5em;
+  position: relative;
+  min-height: 377px;
+}
+/* line 443, ../sass/lagden/site.scss */
+.homebox a {
+  text-decoration: none;
+  color: #333333;
+}
+/* line 4, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-head/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+.homebox a:hover {
+  text-decoration: underline;
+}
+/* line 447, ../sass/lagden/site.scss */
+.homebox ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 451, ../sass/lagden/site.scss */
+.homebox ul li {
+  position: relative;
+  margin: 0 1em;
+  padding: 1em;
+  border-bottom: 1px solid #FFF;
+}
+/* line 456, ../sass/lagden/site.scss */
+.homebox ul li:last-child {
+  border: 0;
+}
+/* line 461, ../sass/lagden/site.scss */
+.homebox h2 {
+  -moz-border-radius: 0.5em 0.5em 0 0;
+  -webkit-border-radius: 0.5em 0.5em 0 0;
+  -o-border-radius: 0.5em 0.5em 0 0;
+  -ms-border-radius: 0.5em 0.5em 0 0;
+  -khtml-border-radius: 0.5em 0.5em 0 0;
+  border-radius: 0.5em 0.5em 0 0;
+  color: #FFF;
+  margin: 0;
+  padding: .7em;
+  font-size: 1.1em;
+  position: relative;
+}
+/* line 468, ../sass/lagden/site.scss */
+.homebox h2 img {
+  position: absolute;
+  right: 0;
+  top: -31px;
+}
+/* line 474, ../sass/lagden/site.scss */
+.homebox.twitter {
+  background-color: #9dd1d6;
+}
+/* line 476, ../sass/lagden/site.scss */
+.homebox.twitter li a.status {
+  position: absolute;
+  right: 0;
+  font-size: .7em;
+  color: #396d72;
+}
+/* line 483, ../sass/lagden/site.scss */
+.homebox.twitter h2 {
+  background-color: #396d72;
+}
+/* line 488, ../sass/lagden/site.scss */
+.homebox.infos {
+  background-color: #92c394;
+}
+/* line 489, ../sass/lagden/site.scss */
+.homebox.infos h2 {
+  background-color: #2e5f30;
 }

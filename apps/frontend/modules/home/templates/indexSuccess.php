@@ -31,10 +31,21 @@ use_javascript('vendor/jquery/plugins/flexslider/init.js');
         }
         ?>
     </div>
-    <!--
+    
     <div class="clearfix someMargin mtop">
-        <div class="grid_4"><p>Twitter</p></div>
-        <div class="grid_4"><p>Outras</p></div>
+        <div class="grid_4 homebox twitter">
+            <h2>Últimos Tweets<?php echo image_tag('twitter.png',array('alt'=>'Twitter')); ?></h2>
+            <ul id="tweets">
+                <li class="loading">Status updating&#8230;</li>
+            </ul>
+        </div>
+        <div class="grid_4 homebox infos">
+            <h2><?php echo $adminfo->title ?><?php echo image_tag('servicos.png',array('alt'=>'Serviços')); ?></h2>
+            <ul>
+                <?php foreach ($adminfo->Contents as $c): ?>
+                    <li><?php echo link_to(truncate_text($c->description,200),'site_content',array('section'=>$adminfo->slug,'slug'=>$c->slug)) ?></li>
+                <?php endforeach ?>
+            </ul>
+        </div>
     </div>
-    -->
 </div>

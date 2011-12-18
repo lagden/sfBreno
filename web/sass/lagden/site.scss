@@ -15,8 +15,9 @@ body{
     @include fontfamily;
     > header{
         background-color: $darkgray;
-        padding:1em;
+        padding:.75em;
         hgroup{
+            font-size:70%;
             @include media960;
             h1{ @extend .visuallyhidden; }
             h2{ color:white; }
@@ -45,6 +46,9 @@ body{
                 vertical-align:middle;
                 display:inline-block;
                 list-style: none;
+                position:absolute;
+                right:0;
+                top:47px;
                 li{
                     width:140px;
                     float:left;
@@ -57,7 +61,7 @@ body{
                     }
                     a{
                         @extend .glass;
-                        // border:1px solid rgba(255,213,71,.5);
+                        border:1px solid rgba(255,213,71,.7);
                         padding:0.6em 0.7em 0.6em 0.7em;
                         font-weight: bold;
                         display: block;
@@ -426,5 +430,65 @@ div.estateImg{
                 }
             }
         }
+    }
+}
+
+$twitterColor:#9DD1D6;
+$infosColor:#92C394;
+
+.homebox{
+    @include border-radius(.5em);
+    position:relative;
+    min-height:377px;
+    a{
+        @include hover-link;
+        @include link_colors($mainColor);
+    }
+    ul{
+        list-style:none;
+        margin:0;
+        padding:0;
+        li{
+            position:relative;
+            margin:0 1em;
+            padding:1em;
+            border-bottom:1px solid #FFF;
+            &:last-child{
+                border:0;
+            };
+        }
+    }
+    h2{
+        @include border-radius(.5em .5em 0 0);
+        color:#FFF;
+        margin:0;
+        padding:.7em;
+        font-size:1.1em;
+        position:relative;
+        img{
+            position:absolute;
+            right:0;
+            top:-31px;
+        }
+    }
+    &.twitter{
+        li{
+            a.status{
+                position:absolute;
+                right:0;
+                font-size:.7em;
+                color:$twitterColor - 100;
+            }
+        }
+        h2{
+            background-color:$twitterColor - 100;
+        }
+        background-color:$twitterColor;
+    }
+    &.infos{
+        h2{
+            background-color:$infosColor - 100;
+        }
+        background-color:$infosColor;
     }
 }
