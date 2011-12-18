@@ -37,6 +37,7 @@
     <script>
         jQuery.noConflict();
         
+        // Google Analytics
         var _gaq=[['_setAccount','UA-22331976-1'],['_trackPageview']];
         (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
@@ -62,6 +63,7 @@
         
     </script>
     
+    <!-- Twitter -->
     <script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
 </body>
 </html>
