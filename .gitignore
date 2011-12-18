@@ -1,4 +1,5 @@
 # Framework
+lib/migration/*
 lib/vendor/symfony/*
 lib/*/doctrine/base/*
 lib/*/doctrine/sfDoctrineGuardPlugin/base/*
