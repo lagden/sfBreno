@@ -242,5 +242,8 @@ class estateActions extends GeneralActions
         // Sort
         sfConfig::set("order_by","{$prefix}_sort.field");
         sfConfig::set("order_by_direction","{$prefix}_sort.direction");
+        
+        // Metas
+        Xtras::metas('estate');
     }
 }

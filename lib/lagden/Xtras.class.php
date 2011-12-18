@@ -171,4 +171,20 @@ class Xtras
 
         return $post;
     }
+
+    static public function metas($r)
+    {
+        $response = sfContext::getInstance()->getResponse();
+        $section = Doctrine_Core::getTable('Section')->findOneByRoute($r);
+        if($section)
+        {
+            $response->addMeta('title', $section->title, true, true);
+            $response->addMeta('description', $section->description, true, true);
+            if($section->Tags->count()>0)
+            {
+                $response->addMeta('keywords', $section->joinTags, true, true);    
+            }
+            if($section->seo) sfConfig::set('seo_site',$section->seo);
+        }
+    }
 }

@@ -12,6 +12,7 @@ class contatoActions extends sfActions
 {
     public function executeIndex(sfWebRequest $request)
     {
+        Xtras::metas('contato');
         $this->info = sfConfig::get('app_footer');
         sfConfig::set('contato_route','contato_envia');
     }

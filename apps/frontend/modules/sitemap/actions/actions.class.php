@@ -93,6 +93,12 @@ class sitemapActions extends sfActions
                 $item['urlset']['__node'][$cc]['url']['__node']['lastmod']['__text']=Utils::date($v->updated_at,'c');
                 $item['urlset']['__node'][$cc]['url']['__node']['priority']['__text']='1';
                 $cc++;
+                
+                // Old way
+                $item['urlset']['__node'][$cc]['url']['__node']['loc']['__text']=url_for('estate_old_show',array('slug'=>$v->slug),true);
+                $item['urlset']['__node'][$cc]['url']['__node']['lastmod']['__text']=Utils::date($v->updated_at,'c');
+                $item['urlset']['__node'][$cc]['url']['__node']['priority']['__text']='1';
+                $cc++;
             endforeach;
         }
 

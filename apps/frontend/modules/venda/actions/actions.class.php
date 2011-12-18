@@ -12,6 +12,7 @@ class vendaActions extends sfActions
 {
     public function executeIndex(sfWebRequest $request)
     {
+        Xtras::metas('venda');
         $this->form = new VendaForm();
     }
 
