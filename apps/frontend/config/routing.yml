@@ -130,3 +130,18 @@ tag:
 tag_notfound:
   url: /tag/nao-encontrado
   param: { module: tag, action: notFound }
+
+# Modulo sitemap
+sitemap:
+  url: /sitemap.:sf_format
+  param: { module: sitemap, action: index}
+  requirements:
+    sf_format: xml
+    sf_method: [GET]
+
+sitemap_type:
+  url: /sitemap/:type.:sf_format
+  param: { module: sitemap, action: maps}
+  requirements:
+    sf_format: xml
+    sf_method: [GET]

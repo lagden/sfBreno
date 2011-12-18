@@ -65,6 +65,7 @@ Content:
 # Tag
 Tag:
   actAs:
+    Timestampable: ~
     Sluggable:
       fields: [name]
       canUpdate: true
