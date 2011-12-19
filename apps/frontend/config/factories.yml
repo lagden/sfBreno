@@ -50,8 +50,8 @@ all:
           host: smtp.gmail.com
           port: 465
           encryption: ssl
-          username: 4nothing@gmail.com
-          password: big1buttgirl2
+          username: breno@brenohomaraimoveis.com.br
+          password: 1bichona
 
   # Mail PHP Mail
   # mailer:

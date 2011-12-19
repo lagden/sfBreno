@@ -54,7 +54,7 @@ class vendaActions extends sfActions
     {
         $message = $this->getMailer()->compose();
         $message->setSubject('Breno Homara Imóveis [Venda ou alugue seu imóvel]');
-        $message->setTo(sfConfig::get('app_master_email'));
+        $message->setTo(sfConfig::get('app_send_to'));
         $message->setFrom(sfConfig::get('app_master_email'), "{$post['nome']}");
         $html = $this->getPartial('global/email_venda', array('post' => $post));
         $message->setBody($html, 'text/html');

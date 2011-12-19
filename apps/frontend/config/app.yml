@@ -16,7 +16,12 @@
 
 all:
   seo: 'Apartamentos à venda em Higienópolis e Santa Cecília'
-  master_email: 4nothing@gmail.com # colocar de acordo com o Swift_SmtpTransport
+  master_email: breno@brenohomaraimoveis.com.br # colocar de acordo com o Swift_SmtpTransport
+  send:
+    to:
+      - 'brenoimoveis@uol.com.br'
+      - 'ryan@brenohomaraimoveis.com.br'
+      - 'lagden@gmail.com'
   
   # Filter General for Estate
   formfilter_estate: EstateFormFilter
