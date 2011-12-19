@@ -20,6 +20,9 @@
             <div id="bairros_inline">
                 <h2>Selecione os bairros</h2>
                 <?php echo $form['neighborhood_id']->render(); ?>
+                <div class="somePadding ptop">
+                    <?php echo content_tag('button', 'OK', array('class' => 'btn orange button closeBairro')) ?>
+                </div>
             </div>
         </li>
         <li>

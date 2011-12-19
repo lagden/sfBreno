@@ -455,7 +455,7 @@ $infosColor:#92C394;
             border-bottom:1px solid #FFF;
             &:last-child{
                 border:0;
-            };
+            }
         }
     }
     h2{
@@ -473,11 +473,13 @@ $infosColor:#92C394;
     }
     &.twitter{
         li{
-            a.status{
-                position:absolute;
-                right:0;
-                font-size:.7em;
+            a{
                 color:$twitterColor - 100;
+                &.status{
+                    position:absolute;
+                    right:0;
+                    font-size:.7em;
+                }
             }
         }
         h2{
@@ -486,6 +488,11 @@ $infosColor:#92C394;
         background-color:$twitterColor;
     }
     &.infos{
+        li{
+            a{
+                color:$infosColor - 100;
+            }
+        }
         h2{
             background-color:$infosColor - 100;
         }

@@ -71,6 +71,11 @@ window.addEvent('domready',function()
             });
         });
         
+        // Fancy Bairros
+        $('button.closeBairro').click(function(){
+            $.fancybox.close();
+        });
+        
         // Fancy Images
         $(".showImageEstate").fancybox({
             fitToView   : true,
