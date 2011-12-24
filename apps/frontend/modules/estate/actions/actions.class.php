@@ -205,8 +205,9 @@ class estateActions extends GeneralActions
 
     public function enviaEmail($post)
     {
+        $info = sfConfig::get('app_footer');
         $message = $this->getMailer()->compose();
-        $message->setSubject('Breno Homara Imóveis [Interessou]');
+        $message->setSubject("{$info['site']} [Interessou][{$post['nome']}]");
         $message->setTo(sfConfig::get('app_send_to'));
         $message->setFrom(sfConfig::get('app_master_email'), "{$post['nome']}");
         $html = $this->getPartial('global/email_interesse', array('post' => $post));

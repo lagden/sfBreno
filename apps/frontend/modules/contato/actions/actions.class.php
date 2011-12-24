@@ -52,8 +52,9 @@ class contatoActions extends sfActions
 
     public function enviaEmail($post)
     {
+        $info = sfConfig::get('app_footer');
         $message = $this->getMailer()->compose();
-        $message->setSubject('Breno Homara Imóveis [Fale Conosco]');
+        $message->setSubject("{$info['site']} [Fale Conosco][{$post['nome']}]");
         $message->setTo(sfConfig::get('app_send_to'));
         $message->setFrom(sfConfig::get('app_master_email'), "{$post['nome']}");
         $html = $this->getPartial('global/email_contato', array('post' => $post));

@@ -1,5 +1,17 @@
-/* Welcome to Compass. Use this file to write IE specific override styles.
- * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
+// Accordion
+#accordionFormResult{
+    > h2{
+        border: 1px solid rgb(248, 181, 0);
+        background:rgb(244, 183, 78);
+        &.hover{
+            color:#000;
+            border: 1px solid rgb(221, 221, 221);
+            background:rgb(249,218,131);
+        }
+        &.ativo{
+            color:#000;
+            background:rgb(249,218,131);
+            border: 1px solid rgb(221, 221, 221);
+        }
+    }
+}
