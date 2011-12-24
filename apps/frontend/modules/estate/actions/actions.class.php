@@ -207,7 +207,7 @@ class estateActions extends GeneralActions
     {
         $info = sfConfig::get('app_footer');
         $message = $this->getMailer()->compose();
-        $message->setSubject("{$info['site']} [Interessou][{$post['nome']}]");
+        $message->setSubject("{$info['site']} [Interessou] [{$post['nome']}]");
         $message->setTo(sfConfig::get('app_send_to'));
         $message->setFrom(sfConfig::get('app_master_email'), "{$post['nome']}");
         $html = $this->getPartial('global/email_interesse', array('post' => $post));

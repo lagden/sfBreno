@@ -24,8 +24,8 @@ test:
 
 all:
   .actions:
-    error_404_module:       default
-    error_404_action:       error404
+    error_404_module:       site
+    error_404_action:       notFound
     
   .settings:
     # Form security secret (CSRF protection)
