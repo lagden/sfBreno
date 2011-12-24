@@ -49,6 +49,11 @@ window.addEvent('domready',function()
         
         PublicPath = ajuda.routes('publicPath');
         
+        // Voltar
+        $('button.backbutton').click(function(){
+            history.back();
+        });
+        
         // Twitter
         if($('#tweets').get(0)!=undefined)getTwitterFeed("brenohomara", 4, false);
         
