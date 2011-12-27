@@ -143,9 +143,10 @@ Estate:
     destaque_chamada: clob
     destaque: { type: boolean, default: 0 }
     ativo: { type: boolean, default: 0 }
-    ordem: { type: integer(3), default: 0 }
+    ordem: { type: integer, default: 0 }
     seo: clob
     carga: clob
+    is_carga: { type: boolean, default: 0 }
     neighborhood_id: { type: bigint }
     type_id: { type: bigint }
   relations:
