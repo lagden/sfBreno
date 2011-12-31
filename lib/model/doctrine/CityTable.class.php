@@ -16,7 +16,33 @@ class CityTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('City');
     }
-    
+
+    public function findOneByNameOrCreate($name)
+    {
+        if (! $name)
+        {
+            return null;
+        }
+        $item = $this->getCidade($name)->fetchOne();
+        if (! $item)
+        {
+            $item = new City();
+            $item
+                ->setName($name)
+                ->save();
+        }
+        return $item;
+    }
+
+    public function getCidade($city, Doctrine_Query $q = null)
+    {
+        if (null === $q) $q = $this->getListQuery();
+        $alias=$q->getRootAlias();
+        $q->andWhere("{$alias}.name LIKE :q", array(':q'=>"{$city}"));
+        $q->limit(1);
+        return $q;
+    }
+
     // Filtro
     public function getListFilter(array $filters, Doctrine_Query $q = null)
     {

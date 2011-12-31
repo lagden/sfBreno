@@ -17,6 +17,35 @@ class NeighborhoodTable extends Doctrine_Table
         return Doctrine_Core::getTable('Neighborhood');
     }
     
+    public function findOneByNameOrCreate($name, $city)
+    {
+        if (! $name)
+        {
+            return null;
+        }
+        
+        
+        $item = $this->getBairro($name, $city)->fetchOne();
+        if (! $item)
+        {
+            $item = new Neighborhood();
+            $item->city_id = $city;
+            $item->name = $name;
+            $item->save();
+        }
+        return $item;
+    }
+    
+    public function getBairro($bairro, $city, Doctrine_Query $q = null)
+    {
+        if (null === $q) $q = $this->getListQuery();
+        $alias=$q->getRootAlias();
+        $q->andWhere("{$alias}.city_id = :v", array(':v'=>"{$city}"));
+        $q->andWhere("{$alias}.name LIKE :q", array(':q'=>"{$bairro}"));
+        $q->limit(1);
+        return $q;
+    }
+    
     // Filtro
     public function getListFilter(array $filters, Doctrine_Query $q = null)
     {

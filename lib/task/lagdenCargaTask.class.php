@@ -1,38 +1,48 @@
 <?php
-
+set_time_limit(0);
 class lagdenCargaTask extends sfBaseTask
 {
-  protected function configure()
-  {
-    // // add your own arguments here
-    // $this->addArguments(array(
-    //   new sfCommandArgument('my_arg', sfCommandArgument::REQUIRED, 'My argument'),
-    // ));
-
-    $this->addOptions(array(
-      new sfCommandOption('application', null, sfCommandOption::PARAMETER_REQUIRED, 'The application name'),
-      new sfCommandOption('env', null, sfCommandOption::PARAMETER_REQUIRED, 'The environment', 'dev'),
-      new sfCommandOption('connection', null, sfCommandOption::PARAMETER_REQUIRED, 'The connection name', 'doctrine'),
-      // add your own options here
-    ));
-
-    $this->namespace        = 'lagden';
-    $this->name             = 'carga';
-    $this->briefDescription = '';
-    $this->detailedDescription = <<<EOF
-The [lagden:carga|INFO] task does things.
+    protected function configure()
+    {
+        $this->namespace        = 'lagden';
+        $this->name             = 'carga';
+        $this->briefDescription = 'Faz a carga dos dados baixados via FTP';
+        $this->detailedDescription = <<<EOF
+The [lagden:flickr|INFO] task does things.
 Call it with:
 
-  [php symfony lagden:carga|INFO]
+    [php symfony lagden:flickr|INFO]
 EOF;
-  }
-
-  protected function execute($arguments = array(), $options = array())
-  {
-    // initialize the database connection
-    $databaseManager = new sfDatabaseManager($this->configuration);
-    $connection = $databaseManager->getDatabase($options['connection'])->getConnection();
-
-    // add your code here
-  }
+    }
+    
+    protected function execute($arguments = array(), $options = array())
+    {
+        $ds=DIRECTORY_SEPARATOR;
+        $rootdir=sfConfig::get('sf_root_dir');
+        $tmp="{$rootdir}{$ds}tmp{$ds}";
+        
+        // Vai para o diretório root/
+        chdir($rootdir);
+        
+        if(is_file("{$tmp}carga.yml"))
+        {
+            $carga = sfYaml::load("{$tmp}carga.yml");
+            foreach ($carga as $v)
+            {
+                gc_enabled();
+                exec('./symfony lagden:acao --dados="'. base64_encode(serialize($v)) .'"',$out);
+                print_r($out); echo "\n";
+                echo "Mem usage is: ", memory_get_usage(), "\n";
+                $out = null;
+                $v = null;
+                gc_collect_cycles();
+            }
+            gc_disable();
+            echo "Carga finalizada. \n";die;
+        }
+        else
+        {
+            die("Não há arquivo de carga. \n");
+        }
+    }
 }

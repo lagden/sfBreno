@@ -16,7 +16,33 @@ class TypeTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Type');
     }
-    
+
+    public function findOneByNameOrCreate($name)
+    {
+        if (! $name)
+        {
+            return null;
+        }
+        $item = $this->getTipo($name)->fetchOne();
+        if (! $item)
+        {
+            $item = new Type();
+            $item
+                ->setName($name)
+                ->save();
+        }
+        return $item;
+    }
+
+    public function getTipo($tipo, Doctrine_Query $q = null)
+    {
+        if (null === $q) $q = $this->getListQuery();
+        $alias=$q->getRootAlias();
+        $q->andWhere("{$alias}.name = :v", array(':v'=>"{$tipo}"));
+        $q->limit(1);
+        return $q;
+    }
+
     // Filtro
     public function getListFilter(array $filters, Doctrine_Query $q = null)
     {

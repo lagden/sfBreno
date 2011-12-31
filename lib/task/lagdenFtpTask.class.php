@@ -89,11 +89,16 @@ EOF;
                 }
             }
         }
+        
+        // Vai para o diretório root/
+        chdir($rootdir);
+        
         // Se o contador for maior que -1, significa que houve parser
         if($cc > -1)
         {
             // Gera yml do arquivo de carga
             file_put_contents("{$tmp}carga.yml",sfYaml::dump($carga),LOCK_EX);
         }
+        echo "Arquivo de carga gerado com sucesso. \n"; die;
     }
 }
