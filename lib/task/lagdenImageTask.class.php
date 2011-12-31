@@ -10,11 +10,13 @@ class lagdenImageTask extends sfBaseTask
             new sfCommandOption('connection', null, sfCommandOption::PARAMETER_REQUIRED, 'The connection name', 'doctrine'),
             new sfCommandOption('id', null, sfCommandOption::PARAMETER_REQUIRED, 'The id of estate'),
             new sfCommandOption('ref', null, sfCommandOption::PARAMETER_REQUIRED, 'The referencia of estate'),
+            new sfCommandOption('urls', null, sfCommandOption::PARAMETER_REQUIRED, 'The urls of images'),
+            new sfCommandOption('update', null, sfCommandOption::PARAMETER_REQUIRED, 'The update flag'),
         ));
 
         $this->namespace        = 'lagden';
         $this->name             = 'image';
-        $this->briefDescription = '';
+        $this->briefDescription = 'Carega as imagens para o resgistro do imóvel';
         $this->detailedDescription = <<<EOF
 The [lagden:image|INFO] task does things.
 Call it with:
@@ -30,14 +32,30 @@ EOF;
         $connection = $databaseManager->getDatabase($options['connection'])->getConnection();
 
         gc_enabled();
-
-        $ds=DIRECTORY_SEPARATOR;
+        
+        $ds=DIRECTORY_SEPARATOR;        
         $webdir=sfConfig::get('sf_web_dir');
-        $ref="flickr{$ds}AA{$options['ref']}{$ds}";
+        $ref="tmp{$ds}{$options['ref']}{$ds}";
         $dir="{$webdir}{$ds}{$ref}";
         $return=true;
-
-        if(is_dir($dir)==false)return false;
+        
+        // Diretorio onde ficara as imagens
+        if (!is_dir("{$dir}")) mkdir("{$dir}", 0777, true);
+        $currDir=getcwd();
+        chdir($dir);
+        
+        $urls=unserialize(base64_decode($options['urls']));
+        if(is_array($urls))
+        {
+            foreach($urls as $url)
+            {
+                echo "Baixando: {$url}\n";
+                exec("wget -q -nc {$url}");
+            }
+        }
+        
+        // Volta para o diretorio atual
+        chdir($currDir);
 
         $itens = glob("{$dir}{*.jpg,*.jpeg,*.png,*.gif}",GLOB_BRACE);
         if($itens)
@@ -54,7 +72,7 @@ EOF;
                         $image = new Image();
                         $image->file = $file;
                         $image->estate_id = $options['id'];
-                        $image->destaque = ($cc==$total) ? 1 : 0;
+                        if($options['update']==0)$image->destaque = ($cc==$total) ? 1 : 0;
                         $image->external = 1;
                         $image->save();
                         $image->free(true);
@@ -70,7 +88,6 @@ EOF;
                 $cc++;
             }
         }
-        else $return=false;
 
         $ds=null;
         $total=null;

@@ -28,9 +28,12 @@ EOF;
         $databaseManager = new sfDatabaseManager($this->configuration);
         $connection = $databaseManager->getDatabase($options['connection'])->getConnection();
 
+        $ds=DIRECTORY_SEPARATOR;
+        $rootdir=sfConfig::get('sf_root_dir');
+        $tmp="{$rootdir}{$ds}tmp{$ds}";
+
         // Imovel
         $estateTable = Doctrine_Core::getTable('Estate');
-        $refLog=false;
         gc_enabled();
 
         if(isset($options['dados']))
@@ -39,16 +42,15 @@ EOF;
             if(is_array($dados))
             {
                 $estate = $estateTable->findOneByReferencia($dados['referencia']);
-                if($estate)
-                {
-                    // Edit
-                    $refLog=true;
-                }
-                else
+                
+                $update=1;
+
+                if(!$estate)
                 {
                     // New
                     $estate = new Estate();
                     $estate->referencia=$dados['referencia'];
+                    $update=0;
                 }
 
                 foreach($dados as $k=>$dado)
@@ -64,11 +66,12 @@ EOF;
                         break;
 
                         case "Disponibilidades":
-                        $estate->$k=static::getDisponibilidade($dado);
+                        $estate->$k=static::getDisponibilidade($dado,$estate->id);
                         break;
 
                         case "Images":
                         case "updated_at":
+                        case "referencia":
                         // Do nothing!!
                         break;
 
@@ -77,23 +80,53 @@ EOF;
                     }
                 }
 
+                // Salva ou Atualiza
                 try
                 {
                     $estate->save();
                 }
                 catch (Exception $e)
                 {
-                    die("Não foi possível gravar. \n");
+                    die("Não foi possível gravar: {$e->getMessage()} \n");
                 }
-                
-                // if(!$refLog)
-                // {
-                //     
-                // }
-                // var_dump($estate->id,$estate->referencia,$refLog);
-                // print_r($dados['Images']);die;
-                // $estate->free(true);
-                // $estate = null;
+
+                // Cria o dir
+                if (!is_dir("{$tmp}{$estate->referencia}")) mkdir("{$tmp}{$estate->referencia}", 0777, true);
+
+                // Coloca os paths das imagens no arquivo de referencia
+                if(is_file("{$tmp}/{$estate->referencia}/image.yml")) $currimages = sfYaml::load("{$tmp}/{$estate->referencia}/image.yml");
+                else $currimages = false;
+
+                if($currimages)
+                {
+                    $carrega=array();
+                    foreach($dados['Images'] as $el)
+                    {
+                        if(!in_array($el,$currimages))
+                        {
+                            array_push($currimages,$el);
+                            $carrega[]=$el;
+                        }
+                    }
+                }
+                else
+                {
+                    $currimages = $carrega = $dados['Images'];
+                }
+                file_put_contents("{$tmp}{$estate->referencia}/image.yml",sfYaml::dump($currimages),LOCK_EX);
+
+                // Se tiver imagem para carregar
+                if(count($carrega)>0)
+                {
+                    exec('./symfony lagden:image --update="'.$update.'" --urls="'. base64_encode(serialize($carrega)) .'" --id="'.$estate->id.'" --ref="'.$estate->referencia.'"',$out);
+                    // Criar log
+                    // print_r($out); echo "\n";
+                }
+
+                // Limpa
+                $estate->free(true);
+                $estate = null;
+                $out = null;
             }
             else
             {
@@ -104,19 +137,22 @@ EOF;
         {
             die("Não há dados. \n");
         }
-        
+
         gc_collect_cycles();
-        die();
+        die('Carga autal finalizada.');
     }
 
-    static protected function getDisponibilidade($o)
+    static protected function getDisponibilidade($o,$e=false)
     {
         $dCollection = new Doctrine_Collection('Disponibilidade');
         $dTable = Doctrine_Core::getTable('Disponibilidade');
+        $deTable = Doctrine_Core::getTable('EstateDisponibilidade');
+        $de=false;
         $d = $dTable->findOneByNameOrCreate($o);
         if($d)
         {
-            $dCollection->add($d);
+            if($e) $de = $deTable->findOneByDisponibilidadeIdAndEstateId($d->id,$e);
+            if(!$de) $dCollection->add($d);
         }
         $d=null;
         return $dCollection;
