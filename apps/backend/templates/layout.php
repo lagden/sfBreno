@@ -8,9 +8,6 @@
     <?php include_metas() ?>
     <?php include_title() ?>
     <?php include_stylesheets() ?>
-    <!--[if lte IE 9]>
-        <?php echo javascript_include_tag('vendor/libs/modernizr.js'); ?>
-    <![endif]-->
 </head>
 <body>
     
@@ -26,15 +23,6 @@
     </div>
     
     <?php include_javascripts() ?>
-    
-    <!--[if lt IE 7 ]>
-        <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
-        <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
-    <![endif]-->
-    
-    <!--[if lte IE 8]>
-        <?php echo javascript_include_tag('vendor/libs/selectivizr.js'); ?>
-    <![endif]-->
     
     <script>
         jQuery.noConflict();

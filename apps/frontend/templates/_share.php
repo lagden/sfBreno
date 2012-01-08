@@ -2,7 +2,7 @@
     <!-- <g:plusone></g:plusone> -->
     <div class="g-plusone"></div>
 </div>
-<div class="clearfix">
+<div class="clearfix somePadding pbottom">
     <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="brenohomara">Tweet</a>
     <!-- <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script> -->
 </div>

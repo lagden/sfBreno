@@ -139,7 +139,7 @@ EOF;
         }
 
         gc_collect_cycles();
-        die('Carga autal finalizada.');
+        die('Carga atual finalizada.');
     }
 
     static protected function getDisponibilidade($o,$e=false)

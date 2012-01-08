@@ -55,7 +55,7 @@ window.addEvent('domready',function()
         });
         
         // Twitter
-        if($('#tweets').get(0)!=undefined)getTwitterFeed("brenohomara", 4, false);
+        if($('#tweets').get(0)!=undefined) getTwitterFeed("brenohomara", 4, false);
         
         // Init tabs
         $('.tabs').tabs();
