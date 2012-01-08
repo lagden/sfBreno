@@ -30,7 +30,7 @@
     <!--[if (lt IE 9) & (!IEMobile)]>
     <?php echo javascript_include_tag('vendor/libs/ie.js'); ?>
     <?php echo javascript_include_tag('vendor/libs/modernizr.js'); ?>
-    <?php //echo javascript_include_tag('vendor/libs/respond.src.js'); ?>
+    <?php echo javascript_include_tag('vendor/libs/respond.src.js'); ?>
     <![endif]-->
     
     <!--[if lt IE 7 ]>
