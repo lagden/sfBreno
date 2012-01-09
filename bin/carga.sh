@@ -13,9 +13,9 @@ if [ -e "/usr/local/bin/sf" ]
     CMD=sf
 fi
 
-# $CMD lagden:ftp
-# $CMD lagden:carga
-# $CMD cc -q
+$CMD lagden:ftp
+$CMD lagden:carga
+$CMD cc -q
 $CMD lagden:completa
 
 exit

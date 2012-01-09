@@ -45,9 +45,7 @@ class cargaActions extends sfActions
         }
         else
         {
-            //exec("{$bin}run.sh {$bin}carga.sh");
-            exec("{$bin}carga.sh",$oo);
-            var_dump($oo);
+            exec("{$bin}run.sh {$bin}carga.sh");
             $response['msg']='Iniciado a execução da carga. Um email será disparado avisando quando a carga estiver completa.';
         }
         return $this->renderText(json_encode($response));

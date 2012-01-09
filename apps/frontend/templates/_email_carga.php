@@ -23,7 +23,7 @@ a:active{text-decoration: none;}
                             <tr>
                                 <td>
                                     <div><img alt="" src="http://brenohomaraimoveis.com.br/images/BrenoHomaraBlack.png"></div>
-                                    <h2 style="color:#F28510;">Carga finalizada em <?php echo date("Y-m-d H:i:s"); ?></h2>
+                                    <h2 style="color:#F28510;">Carga finalizada em <?php echo date("d/m/Y H:i:s"); ?></h2>
                                 </td>
                             </tr>
                         </tbody>
