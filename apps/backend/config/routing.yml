@@ -1,7 +1,7 @@
 # home
 homepage:
   url:   /
-  param: { module: auth, action: index }
+  param: { module: user, action: index }
 
 # Module Auth
 auth:
