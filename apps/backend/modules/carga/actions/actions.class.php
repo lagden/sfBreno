@@ -45,9 +45,9 @@ class cargaActions extends sfActions
         }
         else
         {
-            //exec("{$bin}carga.sh",$outnohup);
-            exec("/usr/bin/nohup {$bin}carga.sh > /dev/null 1&2 &",$outnohup);
-            print_r($outnohup);
+            //exec("{$bin}run.sh {$bin}carga.sh");
+            exec("{$bin}carga.sh",$oo);
+            var_dump($oo);
             $response['msg']='Iniciado a execução da carga. Um email será disparado avisando quando a carga estiver completa.';
         }
         return $this->renderText(json_encode($response));
