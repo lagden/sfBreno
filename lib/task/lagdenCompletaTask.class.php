@@ -33,6 +33,13 @@ EOF;
     
     private function emailHtml($param)
     {
+        $ds=DIRECTORY_SEPARATOR;
+        $rootdir=sfConfig::get('sf_root_dir');
+        $tmp="{$rootdir}{$ds}tmp{$ds}";
+        
+        $log = false;
+        if(is_file("{$tmp}carga.log"))$log = file_get_contents("{$tmp}carga.log");
+        
         $template = sfConfig::get('sf_app_template_dir')."/{$param}";
         ob_start();
         require($template);

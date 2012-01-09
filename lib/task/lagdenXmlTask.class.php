@@ -24,7 +24,7 @@ EOF;
         // Vai para o diretório tmp do app
         chdir($tmp);
         // Remove todos os arquivos XML e YML
-        exec('rm -f *.xml *.yml');
+        exec('rm -f *.xml *.yml *.log');
         
         // Vai para o diretório /home/breno
         chdir($breno);

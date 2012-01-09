@@ -22,7 +22,7 @@ EOF;
         // Vai para o diretório tmp/
         chdir($tmp);
         // Remove todos os arquivos XML
-        exec('rm -f *.xml *.yml');
+        exec('rm -f *.xml *.yml *.log');
         // Faz o FTP do arquivo de carga
         exec('wget --quiet -nv -r -nH -nd -nc --accept=xml --ftp-user=teste_xml@sci12.com.br --ftp-password=10203040 ftp://sci12.com.br');
         // Localiza e converte todos os arquivos xml baixados

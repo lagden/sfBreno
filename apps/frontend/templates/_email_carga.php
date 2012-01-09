@@ -24,6 +24,9 @@ a:active{text-decoration: none;}
                                 <td>
                                     <div><img alt="" src="http://brenohomaraimoveis.com.br/images/BrenoHomaraBlack.png"></div>
                                     <h2 style="color:#F28510;">Carga finalizada em <?php echo date("d/m/Y H:i:s"); ?></h2>
+                                    <?php if ($log): ?>
+                                        <pre><?php echo $log; ?></pre>
+                                    <?php endif ?>
                                 </td>
                             </tr>
                         </tbody>
