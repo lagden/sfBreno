@@ -1,4 +1,5 @@
 <?php
+set_time_limit(0);
 class lagdenFtpTask extends sfBaseTask
 {
     protected function configure()
@@ -99,6 +100,8 @@ EOF;
             // Gera yml do arquivo de carga
             file_put_contents("{$tmp}carga.yml",sfYaml::dump($carga),LOCK_EX);
         }
-        echo "Arquivo de carga gerado com sucesso. \n"; die;
+        
+        file_put_contents("{$tmp}carga.log","[".date('c')."][ftp  ] Arquivo de carga gerado com sucesso. \n",FILE_APPEND);
+        die;
     }
 }

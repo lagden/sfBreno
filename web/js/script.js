@@ -186,11 +186,31 @@ window.addEvent('domready',function()
                 $(this).parent().parent().submit();
             }
         });
+        
+        // Backend - Carga
+        $('button#runCarga').click(function(){
+            backendFunc.carga();
+        });
     })
     (jQuery);
 });
 
 var backendFunc={
+    carga:function()
+    {
+        ajuda.triggerAjax(true);
+        ajuda.alerta('Verificando. Aguarde...');
+        jQuery.post(ajuda.routes('runCarga'),{},backendFunc.cargaCallBack,'json');
+    },
+    cargaCallBack:function(r)
+    {
+        ajuda.triggerAjax();
+        if(r)
+        {
+            ajuda.alerta(r.msg);
+        }
+        else ajuda.alerta('Erro na resposta.');
+    },
     // Formulario de venda
     handlerAuth:function(bool,el,submit)
     {
@@ -205,7 +225,6 @@ var backendFunc={
     authCallBack:function(r)
     {
         ajuda.triggerAjax();
-        log('awesome');
         if(r)
         {
             if(r.success)

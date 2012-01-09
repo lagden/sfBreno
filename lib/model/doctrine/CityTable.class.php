@@ -19,10 +19,11 @@ class CityTable extends Doctrine_Table
 
     public function findOneByNameOrCreate($name)
     {
-        if (! $name)
-        {
-            return null;
-        }
+        if (! $name) return null;
+        
+        setlocale(LC_ALL, 'pt_BR');
+        $name = ucwords(strtolower($name));
+        
         $item = $this->getCidade($name)->fetchOne();
         if (! $item)
         {

@@ -19,10 +19,11 @@ class TypeTable extends Doctrine_Table
 
     public function findOneByNameOrCreate($name)
     {
-        if (! $name)
-        {
-            return null;
-        }
+        if (! $name) return null;
+        
+        setlocale(LC_ALL, 'pt_BR');
+        $name = ucfirst(strtolower($name));
+        
         $item = $this->getTipo($name)->fetchOne();
         if (! $item)
         {

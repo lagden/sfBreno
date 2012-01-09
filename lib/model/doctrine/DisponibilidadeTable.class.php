@@ -19,10 +19,26 @@ class DisponibilidadeTable extends Doctrine_Table
 
     public function findOneByNameOrCreate($name)
     {
-        if (! $name)
+        if (! $name) return null;
+        
+        setlocale(LC_ALL, 'pt_BR');
+        $namelower = strtolower($name);
+        
+        switch($namelower)
         {
-            return null;
+            case "venda":
+            $name = "Comprar";
+            break;
+            
+            case "temporada":
+            case "arrendamento ou locação":
+            $name = "Alugar";
+            break;
+            
+            default:
+            $name = ucfirst($namelower);
         }
+        
         $item = $this->getDisponibilidade($name)->fetchOne();
         if (! $item)
         {

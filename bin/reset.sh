@@ -12,6 +12,7 @@ echo "sudo mode!!!"
 `sudo rm -rf web/uploads/*`
 `sudo rm -rf web/tiny/*`
 `sudo rm -rf web/estates/*`
+`rm -rf tmp/*`
 `rm -rf log/`
 `rm -rf cache/`
 

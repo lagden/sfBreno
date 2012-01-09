@@ -5,8 +5,11 @@ class Utils
     *
     * @author Thiago Lagden
     */
-
-    // Referer for session expired
+    static public function log($content,$file)
+    {
+        file_put_contents($file,$content,FILE_APPEND);
+    }
+    
     public static function date($date,$format='d/m/Y')
     {
         try

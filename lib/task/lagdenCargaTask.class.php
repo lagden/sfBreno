@@ -30,19 +30,22 @@ EOF;
             foreach ($carga as $v)
             {
                 gc_enabled();
+                file_put_contents("{$tmp}carga.log","[".date('c')."][carga] Reference: {$v['referencia']}. \n",FILE_APPEND);
                 exec('./symfony lagden:acao --dados="'. base64_encode(serialize($v)) .'"',$out);
-                print_r($out); echo "\n";
-                echo "Mem usage is: ", memory_get_usage(), "\n";
+                file_put_contents("{$tmp}carga.log","[".date('c')."][carga] Mem usage is: ". memory_get_usage() ." \n",FILE_APPEND);
+                file_put_contents("{$tmp}carga.log","[".date('c')."][carga] Atual finalizada. ({$v['referencia']}) \n",FILE_APPEND);
                 $out = null;
                 $v = null;
                 gc_collect_cycles();
             }
             gc_disable();
-            echo "Carga finalizada. \n";die;
+            file_put_contents("{$tmp}carga.log","[".date('c')."][carga] Carga finalizada. \n",FILE_APPEND);
+            die;
         }
         else
         {
-            die("Não há arquivo de carga. \n");
+            file_put_contents("{$tmp}carga.log","[".date('c')."][carga] Não há arquivo de carga. \n",FILE_APPEND);
+            die;
         }
     }
 }

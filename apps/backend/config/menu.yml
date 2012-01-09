@@ -26,3 +26,6 @@ menu:
   tag:
     route: tag
     label: Tag
+  carga:
+    route: carga
+    label: Carga

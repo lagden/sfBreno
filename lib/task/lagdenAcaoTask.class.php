@@ -42,9 +42,7 @@ EOF;
             if(is_array($dados))
             {
                 $estate = $estateTable->findOneByReferencia($dados['referencia']);
-                
                 $update=1;
-
                 if(!$estate)
                 {
                     // New
@@ -87,7 +85,8 @@ EOF;
                 }
                 catch (Exception $e)
                 {
-                    die("Não foi possível gravar: {$e->getMessage()} \n");
+                    file_put_contents("{$tmp}carga.log","[".date('c')."][acao ] Não foi possível gravar: {$e->getMessage()} \n",FILE_APPEND);
+                    die;
                 }
 
                 // Cria o dir
@@ -119,10 +118,7 @@ EOF;
                 if(count($carrega)>0)
                 {
                     exec('./symfony lagden:image --update="'.$update.'" --urls="'. base64_encode(serialize($carrega)) .'" --id="'.$estate->id.'" --ref="'.$estate->referencia.'"',$out);
-                    // Criar log
-                    // print_r($out); echo "\n";
                 }
-
                 // Limpa
                 $estate->free(true);
                 $estate = null;
@@ -130,16 +126,18 @@ EOF;
             }
             else
             {
-                die("O dado passado não é uma matriz. \n");
+                file_put_contents("{$tmp}carga.log","[".date('c')."][acao ] O dado passado não é uma matriz. \n",FILE_APPEND);
+                die;
             }
         }
         else
         {
-            die("Não há dados. \n");
+            file_put_contents("{$tmp}carga.log","[".date('c')."][acao ] Não há dados. \n",FILE_APPEND);
+            die;
         }
 
         gc_collect_cycles();
-        die('Carga atual finalizada.');
+        die;
     }
 
     static protected function getDisponibilidade($o,$e=false)

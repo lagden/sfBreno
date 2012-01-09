@@ -19,11 +19,10 @@ class NeighborhoodTable extends Doctrine_Table
     
     public function findOneByNameOrCreate($name, $city)
     {
-        if (! $name)
-        {
-            return null;
-        }
+        if (! $name) return null;
         
+        setlocale(LC_ALL, 'pt_BR');
+        $name = ucwords(strtolower($name));
         
         $item = $this->getBairro($name, $city)->fetchOne();
         if (! $item)

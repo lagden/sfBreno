@@ -314,3 +314,14 @@ upload_remove:
   requirements:
     sf_format: (?:html|json)
     sf_method: [DELETE]
+
+# Module Auth
+carga:
+  url: /carga
+  param: { module: carga, action: index }
+
+carga_run:
+  url: /carga/executa
+  param: { module: carga, action: run }
+  requirements:
+    sf_method: [POST]

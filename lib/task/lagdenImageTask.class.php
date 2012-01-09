@@ -33,7 +33,9 @@ EOF;
 
         gc_enabled();
         
-        $ds=DIRECTORY_SEPARATOR;        
+        $ds=DIRECTORY_SEPARATOR;
+        $rootdir=sfConfig::get('sf_root_dir');
+        $tmp="{$rootdir}{$ds}tmp{$ds}";
         $webdir=sfConfig::get('sf_web_dir');
         $ref="tmp{$ds}{$options['ref']}{$ds}";
         $dir="{$webdir}{$ds}{$ref}";
@@ -77,18 +79,17 @@ EOF;
                         $image->save();
                         $image->free(true);
                         $image = null;
-                        echo "Gravado: {$file}\n";
+                        file_put_contents("{$tmp}carga.log","[".date('c')."][image] Gravado: {$file}. \n",FILE_APPEND);
                     }
                     catch (Exception $e)
                     {
-                        echo "Falha ao gravar: {$file}\n";
+                        file_put_contents("{$tmp}carga.log","[".date('c')."][image] Falha ao gravar: {$file}. \n",FILE_APPEND);
                     }
                     $file=null;
                 }
                 $cc++;
             }
         }
-
         $ds=null;
         $total=null;
         $cc=null;
@@ -96,8 +97,7 @@ EOF;
         $ref=null;
         $dir=null;
         $itens=null;
-        
         gc_collect_cycles();
-        die();
+        die;
     }
 }
