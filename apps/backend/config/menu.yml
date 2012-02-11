@@ -23,6 +23,7 @@ menu:
       - { route: false, class: divider }
       - { route: type, label: Tipo do imóvel }
       - { route: disponibilidade, label: Disponibilidade }
+      - { route: complemento, label: Complemento }
   tag:
     route: tag
     label: Tag

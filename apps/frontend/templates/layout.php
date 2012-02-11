@@ -47,9 +47,15 @@
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
         
+        // Twitter
+        (function(){
+            var twitterWidgets = document.createElement('script');
+            twitterWidgets.type = 'text/javascript';
+            twitterWidgets.async = true;
+            twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+            document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+        })
+        ();
     </script>
-    
-    <!-- Twitter -->
-    <?php echo javascript_include_tag('vendor/twitter/widgets.js'); ?>
 </body>
 </html>

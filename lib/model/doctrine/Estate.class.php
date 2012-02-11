@@ -17,7 +17,7 @@ class Estate extends BaseEstate
         return Doctrine_Core::getTable('Image')->findOneByEstateIdAndDestaque($this->id,1);
         return false;
     }
-    
+
     public function setPriceRent($price)
     {
         if($price) $this->_set('price_rent', static::floatPrice($price));
@@ -74,8 +74,15 @@ class Estate extends BaseEstate
 
     static public function floatPrice($v)
     {
-        $r = str_replace('.','',$v);
-        $r = str_replace(',','.',$r);
+        if(strpos($v,',') === false)
+        {
+            $r = $v;
+        }
+        else
+        {
+            $r = str_replace('.','',$v);
+            $r = str_replace(',','.',$r);
+        }
         return $r;
     }
 

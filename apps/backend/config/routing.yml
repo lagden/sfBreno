@@ -264,6 +264,35 @@ disponibilidade_sort:
   requirements:
     sf_method: [POST]
 
+# Module Complementos
+complemento:
+  class: sfDoctrineRouteCollection
+  options:
+    model: Complemento
+    with_show: false
+    prefix_path: /complemento
+    collection_actions:
+      filter: post
+      clear: get
+    segment_names:
+      new: novo
+      create: cria
+      edit: edita
+      update: atualiza
+      delete: deleta
+
+complemento_page:
+  url: /complemento/pagina/:pagina
+  param: { module: complemento, action: index }
+  requirements:
+    sf_method: [GET]
+
+complemento_sort:
+  url: /complemento/ordena
+  param: { module: complemento, action: sort }
+  requirements:
+    sf_method: [POST]
+
 # Module Tag
 tag:
   class: sfDoctrineRouteCollection

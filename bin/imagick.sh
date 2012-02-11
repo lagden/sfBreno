@@ -50,6 +50,9 @@ function convfiles
     # medium2
     $CONVERT_BIN $BASE -strip -colorspace RGB -units PixelsPerInch -density 72 -quality 80 -resize 500x500 $3/$4/medium2.$EXT
     show $3/$4/medium2.$EXT
+    # banner
+    $CONVERT_BIN $BASE -strip -colorspace RGB -units PixelsPerInch -density 72 -quality 80 -thumbnail "700"^x -gravity center -extent 700x460 $3/$4/banner.$EXT
+    show $3/$4/banner.$EXT
     # small
     $CONVERT_BIN $BASE -strip -colorspace RGB -units PixelsPerInch -density 72 -quality 80 -resize 240x240 $3/$4/small.$EXT
     show $3/$4/small.$EXT

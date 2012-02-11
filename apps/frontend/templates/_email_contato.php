@@ -5,7 +5,7 @@ body{
     margin-right: 0px;
     margin-bottom: 0px;
     color: #333333;
-    font-family: Verdana, Geneva, sans-serif; font-size: 10px;
+    font-family: Verdana, Geneva, sans-serif; font-size: 13px;
 }
 
 a:hover{text-decoration: underline;}
@@ -18,7 +18,7 @@ a:active{text-decoration: none;}
         <tbody>
             <tr>
                 <td align="center" valign="top">
-                    <table width="600" border="0" cellspacing="0" cellpadding="0">
+                    <table width="600" border="0" cellspacing="0" cellpadding="5">
                         <tbody>
                             <tr>
                                 <td>

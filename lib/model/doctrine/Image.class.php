@@ -26,6 +26,11 @@ class Image extends BaseImage
     {
         return self::getItemVersion('medium2');
     }
+    
+    public function getBanner()
+    {
+        return self::getItemVersion('banner');
+    }
 
     public function getSmall()
     {
@@ -159,7 +164,7 @@ class Image extends BaseImage
         if($fmts->count()==0)
         {
             $fmts = new Doctrine_Collection('Format');
-            $formats = array('Original','Large','Medium1','Medium2','Small','Thumbnail','Square');
+            $formats = array('Original','Large','Medium1','Medium2','Banner','Small','Thumbnail','Square');
             foreach($formats as $format)
             {
                 $f = new Format();
