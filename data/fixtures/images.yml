@@ -1,18 +1,25 @@
 Format:
   -
+    id: 1
     name: "Original"
   -
+    id: 2
     name: "Large"
   -
+    id: 3
     name: "Medium1"
   -
+    id: 4
     name: "Medium2"
   -
-    name: "Banner"
-  -
+    id: 5
     name: "Small"
   -
+    id: 6
     name: "Thumbnail"
   -
+    id: 7
     name: "Square"
-    
+  -
+    id: 8
+    name: "Banner"
