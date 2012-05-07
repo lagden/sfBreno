@@ -2,8 +2,8 @@
 # http://www.symfony-project.org/reference/1_4/en/13-View
 
 default:
+  http_metas: { content-type: "text/html; charset=UTF-8" }
   metas:
-    charset: "utf-8"
     title: "Gerenciador de conteúdo - Breno Homara Imóveis"
     description: "Sistema de gerenciamento de conteúdo do site"
     keywords: "gentenciador, site, administração, apartamento, higienópolis, higienopolis, apartamentos em higienópolis, Breno, Homara, Imóveis, imóvel em higienopolis, venda imóveis, vende-se imóvel, imoveis, casa, apartamento, prédio, cobertura, mansão, alto padrão, fotos, pacaembu, santa cecilia, santa cecília, compra, venda, aluguel, locação, negociação, perdizes, são paulo, sao paulo, imóveis em são paulo, locação higienopolis, venda higienópolis, apartamento em higienópolis, apartamento em sao paulo, apartamento em são paulo, classificados, classificados de imóveis, imóveis, imovel, imoveis, casa, apartamento"
@@ -13,25 +13,18 @@ default:
 
   stylesheets:
     - backend.css
-    # Mootools Roar CSS
-    - /js/vendor/mootools/plugins/Roar/Roar.css
     # jQuery
     - /js/vendor/jquery/jquery-ui.css
     - /js/vendor/jquery/plugins/tag-it/jquery.ui.tagit.css
 
   javascripts:
     # Mootools
-    - vendor/mootools/mootools-core.js
-    - vendor/mootools/mootools-more.js
-    # Mootools - Roar
-    - vendor/mootools/plugins/Roar/Roar.js
+    - vendor/mootools/mootools.js
     # jQuery
     - vendor/jquery/jquery.js
     - vendor/jquery/jquery-ui.min.js
     # jQuery - Plugins
     - vendor/jquery/plugins/tag-it/jquery.ui.tagit.js
-    # - vendor/jquery/plugins/headsupgrid/hugrid.js
-    # - vendor/jquery/plugins/headsupgrid/init.js
     # jQuery - Plugins - Fancybox
     - vendor/jquery/plugins/fancybox/jquery.easing-1.3.pack.js
     - vendor/jquery/plugins/fancybox/jquery.mousewheel-3.0.6.pack.js

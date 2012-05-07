@@ -2,18 +2,24 @@
 @import "compass";
 @import "blueprint/grid";
 
+@import "mootools/roar";
+
 // vars and mixins
 @import "lagden/mixin";
 
+$showHelperGrid: false;
 .container{
-    background:blue;
-    padding:10px 0px 10px 10px;
     @include container;
+    overflow:visible;
+    position: relative;
+//    padding:10px 0px 10px 10px;
 
     $i: $blueprint_grid_columns;
     @while $i > 0 {
         .grid_#{$i} {
-            // background:red;
+            @if $showHelperGrid == true {
+                background: rgba(0,0,255,.3);
+            }
             @include column($i);
             &:last-child{
                 @include column($i,true);

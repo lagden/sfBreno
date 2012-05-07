@@ -1,3 +1,5 @@
+jQuery.noConflict();
+
 // Mootools
 // Parecido com o Growl
 var Roar = new Roar({position: 'upperRight', duration: 7000});

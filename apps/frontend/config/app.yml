@@ -39,5 +39,5 @@ all:
       creci: 'CRECI 30231'
       endereco: 'Rua Baronesa de Itú, 275 | Higienópolis | São Paulo | 01231-001'
       telefone: '(11) 3667-0124 ou (11) 3667-9756'
-      dev: 'Lagden.art.br'
-      devsite: 'http://lagden.art.br/'
+      dev: 'Lagden'
+      devsite: 'http://lagden.github.com/about/'

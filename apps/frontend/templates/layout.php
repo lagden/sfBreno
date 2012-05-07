@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
-<!--[if (IE 7)&!(IEMobile) ]><html class="no-js ie7" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile) ]><html class="no-js ie8" lang="en"><![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)|!(IE)]><!--><html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"><!--<![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" itemscope itemtype="http://schema.org/Product" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="pt-br" itemscope itemtype="http://schema.org/Product" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="pt-br" itemscope itemtype="http://schema.org/Product" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-br" itemscope itemtype="http://schema.org/Product" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
 
 <head>
     <?php include_http_metas() ?>
     <?php include_metas() ?>
-    <?php include_title() ?>
-    <?php include_stylesheets() ?>
-    <!--[if lt IE 9]>
-        <?php echo stylesheet_tag('ie.css'); ?>
-    <![endif]-->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
     <!-- Google Plus -->
     <meta itemprop="name" content="Compre ou alugue um imóvel">
     <meta itemprop="description" content="Busca de imóveis em Higienópolis para comprar ou alugar.">
     
+    <?php include_title() ?>
+    <?php include_stylesheets() ?>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo public_path('/favicon.ico') ?>">
+    
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <?php echo javascript_include_tag('vendor/libs/modernizr.js'); ?>
+    <![endif]-->
+    
 </head>
 <body>
+    <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6. chromium.org/developers/how-tos/chrome-frame-getting-started -->
+    <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    
     <?php include_partial('global/header'); ?>
     <?php echo $sf_content ?>
     <?php include_partial('global/footer'); ?>
     
     <?php include_javascripts() ?>
     
-    <!--[if (lt IE 9) & (!IEMobile)]>
-    <?php echo javascript_include_tag('vendor/libs/ie.js'); ?>
-    <?php echo javascript_include_tag('vendor/libs/modernizr.js'); ?>
-    <?php echo javascript_include_tag('vendor/libs/respond.src.js'); ?>
-    <![endif]-->
-    
-    <!--[if lt IE 7 ]>
-        <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
-        <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    <?php echo javascript_include_tag('vendor/libs/selectivizr.js'); ?>
     <![endif]-->
     
     <script>
-        jQuery.noConflict();
-        
         // Google Analytics
         var _gaq=[['_setAccount','UA-22331976-1'],['_trackPageview']];
         (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
         
-        // Twitter
-        (function(){
-            var twitterWidgets = document.createElement('script');
-            twitterWidgets.type = 'text/javascript';
-            twitterWidgets.async = true;
-            twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-            document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-        })
-        ();
+        // Facebook
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+        (document, 'script', 'facebook-jssdk'));
     </script>
+    <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
 </body>
 </html>

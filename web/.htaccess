@@ -1,3 +1,4 @@
+# chrome frame
 <IfModule mod_headers.c>
   Header set X-UA-Compatible "IE=Edge,chrome=1"
   # mod_headers can't match by content-type, but we don't want to send this header on *everything*...
@@ -6,31 +7,40 @@
   </FilesMatch>
 </IfModule>
 
+# crossdomain
+<IfModule mod_setenvif.c>
+  <IfModule mod_headers.c>
+    # mod_headers, y u no match by Content-Type?!
+    <FilesMatch "\.(gif|png|jpe?g|svg|svgz|ico|webp)$">
+      SetEnvIf Origin ":" IS_CORS
+      Header set Access-Control-Allow-Origin "*" env=IS_CORS
+    </FilesMatch>
+  </IfModule>
+</IfModule>
+
+# crossdomain webfont
 <IfModule mod_headers.c>
   <FilesMatch "\.(ttf|ttc|otf|eot|woff|font.css)$">
     Header set Access-Control-Allow-Origin "*"
   </FilesMatch>
 </IfModule>
 
-# ----------------------------------------------------------------------
-# Proper MIME type for all files
-# ----------------------------------------------------------------------
 
-# JavaScript
-#   Normalize to standard type (it's sniffed in IE anyways)
-#   tools.ietf.org/html/rfc4329#section-7.2
-AddType application/javascript         js
+# Proper MIME type for all files
+AddType application/javascript         js jsonp
+AddType application/json               json
 
 # Audio
 AddType audio/ogg                      oga ogg
-AddType audio/mp4                      m4a
+AddType audio/mp4                      m4a f4a f4b
 
 # Video
 AddType video/ogg                      ogv
-AddType video/mp4                      mp4 m4v
+AddType video/mp4                      mp4 m4v f4v f4p 
 AddType video/webm                     webm
+AddType video/x-flv                    flv
 
-# SVG.
+# SVG
 #   Required for svg webfonts on iPad
 #   twitter.com/FontSquirrel/status/14855840545
 AddType     image/svg+xml              svg svgz
@@ -38,25 +48,26 @@ AddEncoding gzip                       svgz
 
 # Webfonts
 AddType application/vnd.ms-fontobject  eot
-AddType application/x-font-ttf    ttf ttc
+AddType application/x-font-ttf         ttf ttc
 AddType font/opentype                  otf
 AddType application/x-font-woff        woff
 
 # Assorted types
-AddType image/x-icon                   ico
-AddType image/webp                     webp
-AddType text/cache-manifest            appcache manifest
-AddType text/x-component               htc
-AddType application/x-chrome-extension crx
-AddType application/x-opera-extension  oex
-AddType application/x-xpinstall        xpi
-AddType application/octet-stream       safariextz
-AddType text/x-vcard                   vcf
+AddType image/x-icon                        ico
+AddType image/webp                          webp
+AddType text/cache-manifest                 appcache manifest
+AddType text/x-component                    htc
+AddType application/xml                     rss atom xml rdf
+AddType application/x-chrome-extension      crx
+AddType application/x-opera-extension       oex
+AddType application/x-xpinstall             xpi
+AddType application/octet-stream            safariextz
+AddType application/x-web-app-manifest+json webapp
+AddType text/x-vcard                        vcf
+AddType application/x-shockwave-flash       swf
 
-# ----------------------------------------------------------------------
+
 # Gzip compression
-# ----------------------------------------------------------------------
-
 <IfModule mod_deflate.c>
 
   # Force deflate for mangled headers developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/
@@ -101,10 +112,7 @@ AddType text/x-vcard                   vcf
 
 </IfModule>
 
-
-# ----------------------------------------------------------------------
 # Expires headers (for better cache control)
-# ----------------------------------------------------------------------
 <IfModule mod_expires.c>
   ExpiresActive on
 
@@ -153,86 +161,85 @@ AddType text/x-vcard                   vcf
   ExpiresByType text/css                  "access plus 1 year"
   ExpiresByType application/javascript    "access plus 1 year"
 
-  <IfModule mod_headers.c>
-    Header append Cache-Control "public"
-  </IfModule>
-
 </IfModule>
 
 
-
-# ----------------------------------------------------------------------
 # ETag removal
-# ----------------------------------------------------------------------
-
-# FileETag None is not enough for every server.
 <IfModule mod_headers.c>
   Header unset ETag
 </IfModule>
 
-# Since we're sending far-future expires, we don't need ETags for
-# static content.
-#   developer.yahoo.com/performance/rules.html#etags
 FileETag None
 
-# ----------------------------------------------------------------------
-# Start rewrite engine
-# ----------------------------------------------------------------------
 
 <IfModule mod_rewrite.c>
   Options +FollowSymlinks
   RewriteEngine On
 </IfModule>
 
-# ----------------------------------------------------------------------
-# UTF-8 encoding
-# ----------------------------------------------------------------------
+# remove www
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+</IfModule>
 
-# Use UTF-8 encoding for anything served text/plain or text/html
+# Built-in filename-based cache busting
+# /css/style.20110203.css to /css/style.css
+<IfModule mod_rewrite.c>
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+)\.(\d+)\.(js|css|png|jpg|gif)$ $1.$3 [L]
+</IfModule>
+
+# Prevent SSL cert warnings
+# <IfModule mod_rewrite.c>
+#   RewriteCond %{SERVER_PORT} !^443
+#   RewriteRule ^ https://example-domain-please-change-me.com%{REQUEST_URI} [R=301,L]
+# </IfModule>
+
+# Prevent 404 errors for non-existing redirected folders
+Options -MultiViews
+
+
+# Custom 404 page
+ErrorDocument 404 /404.html
+
+# UTF-8 encoding
 AddDefaultCharset utf-8
 
 # Force UTF-8 for a number of file formats
-AddCharset utf-8 .html .css .js .xml .json .rss .atom
-
-# without -MultiViews, Apache will give a 404 for a rewrite if a folder of the same name does not exist
-#   e.g. /blog/hello : webmasterworld.com/apache/3808792.htm
-Options -MultiViews
+AddCharset utf-8 .css .js .xml .json .rss .atom
 
 <IfModule mod_autoindex.c>
   Options -Indexes
 </IfModule>
 
+# Block access to "hidden" directories whose names begin with a period. This
+# includes directories used by version control systems such as Subversion or Git.
+<IfModule mod_rewrite.c>
+  RewriteCond %{SCRIPT_FILENAME} -d
+  RewriteCond %{SCRIPT_FILENAME} -f
+  RewriteRule "(^|/)\." - [F]
+</IfModule>
+
 # Block access to backup and source files
-# This files may be left by some text/html editors and 
-# pose a great security danger, when someone can access them
-<FilesMatch ".(bak|config|sql|fla|psd|ini|log|sh|inc|~|swp)$">
+<FilesMatch "(\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist)|~)$">
   Order allow,deny
   Deny from all
   Satisfy All
 </FilesMatch>
 
+# Symfony 1.4
 <IfModule mod_rewrite.c>
-  # Block access to "hidden" directories whose names begin with a period. This
-  # includes directories used by version control systems such as Subversion or Git.
-  RewriteRule "(^|/)\." - [F]
-  
-  # Rewrite "www.example.com -> example.com"
-  RewriteCond %{HTTPS} !=on
-  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-  RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
-
   # we check if the .html version is here (caching)
   RewriteRule ^$ index.html [QSA]
   RewriteRule ^([^.]+)$ $1.html [QSA]
   
-  # api.breno
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{HTTP_HOST} ^api(.*).breno(.*)$ [NC]
-  RewriteRule ^(.*)$ api_dev.php [QSA,L]
-  
   # admin.breno
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{HTTP_HOST} ^admin(.*).breno(.*)$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{HTTP_HOST} ^admin.breno(.*)$ [NC]
   RewriteRule ^(.*)$ backend_dev.php [QSA,L]
   
   # no, so we redirect to our front web controller
@@ -240,9 +247,12 @@ Options -MultiViews
   RewriteRule ^(.*)$ index.php [QSA,L]
 </IfModule>
 
-# Increase cookie security
+# PHP
 <IfModule php5_module>
+  php_value session.name BrenoHomara
   php_value session.cookie_httponly true
+  php_flag display_errors On
+  php_flag display_startup_errors On
   # php_value upload_max_filesize 300M
   # php_value memory_limit 320M
   # php_value post_max_size 300M
