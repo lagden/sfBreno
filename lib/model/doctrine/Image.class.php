@@ -39,7 +39,7 @@ class Image extends BaseImage
 
     public function getThumbnail()
     {
-        return "thumbnail.jpg" //self::getItemVersion('thumbnail');
+        return "thumbnail.jpg"; //self::getItemVersion('thumbnail');
     }
 
     public function getSquare()
