@@ -25,10 +25,9 @@ EOF;
         $webdir=sfConfig::get('sf_web_dir');
         $dir="{$webdir}{$ds}estates";
         $bin=sfConfig::get('sf_root_dir')."{$ds}bin{$ds}";
-
+        
         chdir($dir);
         
-
         $dirs = glob("*",GLOB_ONLYDIR);
         if($dirs)
         {
@@ -48,53 +47,8 @@ EOF;
                         }
                     }
                 }
-                // if(is_dir($currDir))
-                // {
-                //     if(file_exists("{$dir}{$ds}{$currDir}{$ds}{original.*"))
-                //     {
-                //         echo "nice";
-                //     } else echo "nono";
-                //     
-                // }
             }
         }
-        // if($itens)
-        // {
-        //     $total = count($itens);
-        //     $cc=1;
-        //     foreach($itens as $item)
-        //     {
-        //         if(is_file($item))
-        //         {
-        //             $file = "..{$ds}{$ref}" . basename($item);
-        //             try
-        //             {
-        //                 $image = new Image();
-        //                 $image->file = $file;
-        //                 $image->estate_id = $options['id'];
-        //                 if($options['update']==0)$image->destaque = ($cc==$total) ? 1 : 0;
-        //                 $image->external = 1;
-        //                 $image->save();
-        //                 $image->free(true);
-        //                 $image = null;
-        //                 file_put_contents("{$tmp}carga.log","[".date('c')."][image] Gravado: {$file}. \n",FILE_APPEND);
-        //             }
-        //             catch (Exception $e)
-        //             {
-        //                 file_put_contents("{$tmp}carga.log","[".date('c')."][image] Falha ao gravar: {$file}. \n",FILE_APPEND);
-        //             }
-        //             $file=null;
-        //         }
-        //         $cc++;
-        //     }
-        // }
-        // $ds=null;
-        // $total=null;
-        // $cc=null;
-        // $webdir=null;
-        // $ref=null;
-        // $dir=null;
-        // $itens=null;
         gc_collect_cycles();
         die;
     }
