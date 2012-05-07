@@ -1,8 +1,8 @@
 <div class="flexslider">
     <ul class="slides">
         <?php foreach ($destaques as $destaque): ?>
-            <?php $currImg = ($destaque->image_destaque) ? "/estates/{$destaque->image_destaque->large->file}" : false; ?>
-            <?php // $currImg = ($destaque->image_destaque) ? "/estates/{$destaque->image_destaque->banner->file}" : false; ?>
+            <?php //$currImg = ($destaque->image_destaque) ? "/estates/{$destaque->image_destaque->large->file}" : false; ?>
+            <?php $currImg = ($destaque->image_destaque) ? "/estates/{$destaque->image_destaque->banner->file}" : false; ?>
             <?php $qs=array('slug'=>$destaque->slug); ?>
             <?php if ($currImg): ?>
                 <li>
