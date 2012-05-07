@@ -12,39 +12,50 @@
 */
 class Image extends BaseImage
 {
+    public function fixImage($type)
+    {
+        return json_decode(json_encode(array("file"=>"{$this->id}/{$type}.jpg")));
+    }
     public function getLarge()
     {
-        return "large.jpg"; // self::getItemVersion('large');
+        return self::fixImage('large');
+        // return self::getItemVersion('large');
     }
 
     public function getMedium1()
     {
-        return "medium1.jpg"; // self::getItemVersion('medium1');
+        return self::fixImage('medium1');
+        // return self::getItemVersion('medium1');
     }
 
     public function getMedium2()
     {
-        return "medium2.jpg"; //self::getItemVersion('medium2');
+        return self::fixImage('medium2');
+        // return self::getItemVersion('medium2');
     }
     
     public function getBanner()
     {
-        return "banner.jpg"; //self::getItemVersion('banner');
+        return self::fixImage('banner');
+        // return self::getItemVersion('banner');
     }
 
     public function getSmall()
     {
-        return "small.jpg"; //self::getItemVersion('small');
+        return self::fixImage('small');
+        // return self::getItemVersion('small');
     }
 
     public function getThumbnail()
     {
-        return "thumbnail.jpg"; //self::getItemVersion('thumbnail');
+        return self::fixImage('thumbnail');
+        // return self::getItemVersion('thumbnail');
     }
 
     public function getSquare()
     {
-        return "square.jpg"; // self::getItemVersion('square');
+        return self::fixImage('square');
+        // return self::getItemVersion('square');
     }
     
     public function save(Doctrine_Connection $conn = null)
