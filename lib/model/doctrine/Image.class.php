@@ -14,37 +14,37 @@ class Image extends BaseImage
 {
     public function getLarge()
     {
-        return self::getItemVersion('large');
+        return "large.jpg"; // self::getItemVersion('large');
     }
 
     public function getMedium1()
     {
-        return self::getItemVersion('medium1');
+        return "medium1.jpg"; // self::getItemVersion('medium1');
     }
 
     public function getMedium2()
     {
-        return self::getItemVersion('medium2');
+        return "medium2.jpg"; //self::getItemVersion('medium2');
     }
     
     public function getBanner()
     {
-        return self::getItemVersion('banner');
+        return "banner.jpg"; //self::getItemVersion('banner');
     }
 
     public function getSmall()
     {
-        return self::getItemVersion('small');
+        return "small.jpg"; //self::getItemVersion('small');
     }
 
     public function getThumbnail()
     {
-        return self::getItemVersion('thumbnail');
+        return "thumbnail.jpg" //self::getItemVersion('thumbnail');
     }
 
     public function getSquare()
     {
-        return self::getItemVersion('square');
+        return "square.jpg"; // self::getItemVersion('square');
     }
     
     public function save(Doctrine_Connection $conn = null)
