@@ -1,4 +1,18 @@
 Format:
   -
-    name: "xxx"
+    name: "Original"
+  -
+    name: "Large"
+  -
+    name: "Medium1"
+  -
+    name: "Medium2"
+  -
+    name: "Banner"
+  -
+    name: "Small"
+  -
+    name: "Thumbnail"
+  -
+    name: "Square"
     
