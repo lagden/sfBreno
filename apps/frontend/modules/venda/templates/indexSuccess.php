@@ -5,6 +5,8 @@
         <?php $rota = url_for('venda_envia'); ?>
         <?php echo $form->renderFormTag($rota,array('method' => 'post','class'=>'frm frmFull','id'=>'frmVendaImovel','data-url'=>$rota)) ?>
         <?php echo $form->renderHiddenFields(); ?>
+        <label for="contato_outrosstuff" class="visuallyhidden">Outros</label>
+        <input type="text" name="contato[outrosstuff]" class="visuallyhidden" id="contato_outrosstuff" title="Outros">
             <div class="grid_4 showDouble">
                 <h2 class="minnulo">Venda ou alugue seu imóvel</h2>
                 <h3>Informações para contato</h3>

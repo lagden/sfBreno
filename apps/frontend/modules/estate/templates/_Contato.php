@@ -9,6 +9,8 @@
     echo $form['slug']->render();
     echo $form->renderHiddenFields();
     ?>
+    <label for="contato_outrosstuff" class="visuallyhidden">Outros</label>
+    <input type="text" name="contato[outrosstuff]" class="visuallyhidden" id="contato_outrosstuff" title="Outros">
     <ul>
         <li>
             <?php echo $form['nome']->renderLabel(); ?>

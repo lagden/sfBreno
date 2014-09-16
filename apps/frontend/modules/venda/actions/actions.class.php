@@ -31,6 +31,11 @@ class vendaActions extends sfActions
 
         $form = new VendaForm();
         $post = $request->getParameter($form->getName());
+
+        $spam = isset($post['outrosstuff']) ? $post['outrosstuff'] : false;
+        if($spam === '' || $spam === false)
+          unset($post['outrosstuff']);
+
         $form->bind($post, $request->getFiles($form->getName()));
 
         if ($form->isValid())
