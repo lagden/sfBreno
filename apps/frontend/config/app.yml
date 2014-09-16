@@ -7,7 +7,7 @@
 
 # [php]
 # print_r(sfConfig::get('app_creditcards'));
-# 
+#
 # Array(
 #   [fake] => false
 #   [visa] => true
@@ -21,15 +21,15 @@ all:
     to:
       - 'brenoimoveis@uol.com.br'
       - 'ryan@brenohomaraimoveis.com.br'
-      - 'lagden@gmail.com'
-  
+      # - 'lagden@gmail.com'
+
   # Filter General for Estate
   formfilter_estate: EstateFormFilter
   app_cookie_search_estate: estate_site_search.filters
   route_form_filter: estate_filter
   search:
     max_per_page: 24
-  
+
   .array:
     footer:
       dono: 'Breno Homara'
