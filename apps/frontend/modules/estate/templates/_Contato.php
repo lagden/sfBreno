@@ -7,6 +7,7 @@
     echo $form['ref']->render();
     $form->setDefault('slug',sfConfig::get('curr_slug'));
     echo $form['slug']->render();
+    echo $form->renderHiddenFields();
     ?>
     <ul>
         <li>

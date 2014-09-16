@@ -1,0 +1,34 @@
+#!/usr/bin/env sh
+
+THIS=$(basename $0)
+DIR="$( cd -P "$( dirname "$0" )" && pwd )"
+cd $DIR
+cd ..
+CURR_FOLDER=`pwd`
+
+# Go
+cd $CURR_FOLDER
+
+while getopts "s" OPT; do
+    case $OPT in
+    s) keypress="s";;
+    \?) keypress=false;;
+    esac
+done
+
+if [[ ! $keypress ]]; then
+    read -s -n1 -p "Isso irá apagar todos os arquivos das pastas log, cache e tmp!! Tem certeza? (s/n): " keypress
+    echo;
+fi
+
+if [[ $keypress == "s" ]]; then
+    `rm -rf log/*`
+    `rm -rf cache/*`
+
+    echo "Folders are clean."
+
+    CMD="./symfony"
+    $CMD cc -q
+fi
+
+exit

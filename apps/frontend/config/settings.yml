@@ -8,7 +8,7 @@ prod:
 
 dev:
   .settings:
-    error_reporting:        <?php echo (E_ALL | E_STRICT | E_NOTICE)."\n" ?>
+    error_reporting:        <?php echo ((E_ALL | E_STRICT | E_NOTICE) & ~E_DEPRECATED)."\n" ?>
     web_debug:              true
     cache:                  false
     no_script_name:         false
@@ -16,7 +16,7 @@ dev:
 
 test:
   .settings:
-    error_reporting:        <?php echo ((E_ALL | E_STRICT) ^ E_NOTICE)."\n" ?>
+    error_reporting:        <?php echo ((E_ALL | E_STRICT | E_NOTICE) & ~E_DEPRECATED)."\n" ?>
     cache:                  false
     web_debug:              false
     no_script_name:         false
@@ -26,10 +26,10 @@ all:
   .actions:
     error_404_module:       site
     error_404_action:       notFound
-    
+
   .settings:
     # Form security secret (CSRF protection)
-    # csrf_secret:            2222d1cf96b4f5d7c4f56589675e6b2491cabecc
+    csrf_secret:            2222d1cf96b4f5d7c4f56589675e6b2491cabecc
 
     # Output escaping settings
     escaping_strategy:      true
@@ -37,3 +37,9 @@ all:
 
     # Enable the database manager
     use_database:           true
+
+    # Compressed
+    compressed:             true
+
+    charset: utf-8
+    standard_helpers: [Partial, Cache, Text, Url]

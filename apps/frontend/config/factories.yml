@@ -51,7 +51,7 @@ all:
           port: 465
           encryption: ssl
           username: breno@brenohomaraimoveis.com.br
-          password: 1bichona
+          password: 13guetet
 
   # Mail PHP Mail
   # mailer:

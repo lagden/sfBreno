@@ -57,6 +57,7 @@ class vendaActions extends sfActions
         $message->setSubject("{$info['site']} [Venda ou alugue seu imóvel] [{$post['nome']}]");
         $message->setTo(sfConfig::get('app_send_to'));
         $message->setFrom(sfConfig::get('app_master_email'), "{$post['nome']}");
+        $message->setReplyTo($post['email'], "{$post['nome']}");
         $html = $this->getPartial('global/email_venda', array('post' => $post));
         $message->setBody($html, 'text/html');
         return $this->getMailer()->send($message);

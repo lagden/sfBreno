@@ -1,0 +1,48 @@
+#!/usr/bin/env sh
+
+THIS=$(basename $0)
+DIR="$( cd -P "$( dirname "$0" )" && pwd )"
+cd $DIR
+cd ..
+CURR_FOLDER=`pwd`
+
+# Go
+cd $CURR_FOLDER
+
+load_fixtures=true
+
+while getopts "sl" OPT; do
+    case $OPT in
+    s) keypress="s";;
+    l) load_fixtures=false;; # not load fixtures
+    \?) keypress=false;;
+    esac
+done
+
+if [[ ! $keypress ]]; then
+    read -s -n1 -p "Isso irá apagar todos os dados!! Tem certeza? (s/n): " keypress
+    echo;
+fi
+
+if [[ $keypress == "s" ]]; then
+
+    # Limpando as pastas
+    `rm -rf log/*`
+    `rm -rf cache/*`
+
+    echo "Folders are clean."
+
+    CMD="./symfony"
+
+    # Limpa o cache do Symfony e builda o banco de dados
+    $CMD cc -q
+    $CMD doctrine:clean-model-files --no-confirmation
+
+    if [[ $load_fixtures == true ]]; then
+        $CMD doctrine:build --all --and-load --no-confirmation
+    else    
+        $CMD doctrine:build --all --no-confirmation
+    fi
+fi
+
+exit

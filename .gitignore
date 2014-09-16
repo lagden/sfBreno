@@ -1,8 +1,11 @@
+# Rsync
+rsync_exclude.log
+
 # Framework
-lib/migration/*
-lib/vendor/symfony/*
+lib/migration
+lib/vendor/symfony
 lib/*/doctrine/base/*
-lib/*/doctrine/sfDoctrineGuardPlugin/base/*
+lib/*/doctrine/*Plugin/base/*
 web/sf
 data/sql/schema.sql
 test/resources/convert/*
@@ -22,23 +25,36 @@ web/flickr/*
 !web/tiny/.htaccess
 !web/estates/.htaccess
 
-# cpanel
+/vendor/*
+composer.lock
+
+npm-debug.log
+
+# Others
 cgi-bin
 error_log
-
-# OS crap
 .DS_Store
 thumbs.db
 .*.swp
 *.tmproj
 *.mwb
 *.mwb.bak
-
-# SCM files
+*.sublime-*
 .arch-params
 .bzr
 _darcs
 .hg
 .monotone
 .svn
-CVS
+.project
+*.sql
+
+# Node
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz

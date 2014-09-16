@@ -1,0 +1,109 @@
+#!/usr/bin/env sh
+
+THIS=$(basename $0)
+DIR="$( cd -P "$( dirname "$0" )" && pwd )"
+cd $DIR
+cd ..
+CURR_FOLDER=`pwd`
+
+# Go
+cd $CURR_FOLDER
+
+# Remove
+function rmfile
+{
+    if [ -f $1 ]; then
+        `rm $1`
+    fi
+}
+
+inserts="$(date +%m%d%H%M%Y%S)_inserts.sql"
+
+read -p "Database: " db
+read -p "User: " user
+read -s -p "Password: " password
+
+# Drop Migration
+echo
+echo "Banco de dados - Drop Migration"
+echo 'DROP TABLE IF EXISTS `migration_version`;' > tmpDropMigrationVersion.sql
+`mysql -u$user -p"$password" $db < tmpDropMigrationVersion.sql`
+if [ $? -ne 0 ]; then
+    echo
+    echo "MySQL Drop Migration falhou."
+    exit
+else
+    rmfile tmpDropMigrationVersion.sql
+fi
+
+# Dump Inserts
+echo
+echo "Banco de dados - Dump Inserts"
+`mysqldump -u$user -p"$password" --add-locks --allow-keywords --no-create-info --extended-insert=FALSE --complete-insert=TRUE $db > $inserts`
+
+if [ $? -ne 0 ]; then
+    echo
+    echo "MySQL dump falhou."
+    exit
+fi
+
+# Dump Backup
+echo
+echo "Banco de dados - Dump Backup"
+bkp="$(date +%m%d%H%M%Y%S)_bkp.sql"
+`mysqldump -u$user -p"$password" --add-drop-table $db > $bkp`
+
+if [ $? -ne 0 ]; then
+    echo
+    echo "MySQL dump falhou."
+    exit
+fi
+
+CMD="php symfony"
+echo
+echo "É necessário executar os seguintes comandos:"
+echo "$CMD cc-q"
+echo "$CMD doctrine:clean-model-files --no-confirmation"
+echo "$CMD doctrine:build --all --no-confirmation"
+read -s -n1 -p "Digite 's' para executar agora ou 'n' para sair? (s/n): " keypress
+echo;
+
+if [[ $keypress == "s" ]]; then
+    # Rebuild database sem as fixtures
+    $CMD cc -q
+    $CMD doctrine:clean-model-files --no-confirmation
+    $CMD doctrine:build --all --no-confirmation
+
+    # Restaurando inserts
+    echo
+    echo "Banco de dados - Restaurando inserts"
+    `mysql -u$user -p"$password" $db < $inserts`
+
+    if [ $? -ne 0 ]; then
+        echo
+        echo "Não foi possível migrar automaticamente."
+        echo
+        echo "Banco de dados - Restaurando backup"
+        `mysql -u$user -p"$password" $db < $bkp`
+
+        if [ $? -ne 0 ]; then
+            echo
+            echo "Não foi restaurar o banco automaticamente. Arquivo de backup: $bkp"
+            exit
+        else
+            echo "Dados restaurados."
+            rmfile $bkp
+        fi
+
+        exit
+    fi
+
+    echo 
+    echo 'Migração concluída.'
+fi
+
+# Removendo arquivos
+rmfile $bkp
+rmfile $inserts
+
+exit

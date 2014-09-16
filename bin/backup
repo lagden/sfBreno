@@ -1,0 +1,25 @@
+#!/usr/bin/env sh
+
+# Remove
+function rmfile
+{
+    if [ -f $1 ]; then
+        `rm $1`
+    fi
+}
+
+read -p "Database: " db
+read -p "User: " user
+read -s -p "Password: " password
+echo
+
+bkp="$(date +%m%d%H%M%Y%S).sql"
+
+`mysqldump -u"$user" -p"$password" --add-drop-table "$db" > $bkp`
+if [ $? -ne 0 ]; then
+    echo "Falha no backup."
+    rmfile $bkp
+    exit
+fi
+
+exit

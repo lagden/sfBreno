@@ -49,10 +49,10 @@ class estateActions extends GeneralActions
             $this->getResponse()->addMeta('description', $this->estate->descricao, true, true);
             if($this->estate->Tags->count()>0)
             {
-                $this->getResponse()->addMeta('keywords', $this->estate->joinTags, true, true);    
+                $this->getResponse()->addMeta('keywords', $this->estate->joinTags, true, true);
             }
             if($this->estate->seo) sfConfig::set('seo_site',$this->estate->seo);
-            
+
             sfConfig::set('curr_ref',$this->estate->referencia);
             sfConfig::set('curr_slug',$this->estate->slug);
             sfConfig::set('contato_route','estate_interessou');
@@ -200,6 +200,23 @@ class estateActions extends GeneralActions
                 $response['msg']='Falha ao tentar enviar. Tente novamente.';
             }
         }
+        else
+        {
+            // Formulário inválido
+            $errors = [];
+            foreach($form as $k => $v)
+                if ($form[$k]->getError())
+                    array_push($errors, "{$form[$k]->renderLabelName()} - {$form[$k]->getError()}");
+
+            foreach($form->getGlobalErrors() as $k => $v)
+                array_push($errors, $v->__toString());
+
+            // var_dump($form->renderGlobalErrors());die;
+            // $notice = (!empty($errors)) ? join("<br>", $errors) : 'Formulário inválido | getGlobalErrors | renderGlobalErrors';
+
+            $notice = (!empty($errors)) ? join("<br>", $errors) : 'Formulário inválido';
+            $response['msg'] = "{$notice}";
+        }
         return $this->renderText(json_encode($response));
     }
 
@@ -210,6 +227,7 @@ class estateActions extends GeneralActions
         $message->setSubject("{$info['site']} [Interessou] [{$post['nome']}]");
         $message->setTo(sfConfig::get('app_send_to'));
         $message->setFrom(sfConfig::get('app_master_email'), "{$post['nome']}");
+        $message->setReplyTo($post['email'], "{$post['nome']}");
         $html = $this->getPartial('global/email_interesse', array('post' => $post));
         $message->setBody($html, 'text/html');
         return $this->getMailer()->send($message);
@@ -243,7 +261,7 @@ class estateActions extends GeneralActions
         // Sort
         sfConfig::set("order_by","{$prefix}_sort.field");
         sfConfig::set("order_by_direction","{$prefix}_sort.direction");
-        
+
         // Metas
         Xtras::metas('estate');
     }

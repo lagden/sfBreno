@@ -16,7 +16,7 @@ class contatoActions extends sfActions
         $this->info = sfConfig::get('app_footer');
         sfConfig::set('contato_route','contato_envia');
     }
-    
+
     // Ajax Form Contato
     public function executeContato(sfWebRequest $request)
     {
@@ -57,6 +57,7 @@ class contatoActions extends sfActions
         $message->setSubject("{$info['site']} [Fale Conosco] [{$post['nome']}]");
         $message->setTo(sfConfig::get('app_send_to'));
         $message->setFrom(sfConfig::get('app_master_email'), "{$post['nome']}");
+        $message->setReplyTo($post['email'], "{$post['nome']}");
         $html = $this->getPartial('global/email_contato', array('post' => $post));
         $message->setBody($html, 'text/html');
         return $this->getMailer()->send($message);

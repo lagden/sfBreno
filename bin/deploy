@@ -1,0 +1,41 @@
+#!/usr/bin/env sh
+
+THIS=$(basename $0)
+DIR="$( cd -P "$( dirname "$0" )" && pwd )"
+cd $DIR
+cd ..
+CURR_FOLDER=`pwd`
+
+# Root
+cd $CURR_FOLDER
+
+# Sync
+rsync $CURR_FOLDER/. lagden@lagden.webfactional.com:~/projects/tex/xxx --rsh ssh --recursive --delete --exclude-from $CURR_FOLDER/rsync_exclude.txt --verbose > rsync_exclude.log
+
+ssh -T lagden@lagden.webfactional.com <<EOF
+
+cd ~/projects/tex/xxx/.
+
+# Composer
+composer.phar self-update
+composer.phar update
+
+# Fix
+bin/setup -f
+bin/reset -sl
+bin/fix -s
+
+echo "                                "
+echo "< Deploy finalizado... Yeahh!! >"
+echo "------------------------------  "
+echo "        \   ^__^                "
+echo "         \  (oo)\_______        "
+echo "            (__)\       )\/\    "
+echo "                ||----w |       "
+echo "                ||     ||       "
+echo "                                "
+
+exit 0
+EOF
+
+exit 0

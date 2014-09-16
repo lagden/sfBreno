@@ -12,16 +12,11 @@
     <?php else: ?>
             <p class="center">Não há imagem.</p>
     <?php endif; ?>
-    
+
     <h3>Interessou?</h3>
     <hr/>
     <?php include_component('estate', 'Contato'); ?>
-    
-    <h3>Compartilhe</h3>
-    <hr/>
-    <p>
-        <?php include_partial('global/share'); ?>
-    </p>
+
 </div>
 <div class="grid_4 showDouble">
     <h2><?php echo $estate->titulo ?></h2>
@@ -45,7 +40,7 @@
                         <?php if ($k=="iptu" || $k=="condominio"): ?>
                             R$ <?php echo number_format($estate->$k, 2, ',', '.'); ?>
                         <?php else: ?>
-                            <?php echo $estate->$k ?>    
+                            <?php echo $estate->$k ?>
                         <?php endif ?>
                     </td>
                 </tr>

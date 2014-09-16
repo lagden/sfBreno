@@ -10,14 +10,14 @@ var PublicPath;
 window.addEvent('domready',function()
 {
     ajuda.flashNotice();
-    
+
     var brenoTips = new Tips($$('.brenoTips'),
     {
         className:'toolTip',
         fixed:true,
         offset:{x: 0, y: 16}
     });
-    
+
     var frmAccordionFormResult = $('accordionFormResult');
     if(frmAccordionFormResult)
     {
@@ -33,35 +33,35 @@ window.addEvent('domready',function()
             }
         });
     }
-    
+
     // Formulario de busca de Imoveis e de buca por Referencia
     ajuda.addFormValidation('frmBuscaImoveis',frmEstateSearch.handler,true);
     ajuda.addFormValidation('frmBuscaImoveisRef',frmEstateSearch.handlerRef,true);
     ajuda.addFormValidation('frmContatoImovel',frmEstateSearch.handlerContato,true);
     ajuda.addFormValidation('frmVendaImovel',frmEstateSearch.handlerVenda,true);
-    
+
     // Backend Form Auth
     ajuda.addFormValidation('formValidationLogin',backendFunc.handlerAuth,true);
-    
+
     // Backend Form Validation
     var backendFrm = ajuda.addFormValidation('formValidationGeneral');
-        
+
     // jQuery
     (function($){
-        
+
         PublicPath = ajuda.routes('publicPath');
-        
+
         // Voltar
         $('button.backbutton').click(function(){
             history.back();
         });
-        
+
         // Twitter
         if($('#tweets').get(0)!=undefined) getTwitterFeed("brenohomara", 4, false);
-        
+
         // Init tabs
         $('.tabs').tabs();
-        
+
         // Fancy Bairros
         $('button.showBairro').click(function(){
             // Fancybox
@@ -77,12 +77,12 @@ window.addEvent('domready',function()
                 closeEffect : 'elastic'
             });
         });
-        
+
         // Fancy Bairros
         $('button.closeBairro').click(function(){
             $.fancybox.close();
         });
-        
+
         // Fancy Images
         $(".showImageEstate").fancybox({
             fitToView   : true,
@@ -92,26 +92,26 @@ window.addEvent('domready',function()
             openEffect  : 'elastic',
             closeEffect : 'elastic'
         });
-        
+
         // Ajax Disponibilidade -> Valor
         $('#estate_filters_Disponibilidades').change(function(){
             frmEstateSearch.disponibilidade(this.value);
         }).trigger('change');
-        
+
         // Ajax Sorting
         $('#sort_sorting').change(function(){
             frmEstateSearch.sorting(this.value);
         });
-        
+
         // Paginação
         $('button.paginacao').live('click',function(e){
             var go=$(this).data('pagina');
             if(go) location=go;
         });
-        
+
         // Backend - menu
         $('#topbarBackend').dropdown();
-        
+
         // Backend - Busca
         $('button.limpar').live('click',function(e){
             location=$(this).data('url');
@@ -131,7 +131,7 @@ window.addEvent('domready',function()
         });
 
         SortableList.setSort(jQuery('div#tableList > table.zebra-striped'));
-        
+
         // Backend Deletar Registro
         $('button.deletar').live('click',function(e){
             if(confirm('Deseja remover este registro?'))
@@ -160,7 +160,7 @@ window.addEvent('domready',function()
                 ,"json");
             }
         });
-        
+
         // Backend Tagit
         var tagitFull=$.parseJSON($('#tagit_full_list').html());
         var tagitModel=$.parseJSON($('#tagit_model_list').html());
@@ -174,11 +174,11 @@ window.addEvent('domready',function()
                 allowSpaces:true
             });
         }
-        
+
         // Backend - User
         $('input#user_change:checkbox').bind('click custom',function(){backendFunc.changePasswd(this);});
         $('input#user_change').trigger('custom');
-        
+
         // Backend - Enviar e Editar
         $('input#enviarEditar').click(function(){
             var validado = backendFrm.validate();
@@ -188,7 +188,7 @@ window.addEvent('domready',function()
                 $(this).parent().parent().submit();
             }
         });
-        
+
         // Backend - Carga
         $('button#runCarga').click(function(){
             backendFunc.carga();
@@ -237,7 +237,7 @@ var backendFunc={
         }
         else ajuda.alerta('Erro na resposta.');
     },
-    
+
     changePasswd:function(el)
     {
         var passwd = jQuery('input#user_password');
@@ -308,7 +308,7 @@ var frmEstateSearch={
     {
         (data.success) ? location.reload() : ajuda.alerta('Não foi possível reordenar.');
     },
-    
+
     // Formulario de venda
     handlerVenda:function(bool,el,submit)
     {
@@ -326,7 +326,7 @@ var frmEstateSearch={
         if(data.success) $('frmVendaImovel').reset();
         ajuda.alerta(data.msg);
     },
-    
+
     // Formulario de contato e de interesse
     handlerContato:function(bool,el,submit)
     {
@@ -344,7 +344,7 @@ var frmEstateSearch={
         if(data.success) $('frmContatoImovel').reset();
         ajuda.alerta(data.msg);
     },
-    
+
     // Formulario de referencia
     handlerRef:function(bool,el,submit)
     {
@@ -362,7 +362,7 @@ var frmEstateSearch={
         ajuda.alerta('Imóvel encontrado. Aguarde...');
         (data.success) ? location=data.data.url : ajuda.alerta('Imóvel não encontrado.');
     },
-    
+
     // Formulario de busca
     handler:function(bool,el,submit)
     {
@@ -372,7 +372,7 @@ var frmEstateSearch={
                 .addClass('visuallyhidden')
                 .removeAttr('style')
                 .appendTo('#bairros_inline_content');
-                
+
             el.submit();
         }
     },
@@ -458,97 +458,16 @@ var ajuda={
                 },
                 onFormValidate: func
             });
-            
+
             frmVal.add('validate-currency-real', {
                 errorMsg: 'Digite um valor em dinheiro válido. Exemplo: 1.100,00',
                 test: function(element){
                     return Form.Validator.getValidator('IsEmpty').test(element) || (/^(\d{1,3}(\.\d{3})*|(\d+))(\,\d{2})?$/).test(element.get('value'))
                 }
             });
-            
+
             return frmVal;
         }
         else return false;
     }
 };
-
-
-
-// Twitter
-// JSON-P Twitter fetcher for Octopress
-// (c) Brandon Mathis // MIT License
-
-/* Sky Slavin, Ludopoli. MIT license.  * based on JavaScript Pretty Date * Copyright (c) 2008 John Resig (jquery.com) * Licensed under the MIT license.  */
-function prettyDate(time) {
-    if (navigator.appName === 'Microsoft Internet Explorer') {
-        return "<span>&infin;</span>"; // because IE date parsing isn't fun.
-    }
-    var say = {
-        just_now:    " now",
-        minute_ago:  "1m",
-        minutes_ago: "m",
-        hour_ago:    "1h",
-        hours_ago:   "h",
-        yesterday:   "1d",
-        days_ago:    "d",
-        last_week:   "1w",
-        weeks_ago:   "w"
-    };
-
-    var current_date = new Date(),
-    current_date_time = current_date.getTime(),
-    current_date_full = current_date_time + (1 * 60000),
-    date = new Date(time),
-    diff = ((current_date_full - date.getTime()) / 1000),
-    day_diff = Math.floor(diff / 86400);
-
-    if (isNaN(day_diff) || day_diff < 0) { return "<span>&infin;</span>"; }
-
-    return day_diff === 0 && (
-        diff < 60 && say.just_now ||
-        diff < 120 && say.minute_ago ||
-        diff < 3600 && Math.floor(diff / 60) + say.minutes_ago ||
-        diff < 7200 && say.hour_ago ||
-        diff < 86400 && Math.floor(diff / 3600) + say.hours_ago) ||
-        day_diff === 1 && say.yesterday ||
-        day_diff < 7 && day_diff + say.days_ago ||
-        day_diff === 7 && say.last_week ||
-        day_diff > 7 && Math.ceil(day_diff / 7) + say.weeks_ago;
-}
-
-function linkifyTweet(text, url) {
-    // Linkify urls, usernames, hashtags
-    text = text.replace(/(https?:\/\/)([\w\-:;?&=+.%#\/]+)/gi, '<a href="$1$2">$2</a>')
-    .replace(/(^|\W)@(\w+)/g, '$1<a href="http://twitter.com/$2">@$2</a>')
-    .replace(/(^|\W)#(\w+)/g, '$1<a href="http://search.twitter.com/search?q=%23$2">#$2</a>');
-
-    // Use twitter's api to replace t.co shortened urls with expanded ones.
-    for (var u in url) {
-        if(url[u].expanded_url != null){
-            var shortUrl = new RegExp(url[u].url, 'g');
-            text = text.replace(shortUrl, url[u].expanded_url);
-            var shortUrl = new RegExp(">"+(url[u].url.replace(/https?:\/\//, '')), 'g');
-            text = text.replace(shortUrl, ">"+url[u].display_url);
-        }
-    }
-    return text
-}
-
-function showTwitterFeed(tweets, twitter_user) {
-    var timeline = document.getElementById('tweets'),
-    content = '';
-    
-    jQuery.each(tweets,function(idx,el){
-        content += '<li><a href="http://twitter.com/'+twitter_user+'/status/'+el.id_str+'" class="status">'+prettyDate(el.created_at)+'</a>';
-        content += linkifyTweet(el.text.replace(/\n/g, '<br>'), el.entities.urls)+'</li>';
-    })
-    timeline.innerHTML = content;
-}
-
-function getTwitterFeed(user, count, replies) {
-    count = parseInt(count, 10);
-    jQuery.getJSON(
-        "http://api.twitter.com/1/statuses/user_timeline/" + user + ".json?trim_user=true&count=" + (count) + "&include_entities=1&exclude_replies=" + (replies ? "0" : "1") + "&callback=?",
-        function(data) { showTwitterFeed(data, user); }
-    );
-}
