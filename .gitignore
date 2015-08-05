@@ -1,11 +1,12 @@
 # Rsync
-rsync_exclude.log
+rsync_exclude*
 
 # Framework
 lib/migration
 lib/vendor/symfony
 lib/*/doctrine/base/*
 lib/*/doctrine/*Plugin/base/*
+plugins/*
 web/sf
 data/sql/schema.sql
 test/resources/convert/*

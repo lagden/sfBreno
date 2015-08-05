@@ -1,0 +1,65 @@
+ul.tagit
+{
+  padding: .2em .5em;
+  overflow: auto;
+}
+
+ul.tagit > li
+{
+  position: relative;
+  display: block;
+  float: left;
+  margin: 2px 5px 2px 0;
+}
+
+ul.tagit > li.tagit-choice
+{
+  padding: .2em 18px .2em .5em;
+}
+
+ul.tagit > li.tagit-new
+{
+  padding: 2px 4px 1px 0;
+}
+
+ul.tagit > li.tagit-choice > input
+{
+  display: block;
+  float: left;
+  margin: 2px 5px 2px 0;
+}
+
+ul.tagit > li.tagit-choice > a.tagLabel
+{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul.tagit > li.tagit-choice > a.close
+{
+  cursor: pointer;
+}
+
+ul.tagit > li.tagit-choice > a.ui-icon
+{
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  right: .1em;
+}
+
+ul.tagit > li > input[type="text"]
+{
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  border-color: #C6C6C6;
+  background-color: inherit;
+  color: #333333;
+  outline: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
