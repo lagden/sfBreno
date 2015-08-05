@@ -82,7 +82,7 @@ SectionTag:
   relations:
     Tag: { local: tag_id, onDelete: CASCADE }
     Section: { local: section_id, onDelete: CASCADE }
-    
+
 ContentTag:
   columns:
     tag_id: { type: bigint, primary: true }
@@ -90,7 +90,7 @@ ContentTag:
   relations:
     Tag: { local: tag_id, onDelete: CASCADE }
     Content: { local: content_id, onDelete: CASCADE }
-    
+
 EstateTag:
   columns:
     tag_id: { type: bigint, primary: true }
@@ -98,7 +98,7 @@ EstateTag:
   relations:
     Tag: { local: tag_id, onDelete: CASCADE }
     Estate: { local: estate_id, onDelete: CASCADE }
-    
+
 EstateDisponibilidade:
   columns:
     disponibilidade_id: { type: bigint, primary: true }

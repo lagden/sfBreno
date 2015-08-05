@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 THIS=$(basename $0)
 DIR="$( cd -P "$( dirname "$0" )" && pwd )"
@@ -80,6 +80,31 @@ fi
 # Go
 cd $CURR_FOLDER
 
+plugins="$CURR_FOLDER/plugins"
+plugin_sortable="$CURR_FOLDER/plugins/csDoctrineActAsSortablePlugin/"
+
+if [ ! -d $plugins ]; then
+    mkdir $plugins
+fi
+
+if [ ! -d $plugin_sortable ]
+then
+    # downloading
+    echo "Downloading csDoctrineActAsSortablePlugin/"
+    curl -o csDoctrineActAsSortablePlugin.tar.gz 'https://codeload.github.com/bshaffer/csDoctrineActAsSortablePlugin/tar.gz/master'
+
+    echo "Extracting..."
+    tar xzf csDoctrineActAsSortablePlugin.tar.gz
+    mv csDoctrineActAsSortablePlugin-master $plugin_sortable
+    rm csDoctrineActAsSortablePlugin.tar.gz
+
+    cd $plugin_sortable
+    find ./ -type d -print0 |xargs -0 chmod 755 && find ./ -type f -print0 |xargs -0 chmod 644
+fi
+
+# Go
+cd $CURR_FOLDER
+
 # generate project
 if [ ! -d "$CURR_FOLDER/config" ] && [ $IGNORE_P = 0 ]
 then
@@ -112,15 +137,15 @@ fi
 cd $CURR_FOLDER
 
 # linking the sf web and dev resources
-folders="web"
+folders="dev"
 for folder in $folders
 do
     if [ ! -e $folder/sf ] && [ -d $folder ]
     then
         echo "Creating link to /sf resources"
-        cd $folder
-        ln -sf ../lib/vendor/symfony/data/web/sf sf
+        ln -sf ../lib/vendor/symfony/data/web/sf $folder/sf
     fi
 done
 
 exit
+

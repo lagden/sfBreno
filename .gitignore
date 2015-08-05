@@ -21,9 +21,7 @@ web/uploads/*
 web/tiny/*
 web/estates/*
 web/flickr/*
-!web/uploads/.htaccess
-!web/tiny/.htaccess
-!web/estates/.htaccess
+!.htaccess
 
 /vendor/*
 composer.lock
