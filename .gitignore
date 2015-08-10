@@ -57,3 +57,4 @@ lib-cov
 *.out
 *.pid
 *.gz
+data/brenosf1.db

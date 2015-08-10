@@ -56,34 +56,35 @@ class uploadActions extends sfActions
             $form->bind(array('estate_id'=>$estate_id),$request->getFiles());
         }
 
-        $response=array(
+        $response = [
             'jsonrpc'=>'2.0',
-            'error'=>array(
+            'error'=>[
                 'code'=>'103',
                 'message'=>'Failed to move uploaded file.',
-            ),
+            ],
             'success' => false,
             'auth' => true,
             'data' => null,
-        );
+        ];
 
-        if ($form->isValid())
-        {
-            try
-            {
-                $image = $form->save();
-                // Response
-                unset($response['error']);
-                $response['success']=true;
-                $response['data']=array('file'=>$image->square->file,'id'=>$image->id,'destaque'=>$image->destaque);
-                return $this->renderText(json_encode($response));
-            }
-            catch (Exception $e)
-            {
-                $response['error']['code']='105';
-                $response['error']['message']='Failed to save on database.';
-                return $this->renderText(json_encode($response));
-            }
+        if ($form->isValid()) {
+          $image = $form->save();
+          if ($image) {
+            unset($response['error']);
+
+            $response['success']=true;
+            $response['data'] = [
+              'id'=>$image->id,
+              'file'=>$image->formato('s'),
+              'file2x'=>$image->formato('s2x'),
+              'destaque'=>$image->destaque,
+            ];
+            return $this->renderText(json_encode($response));
+          } else {
+            $response['error']['code']='105';
+            $response['error']['message']='Failed to save on database.';
+            return $this->renderText(json_encode($response));
+          }
         }
         return $this->renderText(json_encode($response));
     }
@@ -95,9 +96,15 @@ class uploadActions extends sfActions
 
         // Verifica a sessão
         $auth = $this->getUser()->isAuthenticated();
-        if(!$auth) return $this->renderText("end_of_session");
+        if(!$auth)
+          return $this->renderText("end_of_session");
 
-        return $this->renderPartial('global/file',array('id' => $request['id'],'file'=>$request['file'],'destaque'=>$request['destaque']));
+        return $this->renderPartial('global/file', [
+          'id' => $request['id'],
+          'file' => $request['file'],
+          'file2x' => $request['file2x'],
+          'destaque' => $request['destaque']
+        ]);
     }
 
     // Ajax Remove File

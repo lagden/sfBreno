@@ -1,18 +1,24 @@
 <?php
+namespace lagden;
+
+use sfConfig as sfConfig;
+use Doctrine_Inflector as Doctrine_Inflector;
+
 class GetFile
 {
     static public function find($dir,$default)
     {
         $file = glob($dir);
-        if(count($file) > 0)$find = basename($file[0]);
-        else $find = $default;
+        if(count($file) > 0)
+          return basename($file[0]);
 
-        return $find;
+        return $default;
     }
 
     static public function read($path,$file)
     {
-        if(is_dir($path)) return static::readFile($path.$file);
+        if(is_dir($path))
+          return static::readFile($path.$file);
         return false;
     }
 
@@ -40,19 +46,7 @@ class GetFile
         fclose($handle);
     }
 
-    static public function dir()
-    {
-        $ds=DIRECTORY_SEPARATOR;
-        return sfConfig::get('sf_data_dir')."{$ds}files{$ds}";
-    }
-
-    static public function showfile($file)
-    {
-        $pathFile=self::dir().$file;
-        $content=GetFile::readFile($pathFile);
-        return $content;
-    }
-
+    // Retorna o Mime Type do arquivo
     static public function getMime($file)
     {
         $finfo = finfo_open(FILEINFO_MIME_TYPE);
@@ -62,11 +56,14 @@ class GetFile
     }
 
     // Limpa o diretorio
-    static public function cleanDir($recordDir,$clean='{*}')
+    static public function cleanDir($recordDir, $clean='{*}')
     {
-        if(is_dir($recordDir)==false)return false;
+        if(is_dir($recordDir)==false)
+          return false;
 
-        $itens = glob("{$recordDir}{$clean}",GLOB_BRACE);
+        $recordDir = preg_replace('/\/$/', '', $recordDir);
+
+        $itens = glob("{$recordDir}/{$clean}",GLOB_BRACE);
         if($itens)
         {
             foreach($itens as $item)
@@ -79,18 +76,25 @@ class GetFile
         }
     }
 
-    // gera o nome do arquivo
+    // Retorna o arquivo ou false
+    static public function hasFile($file)
+    {
+        if(is_file($file) && file_exists($file)) return $file;
+        return false;
+    }
+
+    // Gera o nome do arquivo
     static public function generateFilename($validator)
     {
-        $ds=DIRECTORY_SEPARATOR;
-        $file=$validator->getOriginalName();
-        $ext=$validator->getOriginalExtension();
-        $base=Doctrine_Inflector::urlize(basename($file,$ext));
-        $rnd=mt_rand();
+        $ds = DIRECTORY_SEPARATOR;
+        $file = $validator->getOriginalName();
+        $ext = $validator->getOriginalExtension();
+        $base = Doctrine_Inflector::urlize(basename($file,$ext));
+        $rnd = mt_rand();
         return "{$base}_{$rnd}{$ext}";
     }
 
-    // path web/upload/
+    // Retorna: web/upload/
     static public function getUploadBasePath()
     {
         $ds=DIRECTORY_SEPARATOR;

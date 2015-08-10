@@ -57,7 +57,7 @@ var Uploaded={
     {
         if(o.success)
         {
-            jQuery.post(jQuery('#uploader-container').data('add-url'),{"id":o.data.id,"file":o.data.file,"destaque":o.data.destaque},
+            jQuery.post(jQuery('#uploader-container').data('add-url'),{"id":o.data.id,"file":o.data.file,"file2x":o.data.file2x,"destaque":o.data.destaque},
             function(r)
             {
                 if(r)

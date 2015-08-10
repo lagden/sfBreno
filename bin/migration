@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 THIS=$(basename $0)
 DIR="$( cd -P "$( dirname "$0" )" && pwd )"
@@ -98,7 +98,7 @@ if [[ $keypress == "s" ]]; then
         exit
     fi
 
-    echo 
+    echo
     echo 'Migração concluída.'
 fi
 

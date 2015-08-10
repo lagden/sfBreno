@@ -5,12 +5,6 @@ User:
     login: lagden
     password: 123
     phone: 11 1111-1111
-  user_2:
-    name: Sabrina
-    email: binamack@gmail.com
-    login: sabrina
-    password: 123
-    phone: 22 2222-2222
 
 City:
   city_1:
@@ -152,3 +146,44 @@ Complemento:
       name: Área de Serviço
   complemento_40:
       name: Garagem Fechada
+
+Format:
+  -
+    id: 1
+    name: "Original"
+  -
+    id: 2
+    name: "Large"
+  -
+    id: 3
+    name: "Medium1"
+  -
+    id: 4
+    name: "Medium2"
+  -
+    id: 5
+    name: "Small"
+  -
+    id: 6
+    name: "Thumbnail"
+  -
+    id: 7
+    name: "Square"
+  -
+    id: 8
+    name: "Banner"
+  -
+    id: 9
+    name: "S"
+  -
+    id: 10
+    name: "S2x"
+  -
+    id: 11
+    name: "T"
+  -
+    id: 12
+    name: "T2x"
+  -
+    id: 13
+    name: "B"

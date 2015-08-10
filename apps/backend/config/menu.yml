@@ -2,20 +2,20 @@ menu:
   user:
     route: user
     label: Usuário
-  site:
-    route: false
-    label: Site
-    class: dropdown
-    a_class: dropdown-toggle
-    children: 
-      - { route: section, label: Seção }
-      - { route: content, label: Conteúdo }
+  # site:
+  #   route: false
+  #   label: Site
+  #   class: dropdown
+  #   a_class: dropdown-toggle
+  #   children:
+  #     - { route: section, label: Seção }
+  #     - { route: content, label: Conteúdo }
   estate:
     route: false
     label: Imóveis e informações
     class: dropdown
     a_class: dropdown-toggle
-    children: 
+    children:
       - { route: estate, label: Cadastro }
       - { route: false, class: divider }
       - { route: city, label: Cidade }
@@ -24,9 +24,9 @@ menu:
       - { route: type, label: Tipo do imóvel }
       - { route: disponibilidade, label: Disponibilidade }
       - { route: complemento, label: Complemento }
-  tag:
-    route: tag
-    label: Tag
-  carga:
-    route: carga
-    label: Carga
+  # tag:
+  #   route: tag
+  #   label: Tag
+  # carga:
+  #   route: carga
+  #   label: Carga

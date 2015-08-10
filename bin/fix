@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 THIS=$(basename $0)
 DIR="$( cd -P "$( dirname "$0" )" && pwd )"
@@ -16,12 +16,12 @@ while getopts "s" OPT; do
     esac
 done
 
-if [[ ! $keypress ]]; then
+if [ ! $keypress ]; then
     read -s -n1 -p "Isso irá apagar todos os arquivos das pastas log, cache e tmp!! Tem certeza? (s/n): " keypress
     echo;
 fi
 
-if [[ $keypress == "s" ]]; then
+if [ $keypress == "s" ]; then
     `rm -rf log/*`
     `rm -rf cache/*`
 
@@ -29,6 +29,8 @@ if [[ $keypress == "s" ]]; then
 
     CMD="./symfony"
     $CMD cc -q
+    $CMD project:optimize teleport dev
+    $CMD project:optimize teleport prod
 fi
 
 exit

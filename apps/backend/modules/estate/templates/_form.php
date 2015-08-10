@@ -12,7 +12,7 @@ $ignores = array('id','tags_list','ativo','destaque');
     <?php else: ?>
         <?php array_push($ignores,'change') ?>
     <?php endif; ?>
-    
+
     <?php echo $form->renderHiddenFields(); ?>
     <?php echo $form->renderGlobalErrors(); ?>
     <?php
@@ -36,7 +36,8 @@ $ignores = array('id','tags_list','ativo','destaque');
         }
     endforeach;
     ?>
-    
+
+    <?php /*
     <div class="clearfix">
         <div class="hidden" id="tagit_full_list"><?php echo Tags::lista(); ?></div>
         <div class="hidden" id="tagit_model_list"><?php echo Tags::modelo(sfConfig::get('table_model'),$currModel->getId()); ?></div>
@@ -45,7 +46,8 @@ $ignores = array('id','tags_list','ativo','destaque');
             <ul id="form_tags_list" data-name="<?php echo $form['tags_list']->renderName() ?>"></ul>
         </div>
     </div>
-    
+    */ ?>
+
     <?php if(!$currModel->isNew()): ?>
         <hr/>
         <div class="clearfix">
@@ -55,19 +57,24 @@ $ignores = array('id','tags_list','ativo','destaque');
             data-plupload-swf-url="<?php echo javascript_path('vendor/plupload/plupload.flash.swf',array('absolute'=>true)) ?>"
             data-plupload-estate="<?php echo $form['id']->getValue(); ?>"
             data-plupload-rnd="<?php echo mt_rand(); ?>"
-            data-add-url="<?php echo url_for('upload_add',array(),array('absolute'=>true)) ?>"
+            data-add-url="<?php echo url_for('upload_add',[],['absolute'=>true]) ?>"
             ><p>Seu navegador não tem suporte para HTML5, Flash.</p></div>
         </div>
         <h2>Imagens <small>Faça o upload e selecione uma como destaque(a imagem em destaque ficará com a borda azul)</small></h2>
         <div id="imageFields" class="clearfix">
             <?php if ($currModel->Images->count()>0): ?>
                 <?php foreach ($currModel->Images as $image): ?>
-                    <?php include_partial('global/file',array('id' => $image->id,'file'=>$image->square->file,'destaque'=>$image->destaque)); ?>
+                    <?php include_partial('global/file',[
+                        'id' => $image->id,
+                        'file'=>$image->formato('s'),
+                        'file2x'=>$image->formato('s2x'),
+                        'destaque'=>$image->destaque
+                      ]); ?>
                 <?php endforeach ?>
             <?php endif ?>
         </div>
     <?php endif; ?>
-    
+
     <div class="actions">
         <?php echo tag('input', array('id'=>'enviarEditar','type' => 'button', 'class' => 'btn primary', 'value' => 'Enviar e Editar')) ?>
         <?php echo tag('input', array('type' => 'submit', 'class' => 'btn primary', 'value' => 'Enviar')) ?>

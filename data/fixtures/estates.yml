@@ -1,32 +1,4 @@
 Estate:
-  estate_209:
-    titulo: "Apartamento Duplex com 1 dormitório próximo ao Mackenzie"
-    referencia: 209
-    Type: type_1
-    Neighborhood: neighborhood_3
-    Disponibilidades: [disponibilidade_1]
-    area_util: 70
-    area_total: 80
-    quartos: 1
-    banheiros: 2
-    vagas: 2
-    condominio: 350.00
-    price_sale: 540000.00
-    price_rent: 0.00
-    descricao: "Santa Cecilia NOVO, Apartamento Duplex, Living com terraço, Lavabo, Cozinha Americana, 1 Suite com closet, 2 vagas, proximo Mackenzie, Santa Casa e Metro!!! \r\n\r\n"
-    seo: ""
-    destaque_chamada: "Lindo apartamento Duplex Novo, predio com lazer total prox do Mackenzie, Metro e Santa Casa!"
-    destaque: 0
-    ordem: 0
-    ativo: 1
-    # Images:
-    #   -
-    #     file: ../flickr/AA209/5fcbdb9e259321f2f90c982346758738.jpg
-    #     external: 1
-    #   -
-    #     file: ../flickr/AA209/650fb27c58e3f10cafe9bca52dc53fef.jpg
-    #     external: 1
-
   estate_217:
     titulo: "Apartamento com 3 dormitórios em Higienópolis Reformado"
     referencia: 217

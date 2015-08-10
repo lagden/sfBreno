@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 THIS=$(basename $0)
 DIR="$( cd -P "$( dirname "$0" )" && pwd )"
@@ -9,12 +9,12 @@ CURR_FOLDER=`pwd`
 # Go
 cd $CURR_FOLDER
 
-load_fixtures=true
+load_fixtures=false
 
 while getopts "sl" OPT; do
     case $OPT in
     s) keypress="s";;
-    l) load_fixtures=false;; # not load fixtures
+    l) load_fixtures=true;; # load fixtures
     \?) keypress=false;;
     esac
 done
@@ -40,7 +40,7 @@ if [[ $keypress == "s" ]]; then
 
     if [[ $load_fixtures == true ]]; then
         $CMD doctrine:build --all --and-load --no-confirmation
-    else    
+    else
         $CMD doctrine:build --all --no-confirmation
     fi
 fi

@@ -1,0 +1,88 @@
+#!/bin/bash
+
+THIS=$(basename $0)
+DIR="$( cd -P "$( dirname "$0" )" && pwd )"
+cd $DIR
+cd ..
+CURR_FOLDER=`pwd`
+
+join() {
+  local IFS="$1"
+  shift
+  echo "$*"
+}
+
+# Result
+addshow() {
+  if test -e "${1}"; then
+    mv $1 $2
+    R+=("{\"success\": true, \"file\": \"$2\"}")
+  else
+    R+=("{\"success\": false, \"file\": \"$2\"}")
+  fi
+}
+
+smartresize() {
+  local filename=$(basename $1)
+  local prefix=${filename%.*}
+  local ext=${filename##*.}
+  local out="${4}.${ext}"
+  local CMD="mogrify"
+
+  if test "${3}" != "false"; then
+    local extent="-extent $3"
+  else
+    local extent="-quality 82"
+  fi
+
+  $CMD \
+    -filter Triangle \
+    -define filter:support=2 \
+    -thumbnail $2 \
+    $extent \
+    -auto-orient \
+    -unsharp 0.25x0.08+8.3+0.045 \
+    -dither None \
+    -posterize 136 \
+    -define jpeg:fancy-upsampling=off \
+    -define png:compression-filter=5 \
+    -define png:compression-level=9 \
+    -define png:compression-strategy=1 \
+    -define png:exclude-chunk=all \
+    -interlace none \
+    -gravity center \
+    -format $out \
+    -colorspace sRGB $1
+
+  addshow "${5}/${prefix}.${out}" "${5}/${prefix}-${out}"
+}
+
+R=()
+file=$1
+outdir=$2
+names=( "s" "s2x" "t" "t2x" "b")
+sizes=( "x100^" "x200^" "300x300" "600x600" "1200x1200")
+extents=( "100x100" "200x200" "false" "false"  "false")
+
+# # For Fun
+# hasParallel=$(which parallel)
+# if test -e "${hasParallel}"; then
+#   export -f addshow
+#   export -f smartresize
+#   parallel smartresize ::: "${file}" ::: 300 150 200 ::: "${outdir}"
+# else
+#   for size in $sizes
+#   do
+#     smartresize $file $size $outdir
+#   done
+# fi
+
+for index in ${!sizes[@]}
+do
+  smartresize $file ${sizes[index]} ${extents[index]} ${names[index]} $outdir
+done
+
+r=$(join , "${R[@]}")
+echo "[${r}]"
+
+exit
