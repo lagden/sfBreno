@@ -187,3 +187,6 @@ Format:
   -
     id: 13
     name: "B"
+  -
+    id: 14
+    name: "B2x"

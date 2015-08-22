@@ -1,31 +1,18 @@
-AddDefaultCharset utf-8
-AddCharset utf-8 .css .js .xml .json .rss .atom
-
-# ETag removal
-<IfModule mod_headers.c>
-  Header unset ETag
-</IfModule>
-
-<IfModule mod_autoindex.c>
-  Options -Indexes
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.+)\.(\d+)\.(json|bmp|css|cur|gif|ico|jpe?g|js|png|svgz?|webp)$ $1.$3 [L]
 </IfModule>
 
 # Symfony 1.4
 <IfModule mod_rewrite.c>
 
-  Options +FollowSymlinks
-  RewriteEngine On
+  # Options +FollowSymlinks
+  # RewriteEngine On
 
   RewriteCond %{SCRIPT_FILENAME} -d
   RewriteCond %{SCRIPT_FILENAME} -f
   RewriteRule "(^|/)\." - [F]
-
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteRule ^(.+)\.(\d+)\.(json|bmp|css|cur|gif|ico|jpe?g|js|png|svgz?|webp)$ $1.$3 [L]
-
-  # we check if the .html version is here (caching)
-  RewriteRule ^$ index.html [QSA]
-  RewriteRule ^([^.]+)$ $1.html [QSA]
 
   # admin.breno
   RewriteCond %{REQUEST_FILENAME} !-f
@@ -33,15 +20,11 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
   RewriteCond %{HTTP_HOST} ^admin.breno(.*)$ [NC]
   RewriteRule ^(.*)$ backend_dev.php [QSA,L]
 
+  # we check if the .html version is here (caching)
+  RewriteRule ^$ index.html [QSA]
+  RewriteRule ^([^.]+)$ $1.html [QSA]
+
   # no, so we redirect to our front web controller
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteRule ^(.*)$ index.php [QSA,L]
-</IfModule>
-
-# PHP
-<IfModule php5_module>
-  php_value session.name BrenoHomara
-  php_value session.cookie_httponly true
-  php_flag display_errors On
-  php_flag display_startup_errors On
 </IfModule>

@@ -21,7 +21,7 @@ class Image extends BaseImage
     $fmts = Doctrine_Core::getTable('Format')->findAll();
     if ($fmts->count()==0) {
       $fmts = new Doctrine_Collection('Format');
-      $formats = array('S','S2x','T','T2x','B');
+      $formats = array('S','S2x','T','T2x','B','B2x');
       foreach ($formats as $format) {
         $f = new Format();
         $f->name=$format;
@@ -108,6 +108,7 @@ class Image extends BaseImage
   public function formato($type)
   {
     $formats = [
+      'b2x' => 'large',
       'b'   => 'large',
       't2x' => 'medium1',
       't'   => 'medium2',

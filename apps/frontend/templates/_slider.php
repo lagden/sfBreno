@@ -1,21 +1,16 @@
-<div class="flexslider">
-    <ul class="slides">
-        <?php foreach ($destaques as $destaque): ?>
-            <?php //$currImg = ($destaque->image_destaque) ? "/estates/{$destaque->image_destaque->large->file}" : false; ?>
-            <?php $currImg = ($destaque->image_destaque) ? "/estates/{$destaque->image_destaque->banner->file}" : false; ?>
-            <?php $qs=array('slug'=>$destaque->slug); ?>
-            <?php if ($currImg): ?>
-                <li>
-                    <figure>
-                        <?php echo link_to(image_tag("{$currImg}",array('alt'=>$destaque->titulo)),'estate_show',$qs); ?>
-                        <?php if ($destaque->destaque_chamada): ?>
-                            <figcaption class="flex-caption">
-                                <p><?php echo link_to("{$destaque->destaque_chamada}",'estate_show',$qs); ?></p>
-                            </figcaption>
-                        <?php endif ?>
-                    </figure>
-                </li>
-            <?php endif ?>
-        <?php endforeach ?>
-    </ul>
+<div id="homeGallery" class="gallery home-gallery">
+	<div id="staticBannerHome" class="static-banner--home">Some text</div>
+	<?php foreach ($destaques as $destaque): ?>
+		<?php
+		$img1x = $destaque->image_destaque->formato('b');
+		$img2x = $destaque->image_destaque->formato('b2x');
+		$qs = ['slug'=>$destaque->slug];
+		$img = "<img src=\"{$img1x}\" srcset=\"{$img1x} 1x, {$img2x} 2x\" alt=\"{$qs['slug']}\">";
+		$link = link_to($img, 'estate_show', $qs);
+		?>
+		<div class="gallery-cell">
+			<?php echo $link ?>
+			<p class="gallery__caption"><?php echo link_to("{$destaque->destaque_chamada}", 'estate_show', $qs); ?></p>
+		</div>
+	<?php endforeach ?>
 </div>

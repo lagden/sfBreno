@@ -1,0 +1,14 @@
+{
+  "directory": "web/js2/lib",
+  "color": true,
+  "analytics": false,
+  "timeout": 120000,
+  "registry": {
+    "search": [
+      "https://bower.herokuapp.com"
+    ]
+  },
+  "scripts": {
+    "postinstall": "rm -rf web/js2/lib/jquery"
+  }
+}

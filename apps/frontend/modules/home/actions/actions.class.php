@@ -15,9 +15,8 @@ class homeActions extends sfActions
         $estateTable = Doctrine_Core::getTable('Estate');
         $this->estates = $estateTable->getRnd(12)->execute();
         $this->destaques = $estateTable->getDestaques()->execute();
-        
+
         // Helper
-        $this->getContext()->getConfiguration()->loadHelpers('Text');
         $this->adminfo = Doctrine_Core::getTable('Section')->findOneBySlug('administracao-de-imoveis-e-servicos');
     }
 }

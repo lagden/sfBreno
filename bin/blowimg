@@ -61,7 +61,7 @@ R=()
 file=$1
 outdir=$2
 names=( "s" "s2x" "t" "t2x" "b")
-sizes=( "x100^" "x200^" "300x300" "600x600" "1200x1200")
+sizes=( "x100^" "x200^" "300x300" "600x600" "1200x1200" "1800x1800")
 extents=( "100x100" "200x200" "false" "false"  "false")
 
 # # For Fun

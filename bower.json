@@ -1,0 +1,8 @@
+{
+  "name": "breno-site",
+  "private": true,
+  "dependencies": {
+    "mout": "~0.11.0",
+    "flickity": "~1.1.0"
+  }
+}

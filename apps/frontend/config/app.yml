@@ -1,20 +1,7 @@
-# all:
-#   .array:
-#     creditcards:
-#       fake:             false
-#       visa:             true
-#       americanexpress:  true
-
-# [php]
-# print_r(sfConfig::get('app_creditcards'));
-#
-# Array(
-#   [fake] => false
-#   [visa] => true
-#   [americanexpress] => true
-# )
-
 all:
+  name: 'Breno Homara Imóveis'
+  title: 'Apartamentos em Higienópolis - Breno Homara Imóveis'
+  cache_version: '0.1.0'
   seo: 'Apartamentos à venda em Higienópolis e Santa Cecília'
   master_email: breno@brenohomaraimoveis.com.br # colocar de acordo com o Swift_SmtpTransport
   send:
@@ -40,4 +27,4 @@ all:
       endereco: 'Rua Baronesa de Itú, 275 | Higienópolis | São Paulo | 01231-001'
       telefone: '(11) 3667-0124 ou (11) 3667-9756'
       dev: 'Lagden'
-      devsite: 'http://lagden.github.com/about/'
+      devsite: 'http://lagden.in'

@@ -1,13 +1,12 @@
-<header>
-    <hgroup>
-        <h1><?php echo sfConfig::get('title_site',$sf_response->getTitle()) ?></h1>
-        <h2><?php echo sfConfig::get('seo_site',sfConfig::get('app_seo',"Apartamentos à venda em Higienópolis e Santa Cecília")) ?></h2>
-    </hgroup>
+<header id="siteHeader" class="header-bg">
+	<h1 class="header__title">
+		<svg class="logo-breno">
+			<use xlink:href="#custom_breno-wide"><?php echo sfConfig::get('title_site',$sf_response->getTitle()) ?></use>
+		</svg>
+	</h1>
+	<?php include_component('home', 'Menu', ['css'=>'nav--header', 'sufix'=>'Header']); ?>
+	<div class="burger-bl">
+		<button id="burger" type="button" class="burger close"><span class="burger__icon"></span></button>
+	</div>
 </header>
-
-<nav>
-    <div class="wrapper">
-        <?php echo link_to(image_tag('BrenoHomara.png',array('alt'=>'')),'homepage'); ?>
-        <?php include_component('home', 'Menu'); ?>
-    </div>
-</nav>
+<?php include_component('home', 'Menu', ['css'=>'nav--out', 'sufix'=>'Out']); ?>

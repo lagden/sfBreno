@@ -1,0 +1,45 @@
+$badge-font-size = 12px
+$badge-color = white
+$badge-color-inverse = green
+$badge-background = green
+$badge-background-inverse = rgba(white, 0.2)
+$badge-size = 22px;
+$badge-padding = 2px;
+
+.mdl-badge
+  position: relative
+  white-space: nowrap
+  margin-right: ($badge-size + $badge-padding)
+
+  &:not([data-badge])
+    margin-right: auto
+
+  &[data-badge]:after
+    content: attr(data-badge)
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-content: center
+    align-items: center
+    position: absolute
+    top: -($badge-size / 2)
+    right: -($badge-size + $badge-padding)
+    font-family: $preferred_font
+    font-weight: 600
+    font-size: $badge-font-size
+    width: $badge-size
+    height: $badge-size
+    border-radius : 50%
+    background: $badge-background
+    color: $badge-color
+
+    .mdl-button &
+      top: -10px
+      right: -5px
+
+  &.mdl-badge--no-background
+    &[data-badge]:after
+      color: $badge-color-inverse
+      background: $badge-background-inverse
+      box-shadow: 0 0 1px gray

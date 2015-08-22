@@ -56,7 +56,7 @@ estate_show:
   param: { module: estate, action: show }
   requirements:
     sf_method: [GET]
-    
+
 # Routes do site antigo (Evitar erros)
 estate_old_busca:
   url: /busca
@@ -69,7 +69,7 @@ estate_old_page:
   param: { module: estate, action: index }
   requirements:
     sf_method: [GET]
-    
+
 estate_old_show:
   url: /show/:slug
   param: { module: estate, action: show }

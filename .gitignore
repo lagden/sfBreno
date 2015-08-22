@@ -9,6 +9,7 @@ lib/*/doctrine/*Plugin/base/*
 plugins/*
 web/sf
 data/sql/schema.sql
+data/brenosf1.db
 test/resources/convert/*
 
 # Project files
@@ -27,7 +28,14 @@ web/flickr/*
 /vendor/*
 composer.lock
 
-npm-debug.log
+/bower
+/node_modules
+/web/assets
+/web/css2
+/web/js2
+/es6/lib
+*.lock
+*.log
 
 # Others
 cgi-bin
@@ -57,4 +65,4 @@ lib-cov
 *.out
 *.pid
 *.gz
-data/brenosf1.db
+

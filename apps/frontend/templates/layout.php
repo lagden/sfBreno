@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="format-detection" content="telephone=no">
+		<?php
+		// Cache version
+		$cacheVersion = '.' . implode('', explode('.',sfConfig::get('app_cache_version')));
+		// $cacheVersion = '';
+		$neverCacheVersion = mt_rand();
+		?>
 
-    <?php include_http_metas() ?>
-    <?php include_metas() ?>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Breno Homara Imóveis é uma imobiliária localizada no bairro de Higienópolis que fica na região central de São Paulo. Temos diversos imóveis para venda. Apartamentos de 01, 02, 03, 04 ou mais dormitórios. Apartamentos com súites. Oferta de Imóveis em edifícios que possuem área de lazer. Apartamentos à venda em Higienópolis e Santa Cecília que possuem sacada e ou terraço.">
+		<meta name="keywords" content="apartamento, higienópolis, higienopolis, apartamentos em higienópolis, Breno, Homara, Imóveis, imóvel em higienopolis, venda imóveis, vende-se imóvel, imoveis, casa, apartamento, prédio, cobertura, mansão, alto padrão, fotos, pacaembu, santa cecilia, santa cecília, compra, venda, aluguel, locação, negociação, perdizes, são paulo, sao paulo, imóveis em são paulo, locação higienopolis, venda higienópolis, apartamento em higienópolis, apartamento em sao paulo, apartamento em são paulo, classificados, classificados de imóveis, imóveis, imovel, imoveis, casa, apartamento">
+		<meta name="google-site-verification" content="ku7lXLQ8RXmHBPV9uR1ieE-CmIca_cuy2VDPEGAziFs">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title><?php echo sfConfig::get('title', Helper::getTitle()) ?></title>
 
-    <!-- Google Plus -->
-    <meta itemprop="name" content="Compre ou alugue um imóvel">
-    <meta itemprop="description" content="Busca de imóveis em Higienópolis para comprar ou alugar.">
+		<?php /* <!-- Add to homescreen --> */ ?>
+		<link rel="manifest" href="<?php echo public_path("/manifest{$cacheVersion}.json") ?>">
 
-    <?php include_title() ?>
-    <?php include_stylesheets() ?>
+		<?php /* <!-- Add to homescreen for Safari on iOS --> */ ?>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="<?php echo  sfConfig::get('app_name', 'Nimble'); ?>">
+		<link rel="apple-touch-icon-precomposed" href="<?php echo public_path("/images/touch/apple-touch-icon-precomposed{$cacheVersion}.png") ?>">
 
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo public_path('/favicon.ico') ?>">
+		<?php /* <!-- Tile icon for Win8 (144x144 + tile color) --> */ ?>
+		<meta name="msapplication-TileImage" content="<?php echo public_path("/images/touch/ms-touch-icon-144x144-precomposed{$cacheVersion}.png") ?>">
+		<meta name="msapplication-TileColor" content="#3372DF">
+
+		<meta name="theme-color" content="#3372DF">
+
+		<!-- Google Plus -->
+		<meta itemprop="name" content="Compre ou alugue um imóvel">
+		<meta itemprop="description" content="Busca de imóveis em Higienópolis para comprar ou alugar.">
+
+		<link rel="icon" href="<?php echo public_path("/favicon{$cacheVersion}.ico") ?>">
+
+		<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+		<link href="<?php echo public_path("/js2/lib/flickity/dist/flickity.min{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">
+		<link href="<?php echo public_path("/css2/app{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript">
+			'use strict';
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-22331976-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
 </head>
 <body>
-
-
-    <?php include_partial('global/header'); ?>
-    <?php echo $sf_content ?>
-    <?php include_partial('global/footer'); ?>
-
-    <?php include_javascripts() ?>
-
-    <!--[if (gte IE 6)&(lte IE 8)]><?php echo javascript_include_tag('vendor/libs/selectivizr.js'); ?><![endif]-->
-
-    <script>
-        // Google Analytics
-        var _gaq=[['_setAccount','UA-22331976-1'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
+		<?php include_partial('global/header'); ?>
+		<main id="siteMain" role="main">
+			<?php echo $sf_content ?>
+		</main>
+		<?php /* include_partial('global/footer'); */ ?>
+		<script async src="<?php echo public_path("/js2/lib/require{$cacheVersion}.js") ?>" data-main="<?php echo public_path("/js2/app") ?>"></script>
 </body>
 </html>

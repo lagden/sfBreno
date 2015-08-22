@@ -2,8 +2,8 @@
 <article>
     <div class="efeito">
         <?php
-        $currImg = ($estate->image_destaque) ? "/estates/{$estate->image_destaque->small->file}" : 'assets/noimage.gif';
-        echo link_to(image_tag("{$currImg}",array('alt'=>$estate->titulo)),'estate_show',$qs,array('class'=>'img'));
+        // $currImg = ($estate->image_destaque) ? "/estates/{$estate->image_destaque->small->file}" : 'assets/noimage.gif';
+        // echo link_to(image_tag("{$currImg}",array('alt'=>$estate->titulo)),'estate_show',$qs,array('class'=>'img'));
         ?>
         <header>
             <h3><?php echo link_to("{$estate->titulo}",'estate_show',$qs); ?></h3>
@@ -57,12 +57,12 @@
                         $label="Valor para compra";
                         $value="{$estate->ValorVenda}";
                         break;
-                        
+
                         case 2:
                         $label="Valor para locação";
                         $value="{$estate->ValorAluga}";
                         break;
-                        
+
                         default:
                         $label=$value=false;
                     }

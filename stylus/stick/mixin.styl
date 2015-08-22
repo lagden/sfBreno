@@ -1,0 +1,53 @@
+// Clearfix
+cf()
+  &:after
+    content ""
+    display table
+    clear both
+
+unstyledLink()
+  color inherit
+  text-decoration inherit
+  &:active,
+  &:focus
+      outline none
+
+// Fonts
+fonts(lista, font)
+  if font isnt null
+    unshift(lista, font)
+  font-family lista
+
+monospace(font = null)
+  lista = Consolas, "Liberation Mono", Courier
+  fonts(lista, font)
+
+sansSerif(font = null)
+  lista = "Helvetica Neue", Helvetica, sans-serif
+  fonts(lista, font)
+
+serif(font = null)
+  lista = "Times New Roman", Times, serif
+  fonts(lista, font)
+
+// Retina
+retina()
+  @media only screen
+    @media (-webkit-min-device-pixel-ratio: 2),
+           (min-resolution: dpi2dppx(192dpi))
+      {block}
+
+// Animation
+keyframes(kf-name)
+  vendors = official
+  @keyframes {kf-name}
+    {block}
+
+// Mixin - Media Queries
+mq(min, max = false)
+  if max
+    @media only screen and (min-width: min) and (max-width: max)
+      {block}
+  else
+    @media only screen and (min-width: min)
+      {block}

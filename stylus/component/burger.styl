@@ -1,0 +1,113 @@
+$transitionTime = 0.5
+$colorBurger = #FFFFFF
+$distBurger = 9
+
+$width = 24
+$height = 21
+$size = 3
+
+.burger
+  margin-right 20px
+  box-sizing border-box
+  background-color transparent
+  padding 0
+  margin 0
+  border 0
+  width $width * 2px
+  height $height * 2px
+  position relative
+  &:focus
+    outline 0
+
+.burger__icon
+  margin auto
+  top 0
+  left 0
+  right 0
+  bottom 0
+  position absolute
+  width $width * 1px
+  height $size * 1px
+  background-color rgba($colorBurger, 1)
+  backface-visibility hidden
+  will-change background-color
+
+  &:before,
+  &:after
+    content ''
+    margin auto
+    top 0
+    left 0
+    right 0
+    bottom 0
+    width 100%
+    height 100%
+    position absolute
+    background-color $colorBurger
+    transform-origin 50% 50%
+    backface-visibility hidden
+    will-change transform
+  &:before
+    transform translateY($distBurger * -1px)
+  &:after
+    transform translateY($distBurger * 1px)
+
+.burger
+  &.close
+    > .burger__icon
+      background-color rgba($colorBurger, 1)
+      transition 0s $transitionTime * 0.5s background-color
+
+      &:before
+        animation: oA $transitionTime * 1s
+        animation-fill-mode forwards
+
+      &:after
+        animation: oB $transitionTime * 1s
+        animation-fill-mode forwards
+
+  &.open
+    > .burger__icon
+      background-color rgba($colorBurger, 0)
+      transition 0s $transitionTime * 0.5s background-color
+
+      &:before
+        animation: xA $transitionTime * 1s
+        animation-fill-mode forwards
+
+      &:after
+        animation: xB $transitionTime * 1s
+        animation-fill-mode forwards
+
+
+@keyframes xA
+  0%
+    transform translateY($distBurger * -1px)
+  50%
+    transform translateY(0) rotate(0deg)
+  100%
+    transform rotate(45deg)
+
+@keyframes xB
+  0%
+    transform translateY($distBurger * 1px)
+  50%
+    transform translateY(0) rotate(0deg)
+  100%
+    transform rotate(-45deg)
+
+@keyframes oA
+  0%
+    transform rotate(45deg)
+  50%
+    transform translateY(0) rotate(0deg)
+  100%
+    transform translateY($distBurger * -1px)
+
+@keyframes oB
+  0%
+    transform rotate(-45deg)
+  50%
+    transform translateY(0) rotate(0deg)
+  100%
+    transform translateY($distBurger * 1px)
