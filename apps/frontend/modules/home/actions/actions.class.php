@@ -18,5 +18,7 @@ class homeActions extends sfActions
 
         // Helper
         $this->adminfo = Doctrine_Core::getTable('Section')->findOneBySlug('administracao-de-imoveis-e-servicos');
+
+        sfConfig::set("homeHeader", true);
     }
 }

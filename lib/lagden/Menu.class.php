@@ -43,7 +43,7 @@ class Menu
 
     static public function match($a,$uri,$c=false)
     {
-        $classes=array();
+        $classes = [];
         $regex= '/<a(.*)href=(\'|")([\?\=\-a-zA-Z-0-9_%\.:\/]*)/i';
         preg_match($regex,$a,$matches);
         if($matches[3]==$uri) $classes[]="active";

@@ -79,26 +79,26 @@ estate_old_show:
 
 # Modulo contato
 contato:
-  url: /fale-conosco
+  url: /contato
   param: { module: contato, action: index }
   requirements:
     sf_method: [POST]
 
 contato_envia:
-  url: /fale-conosco/envia
+  url: /contato/envia
   param: { module: contato, action: contato }
   requirements:
     sf_method: [POST]
 
 # Modulo venda
 venda:
-  url: /venda-ou-alugue
+  url: /anuncie
   param: { module: venda, action: index }
   requirements:
     sf_method: [POST]
 
 venda_envia:
-  url: /venda-ou-alugue/envia
+  url: /anuncie/envia
   param: { module: venda, action: contato }
   requirements:
     sf_method: [POST]
@@ -121,15 +121,15 @@ site_notfound:
   param: { module: site, action: notFound }
 
 # Modulo tags
-tag:
-  url: /tag/:slug
-  param: { module: tag, action: index }
-  requirements:
-    sf_method: [GET]
+# tag:
+#   url: /tag/:slug
+#   param: { module: tag, action: index }
+#   requirements:
+#     sf_method: [GET]
 
-tag_notfound:
-  url: /tag/nao-encontrado
-  param: { module: tag, action: notFound }
+# tag_notfound:
+#   url: /tag/nao-encontrado
+#   param: { module: tag, action: notFound }
 
 # Modulo sitemap
 sitemap:

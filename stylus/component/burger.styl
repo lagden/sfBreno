@@ -1,23 +1,26 @@
-$transitionTime = 0.5
+$transitionTime = 1
 $colorBurger = #FFFFFF
-$distBurger = 9
+$distBurger = 7
 
 $width = 24
-$height = 21
+$height = 24
 $size = 3
 
 .burger
-  margin-right 20px
   box-sizing border-box
-  background-color transparent
+  background none
   padding 0
   margin 0
+  margin-right 10px
   border 0
   width $width * 2px
   height $height * 2px
   position relative
-  &:focus
-    outline 0
+  transform: translateY(2px)
+  &:focus,
+  &:active,
+  &:hover
+    background none
 
 .burger__icon
   margin auto
@@ -56,27 +59,27 @@ $size = 3
   &.close
     > .burger__icon
       background-color rgba($colorBurger, 1)
-      transition 0s $transitionTime * 0.5s background-color
+      transition background-color 0s ($transitionTime / 2s)
 
       &:before
-        animation: oA $transitionTime * 1s
+        animation: oA ($transitionTime * 1s)
         animation-fill-mode forwards
 
       &:after
-        animation: oB $transitionTime * 1s
+        animation: oB ($transitionTime * 1s)
         animation-fill-mode forwards
 
   &.open
     > .burger__icon
       background-color rgba($colorBurger, 0)
-      transition 0s $transitionTime * 0.5s background-color
+      transition background-color 0s ($transitionTime / 2s)
 
       &:before
-        animation: xA $transitionTime * 1s
+        animation: xA ($transitionTime * 1s)
         animation-fill-mode forwards
 
       &:after
-        animation: xB $transitionTime * 1s
+        animation: xB ($transitionTime * 1s)
         animation-fill-mode forwards
 
 

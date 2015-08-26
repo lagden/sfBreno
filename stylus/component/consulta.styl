@@ -1,18 +1,17 @@
-.bloco
-  margin 30px 0
-  padding 20px 0
-  background-color: $cores.bloco
+.consulta__main
+  position relative
+  margin 5px
+  flex 1 1 calc(100% - 10px)
+  +mq(500px, 767px)
+    flex 1 1 calc(50% - 10px)
+  +mq(768px, 1024px)
+    flex 1 1 calc(33.33% - 10px)
+  +mq(1025px)
+    flex 1 1 calc(16.66% - 10px)
 
-.icon
-  display: inline-block
-  width: 3em
-  height: 3em
-  vertical-align middle
-  button > &
-    fill: #FFF
-  & + span
-    display: block
-    margin 5px
+.consulta__main--first
+  +mq(500px, 767px)
+    flex 1 1 calc(100% - 10px)
 
 .consulta__item
   position relative
@@ -23,10 +22,19 @@
   +mq(1025px)
     flex 1 1 calc(16.66% - 10px)
 
-.btn-drop
+.btn--drop
   width 100%
+  background-color: $cores.form
+  &:hover
+    background-color: darken($cores.form, 10%)
+  &:active,
+  &:focus
+    outline: none
+    background-color: lighten($cores.form, 10%)
   &.is-visible
-    background: darken($cores.sol, 30%)
+    background-color: $cores.sol
+  > span:last-child
+    font-size 0.8em
 
 .opts
   position absolute
@@ -34,7 +42,7 @@
   left auto
   right auto
   min-width 30px
-  background: rgba($cores.form, 0.9)
+  background: rgba($cores.black, 0.75)
   color white
   display block
   margin 0
@@ -47,10 +55,9 @@
   transform-origin 0 0
   will-change transform, opacity
   transition transform 0.5s, opacity 0.5s
-
-  &::before
+  &:before
     border-width 0 10px 10px 10px
-    border-color: transparent transparent rgba($cores.form, 0.9)
+    border-color: transparent transparent rgba($cores.black, 0.75)
     border-style solid
     content ''
     position absolute
@@ -58,7 +65,8 @@
     margin-left 15px
     width 0px
     height 0px
-  .btn-drop.is-visible ~ &
+
+  .btn--drop.is-visible ~ &
     opacity 1
     transform scale(1) translate(5px, 5px)
 
@@ -76,3 +84,13 @@
 
 .opts--min
   min-width 280px
+
+.btn--submit
+  margin 5px
+  width calc(100% - 10px)
+  +mq(500px, 767px)
+    width calc(50% - 10px)
+  +mq(768px, 1024px)
+    width calc(33.33% - 10px)
+  +mq(1025px)
+    width calc(16.66% - 10px)

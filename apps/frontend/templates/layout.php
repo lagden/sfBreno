@@ -3,8 +3,8 @@
 <head>
 		<?php
 		// Cache version
-		$cacheVersion = '.' . implode('', explode('.',sfConfig::get('app_cache_version')));
-		// $cacheVersion = '';
+		// $cacheVersion = '.' . implode('', explode('.',sfConfig::get('app_cache_version')));
+		$cacheVersion = '';
 		$neverCacheVersion = mt_rand();
 		?>
 
@@ -38,6 +38,7 @@
 		<link rel="icon" href="<?php echo public_path("/favicon{$cacheVersion}.ico") ?>">
 
 		<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+		<link href="<?php echo public_path("/js2/lib/nouislider/distribute/nouislider.min{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">
 		<link href="<?php echo public_path("/js2/lib/flickity/dist/flickity.min{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">
 		<link href="<?php echo public_path("/css2/app{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">
 
@@ -58,7 +59,11 @@
 		</script>
 </head>
 <body>
-		<?php include_partial('global/header'); ?>
+		<?php if (sfConfig::get("homeHeader", false)): ?>
+			<?php include_partial('global/header'); ?>
+		<?php else: ?>
+			<?php include_partial('global/in_header'); ?>
+		<?php endif ?>
 		<main id="siteMain" role="main">
 			<?php echo $sf_content ?>
 		</main>

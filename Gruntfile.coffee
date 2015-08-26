@@ -53,6 +53,7 @@ module.exports = (grunt) ->
             'jeet'
             'rupture'
             'nib/normalize'
+            'nib/image'
           ]
         files: [
           expand: true

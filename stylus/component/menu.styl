@@ -1,18 +1,24 @@
 .logo-breno
   display block
-  max-width 160px
+  text-indent: 200%
+  white-space: nowrap
+  overflow: hidden
+  width 190px
   height 100px
-  fill: $cores.white
-  // +below('m')
-  //   width 100px
+  image '/images/logo.png' 190px 100px
+  +below(880px)
+    width 126px
+    height 66px
+    background-size 126px 66px
+    image '/images/logo.png' 126px 66px
 
 .bar
   display none
-  +below('m')
+  +below(880px)
     display block
 
 .nav--header
-  +below('m')
+  +below(880px)
     display none
 
 .nav--out
@@ -30,7 +36,7 @@
   background: $cores.bloco
   &.open
     transform translateX(0)
-  +below('m')
+  +below(880px)
     display block
 
 .navbar__ul
@@ -51,13 +57,14 @@
       border-radius 5px
       display block
       padding 10px
+      &.active,
       &:hover
         border-color: $cores.white
-    &.active
-      > a
-        border-color: $cores.white
-    +below('m')
+    +below(880px)
       display block
+      padding 5px 10px
+      &:first-child
+        padding-top 10px
 
 body
   &.open
@@ -65,12 +72,10 @@ body
 
 .burger-bl
   display none
-  +below('m')
+  +below(880px)
     display block
 
-.header-bg
-  background: rgba($cores.sol, 0.8);
-  transform translate(0, 20px)
+.header
   width 100%
   box-sizing border-box
   padding 5px
@@ -80,16 +85,35 @@ body
   flex-wrap nowrap
   justify-content space-between
   align-items center
-  &.open
-    transform translate($menuSize * -1px, 20px)
+  &.open,
   &.open ~ main
     transform translateX($menuSize * -1px)
+
+.header--in
+  background: $cores.sol
+  position relative
+  margin-bottom: 30px
 
 .header__title
   margin 0
   padding 0
 
-.header-bg,
+.header__bg
+  background: rgba($cores.sol, 0.8);
+  width 100%
+  height 65px
+  display block
+  position absolute
+  margin: auto
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: -1
+  +below(880px)
+    height (65 / 1.5) * 1px
+
+.header,
 .navbar,
 main
   transition transform 0.3s ease-out

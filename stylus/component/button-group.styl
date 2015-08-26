@@ -1,0 +1,36 @@
+.btn-group
+  display: flex
+  flex-wrap: nowrap
+  width: 100%
+
+.btn--flex
+  flex: 1 1 50%
+  margin-right 2px
+  > span
+    padding 10px 5px
+    background: $cores.form
+    color white
+    display: block
+    text-align: center
+    &:hover
+      background: darken($cores.form, 5%)
+    &:active,
+    &:focus
+      outline: none
+      background: lighten($cores.form, 5%)
+  &:last-child
+    margin-right 0px
+    > span
+      border-radius 0 5px 5px 0
+  &:first-child > span
+    border-radius 5px 0 0 5px
+  & > input[type="radio"]:checked ~ span
+    background: $cores.sol
+
+.btn-group > .btn--flex
+  > input[type="radio"],
+  > input[type="checkbox"]
+    position: absolute
+    clip: rect(0, 0, 0, 0)
+    pointer-events: none
+

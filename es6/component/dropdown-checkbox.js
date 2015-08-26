@@ -5,27 +5,32 @@
 import $ from 'jquery';
 import {insert, remove, last} from 'mout/array';
 
-const badObj = {};
+const optsObj = {};
 
 const $opts = $('.opt-drop');
 const $btns = $('button');
 const opens = [];
 
-function updateBadge(field, v, checked) {
-	const badgeEl = document.getElementById(`${field}Badge`);
-	const current = badObj[field] || [];
+function update(field, v, checked) {
+	const el = document.getElementById(`${field}Choices`);
+	const current = optsObj[field] || [];
 	const m = (checked) ? insert : remove;
 
 	m(current, parseInt(v, 10));
-	badObj[field] = current;
+	optsObj[field] = current;
 
 	if (current.length > 0) {
 		current.sort((a, b) => a - b);
 		const num = last(current);
 		const plus = num === 4 ? '+' : '';
-		badgeEl.dataset.badge = `${plus}${last(current)}`;
+		let str = current.join(', ');
+		const ax = str.lastIndexOf(',');
+		if (ax !== -1) {
+			str = str.substring(0, ax) + ' ou ' + str.substring(ax + 1);
+		}
+		el.textContent = `${str}${plus}`;
 	} else {
-		badgeEl.removeAttribute('data-badge');
+		el.textContent = '...';
 	}
 }
 
@@ -38,6 +43,11 @@ function closeBefore(ignore) {
 	});
 }
 
+function beforeUpdate(opt) {
+	const opts = opt.closest('.opts');
+	update(opts.dataset.field, opt.value, opt.checked);
+}
+
 $btns.on('click', (event) => {
 	const btn = event.currentTarget;
 	closeBefore(btn);
@@ -48,7 +58,9 @@ $btns.on('click', (event) => {
 });
 
 $opts.on('click', (event) => {
-	const opt = event.currentTarget;
-	const opts = opt.closest('.opts');
-	updateBadge(opts.dataset.field, opt.value, opt.checked);
+	beforeUpdate(event.currentTarget);
+});
+
+$opts.each((idx, el) => {
+	beforeUpdate(el);
 });

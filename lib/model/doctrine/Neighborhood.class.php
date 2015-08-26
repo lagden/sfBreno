@@ -12,14 +12,8 @@
 */
 class Neighborhood extends BaseNeighborhood
 {
-    public function getNeighborhoodCity()
-    {
-        // return "{$this->City->name} - {$this->name}";
-        return "{$this->name}";
-    }
-
-    public function bairroCidade()
-    {
-        return "{$this->City->name} / {$this->name}";
-    }
+		public function getNeighborhoodCity()
+		{
+				return "{$this->name} - {$this->City->name}";
+		}
 }

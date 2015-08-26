@@ -16,9 +16,9 @@ normalize-css()
 
 $cores = {
   fundo: #2c2c2c,
-  bloco: #313131,
+  bloco: #414141,
   footer: #3F3F3F,
-  form: #464646,
+  form: #666,
   fonte: #ABABAB
   sol: #F9AE1C
   white: #FFF
@@ -32,7 +32,9 @@ $menuSize = 200
 @import 'component/media'
 @import 'component/burger'
 @import 'component/menu'
+@import 'component/button-group'
 @import 'component/consulta'
+@import 'component/slider'
 @import 'component/galery'
 
 html
@@ -43,6 +45,9 @@ html
 a
   unstyledLink()
 
+.pad-30
+  padding 30px
+
 .gs
   center(960px, 10px)
   box-sizing border-box
@@ -51,57 +56,26 @@ a
     display flex
     flex-wrap wrap
 
-// .half
-//   col(1/2)
-//   +below(768px)
-//     stack()
-//     margin-bottom 20px
+.icon
+  display: inline-block
+  width: 3em
+  height: 3em
+  vertical-align middle
+  button > &
+    fill: #FFF
+  & + span
+    display: block
+    margin 5px
 
-// .third
-//   col(1/3)
-//   +below(768px)
-//     stack()
-//     margin-bottom 20px
+.icon--btn
+  display: inline-block
+  width: 1.1em
+  height: 1.1em
+  vertical-align middle
+  button > &
+    fill: #FFF
 
-// .two-third
-//   col(2/3)
-//   +below(768px)
-//     stack()
-//     margin-bottom 20px
-
-// .fourth
-//   col(1/4)
-//   +below(768px)
-//     stack()
-//     margin-bottom 20px
-
-// .consulta
-//   background: $cores.bloco
-
-// .consuta__item
-//   background red
-//   box-sizing border-box
-//   margin-bottom: 20px
-
-// .consuta__item--opt
-//   col(1/3)
-//   +below(960px)
-//     stack()
-//   +below(768px)
-//     stack()
-
-// .consuta__item--combo
-//   col(1/3)
-//   +below(960px)
-//     col(1/2)
-//   +below(768px)
-//     stack()
-
-// .consuta__item--box
-//   col(1/6, uncycle: 3)
-//   background yellow
-//   +below(960px)
-//     col(1/3, cycle: 3)
-//     background green
-//   +below(768px)
-//     col(1/2, uncycle: 3, cycle: 2)
+.bloco
+  margin 30px 0
+  padding 20px 0
+  background-color: $cores.bloco

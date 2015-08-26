@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "mout": "~0.11.0",
-    "flickity": "~1.1.0"
+    "flickity": "~1.1.0",
+    "nouislider": "~8.0.2"
   }
 }

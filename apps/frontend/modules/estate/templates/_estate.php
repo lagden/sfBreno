@@ -1,22 +1,7 @@
 <div class="grid_4 showDouble">
-    <h2>Imagens do imóvel</h2>
-
-    <h3>Clique no thumb para ampliar.</h3>
-    <hr/>
-    <?php if ($estate->Images->count()>0): ?>
-        <div class="clearfix">
-            <?php foreach ($estate->Images as $image): ?>
-                <?php include_partial('image',array('image'=>$image,'title'=>$estate->titulo)); ?>
-            <?php endforeach ?>
-        </div>
-    <?php else: ?>
-            <p class="center">Não há imagem.</p>
-    <?php endif; ?>
-
     <h3>Interessou?</h3>
     <hr/>
     <?php include_component('estate', 'Contato'); ?>
-
 </div>
 <div class="grid_4 showDouble">
     <h2><?php echo $estate->titulo ?></h2>

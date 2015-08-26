@@ -136,44 +136,67 @@ class EstateTable extends Doctrine_Table
 								switch($k)
 								{
 										case "type_id":
-										$q->andWhere("{$alias}.{$k} = ?", $v);
-										break;
+											$q->andWhere("{$alias}.{$k} = ?", $v);
+											break;
 
 										case "Disponibilidades":
-										$q->innerJoin("{$alias}.$k j");
-										$q->andWhere("j.id = ?", $v);
-										break;
+											$q->innerJoin("{$alias}.$k j");
+											$q->andWhere("j.id = ?", $v);
+											break;
 
 										case "valor":
-										if(isset($filters['Disponibilidades']) && $v)
-										{
-												($filters['Disponibilidades'] == 1) ? $q->andWhere("{$alias}.price_sale {$v}") : $q->andWhere("{$alias}.price_rent {$v}");
-										}
-										break;
+											if(isset($filters['Disponibilidades']))
+											{
+												$ors = [];
+												if ($filters['Disponibilidades'] == 1) {
+													$filters['valor'] = $filters['valor'] * 1000;
+													$filters['valor_max'] = $filters['valor_max'] * 1000;
+													array_push($ors, "{$alias}.price_sale BETWEEN {$filters['valor']} AND {$filters['valor_max']}");
+													if($filters['valor_max'] === 2000000) {
+														array_push($ors, "{$alias}.price_sale >= {$filters['valor_max']}");
+													}
+												} else {
+													array_push($ors, "{$alias}.price_rent BETWEEN {$filters['valor']} AND {$filters['valor_max']}");
+													if($filters['valor_max'] === 20000) {
+														array_push($ors, "{$alias}.price_rent >= {$filters['valor_max']}");
+													}
+												}
+												$q->andWhere(implode(' OR ', $ors));
+											}
+											break;
 
 										case "neighborhood_id":
-										if(isset($filters['neighborhood_id']) && $v) {
-											$q->andWhereIn("{$alias}.{$k}", $v);
-										}
-										break;
+											if(isset($filters['neighborhood_id']) && $v) {
+												// $q->andWhereIn("{$alias}.{$k}", $v);
+												$q->andWhere("{$alias}.{$k} = ?", $v);
+											}
+											break;
 
 										case "suites":
 										case "quartos":
 										case "banheiros":
 										case "vagas":
-										if($v && is_array($v)) {
-											foreach ($v as $vs) {
-												if ($vs == 4) {
-													$q->andWhere("{$alias}.{$k} >= ?", $vs);
-												} else {
-													$q->andWhere("{$alias}.{$k} = ?", $vs);
+											if($v && is_array($v)) {
+												$ors = [];
+												foreach ($v as $vs) {
+													if ($vs == 4) {
+														array_push($ors, "{$alias}.{$k} >= $vs");
+													} else {
+														array_push($ors, "{$alias}.{$k} = $vs");
+													}
+													$q->andWhere(implode(' OR ', $ors));
 												}
 											}
-										}
-										break;
+											break;
 
-										default:
-										if($v) $q->andWhere("{$alias}.{$k} {$v}");
+										case "area":
+											$ors = [];
+											array_push($ors, "{$alias}.area_total BETWEEN {$filters['area']} AND {$filters['area_max']}");
+											if($filters['area_max'] === 10000) {
+												array_push($ors, "{$alias}.area_total >= {$filters['valor_max']}");
+											}
+											$q->andWhere(implode(' OR ', $ors));
+											break;
 								}
 						}
 				}
