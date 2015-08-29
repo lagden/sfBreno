@@ -1,0 +1,106 @@
+.estateItem
+  display: flex
+  flex-wrap: nowrap
+  flex-direction column
+  border-radius: 5px
+  box-sizing border-box
+  padding 10px
+  margin 5px
+  background-color: rgba($cores.black, 0.2)
+  position relative
+  flex 1 1 calc(100% - 10px)
+  +mq(500px, 767px)
+    flex 0 1 calc(50% - 10px)
+  +mq(768px, 1024px)
+    flex 0 1 calc(33.33% - 10px)
+  +mq(1025px)
+    flex 0 1 calc(100% - 10px)
+    flex-direction row
+
+.estateItem__img
+  width: 100%
+  object-fit: cover
+  border: 3px solid $cores.white
+  box-sizing border-box
+  display block
+  margin-bottom: 15px
+  +mq(1025px)
+    width: 300px
+    height: 100%
+    margin-right: 15px
+    margin-bottom: 0
+
+.estateItem__info
+  display flex
+  flex-wrap wrap
+  flex-direction column
+  justify-content space-between
+  flex 1 1 auto
+  > header
+    > h1, h2
+      margin 0
+      padding 0
+      margin-bottom 5px
+      line-height 1
+    > h1
+      font-size 0.85em
+      color: $cores.white
+    > h2
+      font-size 1.1em
+    > small
+      color: lighten($cores.sol, 30%)
+      padding-bottom 30px
+      display block
+
+.estateItem__group
+  display flex
+  flex-wrap wrap
+  flex-direction column
+  +mq(1025px)
+    align-items flex-end
+    justify-content space-between
+    flex-direction row
+
+.estateItem__icon
+  display flex
+  flex-wrap wrap
+  list-style none
+  padding 0
+  margin 0
+  > li
+    padding 10px
+    text-align center
+    > span
+      display block
+      margin auto
+      margin-bottom 3px
+      font-size 1.1em
+
+.estateItem__valor-detalhe
+  display flex
+  flex-wrap wrap
+  flex-direction column
+  +mq(1025px)
+    align-items flex-end
+    flex-direction row
+
+.estateItem__valor
+  border: 1px solid white
+  padding: 16px 3px
+  border-radius: 5px
+  color: gray
+  background-color: white
+  display inline-block
+  text-align: center
+  font-size 0.9em
+  margin-bottom 5px
+  margin-right 0
+  +mq(1025px)
+    margin-right 5px
+    margin-bottom 0
+
+.estateItem__detalhe
+  btn($cores.sol, $cores.white)
+  max-width: 300px
+  display: block
+  text-align: center

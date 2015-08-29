@@ -12,6 +12,23 @@ unstyledLink()
   &:focus
       outline none
 
+btn($cor1, $cor2)
+  appearance: none
+  border: none
+  background: $cor1
+  border-radius: 5px
+  padding: 16px 20px
+  color: $cor2
+  cursor: pointer
+  font-weight: bold
+  font-smooth: auto
+  &:hover
+    background: darken($cor1, 10%)
+  &:active,
+  &:focus
+    outline: none
+    background: lighten($cor1, 10%)
+
 // Fonts
 fonts(lista, font)
   if font isnt null

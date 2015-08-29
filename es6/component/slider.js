@@ -26,31 +26,33 @@ function update(plus, ...v) {
 
 function prepare(reset, abbr, ...els) {
 	const [slider, fmin, fmax, range, step, times] = els;
-	const elMin = document.getElementById(fmin);
-	const elMax = document.getElementById(fmax);
 	const noS = document.getElementById(slider);
-	const opts = noS.closest('.opts');
-	const startMin = (reset) ? range.min : elMin.value || range.min;
-	const startMax = (reset) ? range.max : elMax.value || range.max;
+	if (noS) {
+		const elMin = document.getElementById(fmin);
+		const elMax = document.getElementById(fmax);
+		const opts = noS.closest('.opts');
+		const startMin = (reset) ? range.min : elMin.value || range.min;
+		const startMax = (reset) ? range.max : elMax.value || range.max;
 
-	noUiSlider.create(noS, {
-		start: [startMin, startMax],
-		step,
-		connect: true,
-		range
-	});
-	noS.noUiSlider.on('update', (v, b, r) => {
-		const vmin = parseInt(v[0], 10) * times;
-		const vmax = parseInt(v[1], 10) * times;
-		const plus = r[1] === range.max ? '+' : '';
-		elMin.value = vmin / times;
-		elMax.value = vmax / times;
-		if (abbr) {
-			update(plus, opts.dataset.field, customAbbr(vmin), customAbbr(vmax));
-		} else {
-			update(plus, opts.dataset.field, currencyFormat(vmin, 0, ',', '.'), currencyFormat(vmax, 0, ',', '.'));
-		}
-	});
+		noUiSlider.create(noS, {
+			start: [startMin, startMax],
+			step,
+			connect: true,
+			range
+		});
+		noS.noUiSlider.on('update', (v, b, r) => {
+			const vmin = parseInt(v[0], 10) * times;
+			const vmax = parseInt(v[1], 10) * times;
+			const plus = r[1] === range.max ? '+' : '';
+			elMin.value = vmin / times;
+			elMax.value = vmax / times;
+			if (abbr) {
+				update(plus, opts.dataset.field, customAbbr(vmin), customAbbr(vmax));
+			} else {
+				update(plus, opts.dataset.field, currencyFormat(vmin, 0, ',', '.'), currencyFormat(vmax, 0, ',', '.'));
+			}
+		});
+	}
 }
 
 prepare(
@@ -72,7 +74,7 @@ prepare(
 function builder(reset = false) {
 	const val = parseInt($disponivel.filter(':checked').val(), 10) || 1;
 	const noS = document.getElementById('valorSlider');
-	if (noS.hasOwnProperty('noUiSlider')) {
+	if (noS && noS.hasOwnProperty('noUiSlider')) {
 		noS.noUiSlider.destroy();
 	}
 	prepare(

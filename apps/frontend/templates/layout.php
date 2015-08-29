@@ -35,7 +35,8 @@
 		<meta itemprop="name" content="Compre ou alugue um imóvel">
 		<meta itemprop="description" content="Busca de imóveis em Higienópolis para comprar ou alugar.">
 
-		<link rel="icon" href="<?php echo public_path("/favicon{$cacheVersion}.ico") ?>">
+		<!--[if IE]><link rel="shortcut icon" href="<?php echo public_path("/favicon{$cacheVersion}.ico") ?>"><![endif]-->
+		<link rel="icon" href="<?php echo public_path("/favicon{$cacheVersion}.png") ?>">
 
 		<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 		<link href="<?php echo public_path("/js2/lib/nouislider/distribute/nouislider.min{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">

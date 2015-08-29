@@ -1,19 +1,6 @@
+
 button
-  appearance: none
-  border: none
-  background: $cores.sol
-  border-radius: 5px
-  padding: 16px 20px
-  color: $cores.white
-  cursor: pointer
-  font-weight: bold
-  font-smooth: auto
-  &:hover
-    background: darken($cores.sol, 10%)
-  &:active,
-  &:focus
-    outline: none
-    background: lighten($cores.sol, 10%)
+  btn($cores.sol, $cores.white)
 
 input[type="checkbox"]
   transform translateY(2px)

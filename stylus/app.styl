@@ -19,10 +19,13 @@ $cores = {
   bloco: #414141,
   footer: #3F3F3F,
   form: #666,
+  border: #555,
   fonte: #ABABAB
   sol: #F9AE1C
   white: #FFF
   black: #000
+  light: #E1E1E1,
+  bebe: #D6D1C8
 }
 
 $menuSize = 200
@@ -36,6 +39,7 @@ $menuSize = 200
 @import 'component/consulta'
 @import 'component/slider'
 @import 'component/galery'
+@import 'component/estate-list'
 
 html
   font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
@@ -75,7 +79,26 @@ a
   button > &
     fill: #FFF
 
+.icon--estate
+  display: inline-block
+  width: 1.5em
+  height: 1.5em
+  vertical-align middle
+  fill: $cores.black
+
 .bloco
-  margin 30px 0
+  margin 10px 0
   padding 20px 0
+  border: 5px solid $cores.border
+  border-width: 5px 0
   background-color: $cores.bloco
+
+.bloco--light
+  background-color: $cores.light
+  color: $cores.black
+  background-color black
+  background-position 50% 50%, 0 0
+  background-attachment fixed, scroll
+  background-repeat no-repeat, repeat
+  background-size contain, 100px 56px
+  background-image: radial-gradient(circle farthest-corner at 50% 0%, rgba(lighten($cores.bebe, 5%), 0.78) 0%, rgba(darken($cores.bebe, 0%), 0.9) 80%), url('../assets/hexa.svg')

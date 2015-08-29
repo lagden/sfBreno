@@ -1,3 +1,10 @@
+$logobrenoSmall = @block {
+  width: 126px
+  height: 66px
+  background-size: 126px 66px
+  image: '/images/logo.png' 126px 66px
+}
+
 .logo-breno
   display block
   text-indent: 200%
@@ -7,10 +14,9 @@
   height 100px
   image '/images/logo.png' 190px 100px
   +below(880px)
-    width 126px
-    height 66px
-    background-size 126px 66px
-    image '/images/logo.png' 126px 66px
+    {$logobrenoSmall}
+  &.logo-breno--in
+    {$logobrenoSmall}
 
 .bar
   display none
@@ -70,11 +76,6 @@ body
   &.open
     overflow: hidden
 
-.burger-bl
-  display none
-  +below(880px)
-    display block
-
 .header
   width 100%
   box-sizing border-box
@@ -92,7 +93,8 @@ body
 .header--in
   background: $cores.sol
   position relative
-  margin-bottom: 30px
+  margin-bottom: 10px
+  border-bottom: 5px solid $cores.border
 
 .header__title
   margin 0
@@ -112,6 +114,11 @@ body
   z-index: -1
   +below(880px)
     height (65 / 1.5) * 1px
+
+.header__burger
+  display none
+  +below(880px)
+    display block
 
 .header,
 .navbar,
