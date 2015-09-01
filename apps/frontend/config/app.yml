@@ -15,7 +15,7 @@ all:
   app_cookie_search_estate: estate_site_search.filters
   route_form_filter: estate_filter
   search:
-    max_per_page: 1
+    max_per_page: 18
 
   .array:
     footer:
