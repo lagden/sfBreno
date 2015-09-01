@@ -12,6 +12,7 @@ $logobrenoSmall = @block {
   overflow: hidden
   width 190px
   height 100px
+  cursor pointer
   image '/images/logo.png' 190px 100px
   +below(880px)
     {$logobrenoSmall}
@@ -39,7 +40,7 @@ $logobrenoSmall = @block {
   height 100%
   transform translateX($menuSize * 1px)
   overflow-y auto
-  background: $cores.bloco
+  background: $cores.black
   &.open
     transform translateX(0)
   +below(880px)

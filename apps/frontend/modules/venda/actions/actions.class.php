@@ -50,8 +50,20 @@ class vendaActions extends sfActions
             {
                 $response['msg']='Falha ao tentar enviar. Tente novamente.';
             }
+        } else {
+          // Formulário inválido
+          $errors = [];
+          foreach($form as $k => $v) {
+            if ($form[$k]->getError()) {
+              array_push($errors, "{$form[$k]->renderLabelName()} - {$form[$k]->getError()}");
+            }
+          }
+          foreach($form->getGlobalErrors() as $k => $v) {
+            array_push($errors, $v->__toString());
+          }
+          $notice = (!empty($errors)) ? join("<br>", $errors) : 'Formulário inválido';
+          $response['msg'] = "{$notice}";
         }
-        else $response['msg']='Formulário inválido.';
         return $this->renderText(json_encode($response));
     }
 

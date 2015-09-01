@@ -1,19 +1,25 @@
-<div class="container">
-    <div class="clearfix someMargin mbottom">
-        <div class="grid_4 showDouble">
-            <h2 class="minnulo">Fale Conosco</h2>
-            <h3><?php echo "{$info['site']} - {$info['creci']}" ?></h3>
-            <hr/>
-            <p>Envie sua mensagem, basta preencher o formulário ao lado.</p>
-            <p><b><?php echo "{$info['dono']}<br>{$info['func']}" ?></b></p>
-            <p><?php echo "{$info['endereco']}" ?><br><?php echo mail_to("{$info['email']}","{$info['email']}") ?></p>
-            <p><?php echo "{$info['telefone']}" ?></p>
-        </div>
-        <div class="grid_4 showDouble">
-            <h2 class="minnulo">&nbsp;</h2>
-            <h3>Formulário de contato</h3>
-            <hr/>
-            <?php include_component('estate', 'Contato'); ?>
-        </div>
-    </div>
+<div class="bloco">
+	<article class="gs">
+		<h2 class="tt">Fale Conosco</h2>
+		<section class="half">
+			<p>Gostaria de saber mais sobre nós ou tirar alguma dúvida? Aguardamos o seu contato.</p>
+      <h3><?php echo "{$info['dono']}<br>{$info['func']}" ?></h3>
+      <p>
+      	<?php echo "{$info['endereco']}" ?><br>
+      	<?php echo "{$info['endereco2']}" ?><br>
+      	<?php echo "{$info['endereco3']}" ?>
+      </p>
+      <p><?php echo mail_to("{$info['email']}","{$info['email']}") ?></p>
+      <p>
+      	<svg class="icon--small-white"><use xlink:href="#material_call"></use></svg>
+      	<?php echo "{$info['telefone']}" ?><br>
+      	<svg class="icon--small-white"><use xlink:href="#material_call"></use></svg>
+      	<?php echo "{$info['telefone2']}" ?><br>
+      </p>
+		</section>
+		<section class="half">
+			<h3>Formulário de contato</h3>
+			<?php include_component('estate', 'Contato'); ?>
+		</section>
+	</article>
 </div>

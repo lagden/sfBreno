@@ -1,6 +1,4 @@
-<?php if($pager->haveToPaginate()): ?>
-    <?php $pagination=Pagination::show($pager->getPage(),$pager->getLastPage(),$route); ?>
-    <footer>
-        <nav><?php echo $pagination; ?></nav>
-    </footer>
-<?php endif; ?>
+<?php
+if($pager->haveToPaginate()) {
+	echo Pagina::show($pager->getPage(), $pager->getLastPage(), $route);
+}

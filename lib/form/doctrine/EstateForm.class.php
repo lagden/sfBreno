@@ -44,7 +44,8 @@ class EstateForm extends BaseEstateForm
         $this->widgetSchema['neighborhood_id'] = new sfWidgetFormDoctrineChoice([
           'model' => $this->getRelatedModelName('Neighborhood'),
           'add_empty' => true,
-          'method' => 'bairroCidade'
+          'method' => 'getNeighborhoodCity',
+          'table_method' => 'getLista',
         ]);
         $this->widgetSchema['neighborhood_id']->setLabel('Cidade / Bairro')->setAttributes(array("title"=>"Cidade / Bairro","class"=>"required"));
 

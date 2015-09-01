@@ -1,0 +1,38 @@
+$jump = 20
+$duration = 0.4s
+
+.theNotification
+  background-color: rgba($cores.black, 0.8)
+  color: $cores.white
+  border-radius: 5px
+  box-sizing: border-box
+  width 300px
+  padding 10px
+  position fixed
+  top auto
+  right auto
+  bottom auto
+  left auto
+  user-select none
+  backface-visibility hidden
+  will-change transform, opacity
+  transform translateY($jump * -1px)
+  opacity 0
+  transition opacity $duration, transform $duration
+  z-index: 1000
+
+.theNotification__title
+  font-size: 1.1em
+  margin: 0 0 10px 0
+
+.theNotification__msg
+  font-size: 0.9em
+  margin: 0
+
+.theNotification--show
+  transform: translateY(0)
+  opacity: 1
+
+.theNotification--remove
+  transform: translateY($jump * 1px)
+  opacity: 0

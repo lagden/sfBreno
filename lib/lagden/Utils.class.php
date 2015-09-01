@@ -9,7 +9,7 @@ class Utils
     {
         file_put_contents($file,$content,FILE_APPEND);
     }
-    
+
     public static function date($date,$format='d/m/Y')
     {
         try
@@ -48,14 +48,14 @@ class Utils
             return "{$matches[3]}-{$matches[2]}-{$matches[1]}";
         }else return null;
     }
-    
-    static public function getJoin($es,$f='name')
+
+    static public function getJoin($es, $f='name', $j=', ')
     {
-        $arr = array();
+        $arr = [];
         foreach ($es as $e) {
-            $arr[]=$e->$f;
+            $arr[] = $e->$f;
         }
-        return join(', ',$arr);
+        return join($j, $arr);
     }
 
     public static function trace(){

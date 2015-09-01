@@ -133,6 +133,9 @@ module.exports = (grunt) ->
       svglocalstorage:
         src: 'node_modules/svg-localstorage/svg-localstorage.js'
         dest: 'web/js2/lib/svg-localstorage.js'
+      githubMarkdownCss:
+        src: 'node_modules/github-markdown-css/github-markdown.css'
+        dest: 'web/css2/github-markdown.css'
       # mout:
       #   files: [
       #     expand: true

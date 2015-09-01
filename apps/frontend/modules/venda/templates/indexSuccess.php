@@ -1,78 +1,69 @@
-<?php use_stylesheets_for_form($form) ?>
-<?php use_javascripts_for_form($form) ?>
-<div class="container">
-    <div class="clearfix someMargin mbottom">
-        <?php $rota = url_for('venda_envia'); ?>
-        <?php echo $form->renderFormTag($rota,array('method' => 'post','class'=>'frm frmFull','id'=>'frmVendaImovel','data-url'=>$rota)) ?>
-        <?php echo $form->renderHiddenFields(); ?>
-        <label for="contato_outrosstuff" class="visuallyhidden">Outros</label>
-        <input type="text" name="contato[outrosstuff]" class="visuallyhidden" id="contato_outrosstuff" title="Outros">
-            <div class="grid_4 showDouble">
-                <h2 class="minnulo">Venda ou alugue seu imóvel</h2>
-                <h3>Informações para contato</h3>
-                <hr/>
-                <p>* Campo obrigatório</p>
-                <ul>
-                    <li>
-                        <?php echo $form['nome']->renderLabel(null,array('class'=>'obr')); ?>
-                        <?php echo $form['nome']->render(array('title'=>$form['nome']->renderLabelName(),'class'=>'required')); ?>
-                    </li>
-                    <li>
-                        <?php echo $form['email']->renderLabel(null,array('class'=>'obr')); ?>
-                        <?php echo $form['email']->render(array('title'=>$form['email']->renderLabelName(),'class'=>'required')); ?>
-                    </li>
-                    <li>
-                        <?php echo $form['telefone']->renderLabel(); ?>
-                        <?php echo $form['telefone']->render(array('title'=>$form['telefone']->renderLabelName())); ?>
-                    </li>
-                    <li>
-                        <?php echo $form['disponibilidade']->renderLabel(null,array('class'=>'obr')); ?>
-                        <?php echo $form['disponibilidade']->render(array('title'=>$form['disponibilidade']->renderLabelName())); ?>
-                    </li>
-                </ul>
-            </div>
-            <div class="grid_4 showDouble">
-                <h2 class="minnulo">&nbsp;</h2>
-                <h3>Informações do imóvel</h3>
-                <hr/>
-                <ul>
-                    <li>
-                        <?php echo $form['tipo']->renderLabel(null,array('class'=>'obr')); ?>
-                        <?php echo $form['tipo']->render(array('title'=>$form['tipo']->renderLabelName())); ?>
-                    </li>
-                    <li>
-                        <?php echo $form['bairro']->renderLabel(null,array('class'=>'obr')); ?>
-                        <?php echo $form['bairro']->render(array('title'=>$form['bairro']->renderLabelName(),'class'=>'required')); ?>
-                    </li>
-                    <li>
-                        <?php echo $form['quartos']->renderLabel(); ?>
-                        <?php echo $form['quartos']->render(array('title'=>$form['quartos']->renderLabelName(),)); ?>
-                    </li>
-                    <li>
-                        <?php echo $form['suites']->renderLabel(); ?>
-                        <?php echo $form['suites']->render(array('title'=>$form['suites']->renderLabelName(),)); ?>
-                    </li>
-                    <li>
-                        <?php echo $form['banheiros']->renderLabel(); ?>
-                        <?php echo $form['banheiros']->render(array('title'=>$form['banheiros']->renderLabelName(),)); ?>
-                    </li>
-                    <li>
-                        <?php echo $form['vagas']->renderLabel(); ?>
-                        <?php echo $form['vagas']->render(array('title'=>$form['vagas']->renderLabelName(),)); ?>
-                    </li>
-                    <li>
-                        <?php echo $form['valor']->renderLabel(null,array('class'=>'obr')); ?>
-                        <?php echo $form['valor']->render(array('title'=>$form['valor']->renderLabelName(),'class'=>'required')); ?>
-                    </li>
-                    <li>
-                        <?php echo $form['descricao']->renderLabel(null,array('class'=>'obr')); ?>
-                        <?php echo $form['descricao']->render(array('title'=>$form['descricao']->renderLabelName(),'class'=>'required')); ?>
-                    </li>
-                    <li>
-                        <?php echo content_tag('button', 'Enviar', array('type' => 'submit', 'class' => 'btn orange button')) ?>
-                    </li>
-                </ul>
-            </div>
-        </form>
-    </div>
+<?php $rota = url_for('venda_envia'); ?>
+<div class="bloco">
+	<article class="gs">
+		<h2 class="tt">Anuncie seu imóvel</h2>
+		<p class="obr">Campo obrigatório</p>
+		<form action="<?php echo $rota ?>" method="post" id="frmAnuncie" class="formTrigger">
+			<?php echo $form->renderHiddenFields(); ?>
+			<label for="contato_outrosstuff" class="vh">Outros</label>
+			<input aria-hidden="true" role="presentation" type="text" name="contato[outrosstuff]" class="vh" id="contato_outrosstuff" title="Outros">
+			<section class="half">
+				<h3>Informações para contato</h3>
+				<div class="form__input">
+					<?php echo $form['nome']->renderLabel(null,array('class'=>'obr')); ?>
+					<?php echo $form['nome']->render(array('title'=>$form['nome']->renderLabelName(),'class'=>'required')); ?>
+				</div>
+				<div class="form__input">
+					<?php echo $form['email']->renderLabel(null,array('class'=>'obr')); ?>
+					<?php echo $form['email']->render(array('title'=>$form['email']->renderLabelName(),'class'=>'required')); ?>
+				</div>
+				<div class="form__input">
+					<?php echo $form['telefone']->renderLabel(); ?>
+					<?php echo $form['telefone']->render(array('title'=>$form['telefone']->renderLabelName())); ?>
+				</div>
+				<div class="form__input">
+					<?php echo $form['disponibilidade']->renderLabel(null,array('class'=>'obr')); ?>
+					<?php echo $form['disponibilidade']->render(array('title'=>$form['disponibilidade']->renderLabelName())); ?>
+				</div>
+			</section>
+			<section class="half">
+				<h3>Informações do imóvel</h3>
+				<div class="form__input">
+					<?php echo $form['tipo']->renderLabel(null,array('class'=>'obr')); ?>
+					<?php echo $form['tipo']->render(array('title'=>$form['tipo']->renderLabelName())); ?>
+				</div>
+				<div class="form__input">
+					<?php echo $form['bairro']->renderLabel(null,array('class'=>'obr')); ?>
+					<?php echo $form['bairro']->render(array('title'=>$form['bairro']->renderLabelName(),'class'=>'required')); ?>
+				</div>
+				<div class="form__input">
+					<?php echo $form['quartos']->renderLabel(); ?>
+					<?php echo $form['quartos']->render(array('title'=>$form['quartos']->renderLabelName(),)); ?>
+				</div>
+				<div class="form__input">
+					<?php echo $form['suites']->renderLabel(); ?>
+					<?php echo $form['suites']->render(array('title'=>$form['suites']->renderLabelName(),)); ?>
+				</div>
+				<div class="form__input">
+					<?php echo $form['banheiros']->renderLabel(); ?>
+					<?php echo $form['banheiros']->render(array('title'=>$form['banheiros']->renderLabelName(),)); ?>
+				</div>
+				<div class="form__input">
+					<?php echo $form['vagas']->renderLabel(); ?>
+					<?php echo $form['vagas']->render(array('title'=>$form['vagas']->renderLabelName(),)); ?>
+				</div>
+				<div class="form__input">
+					<?php echo $form['valor']->renderLabel(null,array('class'=>'obr')); ?>
+					<?php echo $form['valor']->render(array('title'=>$form['valor']->renderLabelName(),'class'=>'required')); ?>
+				</div>
+				<div class="form__input">
+					<?php echo $form['descricao']->renderLabel(null,array('class'=>'obr')); ?>
+					<?php echo $form['descricao']->render(array('title'=>$form['descricao']->renderLabelName(),'class'=>'required')); ?>
+				</div>
+				<div class="form__btn">
+					<?php echo content_tag('button', 'Enviar', array('type' => 'submit', 'class' => 'btn orange button')) ?>
+				</div>
+			</section>
+		</form>
+	</article>
 </div>

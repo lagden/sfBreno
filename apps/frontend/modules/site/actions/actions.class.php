@@ -12,39 +12,27 @@ class siteActions extends sfActions
 {
     public function executeIndex(sfWebRequest $request)
     {
-        $slug = $request->getParameter('slug',false);
-        $section = $request->getParameter('section',false);
-        
-        $sectionTable = Doctrine_Core::getTable('Section');
-        $contentTable = Doctrine_Core::getTable('Content');
-        
-        $c=false;
-        $this->contentAsSection=false;
-        
-        if($slug && $section)
-        {
-            $this->s=$sectionTable->findOneBySlug($section);
-            $c=$contentTable->findOneBySlugAndSectionId($slug,$this->s->id);
+        $slug = $request->getParameter('slug', false);
+        $arr = [
+        	'sobre' => 'Sobre',
+        	'administracao-de-imoveis-e-servicos' => 'Administração de Imóveis',
+        	'administracao-de-imoveis' => 'Administração de Imóveis',
+        	'documentacao-necessaria' => 'Documentação Necessária',
+        ];
+
+        if ($slug) {
+        	$c = Helper::getMD($slug);
+        	$this->title = isset($arr[$slug]) ? $arr[$slug] : '';
         }
-        elseif($slug)
-        {
-            $this->contentAsSection=true;
-            $c=$sectionTable->findOneBySlug($slug);
-        }
-        if(!$c) $this->redirect('site_notfound');
-        else
-        {
-            $this->getResponse()->addMeta('title', $c->title, true, true);
-            $this->getResponse()->addMeta('description', $c->description, true, true);
-            if($c->Tags->count()>0)
-            {
-                $this->getResponse()->addMeta('keywords', $c->joinTags, true, true);    
-            }
-            if($c->seo) sfConfig::set('seo_site',$c->seo);
+
+        if(!$c) {
+        	$this->redirect('site_notfound');
+        } else {
+            $this->getResponse()->addMeta('title', $this->title, true, true);
             $this->c = $c;
         }
     }
-    
+
     public function executeNotFound(sfWebRequest $request)
     {
         // Not Found

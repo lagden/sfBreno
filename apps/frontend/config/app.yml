@@ -15,16 +15,19 @@ all:
   app_cookie_search_estate: estate_site_search.filters
   route_form_filter: estate_filter
   search:
-    max_per_page: 24
+    max_per_page: 1
 
   .array:
     footer:
       dono: 'Breno Homara'
       func: 'Técnico em Transações Imobiliárias'
-      email: 'brenoimoveis@uol.com.br'
+      email: 'contato@brenohomaraimoveis.com.br'
       site: 'Breno Homara Imóveis'
       creci: 'CRECI 30231'
-      endereco: 'Rua Baronesa de Itú, 275 | Higienópolis | São Paulo | 01231-001'
-      telefone: '(11) 3667-0124 ou (11) 3667-9756'
-      dev: 'Lagden'
+      endereco: 'Rua Baronesa de Itú, 275'
+      endereco2: 'Higienópolis | São Paulo'
+      endereco3: '01231-001'
+      telefone: '(11) 3667-0124'
+      telefone2: '(11) 3667-9756'
+      dev: 'Lagden.in'
       devsite: 'http://lagden.in'

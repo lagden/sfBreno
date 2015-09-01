@@ -47,6 +47,14 @@ class Helper
       return $r;
     }
 
+    static public function getMD($file)
+    {
+        $ds = DIRECTORY_SEPARATOR;
+        $dir = sfConfig::get('sf_data_dir');
+        $md = "{$dir}{$ds}md{$ds}{$file}.md";
+        return (file_exists($md)) ? file_get_contents($md) : false;
+    }
+
     static public function getDataYML($path, $file)
     {
         $ds = DIRECTORY_SEPARATOR;

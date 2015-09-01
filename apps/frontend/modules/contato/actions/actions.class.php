@@ -34,8 +34,9 @@ class contatoActions extends sfActions
         $post = $request->getParameter($form->getName());
 
         $spam = isset($post['outrosstuff']) ? $post['outrosstuff'] : false;
-        if($spam === '' || $spam === false)
+        if($spam === '' || $spam === false) {
           unset($post['outrosstuff']);
+        }
 
         $form->bind($post, $request->getFiles($form->getName()));
 
@@ -51,6 +52,19 @@ class contatoActions extends sfActions
             {
                 $response['msg']='Falha ao tentar enviar. Tente novamente.';
             }
+        } else {
+          // Formulário inválido
+          $errors = [];
+          foreach($form as $k => $v) {
+            if ($form[$k]->getError()) {
+              array_push($errors, "{$form[$k]->renderLabelName()} - {$form[$k]->getError()}");
+            }
+          }
+          foreach($form->getGlobalErrors() as $k => $v) {
+            array_push($errors, $v->__toString());
+          }
+          $notice = (!empty($errors)) ? join("<br>", $errors) : 'Formulário inválido';
+          $response['msg'] = "{$notice}";
         }
         return $this->renderText(json_encode($response));
     }

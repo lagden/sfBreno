@@ -15,21 +15,23 @@ normalize-css()
 // edit()
 
 $cores = {
-  fundo: #2c2c2c,
-  bloco: #414141,
-  footer: #3F3F3F,
-  form: #666,
-  border: #555,
+  fundo: #2c2c2c
+  bloco: #414141
+  footer: #3F3F3F
+  form: #666
+  border: #555
   fonte: #ABABAB
   sol: #F9AE1C
   white: #FFF
   black: #000
-  light: #E1E1E1,
+  light: #E1E1E1
   bebe: #D6D1C8
+  burn: #BB8458
 }
 
 $menuSize = 200
 
+@import 'component/growl'
 @import 'component/form'
 @import 'component/badge'
 @import 'component/media'
@@ -39,26 +41,63 @@ $menuSize = 200
 @import 'component/consulta'
 @import 'component/slider'
 @import 'component/galery'
+@import 'component/pagina'
 @import 'component/estate-list'
+@import 'component/estate'
 
 html
-  font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif
   color: $cores.fonte
   background-color: $cores.fundo
 
 a
   unstyledLink()
+  color: $cores.white
+  &:hover
+    color: $cores.sol
+
+strong
+  color: $cores.white
 
 .pad-30
-  padding 30px
+  padding 30px !important
+
+.pad-2015
+  padding 20px 15px !important
 
 .gs
   center(960px, 10px)
+  position relative
   box-sizing border-box
-  cf()
+  // cf()
   &.gs--flex
     display flex
     flex-wrap wrap
+
+  > .tt
+    color: $cores.sol
+
+.half
+  stack()
+  +above(768px)
+    col(1/2)
+
+  > h2
+    color: $cores.sol
+
+  > h3,
+  > small
+    color: $cores.white
+
+.half--left
+  text-align center
+  +above(768px)
+    text-align left
+
+.half--right
+  text-align center
+  +above(768px)
+    text-align right
 
 .icon
   display: inline-block
@@ -70,6 +109,9 @@ a
   & + span
     display: block
     margin 5px
+
+.icon--white
+  fill: #FFF
 
 .icon--btn
   display: inline-block
@@ -85,6 +127,13 @@ a
   height: 1.5em
   vertical-align middle
   fill: $cores.black
+
+.icon--small-white
+  display: inline-block
+  width: 1.3em
+  height: 1.3em
+  vertical-align middle
+  fill: $cores.white
 
 .bloco
   margin 10px 0
@@ -102,3 +151,31 @@ a
   background-repeat no-repeat, repeat
   background-size contain, 100px 56px
   background-image: radial-gradient(circle farthest-corner at 50% 0%, rgba(lighten($cores.bebe, 5%), 0.78) 0%, rgba(darken($cores.bebe, 0%), 0.9) 80%), url('../assets/hexa.svg')
+
+.bloco--footer
+  background-color: $cores.border
+  font-size 0.85em
+  border-width: 0
+  margin-bottom 0
+
+.bloco__both
+  margin 0 auto
+  text-align center
+
+.vh
+  border: 0 !important
+  clip: rect(0 0 0 0) !important
+  height: 1px !important
+  margin: -1px !important
+  overflow: hidden !important
+  padding: 0 !important
+  position: absolute !important
+  width: 1px !important
+
+.markdown-body
+  h2,
+  h3
+    color: $cores.white
+  img
+    width 280px
+    margin 10px auto

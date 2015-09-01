@@ -34,7 +34,7 @@ class estateActions extends GeneralActions
         $this->estate = false;
         if($r)
         {
-            $this->lista = static::tableList();
+            $this->lista = Lista::svgLista();
             $estateTable = Doctrine_Core::getTable('Estate');
             $this->estate = $estateTable->findOneBySlug($r);
             if(!$this->estate)
@@ -61,7 +61,7 @@ class estateActions extends GeneralActions
 
     public static function tableList()
     {
-        return array(
+        return [
             'condominio'=>'Condomínio',
             'iptu'=>'IPTU',
             'suites'=>'Suítes',
@@ -70,7 +70,7 @@ class estateActions extends GeneralActions
             'vagas'=>'Vagas',
             'area_util'=>'Área útil',
             'area_total'=>'Área total',
-        );
+        ];
     }
 
     public function executeNotFound(sfWebRequest $request)
@@ -88,12 +88,12 @@ class estateActions extends GeneralActions
         $this->getResponse()->setContentType('application/json');
 
         // Response
-        $response=array(
+        $response=[
             'success' => false,
             'auth' => true,
             'msg' => 'Erro',
             'data' => null,
-        );
+        ];
 
         $s = $request->getPostParameter('sort',false);
 
@@ -111,12 +111,12 @@ class estateActions extends GeneralActions
     public function executeReferencia(sfWebRequest $request)
     {
         // Response
-        $response=array(
+        $response=[
             'success' => false,
             'auth' => true,
             'msg' => 'Erro',
             'data' => null,
-        );
+        ];
 
         $form = new ReferenciaForm();
         $r = $request->getParameter($form->getName());
@@ -152,12 +152,12 @@ class estateActions extends GeneralActions
         $this->getResponse()->setContentType('application/json');
 
         // Response
-        $response=array(
+        $response=[
             'success' => false,
             'auth' => true,
             'msg' => 'Erro',
             'data' => null,
-        );
+        ];
 
         $d = $request->getPostParameter('disponibilidade',false);
 

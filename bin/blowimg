@@ -60,9 +60,9 @@ smartresize() {
 R=()
 file=$1
 outdir=$2
-names=( "s" "s2x" "t" "t2x" "b" "b2x")
-sizes=( "x100^" "x200^" "300x300" "600x600" "1200x1200" "1800x1800")
-extents=( "100x100" "200x200" "false" "false" "false" "false")
+names=( "s" "s2x" "t" "t2x" "m" "m2x" "b" "b2x")
+sizes=( "x100^" "x200^" "300x300" "600x600" "400x400" "800x800" "1200x1200" "1800x1800")
+extents=( "100x100" "200x200" "false" "false" "false" "false" "false" "false")
 
 # # For Fun
 # hasParallel=$(which parallel)

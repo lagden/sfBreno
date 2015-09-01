@@ -41,6 +41,7 @@
 		<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 		<link href="<?php echo public_path("/js2/lib/nouislider/distribute/nouislider.min{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">
 		<link href="<?php echo public_path("/js2/lib/flickity/dist/flickity.min{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">
+		<?php /* <link href="<?php echo public_path("/css2/github-markdown{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css"> */ ?>
 		<link href="<?php echo public_path("/css2/app{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">
 
 		<script type="text/javascript">
@@ -68,7 +69,7 @@
 		<main id="siteMain" role="main">
 			<?php echo $sf_content ?>
 		</main>
-		<?php /* include_partial('global/footer'); */ ?>
+		<?php include_partial('global/footer'); ?>
 		<script async src="<?php echo public_path("/js2/lib/require{$cacheVersion}.js") ?>" data-main="<?php echo public_path("/js2/app") ?>"></script>
 </body>
 </html>

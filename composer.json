@@ -1,5 +1,6 @@
 {
     "require": {
-        "symfony/filesystem": "^2.7"
+        "symfony/filesystem": "^2.7",
+        "erusev/parsedown": "^1.5"
     }
 }

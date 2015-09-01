@@ -1,9 +1,40 @@
+form
+  box-sizing border-box
+  margin 0
+  padding 0
+  display block
 
 button
   btn($cores.sol, $cores.white)
 
 input[type="checkbox"]
   transform translateY(2px)
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea
+  appearance: none
+  background-color: $cores.form
+  box-sizing: border-box
+  border-radius: 5px
+  border 0
+  width 100%
+  padding 10px
+  white-space normal
+  &:hover
+    background: darken($cores.form, 10%)
+  &:active,
+  &:focus
+    outline: none
+    background: lighten($cores.form, 10%)
+
+textarea
+  min-height: 50px
+  overflow: auto
+  resize: vertical
+  width: 100%
 
 select,
 select[size="0"],
@@ -31,3 +62,17 @@ select::-ms-expand
 
 select[size], select[multiple]
   background-image: none
+
+.form__input
+  margin-bottom 10px
+  > label
+    font-size 0.9em
+    display block
+    margin-bottom 5px
+    color: $cores.bebe
+
+.form__btn
+  text-align right
+
+.obr
+  color: $cores.burn !important

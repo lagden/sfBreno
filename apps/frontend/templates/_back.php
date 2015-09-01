@@ -1,5 +1,3 @@
-<div class="clearfix">
-    <p class="right">
-        <?php echo content_tag('button', ' ← Voltar', array('type' => 'button', 'class' => 'btn orange button backbutton')) ?>
-    </p>
+<div class="estate-back__btn">
+	<?php echo content_tag('button', 'Voltar', ['type' => 'button', 'class' => 'backbutton']) ?>
 </div>

@@ -5,19 +5,20 @@ use_javascripts_for_form($form);
 $currModel = $form->getObject();
 $action = ($currModel->isNew()) ? url_for(sfConfig::get('action_create')) : url_for(sfConfig::get('action_update'),array('id'=>$currModel->getId()));
 echo $form->renderFormTag($action,array('method' => 'post','class' => 'frm clearfix','id' => 'formValidationGeneral'));
-$ignores = array('id','tags_list','ativo','destaque');
+$ignores = array('id','tags_list','ativo','destaque', 'complementos_list', 'seo');
 ?>
     <?php if (!$currModel->isNew()): ?>
         <input type="hidden" name="sf_method" value="put" />
     <?php else: ?>
-        <?php array_push($ignores,'change') ?>
+        <?php array_push($ignores, 'change') ?>
     <?php endif; ?>
 
     <?php echo $form->renderHiddenFields(); ?>
     <?php echo $form->renderGlobalErrors(); ?>
     <?php
-    foreach($form as $k=>$v):
-        if(!in_array($k,$ignores))
+    foreach($form as $k=> $v):
+    		// var_dump($k);
+        if(!in_array($k, $ignores))
         {
             $resultClass[$k]=($form[$k]->hasError())?'clearfix error':'clearfix';
             echo '<div class="'.$resultClass[$k].'">';
@@ -28,7 +29,7 @@ $ignores = array('id','tags_list','ativo','destaque');
             echo '</div>';
             echo '</div>';
         }
-        elseif($form[$k]->getWidget()->getOption('type')=='checkbox')
+        elseif($form[$k]->getWidget()->getOption('type')=='checkbox' && !in_array($k, $ignores))
         {
             echo '<div class="clearfix"><div class="input"><ul class="inputs-list"><li>';
             echo "<label>{$form[$k]->render()}<span>{$form[$k]->renderLabelName()}</span></label>";

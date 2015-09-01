@@ -186,7 +186,13 @@ Format:
     name: "T2x"
   -
     id: 13
-    name: "B"
+    name: "M"
   -
     id: 14
+    name: "M2x"
+  -
+    id: 15
+    name: "B"
+  -
+    id: 16
     name: "B2x"

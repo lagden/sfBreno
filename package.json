@@ -60,6 +60,7 @@
     "time-grunt": "^1.2.1"
   },
   "dependencies": {
+    "github-markdown-css": "^2.0.9",
     "jeet": "^6.1.2",
     "jquery": "^2.1.4",
     "nib": "^1.1.0",
