@@ -29,8 +29,10 @@ if [ $keypress == "s" ]; then
 
     CMD="./symfony"
     $CMD cc -q
-    $CMD project:optimize teleport dev
-    $CMD project:optimize teleport prod
+    $CMD project:optimize frontend dev
+    $CMD project:optimize frontend prod
+    $CMD project:optimize backend dev
+    $CMD project:optimize backend prod
 fi
 
 exit

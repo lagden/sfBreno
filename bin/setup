@@ -137,7 +137,7 @@ fi
 cd $CURR_FOLDER
 
 # linking the sf web and dev resources
-folders="dev"
+folders="web"
 for folder in $folders
 do
     if [ ! -e $folder/sf ] && [ -d $folder ]
@@ -148,4 +148,3 @@ do
 done
 
 exit
-

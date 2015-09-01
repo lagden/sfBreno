@@ -10,20 +10,21 @@ CURR_FOLDER=`pwd`
 cd $CURR_FOLDER
 
 # Sync
-rsync $CURR_FOLDER/. lagden@lagden.webfactional.com:~/projects/tex/xxx --rsh ssh --recursive --delete --exclude-from $CURR_FOLDER/rsync_exclude.txt --verbose > rsync_exclude.log
+rsync $CURR_FOLDER/. lagden.in:/home/lagden/projects/sfBreno --rsh ssh --copy-links --recursive --delete --exclude-from $CURR_FOLDER/rsync_exclude --verbose > rsync_exclude.log
 
-ssh -T lagden@lagden.webfactional.com <<EOF
+ssh -T lagden.in <<EOF
 
-cd ~/projects/tex/xxx/.
+cd ~/projects/sfBreno/.
 
 # Composer
-composer.phar self-update
-composer.phar update
+# composer.phar update
 
 # Fix
 bin/setup -f
-bin/reset -sl
 bin/fix -s
+
+exit 0
+EOF
 
 echo "                                "
 echo "< Deploy finalizado... Yeahh!! >"
@@ -34,8 +35,5 @@ echo "            (__)\       )\/\    "
 echo "                ||----w |       "
 echo "                ||     ||       "
 echo "                                "
-
-exit 0
-EOF
 
 exit 0

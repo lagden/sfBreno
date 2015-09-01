@@ -14,8 +14,6 @@ Section:
     is_active: true
     position: '2'
     slug: compre-ou-alugue-um-imovel
-    created_at: '2011-12-12 05:51:59'
-    updated_at: '2011-12-12 05:51:59'
   Section_3:
     route: venda
     title: 'Anuncie'

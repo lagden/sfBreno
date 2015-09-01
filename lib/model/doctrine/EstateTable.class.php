@@ -184,8 +184,8 @@ class EstateTable extends Doctrine_Table
 													} else {
 														array_push($ors, "{$alias}.{$k} = $vs");
 													}
-													$q->andWhere(implode(' OR ', $ors));
 												}
+												$q->andWhere(implode(' OR ', $ors));
 											}
 											break;
 
