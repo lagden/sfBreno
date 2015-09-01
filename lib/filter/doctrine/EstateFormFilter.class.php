@@ -81,7 +81,7 @@ class EstateFormFilter extends BaseEstateFormFilter
 				));
 
 				$this->widgetSchema['area'] = new sfWidgetFormInputHidden();
-				$this->widgetSchema['area']->setDefault(10);
+				$this->widgetSchema['area']->setDefault(0);
 				$this->widgetSchema['area_max'] = new sfWidgetFormInputHidden();
 				$this->widgetSchema['area_max']->setDefault(10000);
 

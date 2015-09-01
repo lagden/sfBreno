@@ -23,9 +23,9 @@ class estateActions extends GeneralActions
         // Valores
         $values=Filter::get();
         // Query
-        $query=Doctrine_Core::getTable(sfConfig::get('table_model'))->getFrontListFilter( $values );
+        $query=Doctrine_Core::getTable(sfConfig::get('table_model'))->getFrontListFilter($values);
         // Pagination
-        return Xtras::getPager($query,$request,sfConfig::get('table_model'));
+        return Xtras::getPager($query, $request, sfConfig::get('table_model'));
     }
 
     public function executeShow(sfWebRequest $request)

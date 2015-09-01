@@ -62,7 +62,7 @@ prepare(
 	'estate_filters_area',
 	'estate_filters_area_max',
 	{
-		min: 10,
+		min: 0,
 		'40%': 200,
 		'70%': 1000,
 		max: 10000

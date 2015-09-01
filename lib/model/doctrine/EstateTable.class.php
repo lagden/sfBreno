@@ -85,7 +85,9 @@ class EstateTable extends Doctrine_Table
 
 		public function getByTag($tag, $active=1, Doctrine_Query $q = null)
 		{
-				if (null === $q) $q = $this->getListQuery();
+				if (null == $q) {
+					$q = $this->getListQuery();
+				}
 				$alias=$q->getRootAlias();
 				$q->innerJoin("{$alias}.Tags t");
 				$q->andWhere("t.slug = ?", $tag);
@@ -97,7 +99,9 @@ class EstateTable extends Doctrine_Table
 		// Pega imoveis aleatóriamente
 		public function getRnd($limit=12, Doctrine_Query $q = null)
 		{
-				if (null === $q) $q = $this->getListQuery();
+				if (null == $q) {
+					$q = $this->getListQuery();
+				}
 				$alias=$q->getRootAlias();
 
 				$rand = (APP_ENV == 'dev') ? 'id' : 'RAND()';
@@ -113,7 +117,9 @@ class EstateTable extends Doctrine_Table
 		// Pega imoveis em destaque
 		public function getDestaques($limit=false,Doctrine_Query $q = null)
 		{
-				if (null === $q) $q = $this->getListQuery();
+				if (null == $q) {
+					$q = $this->getListQuery();
+				}
 				$alias=$q->getRootAlias();
 
 				$q->andWhere("{$alias}.destaque = ?", 1);
@@ -126,7 +132,9 @@ class EstateTable extends Doctrine_Table
 		// Filtro Frontend
 		public function getFrontListFilter(array $filters, Doctrine_Query $q = null)
 		{
-				if (null === $q) $q = $this->getListQuery();
+				if (null == $q) {
+					$q = $this->getListQuery();
+				}
 				$alias=$q->getRootAlias();
 
 				if (isset($filters))
@@ -157,12 +165,12 @@ class EstateTable extends Doctrine_Table
 													$filters['valor'] = $filters['valor'] * 1000;
 													$filters['valor_max'] = $filters['valor_max'] * 1000;
 													array_push($ors, "{$alias}.price_sale BETWEEN {$filters['valor']} AND {$filters['valor_max']}");
-													if($filters['valor_max'] === 2000000) {
+													if($filters['valor_max'] == 2000000) {
 														array_push($ors, "{$alias}.price_sale >= {$filters['valor_max']}");
 													}
 												} else {
 													array_push($ors, "{$alias}.price_rent BETWEEN {$filters['valor']} AND {$filters['valor_max']}");
-													if($filters['valor_max'] === 20000) {
+													if($filters['valor_max'] == 20000) {
 														array_push($ors, "{$alias}.price_rent >= {$filters['valor_max']}");
 													}
 												}
@@ -196,9 +204,9 @@ class EstateTable extends Doctrine_Table
 
 										case "area":
 											$ors = [];
-											array_push($ors, "{$alias}.area_total BETWEEN {$filters['area']} AND {$filters['area_max']}");
-											if($filters['area_max'] === 10000) {
-												array_push($ors, "{$alias}.area_total >= {$filters['valor_max']}");
+											array_push($ors, "{$alias}.area_util BETWEEN {$filters['area']} AND {$filters['area_max']}");
+											if($filters['area_max'] == 10000) {
+												array_push($ors, "{$alias}.area_util >= {$filters['area_max']}");
 											}
 											$q->andWhere(implode(' OR ', $ors));
 											break;
@@ -225,7 +233,9 @@ class EstateTable extends Doctrine_Table
 
 		public function getListQuery(Doctrine_Query $q = null)
 		{
-				if(null === $q)$q = $this->createQuery('a');
+				if (null == $q) {
+					$q = $this->createQuery('a');
+				}
 				return $q;
 		}
 }
