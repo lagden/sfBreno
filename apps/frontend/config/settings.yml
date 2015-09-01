@@ -17,7 +17,7 @@ dev:
     etag:                   false
     logging_enabled:        true
     no_script_name:         false
-    web_debug:              false
+    web_debug:              true
 
 test:
   .settings:

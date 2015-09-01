@@ -136,12 +136,17 @@ class EstateTable extends Doctrine_Table
 								switch($k)
 								{
 										case "type_id":
-											$q->andWhere("{$alias}.{$k} = ?", $v);
+											if ($v) {
+												$q->andWhere("{$alias}.{$k} = ?", $v);
+											}
+
 											break;
 
 										case "Disponibilidades":
-											$q->innerJoin("{$alias}.$k j");
-											$q->andWhere("j.id = ?", $v);
+											if ($v) {
+												$q->innerJoin("{$alias}.$k j");
+												$q->andWhere("j.id = ?", $v);
+											}
 											break;
 
 										case "valor":

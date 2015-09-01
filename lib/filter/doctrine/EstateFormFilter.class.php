@@ -22,7 +22,8 @@ class EstateFormFilter extends BaseEstateFormFilter
 						'model' => $this->getRelatedModelName('Type'),
 						'multiple' => false,
 						'expanded' => false,
-						'default' => 1,
+						// 'default' => 1,
+						'add_empty' => 'Todos os tipos'
 				));
 
 				$this->widgetSchema['Disponibilidades'] = new sfWidgetFormDoctrineChoice(array(
@@ -30,7 +31,7 @@ class EstateFormFilter extends BaseEstateFormFilter
 						'multiple' => false,
 						'expanded' => true,
 						'renderer_class' => 'RadioButtonGroup',
-						'default' => 1
+						// 'default' => 1
 				));
 				$this->widgetSchema['Disponibilidades']->setAttributes([
 					'class' => 'optsDisponibilidades'
