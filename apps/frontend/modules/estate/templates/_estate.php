@@ -20,10 +20,6 @@
 		<?php endforeach ?>
 	</ul>
 
-	<div class="markdown-body">
-		<?php echo Parsedown::instance()->text($estate->getRaw('descricao')); ?>
-	</div>
-
 	<h3>Valores</h3>
 	<p class="estate-show--destaque">
 		<?php $complemento = ['iptu'=> 'IPTU', 'condominio'=> 'Condomínio'] ?>
@@ -57,6 +53,10 @@
 		<?php endif ?>
 	<?php endforeach ?>
 	</p>
+
+	<div class="markdown-body">
+		<?php echo Parsedown::instance()->text($estate->getRaw('descricao')); ?>
+	</div>
 </article>
 
 <section class="estate-contato">

@@ -14,16 +14,16 @@ class EstateForm extends BaseEstateForm
     public function configure()
     {
         $this->useFields(array(
-            'type_id',
+            'ativo',
+            'destaque',
+            'destaque_chamada',
             'disponibilidades_list',
+            'type_id',
             'neighborhood_id',
             'referencia',
             'titulo',
             'price_rent',
             'price_sale',
-            'ativo',
-            'destaque',
-            'destaque_chamada',
             'suites',
             'quartos',
             'banheiros',

@@ -5,7 +5,7 @@ use_javascripts_for_form($form);
 $currModel = $form->getObject();
 $action = ($currModel->isNew()) ? url_for(sfConfig::get('action_create')) : url_for(sfConfig::get('action_update'),array('id'=>$currModel->getId()));
 echo $form->renderFormTag($action,array('method' => 'post','class' => 'frm clearfix','id' => 'formValidationGeneral'));
-$ignores = array('id','tags_list','ativo','destaque', 'complementos_list', 'seo');
+$ignores = array('id','tags_list', 'complementos_list', 'seo');
 ?>
     <?php if (!$currModel->isNew()): ?>
         <input type="hidden" name="sf_method" value="put" />

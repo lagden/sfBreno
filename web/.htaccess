@@ -16,8 +16,7 @@
 
   # admin.breno
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{HTTP_HOST} ^admin.breno(.*)$ [NC]
+  RewriteCond %{HTTP_HOST} ^admin(.*).breno(.*)$ [NC]
   RewriteRule ^(.*)$ backend_dev.php [QSA,L]
 
   # we check if the .html version is here (caching)

@@ -23,8 +23,8 @@ $img = ($svg) ? $img : "<img src=\"{$img1x}\" srcset=\"{$img1x} 1x, {$img2x} 2x\
 	<?php endif ?>
 	<div class="estateItem__info">
 		<header>
-			<h1><?php echo link_to("{$estate->titulo}",'estate_show',$qs); ?></h1>
 			<h2><?php echo $estate->Type->name ?> para <?php echo $estate->joinDisponibilidades ?></h2>
+			<h1><?php echo link_to("{$estate->titulo}",'estate_show',$qs); ?></h1>
 			<small>Código <?php echo $estate->referencia ?></small>
 		</header>
 		<div class="estateItem__group">

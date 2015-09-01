@@ -38,7 +38,7 @@
 		<!--[if IE]><link rel="shortcut icon" href="<?php echo public_path("/favicon{$cacheVersion}.ico") ?>"><![endif]-->
 		<link rel="icon" href="<?php echo public_path("/favicon{$cacheVersion}.png") ?>">
 
-		<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+		<link href='//fonts.googleapis.com/css?family=Courgette|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 		<link href="<?php echo public_path("/js2/lib/nouislider/distribute/nouislider.min{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">
 		<link href="<?php echo public_path("/js2/lib/flickity/dist/flickity.min{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">
 		<?php /* <link href="<?php echo public_path("/css2/github-markdown{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css"> */ ?>
