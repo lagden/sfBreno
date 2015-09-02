@@ -9,7 +9,7 @@ import 'component/burger';
 import 'component/pagina';
 import 'component/form';
 
-svgLocalstorage('/assets/sprites.svg', '0.1.5');
+svgLocalstorage('/assets/sprites.svg', '0.1.9');
 
 const $btnBack = $('.backbutton');
 $btnBack.on('click.back', () => {

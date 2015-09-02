@@ -17,43 +17,39 @@
     flex 0 1 calc(100% - 10px)
     flex-direction row
 
+  > a
+    position relative
+    display: block
+    width: 100%
+    min-height: 50px
+    background-color: rgba($cores.bloco, 0.5)
+    border: 3px solid $cores.white
+    box-sizing border-box
+    display block
+    margin-bottom: 15px
+    cursor: pointer
+    &.has--svg
+      min-height: 150px
+
+    +mq(1025px)
+      width 300px
+      margin-right: 15px
+      margin-bottom: 0
+    > svg
+      position: absolute
+      width: 5em
+      height: 5em
+      fill: $cores.sol
+      margin: auto
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+
 .estateItem__img
   width: 100%
-  object-fit: cover
-  border: 3px solid $cores.white
-  box-sizing border-box
-  display block
-  margin-bottom: 15px
-  +mq(1025px)
-    width: 300px
-    height: 100%
-    margin-right: 15px
-    margin-bottom: 0
-
-.estateItem__svg
-  position relative
   display: block
-  flex 0 0 100%
-  height: 200px
-  vertical-align middle
-  box-sizing border-box
-  background-color: gray
-  border: 3px solid $cores.white
-  margin-bottom: 15px
-  > a > svg
-    position: absolute
-    width: 5em
-    height: 5em
-    fill: $cores.sol
-    margin: auto
-    top: 0
-    left: 0
-    bottom: 0
-    right: 0
-  +mq(1025px)
-    flex 0 0 300px
-    margin-right: 15px
-    margin-bottom: 0
+  object-fit: cover
 
 .estateItem__info
   display flex

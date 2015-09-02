@@ -26,11 +26,12 @@ function update(plus, ...v) {
 
 function prepare(reset, abbr, ...els) {
 	const [slider, fmin, fmax, range, step, times] = els;
-	const noS = document.getElementById(slider);
-	if (noS) {
+	const $noS = $(`#${slider}`);
+	if ($noS.length > 0) {
+		const noS = $noS[0];
 		const elMin = document.getElementById(fmin);
 		const elMax = document.getElementById(fmax);
-		const opts = noS.closest('.opts');
+		const $opts = $noS.closest('.opts');
 		const startMin = (reset) ? range.min : elMin.value || range.min;
 		const startMax = (reset) ? range.max : elMax.value || range.max;
 
@@ -47,9 +48,9 @@ function prepare(reset, abbr, ...els) {
 			elMin.value = vmin / times;
 			elMax.value = vmax / times;
 			if (abbr) {
-				update(plus, opts.dataset.field, customAbbr(vmin), customAbbr(vmax));
+				update(plus, $opts.data('field'), customAbbr(vmin), customAbbr(vmax));
 			} else {
-				update(plus, opts.dataset.field, currencyFormat(vmin, 0, ',', '.'), currencyFormat(vmax, 0, ',', '.'));
+				update(plus, $opts.data('field'), currencyFormat(vmin, 0, ',', '.'), currencyFormat(vmax, 0, ',', '.'));
 			}
 		});
 	}

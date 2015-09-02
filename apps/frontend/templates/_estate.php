@@ -1,26 +1,25 @@
 <?php
 $qs = ['slug'=>$estate->slug];
+$attr = [];
 $items = Lista::svgLista();
 $svg = false;
 if ($estate->image_destaque) {
 	$img1x = $estate->image_destaque->formato('m');
 	$img2x = $estate->image_destaque->formato('m2x');
 } else {
-	$svg = true;
-	$img = '<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#material_local_see">Sem imagem</use></svg>';
+	$svg = '<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#material_local_see">Sem imagem</use></svg>';
 }
 
-$img = ($svg) ? $img : "<img src=\"{$img1x}\" srcset=\"{$img1x} 1x, {$img2x} 2x\" class=\"estateItem__img\" alt=\"{$qs['slug']}\">";
+if ($svg) {
+	$img = $svg;
+	$attr['class'] = 'has--svg';
+} else {
+	$img = "<img src=\"{$img1x}\" srcset=\"{$img1x} 1x, {$img2x} 2x\" class=\"estateItem__img\" alt=\"{$qs['slug']}\">";
+}
 
 ?>
 <article class="estateItem">
-	<?php if ($svg): ?>
-		<div class="estateItem__svg">
-			<?php echo link_to("{$img}",'estate_show',$qs); ?>
-		</div>
-	<?php else: ?>
-		<?php echo link_to("{$img}",'estate_show',$qs); ?>
-	<?php endif ?>
+	<?php echo link_to("{$img}",'estate_show', $qs, $attr); ?>
 	<div class="estateItem__info">
 		<header>
 			<h2><?php echo $estate->Type->name ?> para <?php echo $estate->joinDisponibilidades ?></h2>

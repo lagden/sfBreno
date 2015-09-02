@@ -44,8 +44,8 @@ function closeBefore(ignore) {
 }
 
 function beforeUpdate(opt) {
-	const opts = opt.closest('.opts');
-	update(opts.dataset.field, opt.value, opt.checked);
+	const $opts = $(opt).closest('.opts');
+	update($opts.data('field'), opt.value, opt.checked);
 }
 
 $btns.on('click', (event) => {
