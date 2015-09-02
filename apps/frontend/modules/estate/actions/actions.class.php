@@ -64,8 +64,8 @@ class estateActions extends GeneralActions
         return [
             'condominio'=>'Condomínio',
             'iptu'=>'IPTU',
-            'suites'=>'Suítes',
             'quartos'=>'Quartos',
+            'suites'=>'Suítes',
             'banheiros'=>'Banheiros',
             'vagas'=>'Vagas',
             'area_util'=>'Área útil',

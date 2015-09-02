@@ -7,54 +7,58 @@ cd ..
 CURR_FOLDER=`pwd`
 
 join() {
-  local IFS="$1"
-  shift
-  echo "$*"
+	local IFS="$1"
+	shift
+	echo "$*"
 }
 
 # Result
 addshow() {
-  if test -e "${1}"; then
-    mv $1 $2
-    R+=("{\"success\": true, \"file\": \"$2\"}")
-  else
-    R+=("{\"success\": false, \"file\": \"$2\"}")
-  fi
+	if test -e "${1}"; then
+		mv $1 $2
+		R+=("{\"success\": true, \"file\": \"$2\"}")
+	else
+		R+=("{\"success\": false, \"file\": \"$2\"}")
+	fi
 }
 
 smartresize() {
-  local filename=$(basename $1)
-  local prefix=${filename%.*}
-  local ext=${filename##*.}
-  local out="${4}.${ext}"
-  local CMD="mogrify"
+	local filename=$(basename $1)
+	local prefix=${filename%.*}
+	local ext=${filename##*.}
+	local out="${4}.${ext}"
+	local EXEC="/home/lagden/bin/mogrify"
+	local CMD="mogrify"
+	if test -e "${EXEC}"; then
+		CMD="${EXEC}"
+	fi
 
-  if test "${3}" != "false"; then
-    local extent="-extent $3"
-  else
-    local extent="-quality 82"
-  fi
+	if test "${3}" != "false"; then
+		local extent="-extent $3"
+	else
+		local extent="-quality 82"
+	fi
 
-  $CMD \
-    -filter Triangle \
-    -define filter:support=2 \
-    -thumbnail $2 \
-    $extent \
-    -auto-orient \
-    -unsharp 0.25x0.08+8.3+0.045 \
-    -dither None \
-    -posterize 136 \
-    -define jpeg:fancy-upsampling=off \
-    -define png:compression-filter=5 \
-    -define png:compression-level=9 \
-    -define png:compression-strategy=1 \
-    -define png:exclude-chunk=all \
-    -interlace none \
-    -gravity center \
-    -format $out \
-    -colorspace sRGB $1
+	$CMD \
+		-filter Triangle \
+		-define filter:support=2 \
+		-thumbnail $2 \
+		$extent \
+		-auto-orient \
+		-unsharp 0.25x0.08+8.3+0.045 \
+		-dither None \
+		-posterize 136 \
+		-define jpeg:fancy-upsampling=off \
+		-define png:compression-filter=5 \
+		-define png:compression-level=9 \
+		-define png:compression-strategy=1 \
+		-define png:exclude-chunk=all \
+		-interlace none \
+		-gravity center \
+		-format $out \
+		-colorspace sRGB $1
 
-  addshow "${5}/${prefix}.${out}" "${5}/${prefix}-${out}"
+	addshow "${5}/${prefix}.${out}" "${5}/${prefix}-${out}"
 }
 
 R=()
@@ -79,7 +83,7 @@ extents=( "100x100" "200x200" "false" "false" "false" "false" "false" "false")
 
 for index in ${!sizes[@]}
 do
-  smartresize $file ${sizes[index]} ${extents[index]} ${names[index]} $outdir
+	smartresize $file ${sizes[index]} ${extents[index]} ${names[index]} $outdir
 done
 
 r=$(join , "${R[@]}")

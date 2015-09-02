@@ -5,8 +5,8 @@ class estateComponents extends GeneralComponents
 		{
 				$this->consultaItem = [
 					['svg'=>'#custom_valor'    , 'field'=>['valor','valor_max'] , 'css'=>'opts--min'],
-					['svg'=>'#custom_suite'    , 'field'=>'suites'                  , 'css'=>null],
 					['svg'=>'#custom_quarto'   , 'field'=>'quartos'                 , 'css'=>null],
+					['svg'=>'#custom_suite'    , 'field'=>'suites'                  , 'css'=>null],
 					['svg'=>'#custom_banheiro' , 'field'=>'banheiros'               , 'css'=>null],
 					['svg'=>'#custom_metro'    , 'field'=>['area','area_max']   , 'css'=>'opts--min'],
 					['svg'=>'#custom_vaga'     , 'field'=>'vagas'                   , 'css'=>null],
