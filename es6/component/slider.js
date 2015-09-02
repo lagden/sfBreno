@@ -64,9 +64,8 @@ prepare(
 	'estate_filters_area_max',
 	{
 		min: 0,
-		'40%': 200,
-		'70%': 1000,
-		max: 10000
+		'50%': 300,
+		max: 1000
 	},
 	10,
 	1
@@ -85,8 +84,9 @@ function builder(reset = false) {
 		'estate_filters_valor',
 		'estate_filters_valor_max',
 		{
-			min: (val === 1) ? 50 : 100,
-			max: (val === 1) ? 2000 : 20000
+			min: 0,
+			'50%': (val === 1) ? 1000 : 10000,
+			max: (val === 1) ? 5000 : 20000
 		},
 		50,
 		(val === 1) ? 1000 : 1

@@ -38,10 +38,10 @@ class EstateFormFilter extends BaseEstateFormFilter
 				]);
 
 				$this->widgetSchema['valor'] = new sfWidgetFormInputHidden();
-				$this->widgetSchema['valor']->setDefault(50);
+				$this->widgetSchema['valor']->setDefault(0);
 
 				$this->widgetSchema['valor_max'] = new sfWidgetFormInputHidden();
-				$this->widgetSchema['valor_max']->setDefault(2000);
+				$this->widgetSchema['valor_max']->setDefault(5000);
 
 				$this->widgetSchema['neighborhood_id'] = new sfWidgetFormDoctrineChoice(array(
 						'model' => $this->getRelatedModelName('Neighborhood'),
@@ -83,7 +83,7 @@ class EstateFormFilter extends BaseEstateFormFilter
 				$this->widgetSchema['area'] = new sfWidgetFormInputHidden();
 				$this->widgetSchema['area']->setDefault(0);
 				$this->widgetSchema['area_max'] = new sfWidgetFormInputHidden();
-				$this->widgetSchema['area_max']->setDefault(10000);
+				$this->widgetSchema['area_max']->setDefault(1000);
 
 				$this->widgetSchema['type_id']->setLabel('Selecione uma opção');
 				$this->widgetSchema['Disponibilidades']->setLabel('Disponibilidade');
