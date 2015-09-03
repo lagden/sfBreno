@@ -1,7 +1,6 @@
 <?php
 $qs = ['slug'=>$estate->slug];
 $attr = [];
-$items = Lista::svgLista();
 $svg = false;
 if ($estate->image_destaque) {
 	$img1x = $estate->image_destaque->formato('m');
@@ -27,18 +26,7 @@ if ($svg) {
 			<small>Código <?php echo $estate->referencia ?></small>
 		</header>
 		<div class="estateItem__group">
-			<ul class="estateItem__icon">
-				<?php foreach ($items as $item): ?>
-					<?php if ($estate->$item['field']): ?>
-						<li>
-							<span title="<?php echo $item['title'] ?>"><?php echo $estate->$item['field'] ?><?php echo $item['sufix'] ?></span>
-							<svg class="icon--estate">
-								<use xlink:href="<?php echo $item['svg'] ?>"></use>
-							</svg>
-						</li>
-					<?php endif ?>
-				<?php endforeach ?>
-			</ul>
+			<?php include_partial('global/quantidade', ['estate'=>$estate, 'ulCss'=>'estateItem__icon', 'svgCss'=>'icon--estate']); ?>
 			<div class="estateItem__valor-detalhe">
 				<?php $countDisponibilidade = $estate->Disponibilidades->count() ?>
 				<?php foreach ($estate->Disponibilidades as $d): ?>

@@ -2,6 +2,6 @@
 <div class="bloco">
 	<div class="gs">
 		<?php include_partial('global/back'); ?>
-		<?php include_partial('estate', array('estate' => $estate, 'lista' => $lista)); ?>
+		<?php include_partial('estate', array('estate' => $estate)); ?>
 	</div>
 </div>

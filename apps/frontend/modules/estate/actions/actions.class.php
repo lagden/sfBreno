@@ -34,7 +34,6 @@ class estateActions extends GeneralActions
         $this->estate = false;
         if($r)
         {
-            $this->lista = Lista::svgLista();
             $estateTable = Doctrine_Core::getTable('Estate');
             $this->estate = $estateTable->findOneBySlug($r);
             if(!$this->estate)
@@ -114,7 +113,7 @@ class estateActions extends GeneralActions
         $response=[
             'success' => false,
             'auth' => true,
-            'msg' => 'Erro',
+            'msg' => 'Nenhum imóvel com esse código.',
             'data' => null,
         ];
 
@@ -134,6 +133,7 @@ class estateActions extends GeneralActions
             if($goto)
             {
                 $response['success']=true;
+                $response['msg']='Redirecionando para a página do imóvel.';
                 $response['data']=array('url'=>$goto);
             }
             return $this->renderText(json_encode($response));

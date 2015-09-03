@@ -17,6 +17,9 @@ $form.on('submit', (event) => {
 			growl().notifica(r.success ? 'Sucesso' : 'Atenção', r.msg);
 			if (r.success) {
 				f.reset();
+				if (r.data && r.data.hasOwnProperty('url')) {
+					window.location = r.data.url;
+				}
 			}
 		})
 		.always(() => {

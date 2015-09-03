@@ -7,18 +7,7 @@
 	</p>
 
 	<h3><?php echo "Sobre o imóvel" ?></h3>
-	<ul class="estateItem__icon">
-		<?php foreach ($lista as $item): ?>
-			<?php if ($estate->$item['field']): ?>
-				<li>
-					<span title="<?php echo $item['title'] ?>"><?php echo $estate->$item['field'] ?><?php echo $item['sufix'] ?></span>
-					<svg class="icon--estate--show">
-						<use xlink:href="<?php echo $item['svg'] ?>"></use>
-					</svg>
-				</li>
-			<?php endif ?>
-		<?php endforeach ?>
-	</ul>
+	<?php include_partial('global/quantidade', ['estate'=>$estate, 'ulCss'=>'estateItem__icon', 'svgCss'=>'icon--estate--show']); ?>
 
 	<h3>Valores</h3>
 	<p class="estate-show--destaque">

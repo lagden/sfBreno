@@ -1,5 +1,5 @@
 <?php $total = $pager->count(); ?>
-<?php include_component('estate', 'Filter'); ?>
+<?php include_partial('global/busca'); ?>
 <div class="gs pad-2015">
 	<p>Total de imóveis encontrado: <?php echo $total ?></p>
 	<?php /* include_component('estate', 'Sorting'); */ ?>

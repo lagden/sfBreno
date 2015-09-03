@@ -4,7 +4,7 @@ class ReferenciaForm extends sfForm
     public function configure()
     {
         $this->setWidgets(array(
-            'referencia' => new sfWidgetFormInput(array('label' => 'Código de referência',),array('placeholder'=>'Informe o código',)),
+            'referencia' => new sfWidgetFormInput(array('label' => 'Código de referência',),array('placeholder'=>'Informe o código de referência',)),
         ));
 
         $this->widgetSchema->setNameFormat('ref[%s]');

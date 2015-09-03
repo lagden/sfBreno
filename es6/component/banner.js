@@ -1,7 +1,7 @@
 'use strict';
 
 import $ from 'jquery';
-import Flickity from 'flickity/dist/flickity.pkgd';
+import Flickity from 'flickity-imagesloaded/flickity-imagesloaded';
 
 function changeCaption($el, v) {
 	$el.empty().text(v);
@@ -19,7 +19,7 @@ if ($homeGallery.length > 0) {
 		prevNextButtons: true,
 		draggable: false,
 		resize: true,
-		lazyLoad: true
+		lazyLoad: false
 	});
 	flktyHome.on('cellSelect', () => {
 		changeCaption($staticBannerHome, flktyHome.selectedElement.lastElementChild.textContent);
@@ -38,7 +38,7 @@ if ($estateGallery.length > 0) {
 		prevNextButtons: true,
 		draggable: false,
 		resize: true,
-		lazyLoad: true
+		lazyLoad: false
 	});
 	flktyGallery.resize();
 }

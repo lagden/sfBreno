@@ -89,10 +89,10 @@ class EstateFormFilter extends BaseEstateFormFilter
 				$this->widgetSchema['Disponibilidades']->setLabel('Disponibilidade');
 				$this->widgetSchema['valor']->setLabel('Valor');
 				$this->widgetSchema['neighborhood_id']->setLabel('Bairros');
-				$this->widgetSchema['suites']->setLabel('Suítes');
-				$this->widgetSchema['quartos']->setLabel('Quartos');
-				$this->widgetSchema['banheiros']->setLabel('Banheiros');
-				$this->widgetSchema['vagas']->setLabel('Vagas');
+				$this->widgetSchema['suites']->setLabel('Suíte');
+				$this->widgetSchema['quartos']->setLabel('Quarto');
+				$this->widgetSchema['banheiros']->setLabel('Banheiro');
+				$this->widgetSchema['vagas']->setLabel('Vaga');
 				$this->widgetSchema['area']->setLabel('Área');
 
 				// Validation
