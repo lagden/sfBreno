@@ -26,7 +26,7 @@ if ($svg) {
 			<small>Código <?php echo $estate->referencia ?></small>
 		</header>
 		<div class="estateItem__group">
-			<?php include_partial('global/quantidade', ['estate'=>$estate, 'ulCss'=>'estateItem__icon', 'svgCss'=>'icon--estate']); ?>
+			<?php include_partial('global/quantidade', ['estate'=>$estate, 'ulCss'=>'estateItem__icon', 'svgCss'=>'icon--estate', 'smallCss'=>'icon--label']); ?>
 			<div class="estateItem__valor-detalhe">
 				<?php $countDisponibilidade = $estate->Disponibilidades->count() ?>
 				<?php foreach ($estate->Disponibilidades as $d): ?>

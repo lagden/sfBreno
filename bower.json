@@ -4,6 +4,7 @@
   "dependencies": {
     "flickity": "~1.1.0",
     "flickity-imagesloaded": "~1.0.1",
+    "imagesloaded": "~3.1.8",
     "lagden-growl": "~0.4.1",
     "mout": "~0.11.0",
     "nouislider": "~8.0.2"

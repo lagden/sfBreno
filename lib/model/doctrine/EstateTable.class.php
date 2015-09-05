@@ -105,10 +105,11 @@ class EstateTable extends Doctrine_Table
 				$alias=$q->getRootAlias();
 
 				$rand = (APP_ENV == 'dev') ? 'id' : 'RAND()';
+				// $rand = 'id DESC';
 
 				$q->andWhere("{$alias}.ativo = ?", 1);
 				// $q->orderBy("RAND()");
-				$q->orderBy($rand);
+				$q->orderby($rand);
 				$q->limit($limit);
 
 				return $q;

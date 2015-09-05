@@ -15,6 +15,7 @@ test/resources/convert/*
 # Project files
 cache/*
 log/*
+apps/frontend/config/factories.yml
 config/databases.yml
 # web/*_dev.php
 tmp/*
@@ -33,6 +34,7 @@ composer.lock
 /web/assets
 /web/css2
 /web/js2
+/web/js3
 /es6/lib
 *.lock
 *.log
@@ -65,4 +67,3 @@ lib-cov
 *.out
 *.pid
 *.gz
-

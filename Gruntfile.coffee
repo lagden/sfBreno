@@ -40,10 +40,38 @@ module.exports = (grunt) ->
           ext: '.js'
         ]
 
+    requirejs:
+      almond:
+        options:
+          optimize: 'uglify2'
+          uglify2:
+            warnings: false
+            mangle: true
+            compress:
+              evaluate: false
+              sequences: true
+              properties: true
+              unused: true
+              hoist_funs: false
+              hoist_vars: false
+              drop_debugger: true
+              drop_console: true
+          optimizeCss: 'none'
+          generateSourceMaps: true
+          keepAmdefine: true
+          preserveLicenseComments: false
+          findNestedDependencies: true
+          useStrict: true
+          baseUrl: 'web/js2/lib'
+          mainConfigFile: 'web/js2/config.js'
+          name: '../../../node_modules/almond/almond',
+          include: [ '../app' ]
+          out: 'web/js3/main.min.js'
+
     stylus:
       dev:
         options:
-          compress: false
+          compress: true
           paths: [
             'node_modules/jeet/stylus'
             'node_modules/rupture'
@@ -164,6 +192,11 @@ module.exports = (grunt) ->
   grunt.registerTask 'styles', [
     'stylus'
     'postcss'
+  ]
+
+  grunt.registerTask 'build', [
+    'default'
+    'requirejs'
   ]
 
   grunt.registerTask 'w', [

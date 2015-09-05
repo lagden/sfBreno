@@ -1,5 +1,8 @@
 <?php include_partial('image', ['estate' => $estate]); ?>
 <div class="bloco">
+	<?php include_component('estate', 'Referencia'); ?>
+</div>
+<div class="bloco">
 	<div class="gs">
 		<?php include_partial('global/back'); ?>
 		<?php include_partial('estate', array('estate' => $estate)); ?>

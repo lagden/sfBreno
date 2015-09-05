@@ -70,6 +70,10 @@
 			<?php echo $sf_content ?>
 		</main>
 		<?php include_partial('global/footer'); ?>
-		<script async src="<?php echo public_path("/js2/lib/require{$cacheVersion}.js") ?>" data-main="<?php echo public_path("/js2/app") ?>"></script>
+		<?php if (sfConfig::get('sf_environment') == 'prod'): ?>
+			<script async src="<?php echo public_path("/js3/main.min{$cacheVersion}.js") ?>"></script>
+		<?php else: ?>
+			<script async src="<?php echo public_path("/js2/lib/require{$cacheVersion}.js") ?>" data-main="<?php echo public_path("/js2/app") ?>"></script>
+		<?php endif ?>
 </body>
 </html>

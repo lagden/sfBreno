@@ -35,11 +35,12 @@
       width 300px
       margin-right: 15px
       margin-bottom: 0
+      box-sizing: content-box
     > svg
       position: absolute
       width: 5em
       height: 5em
-      fill: $cores.sol
+      fill: $cores.white
       margin: auto
       top: 0
       left: 0
@@ -66,7 +67,7 @@
     > h1
       font-size 1.1em
       > a
-        color: $cores.burn
+        color: $cores.green
     > h2
       font-size 0.85em
       color: $cores.white
@@ -92,7 +93,7 @@
   padding 0
   margin 0
   > li
-    padding 10px
+    padding 6px
     text-align center
     > span
       display block
@@ -111,11 +112,11 @@
     flex-direction row
 
 .estateItem__valor
-  border: 1px solid white
+  // border: 1px solid white
   padding: 16px 3px
   border-radius: 5px
-  color: gray
-  background-color: white
+  color: $cores.green
+  background-color: rgba($cores.black, 0.2)
   display inline-block
   text-align: center
   font-size 0.9em

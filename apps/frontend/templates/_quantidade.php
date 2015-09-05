@@ -7,7 +7,7 @@
 				<svg class="<?php echo $svgCss ?>">
 					<use xlink:href="<?php echo $item['svg'] ?>"></use>
 				</svg>
-				<small><?php echo $item['title'] ?></small>
+				<small class="<?php echo $smallCss ?>"><?php echo $item['title'] ?></small>
 			</li>
 		<?php endif ?>
 	<?php endforeach ?>

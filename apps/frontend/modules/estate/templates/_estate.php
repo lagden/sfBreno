@@ -7,7 +7,7 @@
 	</p>
 
 	<h3><?php echo "Sobre o imóvel" ?></h3>
-	<?php include_partial('global/quantidade', ['estate'=>$estate, 'ulCss'=>'estateItem__icon', 'svgCss'=>'icon--estate--show']); ?>
+	<?php include_partial('global/quantidade', ['estate'=>$estate, 'ulCss'=>'estateItem__icon', 'svgCss'=>'icon--estate--show', 'smallCss'=>'icon--label']); ?>
 
 	<h3>Valores</h3>
 	<p class="estate-show--destaque">
