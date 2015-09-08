@@ -7,6 +7,13 @@
 */
 class EstateTable extends Doctrine_Table
 {
+		const VALOR_MAX = 5000000;
+		const VALOR_MIN = 0;
+		const VALOR_MAX_LOCACAO = 20000;
+		const VALOR_MIN_LOCACAO = 0;
+		const AREA_MAX = 1000;
+		const AREA_MIN = 0;
+
 		static public $valor_venda = array(
 				'' => 'Indiferente',
 				'< 400000' => 'até R$400.000',
@@ -166,12 +173,12 @@ class EstateTable extends Doctrine_Table
 													$filters['valor'] = $filters['valor'] * 1000;
 													$filters['valor_max'] = $filters['valor_max'] * 1000;
 													array_push($ors, "{$alias}.price_sale BETWEEN {$filters['valor']} AND {$filters['valor_max']}");
-													if($filters['valor_max'] == 2000000) {
+													if($filters['valor_max'] == EstateTable::VALOR_MAX) {
 														array_push($ors, "{$alias}.price_sale >= {$filters['valor_max']}");
 													}
 												} else {
 													array_push($ors, "{$alias}.price_rent BETWEEN {$filters['valor']} AND {$filters['valor_max']}");
-													if($filters['valor_max'] == 20000) {
+													if($filters['valor_max'] == EstateTable::VALOR_MAX_LOCACAO) {
 														array_push($ors, "{$alias}.price_rent >= {$filters['valor_max']}");
 													}
 												}
@@ -206,7 +213,7 @@ class EstateTable extends Doctrine_Table
 										case "area":
 											$ors = [];
 											array_push($ors, "{$alias}.area_util BETWEEN {$filters['area']} AND {$filters['area_max']}");
-											if($filters['area_max'] == 10000) {
+											if($filters['area_max'] == EstateTable::AREA_MAX) {
 												array_push($ors, "{$alias}.area_util >= {$filters['area_max']}");
 											}
 											$q->andWhere(implode(' OR ', $ors));

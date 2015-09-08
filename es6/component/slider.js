@@ -57,6 +57,7 @@ function prepare(reset, abbr, ...els) {
 	}
 }
 
+// Area Builder
 prepare(
 	false,
 	false,
@@ -72,6 +73,7 @@ prepare(
 	1
 );
 
+// Valor Builder
 function builder(reset = false) {
 	const val = parseInt($disponivel.filter(':checked').val(), 10) || 1;
 	const noS = document.getElementById('valorSlider');
