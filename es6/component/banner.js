@@ -1,8 +1,8 @@
 'use strict';
 
 import $ from 'jquery';
-// import Flickity from 'flickity/dist/flickity.pkgd';
-import Flickity from 'flickity-imagesloaded/flickity-imagesloaded';
+import Flickity from 'flickity/dist/flickity.pkgd';
+// import Flickity from 'flickity-imagesloaded/flickity-imagesloaded';
 import 'imagesloaded/imagesloaded';
 import './lightbox';
 

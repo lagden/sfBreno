@@ -39,11 +39,16 @@
 		<link rel="icon" href="<?php echo public_path("/favicon{$cacheVersion}.png") ?>">
 
 		<link href='//fonts.googleapis.com/css?family=Courgette|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-		<link href="<?php echo public_path("/js2/lib/nouislider/distribute/nouislider.min{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">
-		<link href="<?php echo public_path("/js2/lib/flickity/dist/flickity.min{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">
-		<?php /* <link href="<?php echo public_path("/css2/github-markdown{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css"> */ ?>
+		<?php
+			$nouislider = sfConfig::get("sf_web_dir") . "/js2/lib/nouislider/distribute/nouislider.min.css";
+			$flickity = sfConfig::get("sf_web_dir") . "/js2/lib/flickity/dist/flickity.min.css";
+			$markdown = sfConfig::get("sf_web_dir") . "/css2/github-markdown.css";
+		?>
+		<style>
+			<?php echo file_get_contents($nouislider); ?>
+			<?php echo file_get_contents($flickity); ?>
+		</style>
 		<link href="<?php echo public_path("/css2/app{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">
-
 		<script type="text/javascript">
 			'use strict';
 			var _gaq = _gaq || [];
