@@ -4,7 +4,7 @@
 		<?php
 		// Cache version
 		// $cacheVersion = '.' . implode('', explode('.',sfConfig::get('app_cache_version')));
-		$cacheVersion = '.' . '2.0.0';
+		$cacheVersion = '.' . '2.0.4';
 		$neverCacheVersion = mt_rand();
 		?>
 
@@ -17,7 +17,7 @@
 		<title><?php echo sfConfig::get('title', Helper::getTitle()) ?></title>
 
 		<?php /* <!-- Add to homescreen --> */ ?>
-		<link rel="manifest" href="<?php echo public_path("/manifest{$cacheVersion}.json") ?>">
+		<?php /* <link rel="manifest" href="<?php echo public_path("/manifest{$cacheVersion}.json") ?>"> */ ?>
 
 		<?php /* <!-- Add to homescreen for Safari on iOS --> */ ?>
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -49,7 +49,8 @@
 			<?php echo file_get_contents($flickity); ?>
 			<?php echo file_get_contents($critical); ?>
 		</style>
-		<link href="<?php echo public_path("/css2/app{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">
+		<?php /* <link href="<?php echo public_path("/css2/app{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css"> */ ?>
+
 		<script type="text/javascript">
 			'use strict';
 			var _gaq = _gaq || [];
@@ -81,5 +82,20 @@
 		<?php else: ?>
 			<script async src="<?php echo public_path("/js2/lib/require{$cacheVersion}.js") ?>" data-main="<?php echo public_path("/js2/app") ?>"></script>
 		<?php endif ?>
+		<script>
+			function cbCss() {
+				var l = document.createElement('link');
+				l.rel = 'stylesheet';
+				l.href = '<?php echo public_path("/css2/app{$cacheVersion}.css") ?>';
+				var h = document.getElementsByTagName('head')[0];
+				h.parentNode.insertBefore(l, h);
+			}
+			var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+			if (raf) {
+				raf(cbCss);
+			} else {
+				window.addEventListener('load', cbCss);
+			}
+		</script>
 </body>
 </html>
