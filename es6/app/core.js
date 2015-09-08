@@ -8,6 +8,7 @@ import 'component/banner';
 import 'component/burger';
 import 'component/pagina';
 import 'component/form';
+import 'component/aviso';
 
 const $btnBack = $('.backbutton');
 $btnBack.on('click.back', () => {

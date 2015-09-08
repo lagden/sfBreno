@@ -289,16 +289,6 @@ function imageLightbox(opts) {
 		targets = targets.add($(el));
 	});
 
-	// this.switchImageLightbox = (index) => {
-	// 	const tmpTarget = targets.eq(index);
-	// 	if (tmpTarget.length) {
-	// 		const currentIndex = targets.index(target);
-	// 		target = tmpTarget;
-	// 		loadImage(index < currentIndex ? 'left' : 'right');
-	// 	}
-	// 	return this;
-	// };
-
 	this.quitImageLightbox = quitLightbox;
 
 	return this;

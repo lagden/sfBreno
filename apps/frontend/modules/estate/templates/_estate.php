@@ -1,6 +1,6 @@
-<article class="estate-show">
+<article class="estate-show" id="estateDetalhe" data-ativo="<?php echo ($estate->ativo) ? 1 : 0 ?>">
 	<h2><?php echo $estate->titulo ?></h2>
-	<small>Código <?php echo $estate->referencia ?></small>
+	<small>Código <?php echo $estate->referencia ?> <?php if (!$estate->ativo): ?><span class="estate-inativo"><b>Atenção:</b> Imóvel inativo!</span><?php endif ?></small>
 	<p>
 		<?php echo $estate->Type->name ?> para <?php echo $estate->joinDisponibilidades ?><br>
 		<?php echo "{$estate->Neighborhood->name} / {$estate->Neighborhood->City->name}" ?>

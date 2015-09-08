@@ -21,7 +21,10 @@ if ($svg) {
 	<?php echo link_to("{$img}",'estate_show', $qs, $attr); ?>
 	<div class="estateItem__info">
 		<header>
-			<h2><?php echo $estate->Type->name ?> para <?php echo $estate->joinDisponibilidades ?></h2>
+			<h2>
+				<?php echo $estate->Type->name ?> para <?php echo $estate->joinDisponibilidades ?><br>
+				<?php echo "{$estate->Neighborhood->name} / {$estate->Neighborhood->City->name}" ?>
+			</h2>
 			<h1><?php echo link_to("{$estate->titulo}",'estate_show',$qs); ?></h1>
 			<small>Código <?php echo $estate->referencia ?></small>
 		</header>
