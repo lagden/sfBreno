@@ -4,7 +4,7 @@
 		<?php
 		// Cache version
 		// $cacheVersion = '.' . implode('', explode('.',sfConfig::get('app_cache_version')));
-		$cacheVersion = '';
+		$cacheVersion = '.' . '2.0.0';
 		$neverCacheVersion = mt_rand();
 		?>
 
@@ -37,16 +37,17 @@
 
 		<!--[if IE]><link rel="shortcut icon" href="<?php echo public_path("/favicon{$cacheVersion}.ico") ?>"><![endif]-->
 		<link rel="icon" href="<?php echo public_path("/favicon{$cacheVersion}.png") ?>">
-
-		<link href='//fonts.googleapis.com/css?family=Courgette|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 		<?php
+			/* <link href='//fonts.googleapis.com/css?family=Courgette|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'> */
 			$nouislider = sfConfig::get("sf_web_dir") . "/js2/lib/nouislider/distribute/nouislider.min.css";
 			$flickity = sfConfig::get("sf_web_dir") . "/js2/lib/flickity/dist/flickity.min.css";
 			$markdown = sfConfig::get("sf_web_dir") . "/css2/github-markdown.css";
+			$critical = sfConfig::get("sf_web_dir") . "/css2/critical.css";
 		?>
 		<style>
 			<?php echo file_get_contents($nouislider); ?>
 			<?php echo file_get_contents($flickity); ?>
+			<?php echo file_get_contents($critical); ?>
 		</style>
 		<link href="<?php echo public_path("/css2/app{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css">
 		<script type="text/javascript">
@@ -59,7 +60,7 @@
 				var ga = document.createElement('script');
 				ga.type = 'text/javascript';
 				ga.async = true;
-				ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				ga.src = (document.location.protocol === 'https:' ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 				var s = document.getElementsByTagName('script')[0];
 				s.parentNode.insertBefore(ga, s);
 			})();

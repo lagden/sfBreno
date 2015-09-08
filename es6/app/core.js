@@ -1,6 +1,7 @@
 'use strict';
 
 import $ from 'jquery';
+import webFont from 'webfontloader';
 import 'component/svg';
 import 'component/dropdown-checkbox';
 import 'component/slider';
@@ -19,3 +20,14 @@ const $siteHeader = $('#siteHeader');
 $siteHeader.on('click.logo', '> .logo-breno', (event) => {
 	event.currentTarget.firstElementChild.click();
 });
+
+// Webfont
+const webFontConfig = {
+	google: {
+		families: [
+			'Courgette::latin',
+			'Roboto+Condensed::latin'
+		]
+	}
+};
+webFont.load(webFontConfig);

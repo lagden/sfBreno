@@ -71,7 +71,7 @@ module.exports = (grunt) ->
     stylus:
       dev:
         options:
-          compress: true
+          compress: false
           paths: [
             'node_modules/jeet/stylus'
             'node_modules/rupture'
@@ -161,6 +161,9 @@ module.exports = (grunt) ->
       svglocalstorage:
         src: 'node_modules/svg-localstorage/svg-localstorage.js'
         dest: 'web/js2/lib/svg-localstorage.js'
+      webfontloader:
+        src: 'node_modules/webfontloader/webfontloader.js'
+        dest: 'web/js2/lib/webfontloader.js'
       githubMarkdownCss:
         src: 'node_modules/github-markdown-css/github-markdown.css'
         dest: 'web/css2/github-markdown.css'
