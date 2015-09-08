@@ -4,7 +4,8 @@
 
 import $ from 'jquery';
 import noUiSlider from 'nouislider/distribute/nouislider';
-import {abbreviate, currencyFormat} from 'mout/number';
+import abbreviate from 'mout/src/number/abbreviate';
+import currencyFormat from 'mout/src/number/currencyFormat';
 
 const $disponivel = $('.optsDisponibilidades');
 const _dict = {

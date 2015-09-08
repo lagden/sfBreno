@@ -1,8 +1,10 @@
 'use strict';
 
 import $ from 'jquery';
+// import Flickity from 'flickity/dist/flickity.pkgd';
 import Flickity from 'flickity-imagesloaded/flickity-imagesloaded';
 import 'imagesloaded/imagesloaded';
+import './lightbox';
 
 function changeCaption($el, v) {
 	$el.empty().text(v);
@@ -53,3 +55,54 @@ if ($estateGallery.length > 0) {
 			flktyGallery.resize();
 		});
 }
+
+// Lightbox
+let $indica;
+let $closeBtn;
+let $overlay;
+
+function activityIndicatorOn() {
+	const str = '<div class="imagelightbox-loading"><div></div></div>';
+	$indica = $(str).appendTo('body');
+}
+
+function activityIndicatorOff() {
+	$indica.remove();
+}
+
+function closeButtonOn(instance) {
+	const str = '<button type="button" class="imagelightbox-close"></button>';
+	$closeBtn = $(str).appendTo('body').on('click touchend', () => {
+		closeButtonOff();
+		instance.quitImageLightbox();
+		return false;
+	});
+}
+
+function closeButtonOff() {
+	$closeBtn.remove();
+}
+
+function overlayOn() {
+	const srt = '<div class="imagelightbox-overlay"></div>';
+	$overlay = $(srt).appendTo('body');
+}
+
+function overlayOff() {
+	$overlay.remove();
+}
+
+const $lightbox = $estateGallery.find('.picWorks').imageLightbox({
+	quitOnDocClick: false,
+	onStart: () => {
+		overlayOn();
+		closeButtonOn($lightbox);
+	},
+	onEnd: () => {
+		overlayOff();
+		closeButtonOff();
+		activityIndicatorOff();
+	},
+	onLoadStart: activityIndicatorOn,
+	onLoadEnd: activityIndicatorOff
+});

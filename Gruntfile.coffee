@@ -15,7 +15,7 @@ module.exports = (grunt) ->
       compile:
         options:
           sourceMap: true
-          modules: 'umd'
+          modules: 'amd'
         files: [
           expand: true
           flatten: false
@@ -57,11 +57,11 @@ module.exports = (grunt) ->
               drop_debugger: true
               drop_console: true
           optimizeCss: 'none'
-          generateSourceMaps: true
+          generateSourceMaps: false
           keepAmdefine: true
           preserveLicenseComments: false
           findNestedDependencies: true
-          useStrict: true
+          useStrict: false
           baseUrl: 'web/js2/lib'
           mainConfigFile: 'web/js2/config.js'
           name: '../../../node_modules/almond/almond',

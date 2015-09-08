@@ -3,7 +3,7 @@
 'use strict';
 
 import $ from 'jquery';
-import {insert, remove, last} from 'mout/array';
+import {insert, remove, last} from 'mout/src/array';
 
 const optsObj = {};
 

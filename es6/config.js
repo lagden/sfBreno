@@ -7,8 +7,7 @@ define('config', () => {
 		baseUrl: '/js2/lib',
 		paths: {
 			app: '../app',
-			component: '../component',
-			mout: 'mout/src'
+			component: '../component'
 		}
 	});
 });
