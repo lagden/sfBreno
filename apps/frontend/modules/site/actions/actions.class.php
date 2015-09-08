@@ -10,31 +10,30 @@
 */
 class siteActions extends sfActions
 {
-    public function executeIndex(sfWebRequest $request)
-    {
-        $slug = $request->getParameter('slug', false);
-        $arr = [
-        	'sobre' => 'Sobre',
-        	'administracao-de-imoveis-e-servicos' => 'Administração de Imóveis',
-        	'administracao-de-imoveis' => 'Administração de Imóveis',
-        	'documentacao-necessaria' => 'Documentação Necessária',
-        ];
+	public function executeIndex(sfWebRequest $request)
+	{
+		$slug = $request->getParameter('slug', false);
+		$arr = [
+			'sobre' => 'Sobre',
+			'administracao' => 'Administração de Imóveis',
+			'documentacao-necessaria' => 'Documentação Necessária',
+		];
 
-        if ($slug) {
-        	$c = Helper::getMD($slug);
-        	$this->title = isset($arr[$slug]) ? $arr[$slug] : '';
-        }
+		if ($slug) {
+			$c = Helper::getMD($slug);
+			$this->title = isset($arr[$slug]) ? $arr[$slug] : '';
+		}
 
-        if(!$c) {
-        	$this->redirect('site_notfound');
-        } else {
-            $this->getResponse()->addMeta('title', $this->title, true, true);
-            $this->c = $c;
-        }
-    }
+		if(!$c) {
+			$this->redirect('site_notfound');
+		} else {
+			$this->getResponse()->addMeta('title', $this->title, true, true);
+			$this->c = $c;
+		}
+	}
 
-    public function executeNotFound(sfWebRequest $request)
-    {
-        // Not Found
-    }
+	public function executeNotFound(sfWebRequest $request)
+	{
+		// Not Found
+	}
 }
