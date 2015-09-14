@@ -14,9 +14,7 @@ class EstateFormFilter extends BaseEstateFormFilter
 		{
 				$choices = Doctrine_Core::getTable('Estate')->getNumbers();
 
-				$this->useFields(array(
-					'type_id',
-				));
+				$this->useFields(['type_id', 'neighborhood_id']);
 
 				$this->widgetSchema['type_id'] = new sfWidgetFormDoctrineChoice(array(
 						'model' => $this->getRelatedModelName('Type'),
@@ -37,19 +35,13 @@ class EstateFormFilter extends BaseEstateFormFilter
 					'class' => 'optsDisponibilidades'
 				]);
 
-				$this->widgetSchema['valor'] = new sfWidgetFormInputHidden();
-				$this->widgetSchema['valor']->setDefault(0);
-
-				$this->widgetSchema['valor_max'] = new sfWidgetFormInputHidden();
-				$this->widgetSchema['valor_max']->setDefault(EstateTable::VALOR_MAX / 1000);
-
 				$this->widgetSchema['neighborhood_id'] = new sfWidgetFormDoctrineChoice([
 						'model' => $this->getRelatedModelName('Neighborhood'),
 						'method' => 'getNeighborhoodCity',
-						'table_method' => 'getLista',
-						'expanded' => false,
+						// 'table_method' => 'getLista',
 						'multiple' => IS_MOBILE ? true : false,
-						'add_empty' => IS_MOBILE ? 'Selecione os bairros' : 'Todos os bairros',
+						'expanded' => false,
+						'add_empty' => IS_MOBILE ? 'Selecione os bairros' : 'Todos os bairros'
 				]);
 				if (IS_MOBILE) {
 					$this->widgetSchema['neighborhood_id']
@@ -57,6 +49,12 @@ class EstateFormFilter extends BaseEstateFormFilter
 							"size"=>1,
 						]);
 				}
+
+				$this->widgetSchema['valor'] = new sfWidgetFormInputHidden();
+				$this->widgetSchema['valor']->setDefault(0);
+
+				$this->widgetSchema['valor_max'] = new sfWidgetFormInputHidden();
+				$this->widgetSchema['valor_max']->setDefault(EstateTable::VALOR_MAX / 1000);
 
 				$this->widgetSchema['suites'] = new sfWidgetFormChoice([
 						'choices'  => $choices,

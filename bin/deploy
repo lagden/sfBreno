@@ -17,7 +17,7 @@ ssh -T lagden.in <<EOF
 cd ~/projects/sfBreno/.
 
 # Composer
-composer.phar update
+# composer.phar update
 
 # Fix
 bin/setup -f

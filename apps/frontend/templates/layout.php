@@ -4,7 +4,7 @@
 		<?php
 		// Cache version
 		// $cacheVersion = '.' . implode('', explode('.',sfConfig::get('app_cache_version')));
-		$cacheVersion = '.' . '2.0.5';
+		$cacheVersion = '.' . '2.0.7';
 		$neverCacheVersion = mt_rand();
 		?>
 
