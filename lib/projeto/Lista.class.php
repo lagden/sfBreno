@@ -11,7 +11,7 @@ class Lista
 			['svg'=> '#custom_suite', 'field'=> 'suites', 'title'=> 'Suíte', 'sufix'=> ''],
 			['svg'=> '#custom_banheiro', 'field'=> 'banheiros', 'title'=> 'Banheiro', 'sufix'=> ''],
 			['svg'=> '#custom_vaga', 'field'=> 'vagas', 'title'=> 'Vaga', 'sufix'=> ''],
-			['svg'=> '#custom_metro', 'field'=> 'area_util', 'title'=> 'Área', 'sufix'=> 'm²']
+			['svg'=> '#custom_metro', 'field'=> 'area_util', 'title'=> 'Área útil', 'sufix'=> 'm²']
 		];
 	}
 }

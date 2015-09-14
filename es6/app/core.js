@@ -21,6 +21,10 @@ $siteHeader.on('click.logo', '> .logo-breno', (event) => {
 	event.currentTarget.firstElementChild.click();
 });
 
+// Select
+const $selectmultiple = $('select[multiple]');
+$selectmultiple.find('option:first').attr('disabled', true);
+
 // Webfont
 const webFontConfig = {
 	google: {

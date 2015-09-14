@@ -221,6 +221,15 @@ function imageLightbox(opts) {
 		image = $();
 	}
 
+	function switchImageLightbox(index) {
+		const tmpTarget = targets.eq(index);
+		if (tmpTarget.length) {
+			const currentIndex = targets.index(target);
+			target = tmpTarget;
+			loadImage(index < currentIndex ? 'left' : 'right');
+		}
+	}
+
 	function quitLightbox() {
 		if (!image.length) {
 			return false;
@@ -290,6 +299,7 @@ function imageLightbox(opts) {
 	});
 
 	this.quitImageLightbox = quitLightbox;
+	this.switchImageLightbox = switchImageLightbox;
 
 	return this;
 }

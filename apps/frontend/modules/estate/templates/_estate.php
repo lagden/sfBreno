@@ -11,12 +11,6 @@
 
 	<h3>Valores</h3>
 	<p class="estate-show--destaque">
-		<?php $complemento = ['iptu'=> 'IPTU', 'condominio'=> 'Condomínio'] ?>
-		<?php foreach ($complemento as $k => $v): ?>
-			R$ <?php echo number_format($estate->$k, 2, ',', '.'); ?> <?php echo "de {$v}" ?><br>
-		<?php endforeach ?>
-	</p>
-	<p class="estate-show--destaque">
 	<?php foreach ($estate->Disponibilidades as $d): ?>
 		<?php
 		$label="";
@@ -41,6 +35,14 @@
 			R$ <?php echo $value; ?> <?php echo $label; ?><br>
 		<?php endif ?>
 	<?php endforeach ?>
+	</p>
+
+	<h3>Informações</h3>
+	<p class="estate-show--destaque">
+		<?php $complemento = ['iptu'=> 'IPTU', 'condominio'=> 'Condomínio'] ?>
+		<?php foreach ($complemento as $k => $v): ?>
+			R$ <?php echo number_format($estate->$k, 2, ',', '.'); ?> <?php echo "de {$v}" ?><br>
+		<?php endforeach ?>
 	</p>
 
 	<div class="markdown-body">

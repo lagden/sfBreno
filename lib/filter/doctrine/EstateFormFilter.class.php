@@ -43,14 +43,20 @@ class EstateFormFilter extends BaseEstateFormFilter
 				$this->widgetSchema['valor_max'] = new sfWidgetFormInputHidden();
 				$this->widgetSchema['valor_max']->setDefault(EstateTable::VALOR_MAX / 1000);
 
-				$this->widgetSchema['neighborhood_id'] = new sfWidgetFormDoctrineChoice(array(
+				$this->widgetSchema['neighborhood_id'] = new sfWidgetFormDoctrineChoice([
 						'model' => $this->getRelatedModelName('Neighborhood'),
 						'method' => 'getNeighborhoodCity',
-						'multiple' => false,
-						'expanded' => false,
 						'table_method' => 'getLista',
-						'add_empty' => 'Todos os lugares'
-				));
+						'expanded' => false,
+						'multiple' => IS_MOBILE ? true : false,
+						'add_empty' => IS_MOBILE ? 'Selecione os bairros' : 'Todos os bairros',
+				]);
+				if (IS_MOBILE) {
+					$this->widgetSchema['neighborhood_id']
+						->setAttributes([
+							"size"=>1,
+						]);
+				}
 
 				$this->widgetSchema['suites'] = new sfWidgetFormChoice([
 						'choices'  => $choices,
@@ -93,7 +99,7 @@ class EstateFormFilter extends BaseEstateFormFilter
 				$this->widgetSchema['quartos']->setLabel('Quarto');
 				$this->widgetSchema['banheiros']->setLabel('Banheiro');
 				$this->widgetSchema['vagas']->setLabel('Vaga');
-				$this->widgetSchema['area']->setLabel('Área');
+				$this->widgetSchema['area']->setLabel('Área útil');
 
 				// Validation
 				// Default message errors

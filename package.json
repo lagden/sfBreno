@@ -51,7 +51,6 @@
     "grunt-contrib-symlink": "^0.3.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-postcss": "^0.5.5",
-    "grunt-sass": "^1.0.0",
     "grunt-svg-sprite": "^1.2.8",
     "grunt-svgstore": "^0.5.0",
     "grunt-xo": "^0.3.0",

@@ -41,14 +41,14 @@
     bottom 0
     width 20px
     height 20px
-    background-color #fff
+    background-color: $cores.white
     animation imagelightbox-loading .5s ease infinite
 
 .imagelightbox-close
   width 40px
   height 40px
   text-align left
-  background-color rgba(black, 0.9)
+  background-color: rgba($cores.white, 0.7)
   border 0
   border-radius 50%
   position fixed
@@ -59,13 +59,13 @@
 
   &:hover,
   &:focus
-    background-color #111
+    background-color: rgba($cores.white, 1)
     outline none
 
   &:before,
   &:after
     width 2px
-    background-color #fff
+    background-color: $cores.black
     content ''
     position absolute
     top 20%
@@ -74,14 +74,43 @@
     margin-left -1px
 
   &:before
-    transform rotate( 45deg )
+    transform rotate(45deg)
 
   &:after
-    transform rotate( -45deg )
+    transform rotate(-45deg)
+
+.imagelightbox-arrow
+  width: 44px
+  height: 44px
+  border-radius 50%
+  background-color: rgba($cores.white, 0.5)
+  vertical-align: middle
+  position: fixed
+  z-index: 10002
+  top: 0
+  bottom: 0
+  margin-top: auto
+  margin-bottom: auto
+  &:hover,
+  &:focus
+    background-color: rgba($cores.white, 0.75)
+  &:active
+    background-color: $cores.white
+  &.imagelightbox-arrow-left
+    left: 10px
+  &.imagelightbox-arrow-right
+    right: 10px
+  & > svg
+    position: absolute
+    left: 20%
+    top: 20%
+    width: 60%
+    height: 60%
 
 .imagelightbox-overlay,
 .imagelightbox-close,
-.imagelightbox-loading
+.imagelightbox-loading,
+.imagelightbox-arrow
   animation fade-in .25s linear
 
 @keyframes imagelightbox-loading
@@ -100,4 +129,3 @@
     opacity 0
   to
     opacity 1
-

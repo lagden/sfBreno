@@ -188,8 +188,11 @@ class EstateTable extends Doctrine_Table
 
 										case "neighborhood_id":
 											if(isset($filters['neighborhood_id']) && $v) {
-												// $q->andWhereIn("{$alias}.{$k}", $v);
-												$q->andWhere("{$alias}.{$k} = ?", $v);
+												if (is_array($v)) {
+													$q->andWhereIn("{$alias}.{$k}", $v);
+												} else {
+													$q->andWhere("{$alias}.{$k} = ?", $v);
+												}
 											}
 											break;
 

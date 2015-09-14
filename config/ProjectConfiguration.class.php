@@ -23,6 +23,11 @@ class ProjectConfiguration extends sfProjectConfiguration
 {
   public function setup()
   {
+    $mobileDetect = new Mobile_Detect();
+    $isTablet = $mobileDetect->isTablet();
+    $isMobile = $mobileDetect->isMobile();
+    defined('IS_MOBILE') || define('IS_MOBILE', ($isTablet || $isMobile));
+
     $this->enablePlugins([
       'sfDoctrinePlugin',
       'csDoctrineActAsSortablePlugin'
