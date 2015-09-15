@@ -40,8 +40,8 @@ if ($estateGallery.length > 0) {
 		pageDots: false,
 		autoPlay: true,
 		wrapAround: true,
-		prevNextButtons: true,
-		draggable: false,
+		prevNextButtons: !isMobile,
+		draggable: isMobile,
 		resize: true,
 		lazyLoad: false,
 		accessibility: false
