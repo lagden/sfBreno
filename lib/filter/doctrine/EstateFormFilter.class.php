@@ -38,17 +38,11 @@ class EstateFormFilter extends BaseEstateFormFilter
 				$this->widgetSchema['neighborhood_id'] = new sfWidgetFormDoctrineChoice([
 						'model' => $this->getRelatedModelName('Neighborhood'),
 						'method' => 'getNeighborhoodCity',
-						// 'table_method' => 'getLista',
-						'multiple' => IS_MOBILE ? true : false,
+						'table_method' => 'getLista',
+						'multiple' => true,
 						'expanded' => false,
-						'add_empty' => IS_MOBILE ? 'Selecione os bairros' : 'Todos os bairros'
+						'add_empty' => false
 				]);
-				if (IS_MOBILE) {
-					$this->widgetSchema['neighborhood_id']
-						->setAttributes([
-							"size"=>1,
-						]);
-				}
 
 				$this->widgetSchema['valor'] = new sfWidgetFormInputHidden();
 				$this->widgetSchema['valor']->setDefault(0);

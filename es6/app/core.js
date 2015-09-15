@@ -10,6 +10,7 @@ import 'component/burger';
 import 'component/pagina';
 import 'component/form';
 import 'component/aviso';
+import 'sumoselect/jquery.sumoselect';
 
 const $btnBack = $('.backbutton');
 $btnBack.on('click.back', () => {
@@ -22,8 +23,14 @@ $siteHeader.on('click.logo', '> .logo-breno', (event) => {
 });
 
 // Select
-const $selectmultiple = $('select[multiple]');
-$selectmultiple.find('option:first').attr('disabled', true);
+// const $selectmultiple = $('select[multiple]');
+const $selectmultiple = $('#estate_filters_neighborhood_id');
+$selectmultiple.SumoSelect({
+	placeholder: 'Selecione os bairros',
+	captionFormat: '{0} selecionados',
+	selectAll: true,
+	selectAlltext: 'Todos os bairros'
+});
 
 // Webfont
 const webFontConfig = {

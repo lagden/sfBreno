@@ -30,7 +30,7 @@ if ($homeGallery.length > 0) {
 }
 
 const $estateGallery = $('#estateGallery');
-const isMobile = Number($estateGallery.data('isMobile')) || 0;
+const isMobile = Number($estateGallery.data('mobile')) || 0;
 
 if ($estateGallery.length > 0) {
 	$estateGallery.addClass('estate-gallery--done');

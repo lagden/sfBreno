@@ -1,5 +1,5 @@
 <?php if ($estate->Images->count() > 0): ?>
-	<div id="estateGallery" class="gallery estate-gallery" data-isMobile="<?php echo IS_MOBILE ? 1 : 0 ?>">
+	<div id="estateGallery" class="gallery estate-gallery" data-mobile="<?php echo IS_MOBILE ? 1 : 0 ?>">
 		<?php foreach ($estate->Images as $image): ?>
 			<?php
 			$img1x = $image->formato('m');

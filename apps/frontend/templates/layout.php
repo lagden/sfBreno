@@ -4,7 +4,7 @@
 		<?php
 		// Cache version
 		// $cacheVersion = '.' . implode('', explode('.',sfConfig::get('app_cache_version')));
-		$cacheVersion = '.' . '2.0.7';
+		$cacheVersion = '.' . '2.0.8';
 		$neverCacheVersion = mt_rand();
 		?>
 
@@ -38,10 +38,9 @@
 		<!--[if IE]><link rel="shortcut icon" href="<?php echo public_path("/favicon{$cacheVersion}.ico") ?>"><![endif]-->
 		<link rel="icon" href="<?php echo public_path("/favicon{$cacheVersion}.png") ?>">
 		<?php
-			/* <link href='//fonts.googleapis.com/css?family=Courgette|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'> */
 			$nouislider = sfConfig::get("sf_web_dir") . "/js2/lib/nouislider/distribute/nouislider.min.css";
 			$flickity = sfConfig::get("sf_web_dir") . "/js2/lib/flickity/dist/flickity.min.css";
-			$markdown = sfConfig::get("sf_web_dir") . "/css2/github-markdown.css";
+			// $markdown = sfConfig::get("sf_web_dir") . "/css2/github-markdown.css";
 			$critical = sfConfig::get("sf_web_dir") . "/css2/critical.css";
 		?>
 		<style>
@@ -49,7 +48,6 @@
 			<?php echo file_get_contents($flickity); ?>
 			<?php echo file_get_contents($critical); ?>
 		</style>
-		<?php /* <link href="<?php echo public_path("/css2/app{$cacheVersion}.css") ?>" media="screen" rel="stylesheet" type="text/css"> */ ?>
 
 		<script type="text/javascript">
 			'use strict';

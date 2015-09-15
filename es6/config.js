@@ -8,6 +8,9 @@ define('config', () => {
 		paths: {
 			app: '../app',
 			component: '../component'
+		},
+		shim: {
+			'sumoselect/jquery.sumoselect': ['jquery']
 		}
 	});
 });
