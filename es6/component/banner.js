@@ -67,7 +67,7 @@ function arrowsOn(instance) {
 		'</button>'
 	].join('');
 	$arrows = $(str).appendTo('body');
-	$arrows.on('click touchend', (e) => {
+	$arrows.on('click touchend', e => {
 		e.preventDefault();
 		const $this	= $(e.currentTarget);
 		const $target	= $(`${selector}[href="${$('#imagelightbox').attr('src')}"]`);

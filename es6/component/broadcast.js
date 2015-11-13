@@ -4,7 +4,7 @@ import $ from 'jquery';
 
 const Broadcast = {};
 
-$.Broadcast = (id) => {
+$.Broadcast = id => {
 	let callbacks;
 	let topic = id && Broadcast[id];
 	if (!topic) {

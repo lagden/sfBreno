@@ -27,10 +27,6 @@
       "window"
     ],
     "rules": {
-      "arrow-parens": [
-        1,
-        "always"
-      ],
       "new-cap": [
         2,
         {

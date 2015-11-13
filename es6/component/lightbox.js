@@ -165,7 +165,7 @@ function imageLightbox(opts) {
 			let swipeEnd = 0;
 
 			image
-				.on(hasPointers ? 'pointerup MSPointerUp' : 'click', (e) => {
+				.on(hasPointers ? 'pointerup MSPointerUp' : 'click', e => {
 					e.preventDefault();
 					if (options.quitOnImgClick) {
 						quitLightbox();
@@ -181,13 +181,13 @@ function imageLightbox(opts) {
 					}
 					loadImage(imageWidth / 2 > posX ? 'left' : 'right');
 				})
-				.on('touchstart pointerdown MSPointerDown', (e) => {
+				.on('touchstart pointerdown MSPointerDown', e => {
 					if (!wasTouched(e.originalEvent) || options.quitOnImgClick) {
 						return true;
 					}
 					swipeStart = e.originalEvent.pageX || e.originalEvent.touches[0].pageX;
 				})
-				.on('touchmove pointermove MSPointerMove', (e) => {
+				.on('touchmove pointermove MSPointerMove', e => {
 					if (!wasTouched(e.originalEvent) || options.quitOnImgClick) {
 						return true;
 					}
@@ -196,7 +196,7 @@ function imageLightbox(opts) {
 					swipeDiff = swipeStart - swipeEnd;
 					cssTransitionTranslateX(image, `${-swipeDiff}px`, 0);
 				})
-				.on('touchend touchcancel pointerup pointercancel MSPointerUp MSPointerCancel', (e) => {
+				.on('touchend touchcancel pointerup pointercancel MSPointerUp MSPointerCancel', e => {
 					if (!wasTouched(e.originalEvent) || options.quitOnImgClick) {
 						return true;
 					}
@@ -248,7 +248,7 @@ function imageLightbox(opts) {
 	$win.on('resize', setImage);
 
 	if (options.quitOnDocClick) {
-		$doc.on(hasTouch ? 'touchend' : 'click', (e) => {
+		$doc.on(hasTouch ? 'touchend' : 'click', e => {
 			if (image.length && !$(e.target).is(image)) {
 				quitLightbox();
 			}
@@ -256,7 +256,7 @@ function imageLightbox(opts) {
 	}
 
 	if (options.enableKeyboard) {
-		$doc.on('keyup', (e) => {
+		$doc.on('keyup', e => {
 			if (!image.length) {
 				return true;
 			}
@@ -274,7 +274,7 @@ function imageLightbox(opts) {
 		});
 	}
 
-	$doc.on('click', this.selector, (e) => {
+	$doc.on('click', this.selector, e => {
 		e.preventDefault();
 		const t = e.currentTarget;
 		if (!isTargetValid(t)) {

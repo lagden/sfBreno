@@ -3,7 +3,7 @@
 import $ from 'jquery';
 
 const $paginacao = $('.pagination');
-$paginacao.on('click.paginacao', '> button.paginacao--ui:not(:disabled)', (event) => {
+$paginacao.on('click.paginacao', '> button.paginacao--ui:not(:disabled)', event => {
 	let u;
 	let v;
 	const btn = event.currentTarget;

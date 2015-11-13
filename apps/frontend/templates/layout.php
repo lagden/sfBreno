@@ -66,6 +66,10 @@
 		</script>
 </head>
 <body>
+		<div class="aviso modalLayout__aviso modalLayout--open">
+			<svg id="clearAviso" class="icon--small-white"><use xlink:href="#material_clear"></use></svg>
+			<b>AVISO:</b> Estamos com problemas com nossos telefones. Por favor, façam contato via email ou pelo <a href="/contato">formulário do site</a>.
+		</div>
 		<?php if (sfConfig::get("homeHeader", false)): ?>
 			<?php include_partial('global/header'); ?>
 		<?php else: ?>

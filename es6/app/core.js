@@ -18,7 +18,7 @@ $btnBack.on('click.back', () => {
 });
 
 const $siteHeader = $('#siteHeader');
-$siteHeader.on('click.logo', '> .logo-breno', (event) => {
+$siteHeader.on('click.logo', '> .logo-breno', event => {
 	event.currentTarget.firstElementChild.click();
 });
 
@@ -42,3 +42,9 @@ const webFontConfig = {
 	}
 };
 webFont.load(webFontConfig);
+
+// Aviso
+const $clearAviso = $('#clearAviso');
+$clearAviso.on('click.aviso', () => {
+	$clearAviso.parent().remove();
+});

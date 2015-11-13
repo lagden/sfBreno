@@ -26,7 +26,7 @@ function update(field, v, checked) {
 		let str = current.join(', ');
 		const ax = str.lastIndexOf(',');
 		if (ax !== -1) {
-			str = str.substring(0, ax) + ' ou ' + str.substring(ax + 1);
+			str = `${str.substring(0, ax)} ou ${str.substring(ax + 1)}`;
 		}
 		el.textContent = `${str}${plus}`;
 	} else {
@@ -48,7 +48,7 @@ function beforeUpdate(opt) {
 	update($opts.data('field'), opt.value, opt.checked);
 }
 
-$btns.on('click', (event) => {
+$btns.on('click', event => {
 	const btn = event.currentTarget;
 	closeBefore(btn);
 	btn.classList.toggle('is-visible');
@@ -57,7 +57,7 @@ $btns.on('click', (event) => {
 	}
 });
 
-$opts.on('click', (event) => {
+$opts.on('click', event => {
 	beforeUpdate(event.currentTarget);
 });
 
