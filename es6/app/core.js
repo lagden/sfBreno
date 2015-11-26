@@ -44,7 +44,7 @@ const webFontConfig = {
 webFont.load(webFontConfig);
 
 // Aviso
-const $clearAviso = $('#clearAviso');
-$clearAviso.on('click.aviso', () => {
-	$clearAviso.parent().remove();
-});
+// const $clearAviso = $('#clearAviso');
+// $clearAviso.on('click.aviso', () => {
+// 	$clearAviso.parent().remove();
+// });
