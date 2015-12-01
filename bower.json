@@ -2,7 +2,7 @@
   "name": "breno-site",
   "private": true,
   "dependencies": {
-    "flickity": "~1.1.0",
+    "flickity": "~1.1.1",
     "flickity-imagesloaded": "~1.0.1",
     "imagesloaded": "~3.1.8",
     "lagden-growl": "~0.4.1",

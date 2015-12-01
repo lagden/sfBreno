@@ -43,8 +43,7 @@ if ($estateGallery.length > 0) {
 		prevNextButtons: !isMobile,
 		draggable: isMobile,
 		resize: true,
-		lazyLoad: false,
-		accessibility: false
+		lazyLoad: false
 	});
 	flktyGallery.resize();
 }
