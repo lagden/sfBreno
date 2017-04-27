@@ -1,6 +1,5 @@
 #!/bin/bash
 
-THIS=$(basename $0)
 DIR="$( cd -P "$( dirname "$0" )" && pwd )"
 cd $DIR
 cd ..
@@ -27,8 +26,8 @@ smartresize() {
 	local prefix=${filename%.*}
 	local ext=${filename##*.}
 	local out="${4}.${ext}"
-	local EXEC="/home/lagden/bin/mogrify"
-	local CMD="mogrify"
+	local EXEC="/home/lagden/bin/convert"
+	local CMD="convert"
 	if test -e "${EXEC}"; then
 		CMD="${EXEC}"
 	fi
@@ -55,8 +54,8 @@ smartresize() {
 		-define png:exclude-chunk=all \
 		-interlace none \
 		-gravity center \
-		-format $out \
-		-colorspace sRGB $1
+		-format ${ext} \
+		-colorspace sRGB $1 "${5}/${prefix}.${out}" \
 
 	addshow "${5}/${prefix}.${out}" "${5}/${prefix}-${out}"
 }
